@@ -3922,4 +3922,1029 @@ lakerConnChecker -addNet -net LakerNet__2 -startPoint (2.512,-9.275)
 lakerConnChecker -toMaxLevel -net LakerNet__2 -speedMode -traceViaArray 1
 lakerChangeSelMode -mode Vertex
 lakerZoomOut
-lakerZ
+lakerZoomInByArea -point (0.894,-9.631) (6.068,-7.193)
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerConnChecker -addNet -net LakerNet__3 -startPoint (2.485,-8.995)
+lakerConnChecker -toMaxLevel -net LakerNet__3 -speedMode -traceViaArray 1
+lakerChangeSelMode -mode Vertex
+lakerZoomInByArea -point (3.844,-8.979) (4.688,-8.581)
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerSingleSel -point (4.257,-8.586) -traversedist 0.038
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerConnChecker -addNet -net LakerNet__4 -startPoint (4.992,-8.2)
+lakerConnChecker -toMaxLevel -net LakerNet__4 -speedMode -traceViaArray 1
+lakerChangeSelMode -mode Vertex
+lakerZoomOut
+lakerZoomInByArea -point (-0.154,-10.653) (7.586,-7.005)
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSingleSel -point (5.734,-7.549) -traversedist 0.043
+lakerSingleSel
+lakerZoomInByArea -point (2.017,-8.001) (4.297,-6.927)
+lakerDistance -point (2.855,-7.396) (2.975,-7.401)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (4.63,-7.375) (4.875,-7.421)
+lakerSaveDesign
+lakerZoomInByArea -point (0.524,-9.711) (7.438,-6.453)
+lakerSingleSel -point (5.545,-8.493) -traversedist 0.039
+lakerSingleSel
+lakerSingleSel
+lakerDeselectAll
+lakerSingleSel
+lakerStretchObj -refPoint (4.87,-7.34) -ignoreNet 0 -offsetPoint (4.745,-7.34)
+lakerSingleSel -point (5.294,-7.455) -traversedist 0.039
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (4.875,-9.385) -ignoreNet 0 -offsetPoint (4.75,-9.385)
+lakerSingleSel -point (4.847,-9.383) -traversedist 0.039
+lakerAreaSel -point (4.939,-9.655) (7.195,-6.638)
+lakerAreaSel -point (4.627,-9.47) (7.125,-6.742)
+lakerSaveDesign -autosave
+lakerSingleSel -point (6.721,-6.657) -traversedist 0.039
+lakerAreaSel -point (6.624,-7.38) (6.835,-6.727)
+lakerStretchObj -refPoint (6.71,-7.005) -ignoreNet 0 -offsetPoint (6.955,-7.005)
+lakerDistance -point (0.665,-7.012) (6.965,-7.024)
+This feature only applies to Instance, not for Device, MCell or Shape.
+lakerZoomOut
+lakerSingleSel -point (1.008,-6.52) -traversedist 0.077
+lakerAreaSel -point (0.144,-10.12) (7.985,-6.636)
+lakerSingleSel -point (8.049,-9.898) -traversedist 0.077
+lakerZoomInByArea -point (0.201,-10.045) (7.351,-6.675)
+lakerSingleSel -point (6.645,-9.383) -traversedist 0.04
+lakerDeselectAll
+lakerAreaSel -point (6.649,-9.92) (6.85,-9.347)
+lakerStretchObj -refPoint (6.715,-9.63) -ignoreNet 0 -offsetPoint (6.965,-9.63)
+lakerDeselectAll
+lakerDeselectAll
+lakerSingleSel -point (0.58,-8.362) -traversedist 0.04
+lakerSaveDesign
+lakerSingleSel
+lakerSingleSel -point (3.778,-9.411) -traversedist 0.04
+lakerSingleSel -point (4.237,-9.407) -traversedist 0.04
+lakerSingleSel -point (0.301,-7.991) -traversedist 0.04
+lakerSingleSel
+lakerSingleSel -point (3.997,-7.381) -traversedist 0.04
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerSingleSel
+lakerSingleSel -point (5.995,-8.354) -traversedist 0.04
+lakerAreaSel -point (5.872,-8.56) (6.1,-8.306)
+lakerSingleSel -point (6.011,-8.378) -traversedist 0.04
+lakerZoomInByArea -point (4.844,-8.935) (7.042,-7.899)
+lakerDistance -point (5.795,-8.584) (5.85,-8.592)
+lakerZoomOut
+lakerDistance -point (5.615,-7.893) (5.675,-7.911)
+lakerDistance -point (5.753,-9.15) (5.76,-9.28)
+lakerDistance -point (6.09,-8.592) (6.27,-8.585)
+lakerZoomInByArea -point (5.685,-8.814) (7.031,-8.18)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (5.36,-7.781) (5.615,-7.796)
+lakerDistance -point (5.46,-9.018) (5.615,-9.048)
+lakerDistance -point (5.46,-8.946) (5.295,-8.985)
+lakerDistance -point (5.295,-7.937) (5.36,-7.94)
+lakerSingleSel
+lakerStretchObj -refPoint (5.46,-9.095) -ignoreNet 0 -offsetPoint (5.395,-9.095)
+lakerDistance -point (5.295,-9.084) (5.395,-9.087)
+lakerAreaSel -point (5.366,-9.185) (5.415,-8.838)
+lakerStretchObj -refPoint (5.4,-9.025) -ignoreNet 0 -offsetPoint (5.375,-9.025)
+lakerDistance -point (5.295,-8.952) (5.37,-8.964)
+lakerDeselectAll
+lakerAreaSel -point (5.363,-9.185) (5.385,-8.832)
+lakerSingleSel -point (5.402,-9.18) -traversedist 0.03
+lakerAreaSel -point (5.351,-9.17) (5.425,-8.817)
+lakerStretchObj -refPoint (5.37,-9.025) -ignoreNet 0 -offsetPoint (5.355,-9.025)
+lakerDistance -point (5.295,-8.946) (5.355,-8.946)
+lakerClearRuler
+lakerDistance -point (5.355,-8.997) (5.615,-9.015)
+lakerDeselectAll
+lakerAreaSel -point (5.489,-9.2) (5.855,-7.474)
+lakerStretchObj -refPoint (5.61,-7.78) -ignoreNet 0 -offsetPoint (5.505,-7.78)
+lakerSingleSel -point (5.843,-8.865) -traversedist 0.03
+lakerDistance -point (5.69,-8.589) (5.85,-8.61)
+lakerZoomInByArea -point (5.438,-8.925) (6.948,-8.213)
+lakerZoomOut
+lakerZoomOut
+lakerCreateRect -layerName METAL1 -point (5.855,-8.8) (6.095,-8.265)
+Lib(/home/user/wrk/standard_113/laker/test.lib++/libfile) needs to update:
+ org[Time(1729144247) size(8369)] now[Time(1729144493) Size(8369)]
+deLibMerge starting...
+ Expended time (0.00) sec. sysFileStat is called (0) times.
+deLibMerge finished!!
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerDeselectAll
+lakerPanLeft
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (5.94,-8.27) -ignoreNet 0 -offsetPoint (5.94,-8.36)
+lakerSingleSel
+lakerStretchObj -refPoint (5.845,-8.395) -ignoreNet 0 -offsetPoint (5.835,-8.395)
+lakerDeselectAll
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeselectAll
+lakerChangeSelMode -mode Object
+lakerSaveDesign -autosave
+lakerPanLeft
+lakerPanRight
+lakerPanLeft
+lakerPanRight
+lakerChangeSelMode -mode Vertex
+lakerDeselectAll
+lakerDeselectAll
+lakerAreaSel -point (4.889,-9.475) (5.135,-7.391)
+lakerIncreaseSel -point (4.663,-8.855) (5.075,-8.432)
+lakerAlignObj -point (4.969,-7.806) -mode start
+lakerAlignObj -refObj 1 -refPoint (4.765,-7.78) -traversedist 0.017 -space 0.06
+lakerUndo
+lakerAlignObj -point (4.976,-7.806) -mode start
+lakerAlignObj -refObj 1 -refPoint (4.75,-7.745) -traversedist 0.017 -space 0.1
+lakerSingleSel -point (5.06,-9.403) -traversedist 0.034
+lakerSingleSel
+lakerSingleSel -point (5.0,-8.83) -traversedist 0.034
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerDistance -point (4.31,-8.129) (4.43,-8.146)
+lakerDeselectAll
+lakerConnChecker -clear
+lakerClearHighLight
+lakerZoomOut
+lakerAreaSel -point (4.196,-9.9) (7.23,-6.84)
+lakerSingleSel
+lakerSingleSel -point (7.971,-8.384) -traversedist 0.067
+lakerAreaSel -point (4.007,-8.43) (4.385,-6.685)
+lakerSingleSel
+lakerSingleSel -point (4.142,-6.651) -traversedist 0.067
+lakerAreaSel -point (3.872,-7.96) (4.585,-6.591)
+lakerSingleSel -point (4.014,-6.314) -traversedist 0.067
+lakerAreaSel -point (4.014,-7.27) (4.08,-6.725)
+lakerSingleSel -point (4.128,-6.624) -traversedist 0.067
+lakerAreaSel -point (4.142,-9.88) (7.625,-6.685)
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (5.895,-7.92) -offsetPoint (6.09,-7.92)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (7.607,-8.754) -traversedist 0.067
+lakerZoomInByArea -point (0.367,-10.406) (8.435,-6.604)
+lakerSingleSel -point (4.309,-8.507) -traversedist 0.045
+lakerAreaSel -point (4.273,-8.35) (4.59,-7.369)
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (4.465,-7.56) -ignoreNet 0 -offsetPoint (4.395,-7.56)
+lakerSingleSel -point (4.448,-8.566) -traversedist 0.045
+lakerZoomInByArea -point (2.292,-9.285) (6.816,-7.153)
+lakerClearRuler
+lakerAreaSel -point (4.25,-8.265) (4.565,-7.375)
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (3.485,-8.745) -ignoreNet 0 -offsetPoint (3.565,-8.745)
+lakerStretchObj -refPoint (3.52,-8.735) -ignoreNet 0 -offsetPoint (3.52,-8.815)
+lakerSingleSel -point (3.574,-8.632) -traversedist 0.025
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerCreatePath -layerName POLY1 -point (3.615,-8.76) (3.615,-8.655) (4.055,-8.655) (4.055,-8.135) (4.435,-8.135) -width 0.100000 0.000000 -routeStatus fixed
+lakerDistance -point (4.215,-8.0) (4.22,-8.085)
+lakerSaveDesign -autosave
+lakerUndo
+lakerZoomInByArea -point (2.685,-9.159) (5.431,-7.865)
+lakerCreatePath -layerName POLY1 -point (3.61,-8.745) (3.61,-8.66) (4.11,-8.66) (4.11,-8.205) (4.435,-8.205) -width 0.100000 0.000000 -routeStatus fixed
+lakerDistance -point (4.187,-8.0) (4.198,-8.155)
+lakerZoomOut
+lakerSingleSel
+lakerStretchObj -refPoint (4.875,-8.88) -ignoreNet 0 -offsetPoint (4.95,-8.88)
+lakerSingleSel
+lakerStretchObj -refPoint (4.93,-8.865) -ignoreNet 0 -offsetPoint (4.925,-8.865)
+lakerSingleSel -point (4.488,-8.514) -traversedist 0.031
+lakerAreaSel -point (5.251,-9.505) (5.635,-7.506)
+lakerSingleSel -point (5.557,-7.65) -traversedist 0.031
+lakerAreaSel -point (5.34,-9.481) (5.763,-7.66)
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (5.784,-7.46) -traversedist 0.031
+lakerAreaSel -point (5.29,-9.478) (5.76,-7.575)
+lakerIncreaseSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (5.415,-7.865) -ignoreNet 0 -offsetPoint (5.26,-7.865)
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (5.9,-9.469) -traversedist 0.031
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerDistance -point (5.145,-7.916) (5.22,-7.94)
+lakerDistance -point (1.815,-7.91) (1.91,-7.91)
+lakerDistance -point (3.175,-9.01) (3.275,-9.037)
+lakerPanLeft
+lakerDistance -point (1.815,-9.019) (1.915,-9.056)
+lakerPanRight
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (5.35,-7.71) -ignoreNet 0 -offsetPoint (5.445,-7.71)
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (5.36,-9.045) -ignoreNet 0 -offsetPoint (5.465,-9.045)
+lakerSingleSel
+lakerStretchObj -refPoint (5.31,-7.785) -ignoreNet 0 -offsetPoint (5.31,-7.39)
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerSingleSel -point (5.551,-7.42) -traversedist 0.031
+lakerSingleSel
+lakerSingleSel -point (5.343,-7.371) -traversedist 0.031
+lakerAreaSel -point (5.199,-9.41) (5.445,-7.494)
+lakerAlignObj -point (5.214,-8.391) -mode start
+lakerAlignObj -refObj 1 -refPoint (5.15,-8.46) -traversedist 0.015 -space 0.1
+lakerDistance -point (5.365,-7.904) (5.455,-7.916)
+lakerSingleSel -point (5.557,-8.406) -traversedist 0.031
+lakerSingleSel -point (5.585,-8.501) -traversedist 0.031
+lakerSingleSel -point (5.619,-8.461) -traversedist 0.031
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (5.582,-8.253) -traversedist 0.031
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (5.435,-8.185) -ignoreNet 0 -offsetPoint (5.37,-8.185)
+lakerSingleSel -point (5.606,-8.559) -traversedist 0.031
+lakerChangeSelMode -mode Object
+lakerSetActiveLayer -layerName METAL1 -purpose pin
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerZoomInByArea -point (4.604,-9.383) (6.768,-8.363)
+lakerCreatePath -layerName METAL1 -point (5.305,-9.115) (5.305,-9.325) (6.165,-9.325) (6.165,-8.785) -width 0.120000 0.000000 -routeStatus fixed
+lakerZoomOut
+lakerDistance -point (5.81,-9.15) (5.834,-9.265)
+lakerDistance -point (5.878,-9.385) (5.875,-9.525)
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (6.125,-9.3) -offsetPoint (6.125,-9.305)
+lakerChangeSelMode -mode Object
+lakerSaveDesign -autosave
+lakerZoomOut
+lakerZoomInByArea -point (2.71,-9.537) (8.048,-7.021)
+lakerCreateInstance -point (4.205,-8.485) -cell POLY_GATE -lib test -view layout
+lakerZoomInByArea -point (3.288,-8.655) (5.516,-7.605)
+lakerDistance -point (4.205,-8.344) (4.11,-8.352)
+lakerSingleSel -point (4.408,-8.502) -traversedist 0.012
+lakerAreaSel -point (4.175,-8.541) (4.568,-8.2)
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (4.27,-8.28) -ignoreNet 0 -offsetPoint (4.315,-8.28)
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (4.38,-8.285) -ignoreNet 0 -offsetPoint (4.35,-8.285)
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (4.355,-8.28) -ignoreNet 0 -offsetPoint (4.355,-8.26)
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (4.365,-8.275) -ignoreNet 0 -offsetPoint (4.365,-8.285)
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (4.42,-8.27) -ignoreNet 0 -offsetPoint (4.41,-8.27)
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (4.385,-8.27) -ignoreNet 0 -offsetPoint (4.39,-8.27)
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (4.498,-8.485) -traversedist 0.012
+lakerDistance -point (4.11,-8.319) (4.215,-8.331)
+lakerZoomOut
+lakerAreaSel -point (4.26,-8.511) (4.513,-8.275)
+lakerSingleSel
+lakerSingleSel -point (4.483,-8.584) -traversedist 0.025
+lakerAreaSel -point (4.19,-8.574) (4.562,-8.195)
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (4.33,-8.28) -ignoreNet 0 -offsetPoint (4.355,-8.28)
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (4.448,-8.611) -traversedist 0.025
+lakerDistance -point (4.11,-8.325) (4.24,-8.355)
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerCreateRect -layerName METAL1 -point (4.24,-8.605) (4.48,-8.415)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (4.56,-8.616) -traversedist 0.025
+lakerSingleSel
+lakerConnChecker -addNet -net LakerNet__1 -startPoint (4.36,-8.51)
+lakerConnChecker -toMaxLevel -net LakerNet__1 -speedMode -traceViaArray 1
+lakerDeselectAll
+lakerSingleSel -point (4.595,-8.432) -traversedist 0.025
+lakerConnChecker -clear
+lakerClearHighLight
+lakerSingleSel
+lakerConnChecker -addNet -net LakerNet__1 -startPoint (4.36,-8.51)
+lakerConnChecker -toMaxLevel -net LakerNet__1 -speedMode -traceViaArray 1
+lakerZoomOut
+lakerSingleSel
+lakerConnChecker -addNet -net LakerNet__2 -startPoint (2.335,-8.21)
+lakerConnChecker -toMaxLevel -net LakerNet__2 -speedMode -traceViaArray 1
+lakerZoomInByArea -point (1.3,-9.633) (7.11,-6.895)
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (4.4,-8.555) -ignoreNet 0 -offsetPoint (4.4,-8.405)
+lakerChangeSelMode -mode Object
+lakerConnChecker -clear
+lakerClearHighLight
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (4.385,-8.596) -traversedist 0.032
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (4.553,-8.58) -traversedist 0.032
+lakerZoomInByArea -point (3.439,-8.647) (5.107,-7.861)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (4.435,-8.265) -ignoreNet 0 -offsetPoint (4.435,-8.185)
+lakerSingleSel -point (4.566,-8.3) -traversedist 0.009
+lakerZoomOut
+lakerZoomOut
+lakerSaveDesign -autosave
+lakerChangeSelMode -mode Object
+lakerClearRuler
+lakerZoomInByArea -point (2.257,-8.758) (5.801,-7.088)
+lakerDistance -point (4.11,-8.335) (4.24,-8.325)
+lakerDistance -point (4.42,-8.367) (4.48,-8.371)
+lakerDistance -point (4.372,-8.255) (4.368,-8.295)
+lakerCreateInstance -point (5.32,-7.56) -cell POLY_GATE -lib test -view layout
+lakerZoomOut
+lakerZoomInByArea -point (4.34,-8.244) (6.972,-7.004)
+lakerDistance -point (5.5,-7.438) (5.56,-7.455)
+lakerSingleSel -point (5.479,-7.613) -traversedist 0.015
+lakerAreaSel -point (5.262,-7.58) (5.7,-7.314)
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerClearRuler
+lakerPanDown
+lakerPanLeft
+lakerZoomOut
+lakerPanDown
+lakerZoomOut
+lakerZoomIn
+lakerZoomOut
+lakerZoomInByArea -point (0.817,-10.305) (8.383,-6.739)
+lakerZoomInByArea -point (1.277,-9.883) (7.223,-7.081)
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.4,-8.585) -ignoreNet 0 -offsetPoint (2.39,-8.585)
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerSingleSel -point (2.166,-8.805) -traversedist 0.033
+lakerZoomInByArea -point (3.665,-8.547) (5.813,-7.535)
+lakerAreaSel -point (4.765,-8.115) (4.804,-8.11)
+lakerSingleSel
+lakerSingleSel -point (4.856,-8.054) -traversedist 0.012
+lakerSingleSel
+lakerSaveDesign -autosave
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (4.83,-8.11) -ignoreNet 0 -offsetPoint (4.79,-8.11)
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (4.841,-8.064) -traversedist 0.012
+lakerZoomOut
+lakerZoomOut
+lakerSingleSel -point (7.468,-8.671) -traversedist 0.048
+lakerZoomInByArea -point (0.52,-9.91) (7.438,-6.65)
+lakerZoomInByArea -point (1.623,-9.478) (7.025,-6.932)
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerSingleSel
+lakerAreaSel -point (5.085,-8.185) (5.151,-8.18)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (5.2,-8.24) -ignoreNet 0 -offsetPoint (5.15,-8.24)
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (5.413,-8.264) -traversedist 0.03
+lakerSingleSel
+lakerSingleSel
+lakerConnChecker -addNet -net LakerNet__1 -startPoint (5.105,-8.2)
+lakerConnChecker -toMaxLevel -net LakerNet__1 -speedMode -traceViaArray 1
+lakerZoomOut
+lakerZoomInByArea -point (1.448,-10.01) (8.212,-6.822)
+lakerSingleSel -point (4.277,-8.716) -traversedist 0.038
+lakerSingleSel
+lakerConnChecker -addNet -net LakerNet__2 -startPoint (4.415,-8.25)
+lakerConnChecker -toMaxLevel -net LakerNet__2 -speedMode -traceViaArray 1
+lakerConnChecker -addNet -net LakerNet__3 -startPoint (3.835,-8.515)
+lakerConnChecker -toMaxLevel -net LakerNet__3 -speedMode -traceViaArray 1
+lakerAreaSel -point (4.59,-9.77) (5.68,-6.841)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerSingleSel -point (4.575,-6.852) -traversedist 0.038
+lakerAreaSel -point (4.602,-9.815) (5.585,-6.845)
+lakerStretchObj -refPoint (5.44,-7.74) -ignoreNet 0 -offsetPoint (5.505,-7.74)
+lakerStretchObj -refPoint (5.505,-7.76) -ignoreNet 0 -offsetPoint (5.59,-7.76)
+lakerSingleSel -point (5.628,-7.475) -traversedist 0.038
+lakerConnChecker -clear
+lakerClearHighLight
+lakerSingleSel -point (4.285,-8.667) -traversedist 0.038
+lakerAreaSel -point (4.304,-9.41) (4.6,-8.648)
+lakerStretchObj -refPoint (4.42,-8.78) -ignoreNet 0 -offsetPoint (4.59,-8.78)
+lakerSingleSel -point (4.406,-8.622) -traversedist 0.038
+lakerSingleSel
+lakerSingleSel -point (4.285,-8.682) -traversedist 0.038
+lakerDistance -point (4.675,-8.961) (4.775,-8.984)
+lakerCreateInstance -point (4.35,-8.82) -cell POLY_GATE -lib test -view layout
+lakerZoomInByArea -point (3.034,-9.488) (6.57,-7.822)
+lakerSingleSel
+lakerDistance -point (4.464,-8.8) (4.448,-8.91)
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerSaveDesign
+lakerCreatePath -layerName POLY1 -point (4.63,-8.755) (4.63,-8.595) -width 0.100000 0.000000 -routeStatus fixed
+lakerUndo
+lakerSingleSel
+lakerCreatePath -layerName POLY1 -point (4.625,-8.75) (4.625,-8.6) -width 0.100000 0.000000 -routeStatus fixed
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerSaveDesign
+lakerZoomInByArea -point (4.267,-8.766) (4.721,-8.552)
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (1.01,-8.433) (1.884,-8.021)
+This feature only applies to Instance, not for Device, MCell or Shape.
+lakerZoomOut
+lakerZoomOut
+lakerAreaSel -point (1.216,-8.39) (1.545,-8.027)
+lakerStretchObj -refPoint (1.47,-8.115) -ignoreNet 0 -offsetPoint (1.575,-8.115)
+lakerSingleSel -point (1.339,-8.361) -traversedist 0.019
+lakerAreaSel -point (1.296,-8.41) (1.635,-8.037)
+lakerMirrorY -refPoint (1.495,-8.075)
+lakerSingleSel -point (1.31,-8.173) -traversedist 0.019
+lakerUndo
+lakerSingleSel -point (1.337,-8.329) -traversedist 0.019
+lakerUndo
+lakerSingleSel -point (1.471,-8.374) -traversedist 0.019
+lakerZoomOut
+lakerPanRight
+lakerSingleSel
+lakerRotate90 -refPoint (4.47,-8.7)
+lakerStretchObj -refPoint (4.365,-8.67) -ignoreNet 0 -offsetPoint (4.5,-8.67)
+lakerSingleSel -point (4.649,-8.354) -traversedist 0.039
+lakerZoomInByArea -point (2.381,-9.223) (6.467,-7.297)
+lakerAreaSel -point (4.491,-8.7) (4.535,-8.694)
+lakerSingleSel -point (4.446,-8.646) -traversedist 0.023
+lakerSingleSel
+lakerStretchObj -refPoint (4.515,-8.66) -ignoreNet 0 -offsetPoint (4.54,-8.66)
+lakerStretchObj -refPoint (4.55,-8.66) -ignoreNet 0 -offsetPoint (4.54,-8.66)
+lakerSingleSel -point (4.43,-8.671) -traversedist 0.023
+lakerSingleSel -point (4.391,-8.651) -traversedist 0.023
+lakerAreaSel -point (4.418,-8.875) (4.79,-8.516)
+lakerStretchObj -refPoint (4.535,-8.67) -ignoreNet 0 -offsetPoint (4.545,-8.67)
+lakerSingleSel -point (4.396,-8.667) -traversedist 0.023
+lakerZoomInByArea -point (4.273,-8.883) (5.075,-8.505)
+lakerSaveDesign -autosave
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerCreatePath -layerName METAL1 -point (4.63,-8.58) (4.63,-7.495) (3.77,-7.495) (3.77,-8.27) -width 0.120000 0.000000 -routeStatus fixed
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerConnChecker -addNet -net LakerNet__1 -startPoint (4.63,-8.067)
+lakerConnChecker -toMaxLevel -net LakerNet__1 -speedMode -traceViaArray 1
+lakerChangeSelMode -mode Vertex
+lakerCreatePath -layerName METAL1 -point (4.61,-7.495) (5.89,-7.495) -width 0.120000 0.000000 -routeStatus fixed
+lakerZoomInByArea -point (4.906,-8.248) (6.764,-7.372)
+lakerCreatePath -layerName METAL1 -point (5.825,-7.79) (5.825,-7.47) -width 0.120000 0.000000 -routeStatus fixed
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (2.223,-10.966) (11.321,-6.678)
+lakerZoomInByArea -point (3.288,-10.224) (10.49,-6.83)
+lakerDistance -point (5.605,-7.774) (5.705,-7.794)
+lakerAreaSel -point (5.654,-9.72) (7.46,-6.862)
+lakerZoomOut
+lakerZoomIn
+lakerZoomIn
+lakerZoomOut
+lakerClearRuler
+lakerAlignObj -point (5.69,-7.822) -mode start
+lakerAlignObj -refObj 1 -refPoint (5.6,-7.86) -traversedist 0.02 -space 0.15
+lakerSingleSel -point (7.53,-8.256) -traversedist 0.04
+lakerAreaSel -point (6.493,-8.805) (6.865,-8.356)
+lakerSingleSel
+lakerSingleSel -point (6.554,-8.4) -traversedist 0.04
+lakerSingleSel -point (6.505,-8.388) -traversedist 0.04
+lakerSingleSel
+lakerRotate90 -refPoint (6.635,-8.59)
+lakerSingleSel
+lakerSingleSel -point (6.509,-8.4) -traversedist 0.04
+lakerAreaSel -point (6.493,-8.795) (6.81,-8.36)
+lakerStretchObj -refPoint (6.63,-8.5) -ignoreNet 0 -offsetPoint (6.735,-8.5)
+lakerSingleSel -point (6.602,-8.332) -traversedist 0.04
+lakerDistance -point (6.8,-8.593) (6.935,-8.585)
+lakerDeselectAll
+lakerSingleSel -point (6.606,-8.855) -traversedist 0.04
+lakerSingleSel
+lakerStretchObj -refPoint (6.6,-8.59) -ignoreNet 0 -offsetPoint (6.68,-8.59)
+lakerStretchObj -refPoint (6.6,-8.59) -ignoreNet 0 -offsetPoint (6.6,-8.69)
+lakerSingleSel -point (6.521,-8.565) -traversedist 0.04
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerZoomInByArea -point (4.063,-9.862) (8.401,-7.818)
+lakerSingleSel
+lakerStretchObj -refPoint (6.605,-8.715) -ignoreNet 0 -offsetPoint (6.605,-8.57)
+lakerSingleSel -point (6.591,-8.834) -traversedist 0.024
+lakerZoomInByArea -point (4.733,-9.32) (7.505,-8.014)
+lakerZoomOut
+lakerZoomInByArea -point (5.208,-9.601) (7.008,-8.753)
+lakerZoomOut
+lakerSingleSel
+lakerCreatePath -layerName METAL1 -point (5.455,-9.115) (5.455,-9.335) (6.805,-9.335) -width 0.120000 0.000000 -routeStatus fixed
+lakerSaveDesign -autosave
+lakerSingleSel
+lakerZoomInByArea -point (5.724,-9.419) (7.79,-8.445)
+lakerCreatePath -layerName METAL1 -point (6.74,-8.71) (6.74,-9.395) -width 0.120000 0.000000 -routeStatus fixed
+lakerZoomOut
+lakerDistance -point (5.866,-9.15) (5.885,-9.275)
+lakerZoomOut
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerConnChecker -addNet -net LakerNet__2 -startPoint (6.1,-9.335)
+lakerConnChecker -toMaxLevel -net LakerNet__2 -speedMode -traceViaArray 1
+lakerChangeSelMode -mode Vertex
+lakerConnChecker -clear
+lakerClearHighLight
+lakerPanLeft
+lakerSaveDesign -autosave
+lakerSingleSel -point (3.119,-10.11) -traversedist 0.046
+lakerSaveDesign -autosave
+lakerZoomInByArea -point (4.13,-8.901) (5.33,-8.335)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerZoomOut
+lakerZoomOut
+lakerConnChecker -addNet -net LakerNet__2 -startPoint (4.625,-8.69)
+lakerConnChecker -toMaxLevel -net LakerNet__2 -speedMode -traceViaArray 1
+lakerZoomOut
+lakerZoomInByArea -point (1.779,-9.478) (7.407,-6.826)
+lakerConnChecker -addNet -net LakerNet__3 -startPoint (4.465,-8.03)
+lakerConnChecker -toMaxLevel -net LakerNet__3 -speedMode -traceViaArray 1
+lakerZoomOut
+lakerZoomInByArea -point (0.779,-9.157) (5.883,-6.751)
+lakerZoomOut
+lakerZoomInByArea -point (0.885,-9.591) (6.563,-6.915)
+lakerChangeSelMode -mode Vertex
+lakerDeselectAll
+lakerConnChecker -clear
+lakerClearHighLight
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (1.373,-8.34) -traversedist 0.032
+lakerAreaSel -point (1.192,-8.4) (1.56,-8.055)
+lakerSingleSel -point (1.357,-8.454) -traversedist 0.032
+lakerSingleSel
+lakerSingleSel -point (1.401,-8.346) -traversedist 0.032
+lakerSingleSel
+lakerSingleSel
+lakerRotate90 -refPoint (1.39,-8.2)
+lakerSingleSel -point (1.392,-8.403) -traversedist 0.032
+lakerZoomInByArea -point (0.937,-8.466) (2.011,-7.96)
+lakerZoomOut
+lakerZoomOut
+lakerSingleSel -point (1.724,-8.42) -traversedist 0.024
+lakerZoomOut
+lakerSaveDesign -autosave
+lakerZoomOut
+lakerZoomInByArea -point (0.313,-10.365) (8.367,-6.569)
+lakerDistance -point (0.665,-7.162) (7.015,-7.171)
+lakerDeselectAll
+lakerSingleSel -point (4.764,-9.39) -traversedist 0.045
+lakerSingleSel -point (4.437,-9.422) -traversedist 0.045
+lakerSingleSel -point (4.302,-9.363) -traversedist 0.045
+lakerSingleSel -point (4.275,-9.341) -traversedist 0.045
+lakerSingleSel -point (4.481,-10.23) -traversedist 0.045
+lakerZoomOut
+lakerSingleSel -point (3.707,-10.313) -traversedist 0.09
+lakerZoomInByArea -point (-0.079,-10.717) (8.535,-6.657)
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanRight
+lakerPanRight
+lakerPanLeft
+lakerPanLeft
+lakerPanRight
+lakerPanRight
+lakerPanLeft
+lakerPanLeft
+lakerPanRight
+lakerSingleSel
+lakerSingleSel -point (4.195,-1.735) -traversedist 0.048
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanLeft
+lakerPanLeft
+lakerPanRight
+lakerZoomInByArea -point (0.552,-9.679) (4.536,-7.801)
+lakerDistance -point (2.535,-8.861) (2.655,-8.87)
+lakerSaveDesign -autosave
+lakerDistance -point (1.59,-9.052) (1.715,-9.05)
+lakerZoomOut
+lakerPanRight
+lakerPanLeft
+lakerPanRight
+lakerPanLeft
+lakerPanRight
+lakerPanLeft
+lakerPanRight
+lakerPanLeft
+lakerPanRight
+lakerPanLeft
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerZoomOut
+lakerZoomInByArea -point (-0.133,-10.37) (7.693,-6.682)
+lakerZoomOut
+lakerSingleSel -point (5.068,-10.573) -traversedist 0.087
+lakerSingleSel -point (-0.013,-6.462) -traversedist 0.087
+lakerAreaSel -point (-0.161,-10.425) (7.85,-6.313)
+lakerSingleSel -point (6.412,-10.957) -traversedist 0.087
+lakerZoomInByArea -point (-0.15,-10.102) (7.204,-6.636)
+lakerZoomInByArea -point (1.297,-9.383) (6.717,-6.829)
+lakerZoomOut
+lakerZoomInByArea -point (-0.051,-10.285) (7.877,-6.549)
+lakerSaveDesign -autosave
+lakerZoomInByArea -point (0.641,-9.635) (6.251,-6.991)
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanLeft
+lakerPanUp
+lakerPanDown
+lakerPanRight
+lakerPanUp
+lakerPanDown
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanLeft
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanRight
+lakerPanUp
+lakerPanDown
+lakerPanRight
+lakerPanRight
+lakerPanRight
+lakerPanRight
+lakerPanLeft
+lakerPanLeft
+lakerPanLeft
+lakerPanUp
+lakerPanDown
+lakerPanLeft
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanLeft
+lakerPanDown
+lakerPanRight
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanRight
+lakerPanLeft
+lakerPanLeft
+lakerPanDown
+lakerZoomOut
+lakerPanRight
+lakerPanRight
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanLeft
+lakerPanLeft
+lakerPanRight
+lakerSingleSel -point (0.394,-8.903) -traversedist 0.063
+lakerPanUp
+lakerAreaSel -point (0.282,-10.025) (7.635,-6.69)
+lakerChangeSelMode -mode DevObj
+lakerPanDown
+lakerPanDown
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanDown
+lakerPanUp
+lakerPanDown
+lakerChangeSelMode -mode Vertex
+lakerPanUp
+lakerAreaSel -point (-0.175,-5.29) (9.525,-1.934)
+lakerChangeSelMode -mode DevObj
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerCopyObj -refPoint (5.145,-4.83) -offsetPoint (5.145,-13.22)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (5.063,-14.148) -traversedist 0.063
+lakerPanUp
+lakerPanUp
+lakerPanDown
+lakerPanUp
+lakerPanDown
+lakerZoomInByArea -point (-0.156,-13.95) (9.136,-9.57)
+lakerZoomInByArea -point (-0.814,-13.287) (5.522,-10.301)
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerAreaSel -point (0.289,-12.795) (1.225,-10.962)
+lakerSingleSel -point (1.303,-12.033) -traversedist 0.035
+lakerAreaSel -point (1.451,-12.175) (1.815,-11.866)
+lakerSingleSel
+lakerStretchObj -refPoint (1.5,-11.975) -ignoreNet 0 -offsetPoint (1.64,-11.975)
+lakerRotate90 -refPoint (1.785,-11.975)
+lakerSingleSel -point (1.426,-11.767) -traversedist 0.035
+lakerSingleSel
+lakerSaveDesign -autosave
+lakerStretchObj -refPoint (1.895,-11.985) -ignoreNet 0 -offsetPoint (1.905,-11.985)
+lakerZoomInByArea -point (1.109,-12.254) (2.479,-11.608)
+lakerSingleSel -point (1.501,-12.067) -traversedist 0.008
+lakerSingleSel
+lakerStretchObj -refPoint (1.605,-11.96) -ignoreNet 0 -offsetPoint (1.775,-11.96)
+lakerSingleSel -point (1.574,-12.031) -traversedist 0.008
+lakerZoomOut
+lakerSingleSel
+lakerAreaSel -point (2.21,-11.94) (2.33,-11.808)
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (2.285,-11.785) -ignoreNet 0 -offsetPoint (2.285,-11.925)
+lakerZoomOut
+lakerStretchObj -refPoint (2.205,-11.945) -ignoreNet 0 -offsetPoint (2.34,-11.945)
+lakerSingleSel
+lakerStretchObj -refPoint (2.16,-11.785) -ignoreNet 0 -offsetPoint (2.25,-11.785)
+lakerSingleSel
+lakerRotate90 -refPoint (2.3,-11.93)
+lakerAreaSel -point (2.02,-11.874) (2.318,-11.87)
+lakerSingleSel
+lakerStretchObj -refPoint (2.345,-11.945) -ignoreNet 0 -offsetPoint (2.07,-11.945)
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (2.06,-11.985) -ignoreNet 0 -offsetPoint (2.06,-11.835)
+lakerPanLeft
+lakerSingleSel -point (2.399,-12.006) -traversedist 0.031
+lakerSingleSel
+lakerStretchObj -refPoint (2.28,-11.79) -ignoreNet 0 -offsetPoint (2.07,-11.79)
+lakerSingleSel -point (2.295,-12.015) -traversedist 0.031
+lakerPanRight
+lakerSingleSel
+lakerRotate90 -refPoint (0.545,-12.085)
+lakerStretchObj -refPoint (0.54,-11.97) -ignoreNet 0 -offsetPoint (0.685,-11.97)
+lakerSingleSel -point (0.303,-11.905) -traversedist 0.031
+lakerSingleSel
+lakerStretchObj -refPoint (0.5,-12.07) -ignoreNet 0 -offsetPoint (0.645,-12.07)
+lakerSingleSel -point (1.178,-11.911) -traversedist 0.031
+lakerDistance -point (0.75,-12.027) (0.845,-12.03)
+lakerZoomOut
+lakerZoomInByArea -point (-1.978,-13.584) (5.144,-10.228)
+lakerAreaSel -point (0.592,-12.085) (1.22,-12.035)
+lakerAreaSel -point (0.143,-12.865) (1.265,-10.991)
+lakerMirrorY -refPoint (0.7,-11.91)
+lakerSingleSel -point (-0.171,-11.296) -traversedist 0.04
+lakerAreaSel -point (0.04,-12.815) (1.39,-10.959)
+lakerAlignObj -point (1.033,-11.412) -mode start
+lakerAlignObj -snapMode anyangle -refObj 1 -refPoint (1.65,-11.42) -traversedist 0.02 -space 0.15
+lakerUndo
+lakerSingleSel -point (-0.258,-11.872) -traversedist 0.04
+lakerSingleSel -point (-1.064,-11.292) -traversedist 0.04
+lakerAlignObj -mode end
+lakerAlignObj -point (0.981,-11.4) -mode start
+lakerAlignObj -mode end
+lakerAreaSel -point (0.211,-13.005) (1.375,-11.05)
+lakerAlignObj -point (0.961,-11.412) -mode start
+lakerAlignObj -snapMode anyangle -refObj 1 -refPoint (1.645,-11.41) -traversedist 0.02
+lakerSingleSel -point (0.675,-11.785) -traversedist 0.04
+lakerZoomInByArea -point (-0.151,-12.877) (3.927,-10.955)
+lakerSingleSel -point (1.673,-11.803) -traversedist 0.023
+lakerAreaSel -point (1.595,-11.733) (1.705,-11.325)
+lakerSingleSel -point (1.584,-11.794) -traversedist 0.023
+lakerZoomOut
+lakerAreaSel -point (1.485,-11.723) (1.713,-10.655)
+lakerChangeSelMode -mode Object
+lakerSelInsideGroup -selInside 0
+lakerMergeObj
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerSingleSel -point (1.636,-11.727) -traversedist 0.045
+lakerSingleSel -point (3.173,-11.659) -traversedist 0.045
+lakerAreaSel -point (2.775,-11.759) (3.114,-10.655)
+lakerChangeSelMode -mode Object
+lakerSelInsideGroup -selInside 0
+lakerMergeObj
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerSingleSel -point (3.159,-11.386) -traversedist 0.045
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanDown
+lakerPanDown
+lakerPanUp
+lakerPanUp
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerPanUp
+lakerPanUp
+lakerPanRight
+lakerPanLeft
+lakerPanLeft
+lakerPanDown
+lakerPanDown
+lakerPanRight
+lakerPanRight
+lakerPanRight
+lakerPanLeft
+lakerPanUp
+lakerPanUp
+lakerPanUp
+lakerPanDown
+lakerPanDown
+lakerPanDown
+lakerZoomInByArea -point (0.506,-12.914) (4.52,-11.022)
+lakerSingleSel
+lakerRotate90 -refPoint (2.81,-12.075)
+lakerStretchObj -refPoint (2.8,-11.98) -ignoreNet 0 -offsetPoint (2.655,-11.98)
+lakerSingleSel -point (3.094,-12.05) -traversedist 0.022
+lakerSingleSel
+lakerStretchObj -refPoint (2.905,-12.065) -ignoreNet 0 -offsetPoint (2.765,-12.065)
+lakerSingleSel -point (3.016,-12.056) -traversedist 0.022
+lakerZoomOut
+lakerPanRight
+lakerAreaSel -point (3.929,-12.21) (4.365,-11.876)
+lakerRotate90 -refPoint (4.185,-11.91)
+lakerZoomIn
+lakerUndo
+lakerSingleSel -point (3.818,-11.671) -traversedist 0.022
+lakerSingleSel
+lakerRotate90 -refPoint (4.15,-12.06)
+lakerStretchObj -refPoint (4.165,-11.955) -ignoreNet 0 -offsetPoint (4.32,-11.955)
+lakerSingleSel -point (4.536,-11.871) -traversedist 0.022
+lakerSingleSel
+lakerStretchObj -refPoint (4.055,-12.065) -ignoreNet 0 -offsetPoint (4.215,-12.065)
+lakerSingleSel -point (4.646,-11.895) -traversedist 0.022
+lakerAreaSel -point (5.445,-12.184) (5.642,-11.955)
+lakerSingleSel -point (5.866,-12.133) -traversedist 0.022
+lakerSingleSel
+lakerRotate90 -refPoint (5.51,-12.08)
+lakerStretchObj -refPoint (5.51,-11.965) -ignoreNet 0 -offsetPoint (5.37,-11.965)
+lakerSingleSel -point (5.689,-11.909) -traversedist 0.022
+lakerSingleSel
+lakerStretchObj -refPoint (5.475,-11.985) -ignoreNet 0 -offsetPoint (5.47,-11.985)
+lakerSaveDesign -autosave
+lakerSingleSel -point (5.589,-11.953) -traversedist 0.022
+lakerSingleSel
+lakerStretchObj -refPoint (5.64,-12.06) -ignoreNet 0 -offsetPoint (5.49,-12.06)
+lakerSingleSel -point (5.748,-11.985) -traversedist 0.022
+lakerSingleSel
+lakerStretchObj -refPoint (6.245,-12.205) -ignoreNet 0 -offsetPoint (6.33,-12.205)
+lakerRotate90 -refPoint (6.285,-12.115)
+lakerDistance -point (6.35,-12.103) (6.5,-12.07)
+lakerDeselectAll
+lakerSingleSel
+lakerStretchObj -refPoint (6.205,-12.025) -ignoreNet 0 -offsetPoint (6.265,-12.025)
+lakerSingleSel -point (6.202,-11.947) -traversedist 0.022
+lakerDistance -point (6.405,-12.101) (6.5,-12.101)
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (6.44,-12.22) -ignoreNet 0 -offsetPoint (6.42,-12.22)
+lakerStretchObj -refPoint (6.425,-12.215) -ignoreNet 0 -offsetPoint (6.41,-12.215)
+lakerDistance -point (6.37,-12.153) (6.5,-12.173)
+lakerSingleSel
+lakerStretchObj -refPoint (6.1,-12.13) -ignoreNet 0 -offsetPoint (6.285,-12.13)
+lakerSingleSel
+lakerAreaSel -point (6.22,-12.121) (6.271,-12.115)
+lakerSingleSel -point (6.18,-12.213) -traversedist 0.022
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (6.28,-12.145) -ignoreNet 0 -offsetPoint (6.28,-12.045)
+lakerStretchObj -refPoint (6.43,-11.985) -ignoreNet 0 -offsetPoint (6.385,-11.985)
+lakerSingleSel -point (6.139,-12.074) -traversedist 0.022
+lakerZoomOut
+lakerZoomInByArea -point (4.65,-12.561) (8.194,-10.891)
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (0.251,-13.866) (7.975,-10.226)
+lakerAreaSel -point (3.719,-13.36) (5.895,-10.614)
+lakerRotate90 -refPoint (4.83,-11.93)
+lakerUndo
+lakerAreaSel -point (3.697,-13.23) (5.875,-10.562)
+lakerMirrorY -refPoint (4.83,-11.93)
+lakerAlignObj -point (4.029,-11.411) -mode start
+lakerZoomInByArea -point (1.246,-13.115) (6.152,-10.803)
+lakerAlignObj -refObj 1 -refPoint (2.815,-11.425) -traversedist 0.014
+lakerSingleSel -point (4.762,-11.731) -traversedist 0.027
+lakerZoomOut
+lakerPanUp
+lakerPanUp
+lakerPanDown
+lakerPanDown
+lakerAreaSel -point (5.694,-13.24) (6.89,-10.588)
+lakerZoomInByArea -point (2.048,-13.297) (8.562,-10.227)
+lakerAlignObj -mode end
+lakerZoomInByArea -point (5.198,-12.38) (7.656,-11.222)
+lakerZoomOut
+lakerZoomOut
+lakerAlignObj -mode end
+lakerDeselectAll
+lakerAreaSel -point (5.79,-13.696) (6.764,-10.7)
+lakerZoomInByArea -point (5.532,-11.979) (7.382,-11.107)
+lakerAlignObj -mode end
+lakerZoomOut
+lakerZoomOut
+lakerAlignObj -mode end
+lakerAlignObj -point (6.088,-12.47) -mode start
+lakerAlignObj -snapMode anyangle -refObj 1 -refPoint (4.28,-12.475) -traversedist 0.021
+lakerSingleSel -point (5.196,-12.627) -traversedist 0.041
+lakerPanLeft
+lakerZoomOut
+lakerSingleSel -point (-0.636,-10.045) -traversedist 0.083
+lakerZoomInByArea -point (-0.529,-14.254) (9.171,-9.682)
+lakerSingleSel -point (5.595,-12.057) -traversedist 0.054
+lakerPanUp
+lakerPanUp
+lakerPanDown
+lakerPanDown
+lakerAreaSel -point (6.742,-13.01) (7.8,-10.921)
+lakerMirrorY -refPoint (7.3,-11.91)
+lakerSingleSel -point (6.347,-11.332) -traversedist 0.054
+lakerZoomInByArea -point (4.554,-13.567) (10.834,-10.607)
+lakerSingleSel
+lakerRotate90 -refPoint (7.45,-12.075)
+lakerSingleSel -point (7.65,-12.071) -traversedist 0.035
+lakerDistance -point (7.15,-12.054) (7.39,-12.064)
+lakerZoomInByArea -point (5.855,-12.803) (9.021,-11.311
