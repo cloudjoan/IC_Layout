@@ -1,0 +1,65 @@
+Command Line: /data1/synopsys/laker/L-2021.03-3/platform/LINUX64/bin/laker
+uname(Linux vmxr7aoooo 3.10.0-1160.66.1.el7.x86_64 #1 SMP Wed Apr 27 20:34:34 UTC 2022 x86_64)
+source /data1/synopsys/laker/L-2021.03-3/gift/gift.tcl
+The color name 'whit' of the 'DT' layer was not defined in default.dsp file.
+lakerOpenDesign -lib test -cell INVX1 -mode edit
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerCalibreRVE
+New connection accepted, fd = 19
+
+//  Calibre v2022.1_36.16    Tue Mar 1 14:27:08 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.1_36.16  Tue Mar 1 14:27:08 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+//  Graphical User-Interface startup.... Complete.
+//
+//  calibreqdb license acquired.
+//  RVE authorized.
+
+Calibre process exit.
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+lakerCalibreRVE
+//  Calibre v2022.1_36.16    Tue Mar 1 14:27:08 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.1_36.16  Tue Mar 1 14:27:08 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+//  Graphical User-Interface startup.... Complete.
+//
+
+New connection accepted, fd = 19
+
+//  calibreqdb license acquired.
+//  RVE authorized.
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+Calibre process exit.
+lakerCloseDesign
+au time 1183.855223 15.528062 23.250404 delta 51277824 51277824 total 410742784 410742784

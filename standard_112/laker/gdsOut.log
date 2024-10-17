@@ -1,0 +1,56 @@
+       ###############################################
+       ##                                           ##
+       ##    FileName:  gdsOut.log                  ##
+       ##    GenDate :   6-Jul-2023   14:03:05      ##
+       ##                                           ##
+       ##    Laker:  2021.03 (Linux x86_64/64bit) 04/19/2021  ##
+       ##############################################N
+
+Command: gdsOut -64 -SkipWarnNo 100 -keepPCell off -s Preserve -label Preserve -T "INVX3" -filterAllSysLayer "All" -reduceMCell off -maxAryColRow off -precisionForMag 5 -reduceDevice off -filterText off -convertPolyText off -pathToPolygon off -purposeMap on -designIntention off -Ref -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -Vm 4096 -o /home/user/wrk/standard_112/drc/INVX3.calibre.db test
+Host/OS: vmxr7aoooo   Linux 3.10.0-1160.66.1.el7.x86_64
+
+
+##### Stream Cells #####
+
+   1.INVX3                
+
+
+##### Stream Error File(gdsOut.err) #####
+
+   1.INVX3 (original cell:test.INVX3.layout): 1-Warn .
+
+
+##### Stream Summary #####
+
+                   Resort Primary Cell(s)
+
+--------------------------------------------------------------------------
+   1.INVX3                
+
+
+                   Resort Cell(s) Summary
+
+cellName     #cInst  #array    #rect    #poly    #path    #text  bBox(um)
+--------------------------------------------------------------------------------------------------
+INVX3             0       0        0        0        0        0 (***,***) (***,***)
+
+
+                   Resort Layer(s) Summary
+
+Laker                Stream
+layerName   purpose  layerNo  dataType    #rect    #poly    #path    #text
+--------------------------------------------------------------------------
+
+
+
+
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off
+
+ EXE Start Time =  6-Jul-2023   14:03:05                  
+ EXE Stop  Time =  6-Jul-2023   14:03:05                  
+
+ #Elapsed Time  = 00:00:00
+ #CPU Time      = 00:00:00
+
+ #Memory 407788 K,Peak 407788 K
+ Total #Fatal = 0, #Warn = 1

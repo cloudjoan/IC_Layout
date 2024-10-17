@@ -1,0 +1,95 @@
+Command Line: /dq3/qa/LEO/PACK/laker201212/platform/LINUX64/bin/laker
+uname(Linux spx517 2.6.32-220.el6.x86_64 #1 SMP Wed Nov 9 08:03:13 EST 2011 x86_64)
+source /dq3/qa/LEO/PACK/laker201212/gift/gift.tcl
+lakerOpenDesign -lib cpu -cell CPU -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerSingleSel -point (583.085,140.68) -traversedist 11.185
+Net information is not found.
+lakerConnBrowser -show 1
+lakerConnBrowser -view CPU_trace
+Net information is not found.
+lakerConnBrowser -view layout
+Net information is not found.
+lakerConnBrowser -view CPU_trace
+Net information is not found.
+lakerZoomAll
+lakerSingleSel -point (538.345,170.88) -traversedist 11.185
+Net information is not found.
+lakerConnBrowser -show 1
+lakerChangeSelMode -mode Object
+lakerConnChecker -addNet -net LakerNet__1 -startPoint (466.76,100.415)
+lakerConnChecker -toMaxLevel -net LakerNet__1 -speedMode -traceViaArray 1
+wtAskUser: "The View: CPU_trace exists. Overwrite it anyway?", answer:  "Yes"
+lakerConnChecker -save CPU_trace
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (552.885,137.325) -traversedist 11.185
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (552.885,137.325) -traversedist 11.185
+lakerSingleSel -point (552.885,137.325) -traversedist 11.185
+lakerConnChecker -clear
+lakerClearHighLight
+lakerSingleSel -point (552.885,137.325) -traversedist 11.185
+lakerConnBrowser -show 1
+lakerIncreaseSel -point (-57.835,109.365) -traversedist 11.185
+lakerConnBrowser -show 1
+lakerConnBrowser -net LakerNet__1
+Highlight Net "LakerNet__1" Report:
+	Layer:MET3  Area = 801.820000  Perimeter = 2710.600000
+	Layer:CONT  Area = 32.160000  Perimeter = 321.600000
+	Layer:POLY  Area = 1231.320000  Perimeter = 7137.500000
+	Layer:VIA1  Area = 25.500000  Perimeter = 204.000000
+	Layer:VIA2  Area = 30.250000  Perimeter = 242.000000
+	Layer:MET1  Area = 388.075000  Perimeter = 1489.900000
+	Layer:MET2  Area = 1008.925000  Perimeter = 3405.900000
+lakerZoomAll
+lakerConnBrowser -view layout
+Net information is not found.
+lakerConnBrowser -view CPU_trace
+lakerZoomAll
+lakerConnChecker -clear
+lakerConnBrowser -clear
+lakerClearHighLight
+lakerConnChecker -clear
+lakerConnBrowser -clear
+lakerClearHighLight
+lakerConnBrowser -show 1
+lakerConnBrowser -net LakerNet__1
+Highlight Net "LakerNet__1" Report:
+	Layer:MET3  Area = 801.820000  Perimeter = 2710.600000
+	Layer:CONT  Area = 32.160000  Perimeter = 321.600000
+	Layer:POLY  Area = 1231.320000  Perimeter = 7137.500000
+	Layer:VIA1  Area = 25.500000  Perimeter = 204.000000
+	Layer:VIA2  Area = 30.250000  Perimeter = 242.000000
+	Layer:MET1  Area = 388.075000  Perimeter = 1489.900000
+	Layer:MET2  Area = 1008.925000  Perimeter = 3405.900000
+lakerConnBrowser -findShort LakerNet__1 -point (456.375,106.35) (73.39,207.75)
+lakerZoomAll
+lakerZoomAll
+lakerConnBrowser -show 1
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerSingleSel -point (523.805,121.665) -traversedist 11.185
+lakerZoomAll
+lakerConnBrowser -show 1
+lakerZoomAll
+lakerSingleSel -point (540.58,148.51) -traversedist 11.185
+lakerConnBrowser -show 1
+lakerConnBrowser -net LakerNet__1
+lakerZoomAll
+lakerConnBrowser -findShort LakerNet__1 -point (463.4,106.95) (0.0,207.75)
+lakerZoomAll
+lakerConnBrowser -show 1
+lakerConnBrowser -net LakerNet__1
+Highlight Net "LakerNet__1" Report:
+	Layer:MET3  Area = 801.820000  Perimeter = 2710.600000
+	Layer:CONT  Area = 32.160000  Perimeter = 321.600000
+	Layer:POLY  Area = 1231.320000  Perimeter = 7137.500000
+	Layer:VIA1  Area = 25.500000  Perimeter = 204.000000
+	Layer:VIA2  Area = 30.250000  Perimeter = 242.000000
+	Layer:MET1  Area = 388.075000  Perimeter = 1489.900000
+	Layer:MET2  Area = 1008.925000  Perimeter = 3405.900000
+lakerZoomAll
+lakerConnBrowser -findShort LakerNet__1 -point (457.81,106.35) (42.83,207.75)
+lakerZoomAll
+lakerCloseDesign
+au time 64276.071929 1892.990222 3992.117106 delta 65609728 65609728 total 360341504 360341504

@@ -1,0 +1,23 @@
+
+
+       #############################################################
+       ##                                                         ##
+       ##               C A L I B R E    S Y S T E M              ##
+       ##                                                         ##
+       ##    C I R C U I T   E X T R A C T I O N   R E P O R T    ##
+       ##                                                         ##
+       #############################################################
+
+
+REPORT FILE NAME:         CLKINVX1.lvs.report.ext
+LAYOUT NAME:              CLKINVX1.calibre.db ('CLKINVX1')
+CREATION TIME:            Thu Oct 10 14:28:05 2024
+CURRENT DIRECTORY:        /home/user/wrk/standard_113/lvs
+USER NAME:                user
+CALIBRE VERSION:          v2022.4_37.20    Fri Dec 2 17:41:13 PST 2022
+
+
+
+
+WARNING: Invalid PATHCHK request "! LABELED": no LABELED nets present, operation aborted.
+

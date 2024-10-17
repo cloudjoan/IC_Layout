@@ -1,0 +1,7 @@
+@laker rc file Version 1.0
+[AutoGuardRing]
+layerSpace_test = {{{MET1 drawing} {MET1 drawing} 5.0}\\
+		{{OD drawing} {OD drawing} 2.2}\\
+		{{OD drawing} {POLY drawing} 0.5}\\
+		{{MET1 drawing} {MET2 drawing} 2.4}\\
+		{{MET1 drawing} {MET3 drawing} 1.0}}

@@ -1,0 +1,13 @@
+Command Line: /dq3/qa/LEO/PACK/laker32v1p1/platform/LINUXAMD64/bin/laker
+uname(Linux spx505 2.6.9-5.0.5.ELsmp #1 SMP Tue Apr 19 18:06:07 CDT 2005 x86_64)
+License: SC_LICENSE_FILE is set as 5229@sps503:5229@sps201:5229@sps206
+License: Note that SC_LICENSE_FILE prevails against LM_LICENSE_FILE
+License: SC_LICENSE_FILE is set as 5229@sps503:5229@sps201:5229@sps206
+License: Note that SC_LICENSE_FILE prevails against LM_LICENSE_FILE
+License: Error getting ARP entry for sps503 (ioctl) error = 19, No such device
+arp: rsh timeout
+lakerOpenDesign -lib lab1 -cell NA1 -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerCloseDesign
+lakerDelCell -lib lab1 -cell NA1
+au time 28 0.433934 0.404938 delta 19394976 19107840 total 19869696 19734528

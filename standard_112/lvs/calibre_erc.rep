@@ -1,0 +1,101 @@
+
+
+==================================================================================
+=== CALIBRE::ERC-H SUMMARY REPORT
+===
+Execution Date/Time:          Tue Jul  4 15:27:05 2023
+Calibre Version:              v2022.1_36.16    Tue Mar 1 14:26:36 PST 2022
+Rule File Pathname:           _lvs.rule_
+Rule File Title:              
+Layout System:                GDSII
+Layout Path(s):               INVX3.calibre.db
+Layout Primary Cell:          INVX3
+Current Directory:            /home/user/wrk/standard_112/lvs
+User Name:                    user
+Maximum Results/ERC Check:    ALL
+Maximum ERC Result Vertices:  4096
+ERC PATHCHK Results Database: svdb/INVX3.pathchk.erc
+ERC PATHCHK Report:           svdb/INVX3.pathchk.rep
+Layout Depth:                 ALL
+Text Depth:                   1
+Summary Report File:          calibre_erc.rep (REPLACE)
+Geometry Flagging:            ACUTE = NO  SKEW = YES  ANGLED = NO  OFFGRID = YES
+                              NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
+Excluded Cells:              
+CheckText Mapping:            COMMENT TEXT + RULE FILE INFORMATION
+Layers:                       MEMORY-BASED
+Keep Empty Checks:            YES
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER MOSRDUM ... TOTAL Original Geometry Count = 0  (0)
+LAYER POLY1i .... TOTAL Original Geometry Count = 9  (9)
+LAYER ODi ....... TOTAL Original Geometry Count = 12 (12)
+LAYER RPO ....... TOTAL Original Geometry Count = 0  (0)
+LAYER RODMY ..... TOTAL Original Geometry Count = 0  (0)
+LAYER RPDMY ..... TOTAL Original Geometry Count = 0  (0)
+LAYER NIMP ...... TOTAL Original Geometry Count = 6  (6)
+LAYER RWDMY ..... TOTAL Original Geometry Count = 0  (0)
+LAYER NWELL ..... TOTAL Original Geometry Count = 3  (3)
+LAYER OD2 ....... TOTAL Original Geometry Count = 0  (0)
+LAYER ESD3DMY ... TOTAL Original Geometry Count = 0  (0)
+LAYER NTN ....... TOTAL Original Geometry Count = 0  (0)
+LAYER PSUB2 ..... TOTAL Original Geometry Count = 0  (0)
+LAYER VARDMY .... TOTAL Original Geometry Count = 0  (0)
+LAYER PIMP ...... TOTAL Original Geometry Count = 6  (6)
+LAYER DIODMY .... TOTAL Original Geometry Count = 0  (0)
+LAYER BJTDMY .... TOTAL Original Geometry Count = 0  (0)
+LAYER DUM1 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER M1 ........ TOTAL Original Geometry Count = 29 (29)
+LAYER M1SLOT .... TOTAL Original Geometry Count = 0  (0)
+LAYER RMDMY ..... TOTAL Original Geometry Count = 0  (0)
+LAYER DUM2 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER M2 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER M2SLOT .... TOTAL Original Geometry Count = 0  (0)
+LAYER DUM3 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER M3 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER M3SLOT .... TOTAL Original Geometry Count = 0  (0)
+LAYER DUM4 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER M4 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER M4SLOT .... TOTAL Original Geometry Count = 0  (0)
+LAYER DUM5 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER M5 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER M5SLOT .... TOTAL Original Geometry Count = 0  (0)
+LAYER DUM6 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER M6 ........ TOTAL Original Geometry Count = 0  (0)
+LAYER M6SLOT .... TOTAL Original Geometry Count = 0  (0)
+LAYER DMP2V ..... TOTAL Original Geometry Count = 0  (0)
+LAYER DMN2V ..... TOTAL Original Geometry Count = 0  (0)
+LAYER POLY2 ..... TOTAL Original Geometry Count = 0  (0)
+LAYER CONT ...... TOTAL Original Geometry Count = 37 (37)
+LAYER MCAPDUM ... TOTAL Original Geometry Count = 0  (0)
+LAYER LMCDUM .... TOTAL Original Geometry Count = 0  (0)
+LAYER CAPP1 ..... TOTAL Original Geometry Count = 0  (0)
+LAYER CAPP2 ..... TOTAL Original Geometry Count = 0  (0)
+LAYER CTM2 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER VIA2 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER CTM3 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER VIA3 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER CTM4 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER VIA4 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER CTM5 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER VIA5 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER VIA1 ...... TOTAL Original Geometry Count = 0  (0)
+LAYER FCAPDUM ... TOTAL Original Geometry Count = 0  (0)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+----------------------------------------------------------------------------------
+--- ERC PATHCHK RESULTS STATISTICS
+---
+  PATHCHK ! LABELED:
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                              0
+TOTAL REAL Time:                             0
+TOTAL Original Layer Geometries:             102 (102)
+TOTAL ERC PATHCHK Operations Executed:       1

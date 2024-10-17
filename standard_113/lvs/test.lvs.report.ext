@@ -1,0 +1,33 @@
+
+
+       #############################################################
+       ##                                                         ##
+       ##               C A L I B R E    S Y S T E M              ##
+       ##                                                         ##
+       ##    C I R C U I T   E X T R A C T I O N   R E P O R T    ##
+       ##                                                         ##
+       #############################################################
+
+
+REPORT FILE NAME:         test.lvs.report.ext
+LAYOUT NAME:              test.calibre.db ('test')
+CREATION TIME:            Tue Oct  1 16:50:26 2024
+CURRENT DIRECTORY:        /home/user/wrk/standard_113/lvs
+USER NAME:                user
+CALIBRE VERSION:          v2022.4_37.20    Fri Dec 2 17:41:13 PST 2022
+
+
+
+
+WARNING: BAD DEVICE on layer pgate at location (-2.61,1.035) in cell test
+         (Too many pins).
+         Found 5 interaction(s):
+         Pin on layer poly, net 1 at location (-2.61,1.135)
+         Pin on layer pdiff, net 4 at location (-2.33,1.032)
+         Pin on layer pdiff, net 1 at location (-2.47,1.235)
+         Pin on layer nxwell, net 1 at location (-2.61,1.135)
+         Pin on layer pdiff, net 2 at location (-2.23,1.527) (extra pin)
+         Possible Element Names: MP(pmos1v)
+
+WARNING: Invalid PATHCHK request "! LABELED": no LABELED nets present, operation aborted.
+

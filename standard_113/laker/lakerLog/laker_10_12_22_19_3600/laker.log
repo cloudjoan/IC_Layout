@@ -1,0 +1,18 @@
+Command Line: /data1/synopsys/laker/laker_v2023.06-2.aut/platform/LINUX64/bin/laker
+uname(Linux leon 3.10.0-1160.105.1.el7.x86_64 #1 SMP Mon Nov 6 06:58:51 EST 2023 x86_64)
+source /data1/synopsys/laker/laker_v2023.06-2.aut/gift/gift.tcl
+The color name 'ID_WHITE' of the 'DT' layer was not defined in default.dsp file.
+lakerOpenDesign -lib test -cell NAND4X1 -mode readOnly
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerZoomAll
+lakerZoomAll
+lakerDistance -point (0.0,1.342) (0.375,1.376)
+lakerDistance -point (0.18,2.085) (0.3,2.1)
+lakerDistance -point (0.375,1.541) (0.3,2.14)
+lakerDistance -point (0.375,1.501) (0.18,1.456)
+lakerZoomAll
+lakerCloseDesign
+
+====== The following is working cellview list in memory ======
+=========================================================
+

@@ -1,0 +1,21 @@
+#
+#Sample leoStreamIn Layer Mapping File
+#
+#  LAKER      LAKER         Stream      Stream
+#  layerName  layerPurpose  LayerNo     dataType        
+#*********************************
+# 4.Stream Table                  
+#*********************************
+#             Layer   Purpose      Stream     Stream
+#             Name    Name         Number     DataType
+#-------------------------------------------------------
+        NWELL  drawing   2 0
+        DIFF drawing   1 0
+        PIMP drawing   5 0
+        NIMP drawing   4 0
+        POLY1  drawing   3 0
+        CONT drawing   6 0
+        METAL1 drawing   7 0
+        METAL1 dummy   7 1
+        METAL1 slot    7 2
+        TEXT drawing   67 2

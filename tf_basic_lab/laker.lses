@@ -1,0 +1,12 @@
+#  lib libraryName
+#      filter pattern
+#          ...
+#  lib libraryName2
+#      ...
+lib labNew
+    filter pattern
+        {*}      
+        {N}      
+        {N*}     
+        {M*}     
+        

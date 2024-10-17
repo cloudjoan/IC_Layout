@@ -1,0 +1,21 @@
+@laker rc file Version 1.0
+[HierNetTracerSetting]
+Rule = default
+[HierNetTracerSetting.default]
+ConnCheckTraceLevel = max
+ConnCheckTraceMode = fullCell
+ConnCheckHighlightMode = all
+ConnCheckReportName = ExtractReport.rpt
+ConnCheckProcessName = default
+ConnCheckReportNet = FALSE
+ConnCheckReportFile = FALSE
+ConnCheckDisUserNetName = FALSE
+ConnCheckDisHighlight = FALSE
+ConnCheckTraceAllVias = TRUE
+ConnCheckSpeedMode = TRUE
+POLY1#METAL1#CONT##default = enableAll
+METAL1#METAL2#VIA12##default = enableAll
+METAL2#METAL3#VIA23##default = enableAll
+METAL3#METAL4#VIA34##default = enableAll
+METAL4#METAL5#VIA45##default = enableAll
+METAL5#METAL6#VIA56##default = enableAll

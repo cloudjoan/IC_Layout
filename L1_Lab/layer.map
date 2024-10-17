@@ -1,0 +1,10 @@
+#
+#Sample leoStreamIn Layer Mapping File
+#
+#  LAKER      LAKER         Stream      Stream
+#  layerName  layerPurpose  LayerNo     dataType        
+   OD         drawing       21   	0
+   POLY       drawing       22  	0
+   CONT       drawing       23   	0
+   MET1       drawing       24   	0
+  

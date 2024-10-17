@@ -1,0 +1,125 @@
+Command Line: /data1/synopsys/laker/laker_v2023.06-2.aut/platform/LINUX64/bin/laker
+uname(Linux leon 3.10.0-1160.105.1.el7.x86_64 #1 SMP Mon Nov 6 06:58:51 EST 2023 x86_64)
+source /data1/synopsys/laker/laker_v2023.06-2.aut/gift/gift.tcl
+wtAskUser: "The recovery cell view exists. Open the recovery file? Library: test, Cell: new_1008, View: layout After opening, please save cell view to remove recovery file.", answer:  "Yes"
+The color name 'ID_WHITE' of the 'DT' layer was not defined in default.dsp file.
+lakerOpenDesign -lib test -cell new_1008 -mode edit
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerMaxViewLevel
+lakerZoomInByArea -point (-0.571,-0.076) (2.417,1.334)
+lakerDistance -point (0.896,0.995) (0.974,0.345)
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerSetColPat -layerNo 3 -purpose system -layerName Ruler -outlineColor lime -fillColor lime -stipple blank -style line_solid -width 1
+lakerDistance -point (0.881,0.995) (0.914,0.345)
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSmashObj -level 1
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (-0.018,0.847) -traversedist 0.017
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerZoomAll
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerAttribute -index 1 -point (0.585,0.345) (1.245,2.295)
+lakerZoomAll
+lakerAreaSel -point (0.117,-1.28) (1.9,2.026)
+lakerUndo
+lakerCreateInstance -point (-1.655,-0.89) -cell INVX1 -lib test -view layout
+lakerZoomAll
+lakerDistance -point (-0.633,2.02) (-0.724,-1.03)
+lakerClearRuler
+lakerSingleSel
+lakerDistance -point (-1.069,1.9) (-0.915,-1.07)
+lakerSingleSel
+lakerSingleSel -point (0.006,0.38) -traversedist 0.042
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerMaxViewLevel
+lakerClearRuler
+lakerZoomAll
+lakerZoomInByArea -point (-0.265,0.173) (2.041,1.261)
+lakerZoomAll
+lakerSingleSel
+lakerAttribute -index 1 -point (0.585,0.345) (1.245,2.295)
+lakerUndo
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (0.5,1.31) -ignoreNet 0 -offsetPoint (0.5,0.645)
+lakerUndo
+lakerStretchObj -refPoint (1.395,0.345) -ignoreNet 0 -offsetPoint (0.885,0.345)
+lakerUndo
+lakerSetColPat -visall 0
+lakerSetColPat -selall 0
+lakerSetColPat -modCategory DesignSet -use 1
+lakerSetColPat -layerName DIFF -sel 1 -vis 1
+lakerSetActiveLayer -layerName DIFF -purpose drawing
+lakerSetColPat -layerName POLY1 -sel 1 -vis 1
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerRedraw
+lakerStretchObj -refPoint (0.48,1.23) -ignoreNet 0 -offsetPoint (0.48,0.655)
+lakerUndo
+lakerSingleSel
+lakerSingleSel -point (0.501,1.185) -traversedist 0.04
+lakerAreaSel -point (0.083,0.215) (1.67,1.374)
+lakerSingleSel -point (1.67,0.217) -traversedist 0.04
+lakerSingleSel
+lakerDecreaseSel
+lakerIncreaseSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (1.175,0.685) -offsetPoint (1.865,0.685)
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (1.88,0.775) -offsetPoint (2.545,0.775)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (2.072,-0.257) -traversedist 0.04
+lakerAreaSel -point (1.135,0.916) (1.357,0.95)
+lakerSingleSel
+lakerSingleSel
+lakerIncreaseSel
+lakerIncreaseSel
+lakerAlignObj -point (0.971,0.675) -mode start
+lakerAlignObj -snapMode anyangle -refObj 1 -refPoint (1.27,0.67) -traversedist 0.02
+lakerSingleSel
+lakerUndo
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (-0.632,1.101) -traversedist 0.04
+lakerUndo
+lakerUndo
+lakerUndo
+lakerUndo
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerSetColPat -visall 0
+lakerSetColPat -selall 0
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerSingleSel -point (-0.848,1.013) -traversedist 0.04
+lakerRedraw
+lakerSingleSel
+lakerStretchObj -refPoint (1.375,1.6) -ignoreNet 0 -offsetPoint (1.58,1.6)
+lakerUndo
+lakerSingleSel -point (1.887,1.467) -traversedist 0.04
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerZoomInByArea -point (-0.166,0.756) (2.412,1.972)
+lakerSingleSel
+lakerStretchObj -refPoint (1.37,1.625) -ignoreNet 0 -offsetPoint (1.435,1.625)
+lakerUndo
+lakerSetColPat -layerName CONT -vis 0
+lakerSetColPat -lay

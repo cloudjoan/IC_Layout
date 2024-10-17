@@ -1,0 +1,10 @@
+defSearchHistory {
+    defTextHistory {
+        defTextString { *[*] }
+    }
+}
+defReplaceHistory {
+    defTextHistory {
+        defTextString { *<*> }
+    }
+}

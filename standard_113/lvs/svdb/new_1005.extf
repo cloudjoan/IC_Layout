@@ -1,0 +1,10 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1728107098 1728107098
+lvs_ExtOutFile RUNDIR /home/user/wrk/standard_113/lvs
+lvs_ExtOutFile RULES_FILE _lvs.rule_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 1 0 0 0 1 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST new_1005.sp
+lvs_ExtOutFile EXTRACTION_REPORT new_1005.lvs.report.ext

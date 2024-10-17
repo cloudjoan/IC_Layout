@@ -1,0 +1,1135 @@
+//*************************************************************************** 
+// 0.18UM CALIBRE ERC/LVS COMMAND FILE  
+//*************************************************************************** 
+// 
+//                             DEVICE FORMULA 
+//   ----- ----------------------------- ---------------------------------- 
+//   NAME  DESCRIPTION                   DEVICE LAYER OPERATION 
+//   ----- ----------------------------- ---------------------------------- 
+//   M[NL] 1.8V native device            ((NGATE-OD2)*NTN) 
+//   M[NN] 3.3V native device            ((NGATE*OD2)*NTN) 
+//   M[N]  1.8V NMOS                     ((NGATE-OD2)-NTN) 
+//   M[ND] 3.3V NMOS                     ((NGATE*OD2)-NTN) 
+//   M[P]  1.8V PMOS                     (PGATE-OD2) 
+//   M[PD] 3.3V PMOS                     (PGATE*OD2) 
+//   M[C1] Varactor on thin oxide        (VARGT-OD2) 
+//   M[C2] Varactor on thick oxide       (VARGT*OD2) 
+//   R[WO] N-Well resistor under OD      (RWDMY*NWELL*(OD*RPO)) 
+//   R[WR] N-Well resister under STI     (RWDMY*NWELL-(OD*RPO)) 
+//   R[PR] P+Poly resistor w/o Silicide  (RPDMY*POLY1*PIMP*RPO*DMP2V) 
+//   R[NR] N+Poly resistor w/o Silicide  (RPDMY*POLY1*NIMP*RPO*DMN2V) 
+//   R[PS] P+Poly resistor w/i Silicide  (RPDMY*POLY1*PIMP-RPO) 
+//   R[NS] N+Poly resistor w/i Silicide  (RPDMY*POLY1*NIMP-RPO) 
+//   R[PD] P+diff resistor w/o Silicide  (RPDMY*OD*PIMP*RPO) 
+//   R[ND] N+diff resistor w/o Silicide  (RPDMY*OD*NIMP*RPO) 
+//   R[PI] P+diff resistor w/i Silicide  (RPDMY*OD*PIMP-RPO) 
+//   R[NI] N+diff resistor w/i Silicide  (RPDMY*OD*NIMP-RPO) 
+//   R[M1] METAL1 resistor               (RMDMY*METAL1) 
+//   R[M2] METAL2 resistor               (RMDMY*METAL2) 
+//   R[M3] METAL3 resistor               (RMDMY*METAL3) 
+//   R[M4] METAL4 resistor               (RMDMY*METAL4) 
+//   R[M5] METAL5 resistor               (RMDMY*METAL5) 
+//   R[M6] METAL6 resistor               (RMDMY*METAL6) 
+//   C[PC] Poly-2/Poly-1 capacitor       (POLY2*POLY1) 
+//   D[DP] 1.8V diode P+/NW              (DIODMY*OD*PIMP*NWELL) 
+//   D[D1] 3.3V diode P+/NW              (DIODMY*OD*PIMP*OD2*NWELL) 
+//   D[DN] 1.8V diode N+/PW              (DIODMY*OD*NIMP*PSUB) 
+//   D[D2] 3.3V diode N+/PW              (DIODMY*OD*NIMP*OD2*PSUB) 
+//   D[DW] 1.8V diode NW/PW              (DIODMY*NWELL) 
+//   D[D3] 3.3V diode NW/PW              (DIODMY*NWELL*OD2) 
+//   D[DB] 3.3V ESD diode                ((((((((ESD3DMY AND OD )    
+//                                        NIMP) AND RPO) NOT NWELL) NOT  
+//                                       (POLY1 SIZE 0.2))) SIZE -0.8)  
+//                                       SIZE 0.6)  
+//   Q[PV] 1.8V PNP-BJT                  (BJTDMY*OD*PIMP*NWELL) 
+//   Q[P1] 3.3V PNP-BJT                  (BJTDMY*OD*PIMP*OD2*NWELL) 
+//   ----- ----------------------------- ---------------------------------- 
+//   * NGATE = OD * POLY1 * NIMP - NWELL 
+//   * PGATE = OD * POLY1 * PIMP * NWELL 
+//   * VARGT = OD * POLY1 * NIMP * NWELL * VARDMY 
+// 
+//////////////////////////////////////////////////////////////////////////////// 
+// 
+// USER NOTES : 
+// 
+// 1) mnpg49 mppg49 are obtained in a DRC run, not in an LVS run. 
+// 
+// 2) Metal sheet resistance 0.078 except for top metal (0.036). 
+// 
+// 3) For Calibre "EDTEXT" file, use .INCLUDE strings.txt. 
+//        LAYOUT TEXT  "text string" [x] [y]  (layer num) (cell name) 
+// 
+// 4) Input layer 'OD' is defined as thin oxide (OD) area which would  
+//    be drawn by one generic od mask or by seperated N+OD and P+OD.  
+//    Remove layers in the 'OD' entries you don't want to use at  
+//    layer definition block. 
+// 
+// 5) Default setting for property check is 0%. Users should check with 
+//    IP/Designe providers for proper tolerance. 
+// 
+// 6) It's recommended to run Calibre LVS by hierarchical mode since false 
+//    errors have been encountered by only flat mode option '-lvs'. 
+// 
+// 7) Default property resolution for ambiguity is set to 32. It could be 
+//    necessary to increase this setting to resolve serious ambiguity. 
+//    Uncomment statement 'LVS PROPERTY RESOLUTION MAXIMUM' in this deck 
+//    to reset the capability of property resolution. 
+// 
+// 8) This deck default not to extracts MOS AS/AD property. To turn on the 
+//    extraction of MOS AS/AD property, please uncomment the line 
+//    "#DEFINE extract_as_ad". It would cause SEED PROMOTION, and pose 
+//    much overhead on layout netlist extraction, erc checks, and lvs comparison. 
+// 
+//////////////////////////////////////////////////////////////////////////////// 
+//#########################################################################
+//# ENVIRONMENT SETTING                              
+//#########################################################################
+//LVS HEAP DIRECTORY "/tmp"
+
+LAYOUT PATH "../gds/AND2X1.gds"
+LAYOUT PRIMARY "AND2X1"
+LAYOUT SYSTEM GDSII
+
+SOURCE PATH "../cdl/all.spi"
+SOURCE PRIMARY "AND2X1"
+SOURCE SYSTEM SPICE
+
+DRC MAXIMUM RESULTS ALL
+ERC MAXIMUM RESULTS ALL
+
+DRC RESULTS DATABASE "calibre_drc.db"
+ERC RESULTS DATABASE "calibre_erc.db"
+
+DRC SUMMARY REPORT "calibre_drc.rep"
+ERC SUMMARY REPORT "calibre_erc.rep"
+
+LVS REPORT "Aries_lvs.rep"
+LVS REPORT MAXIMUM 50 
+LVS REPORT OPTION A B C D S
+MASK RESULTS DATABASE NONE //"mask.db"
+MASK SVDB DIRECTORY "svdb" QUERY
+LVS ISOLATE SHORTS YES
+
+PRECISION 1000
+RESOLUTION 1
+UNIT LENGTH U
+UNIT CAPACITANCE F
+
+//TEXT DEPTH PRIMARY
+//PORT DEPTH PRIMARY
+TEXT DEPTH 1      
+PORT DEPTH 1       
+
+FLAG SKEW YES
+FLAG OFFGRID YES
+
+LVS SPICE PREFER PINS	       YES
+//!!
+LAYOUT CASE YES 
+SOURCE CASE YES 
+LVS COMPARE CASE                   NAMES 
+//!!
+LVS ABORT ON SUPPLY ERROR      YES
+LVS ALL CAPACITOR PINS SWAPPABLE NO
+LVS RECOGNIZE GATES ALL
+LVS IGNORE PORTS               YES
+LVS CHECK PORT NAMES          YES
+LVS REDUCE PARALLEL BIPOLAR    NO
+LVS REDUCE PARALLEL MOS        YES
+LVS REDUCE PARALLEL DIODES     YES
+LVS REDUCE PARALLEL CAPACITORS YES
+LVS REDUCE PARALLEL RESISTORS  YES
+LVS REDUCE SERIES RESISTORS    YES      //Smashes series resistors
+LVS REDUCE SERIES CAPACITORS   YES      //Smashes series capacitors
+LVS REDUCE SERIES MOS          YES      //Smashes series mos       
+LVS REDUCE SPLIT GATES YES
+//LVS FILTER UNUSED OPTION RC RE RG
+LVS FILTER UNUSED OPTION AB RC RE RG
+LVS FILTER R R<=0 SHORT SOURCE
+LVS PROPERTY RESOLUTION MAXIMUM 65536 // ALL
+
+// should be modify
+LAYOUT TOP LAYER M1 VIA1 M2 VIA2 M3 VIA3 M4 VIA4 M5 VIA5 M6
+
+// #DEFINE USE_VIRTUAL // USE VIRTUAL CONNECT //   ConMark ("ENABLE" eq "ENABLE")
+//#IFNDEF USE_VIRTUAL
+VIRTUAL CONNECT COLON YES
+// VIRTUAL CONNECT NAME 
+//#ENDIF
+
+//LVS POWER NAME "?VDD?" "?VCC?" "VD33"
+LVS POWER NAME "?VDD?" "?VCC?" 
+//LVS GROUND NAME "?VSS?" "?GND?"
+LVS GROUND NAME "?VSS?" 
+LVS GLOBALS ARE PORTS YES
+
+//#############################################
+//# MAPPING                                   #
+//#############################################
+LAYER NWELL      2  //  N-Well
+LAYER NTN        129  //  Native Device Blocked Implant
+LAYER ODi        1  //  thin oxide
+LAYER OD2        12  //  Thick Oxide Definition
+LAYER POLY1i     3  //  Poly Si
+LAYER POLY2      14  //  Poly2 for caps and res
+LAYER PIMP       5  //  P+ S/D Implantation
+LAYER NIMP       4  //  N+ S/D Implantation
+LAYER CONT       6  //  Contact
+LAYER M1         7  //  Metal-1
+LAYER VIA1       17  //  Via1 Hole
+LAYER M2         18  //  Metal-2
+LAYER VIA2       27  //  Via2 Hole
+LAYER M3         28  //  Metal-3
+LAYER VIA3       29  //  Via3 Hole
+LAYER M4         31  //  Metal-4
+LAYER VIA4       32  //  Via4 Hole
+LAYER M5         33  //  Metal-5
+LAYER VIA5       39  //  Via5 Hole
+LAYER M6         38  //  Metal-6
+LAYER RPO        34  //  Non-salicide OD Area Definition
+LAYER ESD3DMY    234  //  ESD3DMY 
+LAYER PSUB2      50  //  apply for subtract2 ground
+LAYER RODMY      75  //  dummy layer to remove OD
+LAYER BJTDMY     49  //  BJT dummy layer to form BJT
+LAYER DIODMY     37  56  //  dummy layer to form diode
+LAYER RWDMY      52  //  dummy layer to form N-Well resistor
+LAYER RPDMY      54  //  dummy layer to form OD/POLY resistor
+LAYER RMDMY      69  //  dummy layer to form METAL resistor
+LAYER VARDMY     138  //  dummy layer to form Varactor
+LAYER DMN2V      184  //  dummy layer to avoid N2V in N+ poly resistor
+LAYER DMP2V      149  //  dummy layer to avoid P2V in P+ poly resistor
+LAYER DUM1      300
+LAYER MAP 16 DATATYPE 1 300 //  dummy metal M1
+LAYER DUM2      301
+LAYER MAP 18 DATATYPE 1 301 //  dummy metal M2
+LAYER DUM3      302
+LAYER MAP 28 DATATYPE 1 302 //  dummy metal M3
+LAYER DUM4      303
+LAYER MAP 31 DATATYPE 1 303 //  dummy metal M4
+LAYER DUM5      304
+LAYER MAP 33 DATATYPE 1 304 //  dummy metal M5
+LAYER DUM6      305
+LAYER MAP 38 DATATYPE 1 305 //  dummy metal M6
+LAYER M1SLOT    306
+LAYER MAP 16 DATATYPE 2 306 //  M1 slot
+LAYER M2SLOT    307
+LAYER MAP 18 DATATYPE 2 307 //  M2 slot
+LAYER M3SLOT    308
+LAYER MAP 28 DATATYPE 2 308 //  M3 slot
+LAYER M4SLOT    309
+LAYER MAP 31 DATATYPE 2 309 //  M4 slot
+LAYER M5SLOT    310
+LAYER MAP 33 DATATYPE 2 310 //  M5 slot
+LAYER M6SLOT    311
+LAYER MAP 38 DATATYPE 2 311 //  M6 slot
+
+// LVS BOX LAYOUT 
+// LVS BOX SOURCE 
+// EXCLUDE CELL 
+
+//INCLUDE "/home/lqa9318/QA9318/gds/edtext/Edtext.single" // input include edtext file
+   LAYER M1_TEXT   40 TEXT LAYER M1_TEXT ATTACH M1_TEXT metal1  //PORT LAYER TEXT M1_TEXT
+   PORT LAYER TEXT 40
+
+   LAYER M2_TEXT   41 TEXT LAYER M2_TEXT ATTACH M2_TEXT metal2  //PORT LAYER TEXT M2_TEXT
+   PORT LAYER TEXT 41
+
+   LAYER M3_TEXT   42 TEXT LAYER M3_TEXT ATTACH M3_TEXT metal3  //PORT LAYER TEXT M3_TEXT
+   PORT LAYER TEXT 42
+
+   LAYER M4_TEXT   43 TEXT LAYER M4_TEXT ATTACH M4_TEXT metal4  //PORT LAYER TEXT M4_TEXT
+   PORT LAYER TEXT 43
+
+// LAYER M5_TEXT   44 TEXT LAYER M5_TEXT ATTACH M5_TEXT metal5  //PORT LAYER TEXT M5_TEXT
+// PORT LAYER TEXT 44
+
+// LAYER M5_TEXT 505 TEXT LAYER M5_TEXT ATTACH M5_TEXT metal5  PORT LAYER TEXT M5_TEXT
+// LAYER M6_TEXT  TEXT LAYER M6_TEXT ATTACH M6_TEXT metal6  PORT LAYER TEXT M6_TEXT
+
+LAYER MCAPDUM 125
+LAYER MOSRDUM 126
+LAYER LMCDUM 198
+LAYER CAPP1 197
+LAYER CAPP2 196
+LAYER CTM2 248 // MT2(BUTTOM) + CTM2(TOP)
+LAYER MAP 67  DATATYPE == 2  248
+LAYER CTM3 249 // MT3(BUTTOM) + CTM3(TOP)
+LAYER MAP 67  DATATYPE == 3  249
+LAYER CTM4 250 // MT4(BUTTOM) + CTM4(TOP)
+LAYER MAP 67  DATATYPE == 4  250
+LAYER CTM5 251 // MT5(BUTTOM) + CTM5(TOP)
+LAYER MAP 67  DATATYPE == 5  251
+//#############################################
+//# LOGIC OPERATION POOL                      #
+//#############################################
+
+//Form BULK layer
+DRC:1 = EXTENT
+BULK  = SIZE DRC:1 BY 1.0
+
+DUMGATE = POLY1i AND MOSRDUM
+POLY1 = POLY1i NOT MOSRDUM
+OD = ODi NOT DUMGATE
+
+//* Define device -- nmos NL
+p1hr_1 = POLY1 AND RPO 
+diff = OD NOT RODMY 
+rp1 = RPDMY NOT INTERACT diff 
+p1rdum = rp1 INTERACT POLY1  //  poly1 resistor dummy
+rpop = p1hr_1 INTERACT p1rdum  //  RPO for high resistance poly1 resistor
+poly_1 = POLY1 NOT rpop 
+p1lr_1 = POLY1 AND p1rdum 
+rpip = p1lr_1 NOT INTERACT RPO 
+poly = poly_1 NOT rpip  //  poly interconnect
+dfhr_1 = diff AND RPO 
+drdum = RPDMY INTERACT diff  //  diff resistor dummy
+rdop = dfhr_1 INTERACT drdum 
+mdiff_1 = diff NOT rdop 
+dflr_1 = diff AND drdum 
+rdip = dflr_1 NOT INTERACT RPO 
+mdiff = mdiff_1 NOT rdip 
+gate = poly AND mdiff  //  define poly gate
+tngate1 = gate AND NIMP 
+nxwell = NWELL NOT RWDMY  //  define N_well region
+tngate = tngate1 NOT nxwell 
+ngate1 = tngate NOT OD2 
+ngate2 = ngate1 NOT ESD3DMY 
+nlgate = ngate2 AND NTN  //  1.8V Native Device
+nthin = mdiff AND NIMP  //  define N+ thin oxide
+tndiff = nthin NOT gate  //  define N+ diffusion region
+tndiff1 = tndiff NOT nxwell 
+ndiff1 = tndiff1 NOT OD2 
+ndiff2 = ndiff1 NOT ESD3DMY 
+nldiff = ndiff2 AND NTN  //  1.8V Native Device S/D
+
+//***** Define connectivity/via layer -- psub ****
+ppsub = BULK NOT NWELL  //  define total p_sub region
+psub2s = SIZE PSUB2 BY 0.01 
+psub1 = ppsub NOT psub2s  //  p_sub connect to GND
+psub2a = ppsub AND PSUB2 
+psub = psub1 OR psub2a  //  psub= [(bulk-nwell)-size(psub2)]+[(bulk-nwell)*psub2]
+
+//* Define device -- nmos NN
+bngate1 = tngate AND OD2 
+bnngate = bngate1 AND NTN  //  3.3V Native Device
+bndiff1 = tndiff1 AND OD2 
+bnndiff = bndiff1 AND NTN  //  3.3V Native Device S/D
+
+//* Define device -- nmos N
+ngate = ngate1 NOT NTN  //  1.8V NMOS   
+ndiff = ndiff1 NOT NTN  //  1.8V NMOS S/D  
+
+//* Define device -- nmos ND
+bngate = bngate1 NOT NTN  //  3.3V NMOS
+bndiff = bndiff1 NOT NTN  //  3.3V NMOS S/D
+
+//* Define device -- nmos C1
+vargt1 = tngate1 AND nxwell 
+vargt2 = vargt1 AND VARDMY 
+vargt = vargt2 NOT OD2  //  Varactor on thin oxide
+tndiff2 = tndiff AND nxwell 
+varod1 = tndiff2 AND nxwell 
+varod2 = varod1 AND VARDMY 
+varod = varod2 NOT OD2 
+
+//* Define device -- nmos C2
+bvargt = vargt2 AND OD2  //  Varactor on thick oxide
+bvarod = varod2 AND OD2 
+
+vargt3 = NOT vargt1 VARDMY
+c4gate = AND vargt3 OD2
+c3gate = NOT vargt3 c4gate
+
+//* Define device -- pmos P
+tpgate1 = gate AND PIMP 
+tpgate = tpgate1 AND nxwell 
+pgate = tpgate NOT OD2  //  1.8V PMOS
+pthin = mdiff AND PIMP  //  define P+ thin oxide
+tpdiff = pthin NOT gate  //  define P+ diffusion region
+pdiff = tpdiff NOT OD2  //  1.8V PMOS S/D
+
+//* Define device -- pmos PD
+bpgate = tpgate AND OD2  //  3.3V PMOS
+bpdiff = tpdiff AND OD2  //  3.3V PMOS S/D
+
+//* Define device -- diode DP
+pdio_a = tpdiff AND DIODMY 
+pdio_b = pdio_a AND nxwell 
+pdio = pdio_b NOT OD2  //  1.8V P+/NW diode
+
+//* Define device -- diode D1
+pdio_3 = pdio_b AND OD2  //  3.3V P+/NW diode
+
+//* Define device -- diode DN
+ndio_a = tndiff AND DIODMY 
+ndio_b = ndio_a AND psub 
+ndio = ndio_b NOT OD2  //  1.8V N+/PW diode
+
+//* Define device -- diode D2
+ndio_3 = ndio_b AND OD2  //  3.3V N+/PW diode
+
+//* Define device -- diode DW
+DIONW = DIODMY OUTSIDE tpdiff 
+nwdio_a = nxwell AND DIONW 
+nwdio = nwdio_a NOT OD2  //  1.8V NW/PW diode
+
+//* Define device -- diode D3
+nwdio_3 = nwdio_a AND OD2  //  3.3V NW/PW diode
+
+//* Define device -- diode DB
+ydio_a = ESD3DMY AND OD 
+//ydio_b = ydio_a AND OD2
+ydio_c = SIZE ydio_a BY -0.2 
+ydio_d = ydio_c AND NIMP 
+ydio_e = ydio_d AND RPO 
+ydio_f = ydio_e NOT NWELL 
+ydio_g = ESD3DMY AND POLY1 
+ydio_h = SIZE ydio_g BY 0.2 
+ydio_i = ydio_f NOT ydio_h 
+ydio_j = SIZE ydio_i BY -0.8 
+ydio = SIZE ydio_j BY 0.6 
+
+//***** Define connectivity/via layer -- emit ****
+ttdiff = tpdiff AND BJTDMY 
+nbase_a = nxwell AND BJTDMY 
+nbase = nbase_a NOT OD2  //  define 1.8V BJT[PV] base terminal
+emit = ttdiff AND nbase  //  define 1.8V BJT[PV] emitter
+
+//***** Define connectivity/via layer -- coll:1 ****
+collsur = psub TOUCH nbase_a 
+coll = collsur OR nbase_a  //  define BJT[PV] collector
+coll:1 = STAMP coll BY psub  //  link psub & collector
+
+//***** Define connectivity/via layer -- base:1 ****
+base:1 = STAMP nbase BY tndiff  //  link ndiff & base terminal
+
+//***** Define connectivity/via layer -- emit:1 ****
+emit:1 = STAMP emit BY tpdiff  //  link pdiff & emitter
+
+//***** Define connectivity/via layer -- emit_3 ****
+nbase_3 = nbase_a AND OD2  //  define 3.3V BJT[PV] base terminal
+emit_3 = ttdiff AND nbase_3  //  define 3.3V BJT[PV] emitter
+
+//***** Define connectivity/via layer -- base_3:1 ****
+base_3:1 = STAMP nbase_3 BY tndiff  //  link ndiff & base terminal
+
+//***** Define connectivity/via layer -- emit_3:1 ****
+emit_3:1 = STAMP emit_3 BY tpdiff  //  link pdiff & emitter
+
+//* Define device -- r M1
+M1X = M1 OR DUM1 
+M1Y = M1X NOT M1SLOT 
+mt1res = M1Y AND RMDMY  //  metal1 resistor
+
+//***** Define connectivity/via layer -- metal1 ****
+metal1 = M1Y NOT mt1res  //  metal1 interconnect
+
+//* Define device -- r M2
+M2X = M2 OR DUM2 
+M2Y = M2X NOT M2SLOT 
+mt2res = M2Y AND RMDMY  //  metal2 resistor
+
+//***** Define connectivity/via layer -- metal2 ****
+metal2 = M2Y NOT mt2res  //  metal2 interconnect
+
+//* Define device -- r M3
+M3X = M3 OR DUM3 
+M3Y = M3X NOT M3SLOT 
+mt3res = M3Y AND RMDMY  //  metal3 resistor
+
+//***** Define connectivity/via layer -- metal3 ****
+metal3 = M3Y NOT mt3res  //  metal3 interconnect
+
+//* Define device -- r M4
+M4X = M4 OR DUM4 
+M4Y = M4X NOT M4SLOT 
+mt4res = M4Y AND RMDMY  //  metal4 resistor
+
+//***** Define connectivity/via layer -- metal4 ****
+metal4 = M4Y NOT mt4res  //  metal4 interconnect
+
+//* Define device -- r M5
+M5X = M5 OR DUM5 
+M5Y = M5X NOT M5SLOT 
+mt5res = M5Y AND RMDMY  //  metal5 resistor
+
+//***** Define connectivity/via layer -- metal5 ****
+metal5 = M5Y NOT mt5res  //  metal5 interconnect
+
+//* Define device -- r M6
+M6X = M6 OR DUM6 
+M6Y = M6X NOT M6SLOT 
+mt6res = M6Y AND RMDMY  //  metal6 resistor
+
+//***** Define connectivity/via layer -- metal6 ****
+metal6 = M6Y NOT mt6res  //  metal6 interconnect
+
+//* Define device -- r WR
+trwell = RWDMY AND NWELL  //  N-well resistor layer
+drpo = diff AND RPO 
+nwsti = trwell NOT drpo  //  RWDMY*NWELL-RPO-diff --> nwsti
+
+//* Define device -- r WO
+nwod = trwell AND drpo  //  RWDMY*NWELL*RPO*diff --> nwod
+
+//* Define device -- r PR
+rpopp = rpop INTERACT DMP2V  //  for p+
+prpop = rpopp AND PIMP  //  p+po resistor w/o silicide
+
+//* Define device -- r NR
+rpopn = rpop INTERACT DMN2V  //  for n+
+nrpop = rpopn AND NIMP  //  n+po resistor w/o silicide
+
+//* Define device -- r PS
+prpip = rpip AND PIMP  //  p+po resistor w/i silicide
+
+//* Define device -- r NS
+nrpip = rpip AND NIMP  //  n+po resistor w/i silicide
+
+//* Define device -- r PD
+prdop1 = rdop AND PIMP  //  P+OD resistor w/o silicide
+prdop = prdop1 AND NWELL
+
+//* Define device -- r ND
+nrdop1 = rdop AND NIMP  //  N+OD resistor w/o silicide
+nrdop = nrdop1 NOT NWELL
+
+//* Define device -- r PI
+prdip1 = rdip AND PIMP  //  P+OD resistor w/i silicide
+prdip = prdip1 AND NWELL 
+
+//* Define device -- r NI
+nrdip1 = rdip AND NIMP  //  N+OD resistor w/i silicide
+nrdip = nrdip1 NOT NWELL
+
+//* Define device -- c PC
+tcappl = POLY1 AND POLY2 
+cappl = tcappl INTERACT CONT  //  POLY1*POLY2 --> cappl
+
+//***** Define connectivity/via layer -- c2poly ****
+rp2 = rp1 NOT INTERACT POLY1 
+p2rdum = rp2 INTERACT POLY2  //  poly2 resistor dummy
+resp2 = POLY2 AND p2rdum  //  poly2 resistor
+c2poly = POLY2 NOT resp2  //  poly2 interconnect
+
+//* Define ERC or other layers
+xwell = NWELL OUTSIDE RWDMY 
+ntapx = tndiff AND xwell 
+ntap = ntapx NOT BJTDMY 
+
+//***** Define connectivity/via layer -- podcon ****
+tiod1 = diff NOT POLY1 
+tiod2 = tiod1 NOT RPO 
+tiod3 = tiod2 NOT RPDMY 
+tiod = tiod3 NOT RWDMY  //  RPO, RPDMY, RWDMY cut ti-od
+podcon = tiod AND PIMP 
+
+//***** Define connectivity/via layer -- pl2co ****
+pl2co = POLY2 AND CONT  //  define POLY2 contact
+
+//***** Define connectivity/via layer -- nplug ****
+nplug = tndiff AND nxwell  //  define N_well contact
+
+//***** Define connectivity/via layer -- pplug ****
+pplug = tpdiff AND psub  //  define p_sub contact
+ptap = tpdiff AND psub 
+
+//***** Define connectivity/via layer -- nodcon ****
+nodcon = tiod AND NIMP 
+
+//***** Define connectivity/via layer -- pl1co ****
+pl1co = CONT NOT pl2co  //  define OD/POLY1 contact
+
+M6CAP6 = MCAPDUM AND metal6 
+M5CDUM = MCAPDUM NOT INTERACT metal6
+M5CAP5 = M5CDUM AND metal5
+M4CDUM = M5CDUM NOT INTERACT metal5
+M4CAP4 = M4CDUM AND metal4
+M3CDUM = M4CDUM NOT INTERACT metal4
+M3CAP3 = M3CDUM AND metal3
+
+M6CAP5 = M6CAP6 AND metal5
+M6CAP4 = M6CAP5 AND metal4
+M6CAP3 = M6CAP4 AND metal3
+M6CAP2 = M6CAP3 AND metal2
+M6CAP  = M6CAP2 AND metal1
+
+M5CAP4 = M5CAP5 AND metal4
+M5CAP3 = M5CAP4 AND metal3
+M5CAP2 = M5CAP3 AND metal2
+M5CAP  = M5CAP2 AND metal1
+//!!M5CAP = M5CAP1 AND poly
+M4CAP3 = M4CAP4 AND metal3
+M4CAP2 = M4CAP3 AND metal2
+M4CAP  = M4CAP2 AND metal1
+//!!M4CAP = M4CAP1 AND poly
+M3CAP2 = M3CAP3 AND metal2
+M3CAP  = M3CAP2 AND metal1
+//!!M3CAP = M3CAP1 AND poly
+
+// ;M1
+L1CGAP1 = LMCDUM NOT metal1
+L1CGAP = L1CGAP1 TOUCH metal1 == 2
+L1CAP = SIZE L1CGAP BY 0.11
+C1M1 = CAPP1 AND metal1
+C2M1 = CAPP2 AND metal1
+CAPM21 = CTM2 AND metal2      
+CAPM2 = CAPM21 INTERACT VIA2  
+TV2 = VIA2 AND CTM2
+V2S = VIA2 NOT TV2
+CAPM31 = CTM3 AND metal3      
+CAPM3 = CAPM31 INTERACT VIA3  
+TV3 = VIA3 AND CTM3
+V3S = VIA3 NOT TV3
+CAPM41 = CTM4 AND metal4      //  
+CAPM4 = CAPM41 INTERACT VIA4  //  
+TV4 = VIA4 AND CTM4
+V4S = VIA4 NOT TV4
+CAPM51 = CTM5 AND metal5      //  
+CAPM5 = CAPM51 INTERACT VIA5  //  
+TV5 = VIA5 AND CTM5
+V5S = VIA5 NOT TV5
+
+//#############################################
+//# CONNECTION                                #
+//#############################################
+CONNECT tiod tndiff BY nodcon
+CONNECT tiod tpdiff BY podcon
+CONNECT metal1 c2poly BY pl2co
+CONNECT metal1 tndiff BY pl1co
+CONNECT metal1 poly BY pl1co
+CONNECT metal1 tpdiff BY pl1co
+CONNECT metal2 metal1 BY VIA1
+//CONNECT metal3 metal2 BY VIA2
+//CONNECT metal4 metal3 BY VIA3
+//CONNECT metal5 metal4 BY VIA4
+//CONNECT metal6 metal5 BY VIA5
+CONNECT metal6 metal5 BY V5S
+CONNECT metal6 CTM5   BY TV5
+CONNECT metal5 metal4 BY V4S
+CONNECT metal5 CTM4   BY TV4
+CONNECT metal4 metal3 BY V3S
+CONNECT metal4 CTM3   BY TV3
+CONNECT metal3 metal2 BY V2S
+CONNECT metal3 CTM2   BY TV2
+SCONNECT tndiff nxwell BY nplug
+SCONNECT tpdiff psub BY pplug
+C1M1:1 = STAMP C1M1 BY metal1
+C2M1:1 = STAMP C2M1 BY metal1
+//#############################################
+//# FORM DEVICE                               #
+//#############################################
+
+#IFDEF extract_ad_as
+DEVICE MN(ND) bngate poly(G) bndiff(S) bndiff(D) psub(B) <nthin>[
+  property W,L,AS,AD
+   W=(perimeter_coincide(bngate, bndiff ) + perimeter_inside(bngate, bndiff)) / 2
+   L=area(bngate) / W
+  AS = area(S) * W /perimeter_inside(S,nthin)
+  AD = area(D) * W /perimeter_inside(D,nthin)
+]
+DEVICE MN(NL) nlgate poly(G) nldiff(S) nldiff(D) psub(B) <nthin>[
+  property W,L,AS,AD
+   W=(perimeter_coincide(nlgate, nldiff ) + perimeter_inside(nlgate, nldiff)) / 2
+   L=area(nlgate) / W
+  AS = area(S) * W /perimeter_inside(S,nthin)
+  AD = area(D) * W /perimeter_inside(D,nthin)
+]
+DEVICE M(C1) vargt poly(G) varod(S) varod(D) nxwell(B) <nthin>[
+  property W,L,AS,AD
+   W=(perimeter_coincide(vargt, varod ) + perimeter_inside(vargt, varod)) / 2
+   L=area(vargt) / W
+  AS = area(S) * W /perimeter_inside(S,nthin)
+  AD = area(D) * W /perimeter_inside(D,nthin)
+]
+DEVICE MN(NN) bnngate poly(G) bnndiff(S) bnndiff(D) psub(B) <nthin>[
+  property W,L,AS,AD
+   W=(perimeter_coincide(bnngate, bnndiff ) + perimeter_inside(bnngate, bnndiff)) / 2
+   L=area(bnngate) / W
+  AS = area(S) * W /perimeter_inside(S,nthin)
+  AD = area(D) * W /perimeter_inside(D,nthin)
+]
+DEVICE M(C2) bvargt poly(G) bvarod(S) bvarod(D) nxwell(B) <nthin>[
+  property W,L,AS,AD
+   W=(perimeter_coincide(bvargt, bvarod ) + perimeter_inside(bvargt, bvarod)) / 2
+   L=area(bvargt) / W
+  AS = area(S) * W /perimeter_inside(S,nthin)
+  AD = area(D) * W /perimeter_inside(D,nthin)
+]
+DEVICE MN(nmos1v) ngate poly(G) ndiff(S) ndiff(D) psub(B) <nthin>[
+  property W,L,AS,AD
+   W=(perimeter_coincide(ngate, ndiff ) + perimeter_inside(ngate, ndiff)) / 2
+   L=area(ngate) / W
+  AS = area(S) * W /perimeter_inside(S,nthin)
+  AD = area(D) * W /perimeter_inside(D,nthin)
+]
+DEVICE MP(pmos1v) pgate poly(G) pdiff(S) pdiff(D) nxwell(B) <pthin>[
+  property W,L,AS,AD
+   W=(perimeter_coincide(pgate, pdiff ) + perimeter_inside(pgate, pdiff)) / 2 
+   L=area(pgate) / W
+  AS = area(S) * W /perimeter_inside(S,pthin)
+  AD = area(D) * W /perimeter_inside(D,pthin)
+]
+DEVICE MP(PD) bpgate poly(G) bpdiff(S) bpdiff(D) nxwell(B) <pthin>[
+  property W,L,AS,AD
+   W=(perimeter_coincide(bpgate, bpdiff ) + perimeter_inside(bpgate, bpdiff)) / 2 
+   L=area(bpgate) / W
+  AS = area(S) * W /perimeter_inside(S,pthin)
+  AD = area(D) * W /perimeter_inside(D,pthin)
+]
+
+DEVICE M(C4) c4gate poly (G) tndiff (S) tndiff (D) nxwell (B) [
+  property W, L
+  weffect = 0  // Replace with effective width factor if desired (eg. 0.5).
+  W = 0.5 * ( perim_co(S, c4gate) + perim_in(S, c4gate) + perim_co(D, c4gate) + perim_in(D, c4gate) )
+  L = area(c4gate) / W
+  if ( weffect != 0 ) {
+    if ( bends(c4gate) != 0 ) {
+      if ( W > L )
+        W = W - weffect * bends(c4gate) * L
+      else
+        L = L - weffect * bends(c4gate) * W
+    }
+  }
+]
+TRACE PROPERTY M(C4) L L 5
+TRACE PROPERTY M(C4) W W 5
+DEVICE M(C3) c3gate poly (G) tndiff (S) tndiff (D) nxwell (B) [
+  property W, L
+  weffect = 0  // Replace with effective width factor if desired (eg. 0.5).
+  W = 0.5 * ( perim_co(S, c3gate) + perim_in(S, c3gate) + perim_co(D, c3gate) + perim_in(D, c3gate) )
+  L = area(c3gate) / W
+  if ( weffect != 0 ) {
+    if ( bends(c3gate) != 0 ) {
+      if ( W > L )
+        W = W - weffect * bends(c3gate) * L
+      else
+        L = L - weffect * bends(c3gate) * W
+    }
+  }
+]
+
+#ELSE
+DEVICE MN(ND) bngate poly(G) bndiff(S) bndiff(D) psub(B) [
+   property W,L
+   W=(perimeter_coincide(bngate, bndiff ) + perimeter_inside(bngate, bndiff)) / 2 
+   L=area(bngate) / W
+]
+DEVICE MN(NL) nlgate poly(G) nldiff(S) nldiff(D) psub(B) [
+   property W,L
+   W=(perimeter_coincide(nlgate, nldiff ) + perimeter_inside(nlgate, nldiff)) / 2 
+   L=area(nlgate) / W
+]
+DEVICE M(C1) vargt poly(G) varod(S) varod(D) nxwell(B) [
+   property W,L
+   W=(perimeter_coincide(vargt, varod ) + perimeter_inside(vargt, varod)) / 2 
+   L=area(vargt) / W
+]
+DEVICE MN(NN) bnngate poly(G) bnndiff(S) bnndiff(D) psub(B) [
+   property W,L
+   W=(perimeter_coincide(bnngate, bnndiff ) + perimeter_inside(bnngate, bnndiff)) / 2 
+   L=area(bnngate) / W
+]
+DEVICE M(C2) bvargt poly(G) bvarod(S) bvarod(D) nxwell(B) [
+   property W,L
+   W=(perimeter_coincide(bvargt, bvarod ) + perimeter_inside(bvargt, bvarod)) / 2 
+   L=area(bvargt) / W
+]
+DEVICE MN(nmos1v) ngate poly(G) ndiff(S) ndiff(D) psub(B) [
+   property W,L
+   W=(perimeter_coincide(ngate, ndiff ) + perimeter_inside(ngate, ndiff)) / 2 
+   L=area(ngate) / W
+]
+DEVICE MP(pmos1v) pgate poly(G) pdiff(S) pdiff(D) nxwell(B) [
+   property W,L
+   W=(perimeter_coincide(pgate, pdiff ) + perimeter_inside(pgate, pdiff)) / 2 
+   L=area(pgate) / W
+]
+DEVICE MP(PD) bpgate poly(G) bpdiff(S) bpdiff(D) nxwell(B) [
+   property W,L
+   W=(perimeter_coincide(bpgate, bpdiff ) + perimeter_inside(bpgate, bpdiff)) / 2 
+   L=area(bpgate) / W
+]
+
+DEVICE M(C4) c4gate poly (G) tndiff (S) tndiff (D) nxwell (B) [
+  property W, L
+  weffect = 0  // Replace with effective width factor if desired (eg. 0.5).
+  W = 0.5 * ( perim_co(S, c4gate) + perim_in(S, c4gate) + perim_co(D, c4gate) + perim_in(D, c4gate) )
+  L = area(c4gate) / W
+  if ( weffect != 0 ) {
+    if ( bends(c4gate) != 0 ) {
+      if ( W > L )
+        W = W - weffect * bends(c4gate) * L
+      else
+        L = L - weffect * bends(c4gate) * W
+    }
+  }
+]
+DEVICE M(C3) c3gate poly (G) tndiff (S) tndiff (D) nxwell (B) [
+  property W, L
+  weffect = 0  // Replace with effective width factor if desired (eg. 0.5).
+  W = 0.5 * ( perim_co(S, c3gate) + perim_in(S, c3gate) + perim_co(D, c3gate) + perim_in(D, c3gate) )
+  L = area(c3gate) / W
+  if ( weffect != 0 ) {
+    if ( bends(c3gate) != 0 ) {
+      if ( W > L )
+        W = W - weffect * bends(c3gate) * L
+      else
+        L = L - weffect * bends(c3gate) * W
+    }
+  }
+]
+
+#ENDIF
+
+DEVICE C(S6) M6CAP metal6 metal5 [198.39E-18 0]  // 
+DEVICE C(S5) M5CAP metal5 metal4 [158.57E-18 0]
+DEVICE C(S4) M4CAP metal4 metal3 [118.93E-18 0]
+DEVICE C(S3) M3CAP metal3 metal2 [ 79.29E-18 0]
+DEVICE C(L1) L1CAP C1M1:1 C2M1:1 [1.68e-16 0]
+TRACE PROPERTY C(L1) C C 20
+TRACE PROPERTY M(C3) L L 5
+TRACE PROPERTY M(C3) W W 5
+TRACE PROPERTY M(C4) L L 5
+TRACE PROPERTY M(C4) W W 5
+
+TRACE PROPERTY C(S6) C C 20
+TRACE PROPERTY C(S5) C C 20
+TRACE PROPERTY C(S4) C C 20
+TRACE PROPERTY C(S3) C C 20
+TRACE PROPERTY MN(ND) L L 5
+TRACE PROPERTY MN(ND) W W 5
+TRACE PROPERTY MN(NL) L L 5
+TRACE PROPERTY MN(NL) W W 5
+TRACE PROPERTY M(C1) L L 5
+TRACE PROPERTY M(C1) W W 5
+TRACE PROPERTY MN(NN) L L 5
+TRACE PROPERTY MN(NN) W W 5
+TRACE PROPERTY M(C2) L L 5
+TRACE PROPERTY M(C2) W W 5
+TRACE PROPERTY MN(nmos1v) L L 5
+TRACE PROPERTY MN(nmos1v) W W 5
+TRACE PROPERTY MP(pmos1v) L L 5
+TRACE PROPERTY MP(pmos1v) W W 5
+TRACE PROPERTY MP(PD) L L 5
+TRACE PROPERTY MP(PD) W W 5
+DEVICE Q(P1) emit_3 coll:1 base_3:1 emit_3:1 [
+		property A,W,L
+		A = area(emit_3:1)
+		W = perimeter_inside(emit_3:1 , base_3:1)
+		L = A / W 
+]
+//  TRACE PROPERTY Q(P1) A A 2 //  
+//  TRACE PROPERTY Q(P1) W W 2//  
+//  TRACE PROPERTY Q(P1) L L 2//  
+DEVICE Q(PV) emit coll:1 base:1 emit:1 [
+		property A,W,L
+		A = area(emit:1)
+		W = perimeter_inside(emit:1 , base:1)
+		L = A / W 
+]
+//  TRACE PROPERTY Q(PV) A A 2 //  
+//  TRACE PROPERTY Q(PV) W W 2//  
+//  TRACE PROPERTY Q(PV) L L 2//  
+DEVICE D(DN) ndio psub tndiff
+//  TRACE PROPERTY D(DN) A A 2 //  
+DEVICE D(DW) nwdio psub nxwell
+//  TRACE PROPERTY D(DW) A A 2 //  
+DEVICE D(DP) pdio tpdiff nxwell
+//  TRACE PROPERTY D(DP) A A 2 //  
+DEVICE D(D1) pdio_3 tpdiff nxwell
+//  TRACE PROPERTY D(D1) A A 2 //  
+DEVICE D(DB) ydio psub tndiff
+//  TRACE PROPERTY D(DB) A A 2 //  
+DEVICE D(D2) ndio_3 psub tndiff
+//  TRACE PROPERTY D(D2) A A 2 //  
+DEVICE D(D3) nwdio_3 psub nxwell
+//  TRACE PROPERTY D(D3) A A 2 //  
+//DEVICE R(NR) nrpop poly poly [292]
+DEVICE R(NR) nrpop poly poly
+[ PROPERTY  R,L,W
+  W=perimeter_coincide(nrpop,poly)/2
+  L= AREA(nrpop)/W
+//  R=2*7.8+2*14.77E-6/W+2*37.16+292*L/W
+R=2*3.2586E-5/(W-0.091373E-6)+292*(L+0.04225E-6)/(W-0.091373E-6)
+]
+TRACE PROPERTY R(NR) R R 20
+
+//DEVICE R(M3) mt3res metal3 metal3 [0.078]
+DEVICE R(M3) mt3res metal3 metal3
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(mt3res,metal3)/2
+  L = AREA(mt3res)/W
+  R = 0.078*(L-0)/(W-0.03E-6)
+]
+TRACE PROPERTY R(M3) R R 20
+
+//DEVICE R(NS) nrpip poly poly [7.89]  //  
+DEVICE R(NS) nrpip poly poly
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(nrpip,poly)/2
+  L = AREA(nrpip)/W
+  R = 7.89*(L-0)/(W+0.057E-6)
+]
+TRACE PROPERTY R(NS) R R 20
+
+//DEVICE R(M4) mt4res metal4 metal4 [0.078]
+DEVICE R(M4) mt4res metal4 metal4
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(mt4res,metal4)/2
+  L = AREA(mt4res)/W
+  R = 0.078*(L-0)/(W-0.03E-6)
+]
+TRACE PROPERTY R(M4) R R 20
+
+//DEVICE R(PR) prpop poly poly [311]
+DEVICE R(PR) prpop poly poly
+[ PROPERTY  R,L,W
+  W=perimeter_coincide(prpop,poly)/2
+  L= AREA(prpop)/W
+//  R=2*7.8+2*67.52E-6/W+2*39.41+311*L/W
+R=2*7.2135E-5/(W-0.06165E-6)+311*(L-0.0006E-6)/(W-0.06165E-6)
+]
+TRACE PROPERTY R(PR) R R 20
+
+//DEVICE R(M5) mt5res metal5 metal5 [0.078]
+DEVICE R(M5) mt5res metal5 metal5
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(mt5res,metal5)/2
+  L = AREA(mt5res)/W
+  R = 0.078*(L-0)/(W-0.03E-6)
+]
+TRACE PROPERTY R(M5) R R 20
+
+//DEVICE R(PS) prpip poly poly [7.9]  
+DEVICE R(PS) prpip poly poly
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(prpip,poly)/2
+  L = AREA(prpip)/W
+  R = 7.9*(L-0)/(W+0.025E-6)
+]
+TRACE PROPERTY R(PS) R R 20
+
+//DEVICE R(M6) mt6res metal6 metal6 [0.036]
+DEVICE R(M6) mt6res metal6 metal6
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(mt6res,metal6)/2
+  L = AREA(mt6res)/W
+  R = 0.036*(L-0)/(W-0.04E-6)
+]
+TRACE PROPERTY R(M6) R R 20
+
+//DEVICE R(WO) nwod nxwell nxwell [440]
+DEVICE R(WO) nwod nxwell nxwell
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(nwod,nxwell)/2
+  L = AREA(nwod)/W
+  R = 440*(L-0)/(W-0.141E-6)
+]
+TRACE PROPERTY R(WO) R R 20
+
+//DEVICE R(WR) nwsti nxwell nxwell [927]
+DEVICE R(WR) nwsti nxwell nxwell
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(nwsti,nxwell)/2
+  L = AREA(nwsti)/W
+  R = 927*(L-0)/(W-0.182E-6)
+]
+TRACE PROPERTY R(WR) R R 20
+
+//DEVICE R(ND) nrdop tndiff tndiff [59]
+DEVICE R(ND) nrdop tndiff tndiff
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(nrdop,tndiff)/2
+  L = AREA(nrdop)/W
+  R = 59*(L-0)/(W-0)
+]
+TRACE PROPERTY R(ND) R R 20
+
+//DEVICE R(PD) prdop tpdiff tpdiff [133]
+DEVICE R(PD) prdop tpdiff tpdiff
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(prdop,tpdiff)/2
+  L = AREA(prdop)/W
+  R = 133*(L-0)/(W-0)
+]
+TRACE PROPERTY R(PD) R R 20
+
+//DEVICE R(NI) nrdip tndiff tndiff [6.82]  
+DEVICE R(NI) nrdip tndiff tndiff
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(nrdip,tndiff)/2
+  L = AREA(nrdip)/W
+  R = 6.82*(L-0)/(W+0.0765E-6)
+]
+TRACE PROPERTY R(NI) R R 20
+
+//DEVICE R(PI) prdip tpdiff tpdiff [7.76]  
+DEVICE R(PI) prdip tpdiff tpdiff
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(prdip,tpdiff)/2
+  L = AREA(prdip)/W
+  R = 7.76*(L-0)/(W+0.08E-6)
+]
+TRACE PROPERTY R(PI) R R 20
+
+//DEVICE R(M1) mt1res metal1 metal1 [0.078]
+DEVICE R(M1) mt1res metal1 metal1
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(mt1res,metal1)/2
+  L = AREA(mt1res)/W
+  R = 0.078*(L-0)/(W-0.03E-6)
+]
+TRACE PROPERTY R(M1) R R 20
+
+//DEVICE R(M2) mt2res metal2 metal2 [0.078]
+DEVICE R(M2) mt2res metal2 metal2
+[ PROPERTY  R,L,W
+  W = perimeter_coincide(mt2res,metal2)/2
+  L = AREA(mt2res)/W
+  R = 0.078*(L-0)/(W-0.03E-6)
+]
+TRACE PROPERTY R(M2) R R 20
+
+DEVICE C(PC) cappl poly c2poly [0 0]
+TRACE PROPERTY C(PC) C C 20
+DEVICE C(M2) capm2 ctm2 metal2 [1.025e-15 2.425e-16]
+TRACE PROPERTY C(M2) C C 20
+DEVICE C(M3) capm3 ctm3 metal3 [1.025e-15 2.425e-16]
+TRACE PROPERTY C(M3) C C 20
+DEVICE C(M4) capm4 ctm4 metal4 [1.025e-15 2.425e-16]
+TRACE PROPERTY C(M4) C C 20
+DEVICE C(M5) capm5 ctm5 metal5 [1.025e-15 2.425e-16]
+TRACE PROPERTY C(M5) C C 20
+
+LAYER FCAPDUM 211
+
+CMET1 = METAL1 INTERACT (CONT OR VIA1)
+CMET2 = METAL2 INTERACT (VIA2 OR VIA1)
+CMET3 = METAL3 INTERACT (VIA3 OR VIA2)
+CMET4 = METAL4 INTERACT (VIA4 OR VIA3)
+CMET5 = METAL5 INTERACT (VIA5 OR VIA4)
+CMET6 = METAL6 INTERACT VIA5
+
+VARIABLE M1SP 0.23
+VARIABLE M2SP 0.28
+VARIABLE M3SP 0.46
+VARIABLE M4SP 0.46
+VARIABLE M5SP 0.46
+VARIABLE M6SP 0.46
+
+FC6 =(((CMET6 INTERACT FCAPDUM ) SIZE BY M6SP OVERUNDER) AND FCAPDUM) SIZE BY M6SP UNDEROVER
+FC5 =(((CMET5 INTERACT FCAPDUM ) SIZE BY M5SP OVERUNDER) AND FCAPDUM) SIZE BY M5SP UNDEROVER
+FC4 =(((CMET4 INTERACT FCAPDUM ) SIZE BY M4SP OVERUNDER) AND FCAPDUM) SIZE BY M4SP UNDEROVER
+FC3 =(((CMET3 INTERACT FCAPDUM ) SIZE BY M3SP OVERUNDER) AND FCAPDUM) SIZE BY M3SP UNDEROVER
+FC2 =(((CMET2 INTERACT FCAPDUM ) SIZE BY M2SP OVERUNDER) AND FCAPDUM) SIZE BY M2SP UNDEROVER
+FC1 =(((CMET1 INTERACT FCAPDUM ) SIZE BY M1SP OVERUNDER) AND FCAPDUM) SIZE BY M1SP UNDEROVER
+//#DEFINE ALONG
+#IFDEF ALONG
+DEVICE C(SC1) FC1 METAL1 METAL1 [1 1] // CAPASITOR ONLY REFERENCE
+DEVICE C(SC2) FC2 METAL2 METAL2 [1 1] // CAPASITOR ONLY REFERENCE
+DEVICE C(SC3) FC3 METAL3 METAL3 [1 1] // CAPASITOR ONLY REFERENCE
+DEVICE C(SC4) FC4 METAL4 METAL4 [1 1] // CAPASITOR ONLY REFERENCE
+DEVICE C(SC5) FC5 METAL5 METAL5 [1 1] // CAPASITOR ONLY REFERENCE
+DEVICE C(SC6) FC6 METAL6 METAL6 [1 1] // CAPASITOR ONLY REFERENCE
+DEVICE C(SC7) FC7 METAL7 METAL7 [1 1] // CAPASITOR ONLY REFERENCE
+TRACE PROPERTY C(SC1) C C 20
+TRACE PROPERTY C(SC2) C C 20
+TRACE PROPERTY C(SC3) C C 20
+TRACE PROPERTY C(SC4) C C 20
+TRACE PROPERTY C(SC5) C C 20
+TRACE PROPERTY C(SC6) C C 20
+#ELSE
+DEVICE C(FC) FC1 METAL1 METAL1 [3.96E-16 2.84E-16] // CAPASITOR ONLY REFERENCE PLEASE FOLLOW START-RC!
+DEVICE C(FC) FC2 METAL2 METAL2 [3.96E-16 2.84E-16] // CAPASITOR ONLY REFERENCE PLEASE FOLLOW START-RC!
+DEVICE C(FC) FC3 METAL3 METAL3 [3.96E-16 2.83E-16] // CAPASITOR ONLY REFERENCE PLEASE FOLLOW START-RC!
+DEVICE C(FC) FC4 METAL4 METAL4 [3.96E-16 2.79E-16] // CAPASITOR ONLY REFERENCE PLEASE FOLLOW START-RC!
+DEVICE C(FC) FC5 METAL5 METAL5 [3.96E-16 2.76E-16] // CAPASITOR ONLY REFERENCE PLEASE FOLLOW START-RC!
+DEVICE C(FC) FC6 METAL6 METAL6 [3.41E-16 1.90E-16] // CAPASITOR ONLY REFERENCE PLEASE FOLLOW START-RC!
+TRACE PROPERTY C(FC) C C 20
+#ENDIF
+//#############################################
+//# ERC CHECK                                 #
+//#############################################
+
+VARIABLE ERC_POWER_NAME "?VDD?" "?VCC?" 
+VARIABLE ERC_GROUND_NAME "?VSS?" "?GND?"
+
+// Reports regions on a nxwell layer that connect to more than one node.
+LVS SOFTCHK nxwell CONTACT
+// Reports regions on a psub layer that connect to more than one node.
+LVS SOFTCHK psub CONTACT
+
+// Nodes with a path to power but not ground 
+//ERC PATHCHK !ERC_GROUND_NAME & !ERC_POWER_NAME //   ConMark ("ENABLE" eq "DISABLE")
+
+// Nodes with a path to ground but not power 
+//ERC PATHCHK !ERC_POWER_NAME && !ERC_GROUND_NAME //   ConMark ("ENABLE" eq "DISABLE")
+
+// Nodes without a path to power and ground 
+//ERC PATHCHK !ERC_POWER_NAME && !ERC_GROUND_NAME  // DISABLE //   ConMark ("ENABLE" eq "DISABLE")
+ERC PATHCHK !LABELED // DISABLE //   ConMark ("ENABLE" eq "DISABLE")
+
+
+ // ptap connect to power 
+ppvdd49 { @ ptap connected to POWER
+	NET ptap ERC_POWER_NAME 
+}
+
+ // MOS N S/D connect to POWER&GROUND --mnpg*/
+N1ndiff = NET ndiff ERC_POWER_NAME
+T1ndiff = ngate  TOUCH N1ndiff
+N2ndiff = NET ndiff ERC_GROUND_NAME 
+T2ndiff = ngate  TOUCH N2ndiff
+mnpg { @ MOS connected to both power and ground
+ T1ndiff AND T2ndiff
+}
+
+ // MOS P S/D connect to POWER&GROUND --mppg*/
+N1pdiff = NET pdiff ERC_POWER_NAME
+T1pdiff =  pgate TOUCH N1pdiff
+N2pdiff = NET pdiff ERC_GROUND_NAME
+T2pdiff =  pgate TOUCH N2pdiff
+mppg { @ MOS connected to both power and ground
+ T1pdiff AND T2pdiff
+}
+
+ // ntap connect to ground 
+npvss49 { @ ntap connected to GROUND
+	NET ntap ERC_GROUND_NAME
+}
+
+NETVDD = metal1 NET ERC_POWER_NAME
+MOSRCO = DUMGATE AND CONT
+MOSRCOG = MOSRCO AND NETVDD
+MOSRE149 {
+  DUMGATE NOT INTERACT MOSRCOG
+}
+//NWSZ249 {
+//  EXT nxwell < 1.4 NOT CONNECTED ABUT>0<90 SINGULAR
+// ;
+// ; Detect incorrectly connected or floating wells
+PWPWR49 {  NET psub        ERC_POWER_NAME  }
+NWGND49 {  NET nxwell      ERC_GROUND_NAME }
+PWNGND49 {  NOT NET psub   ERC_GROUND_NAME }
+NWNPWR49 {  NOT NET nxwell ERC_POWER_NAME  }
+RNWEL    = NWELL INTERACT RWDMY
+HOT_NWEL = (NXWELL NOT NET ERC_POWER_NAME) OR RNWEL // DEFINE HOT NWELL
+GROUP NWCHECK NW?
+NW.W.1 { @ Minimum NWEL width < 0.86
+  INT NWELL < 0.86 ABUT < 90 SINGULAR REGION
+}
+NW.W.2 { @ Minimum HOT_NWEL width < 2.10
+  INT HOT_NWEL < 2.10 ABUT < 90 SINGULAR REGION
+}
+NW.S.1 { @ Minimum different potential NWEL space < 1.40
+  EXT NXWELL < 1.40 SINGULAR REGION ABUT < 90 NOT CONNECTED
+  EXT RNWEL NWELL < 1.40 SINGULAR REGION ABUT < 90
+  EXT RNWEL < 1.40 SINGULAR REGION ABUT < 90
+}
+NW.S.2 { @ Minimum same potential NWEL space < 0.6
+  EXT NWELL < 0.60 REGION ABUT < 90 SINGULAR
+}
+//#########################################################################
+//		END
+//#########################################################################

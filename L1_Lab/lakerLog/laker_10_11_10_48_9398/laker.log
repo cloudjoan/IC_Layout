@@ -1,0 +1,98 @@
+Command Line: /data1/synopsys/laker/laker_v2023.06-2.aut/platform/LINUX64/bin/laker
+uname(Linux leon 3.10.0-1160.105.1.el7.x86_64 #1 SMP Mon Nov 6 06:58:51 EST 2023 x86_64)
+source /data1/synopsys/laker/laker_v2023.06-2.aut/gift/gift.tcl
+Transferring GDSII(/home/user/wrk/L1_Lab/CPU.db) to library(gds) ...
+	Please wait a moment...
+lakerImportStream -file /home/user/wrk/L1_Lab/CPU.db -tech /home/user/wrk/L1_Lab/laker_demo.tf -path /home/user/wrk/L1_Lab -lib gds -CorrectNon90Inst 1 -IoLayerMapMode Map -sumExtraLayer 1 -case Preserve -label Preserve -maxVerti 1024 -instProp 102 -netProp 102 -keepPCell 0 -layerMap /home/user/wrk/L1_Lab/layer.map
+Import-Stream Job completed.
+There are 58 cells that have extra layers.
+Total #Fatal = 0, #Warn = 409
+For more information, please check (gdsIn.log) and (gdsIn.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+lakerOpenDesign -lib PAD -cell PAD -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerOpenDesign -lib cpu -cell INV2 -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerSetActiveLayer -layerName PDIF -purpose drawing
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSetActiveLayer -layerName PDIF -purpose drawing
+lakerSetActiveLayer -layerName PDIF -purpose drawing
+lakerSetColPat -layerNo 11 -purpose drawing -layerName PDIF -outlineColor magenta -fillColor magenta -stipple dots2 -style solid -width 1 -streamNo 11 -dataTypeNo 0 -apply 1
+lakerSingleSel -point (-3.965,7.63) -traversedist 0.17
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSetActiveLayer -layerName PDIF -purpose drawing
+lakerSetActiveLayer -layerName PDIF -purpose drawing
+lakerSetActiveLayer -layerName PDIF -purpose drawing
+lakerSingleSel -point (-4.695,8.525) -traversedist 0.17
+lakerSingleSel -point (-8.46,6.135) -traversedist 0.17
+lakerCloseDesign
+wtAskUser: "The number of text lists 13  and the number of PAD layers 15 do not match. Continue?", answer:  "Yes"
+lakerPadWindow -padLayerName CB -textLayerName TEXT -height 5.0 -shrinkFactor 1.0 -textListFile /home/user/wrk/L1_Lab/in.pad -coordinateFile out.pad
+lakerSingleSel -point (113.543,39.943) -traversedist 1.62
+lakerCreateInstance -point (101.065,31.03) -cell AN2D1 -lib cpu -view layout
+lakerZoomInByArea -point (63.39,8.833) (138.418,44.155)
+lakerMaxViewLevel
+lakerZoomInByArea -point (85.955,23.947) (113.181,36.765)
+lakerZoomInByArea -point (94.74,28.159) (107.774,34.295)
+lakerZoomInByArea -point (97.567,29.457) (106.717,33.765)
+lakerZoomInByArea -point (98.5,30.725) (104.944,33.759)
+lakerCalibreDRC
+New connection accepted, fd = 18
+
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+Received from RVE: [ mgc_rve_export_layout "PAD" "GDSII" "/home/user/wrk/standard_113/drc/PAD.calibre.db" ]
+Transferring library (PAD) to GDSII (/home/user/wrk/standard_113/drc/PAD.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/L1_Lab/ -lib PAD -topCell {PAD} -case Preserve -label Preserve -maxVerti 1024 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 21
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+New connection accepted, fd = 21
+
+//  calinteractive license released.
+//  All licenses were released due to inactivity
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+//  calinteractive license acquired.
+//  Licenses were acquired after being released
+
+Calibre process exit.
+lakerSingleSel -point (99.364,32.083) -traversedist 0.036
+lakerNewCell -lib digitalADP -cell nand2
+lakerSetActiveLayer -layerName SoftBdry -purpose softBdry
+lakerZoomAll
+lakerZoomAll
+lakerZoomAll
+lakerCloseDesign
+lakerCloseDesign
+au time 22787.757468 334.494842 926.142009 delta 121085952 121085952 total 483946496 483946496

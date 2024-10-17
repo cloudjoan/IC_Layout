@@ -1,0 +1,581 @@
+Command Line: /data1/synopsys/laker/laker_v2023.06-2.aut/platform/LINUX64/bin/laker
+uname(Linux leon 3.10.0-1160.105.1.el7.x86_64 #1 SMP Mon Nov 6 06:58:51 EST 2023 x86_64)
+source /data1/synopsys/laker/laker_v2023.06-2.aut/gift/gift.tcl
+lakerNewCell -lib test -cell new_1005
+The color name 'ID_WHITE' of the 'DT' layer was not defined in default.dsp file.
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerCreateInstance -point (-0.425,-0.125) -cell INVX1 -lib test -view layout
+lakerMaxViewLevel
+lakerZoomAll
+lakerSetColPat -visall 0
+lakerSetColPat -selall 0
+lakerSingleSel -point (-1.575,2.075) -traversedist 0.04
+lakerRedraw
+lakerSetColPat -layerName NWELL -sel 1 -vis 1
+lakerSetActiveLayer -layerName NWELL -purpose drawing
+lakerSingleSel -point (-1.96,2.063) -traversedist 0.04
+lakerRedraw
+lakerSetColPat -layerName PIMP -sel 1 -vis 1
+lakerSetActiveLayer -layerName PIMP -purpose drawing
+lakerSingleSel -point (-1.129,1.662) -traversedist 0.04
+lakerRedraw
+lakerSetColPat -layerName DIFF -sel 1 -vis 1
+lakerSetActiveLayer -layerName DIFF -purpose drawing
+lakerSingleSel -point (-1.852,1.851) -traversedist 0.04
+lakerRedraw
+lakerSetColPat -layerName NIMP -sel 1 -vis 1
+lakerSetActiveLayer -layerName NIMP -purpose drawing
+lakerSingleSel -point (-2.418,1.429) -traversedist 0.04
+lakerRedraw
+lakerRedraw
+lakerSetActiveLayer -layerName NIMP -purpose drawing
+lakerSetActiveLayer -layerName NIMP -purpose drawing
+lakerSetColPat -layerName NIMP -vis 0
+lakerSingleSel -point (-2.756,1.413) -traversedist 0.04
+lakerRedraw
+lakerSetColPat -layerName NIMP -vis 1
+lakerSetColPat -layerName NIMP -vis 0
+lakerSetColPat -layerName NIMP -sel 1 -vis 1
+lakerSetActiveLayer -layerName NIMP -purpose drawing
+lakerSetColPat -layerName PIMP -vis 0
+lakerSetColPat -layerName PIMP -vis 1
+lakerSetColPat -layerName PIMP -vis 0
+lakerSetColPat -layerName PIMP -sel 1 -vis 1
+lakerSetColPat -layerName PIMP -sel 0
+lakerSetColPat -layerName PIMP -sel 1
+lakerSetColPat -layerName METAL1 -sel 1 -vis 1
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerRedraw
+lakerRedraw
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerSetColPat -layerName METAL1 -vis 0
+lakerRedraw
+lakerSetColPat -layerName METAL1 -vis 1
+lakerSetColPat -layerName METAL1 -sel 1 -vis 1
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerSingleSel -point (-1.655,1.132) -traversedist 0.04
+lakerRedraw
+lakerSetColPat -layerName METAL1 -vis 0
+lakerSingleSel -point (-2.515,1.132) -traversedist 0.04
+lakerRedraw
+lakerSetColPat -layerName METAL1 -vis 1
+lakerSetColPat -layerName METAL1 -sel 1 -vis 1
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerRedraw
+lakerSetColPat -layerName CONT -sel 1 -vis 1
+lakerSetActiveLayer -layerName CONT -purpose drawing
+lakerSingleSel -point (-2.422,1.204) -traversedist 0.04
+lakerRedraw
+lakerSetColPat -layerName POLY1 -sel 1 -vis 1
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerSingleSel -point (-2.193,1.83) -traversedist 0.04
+lakerRedraw
+lakerSetColPat -layerName PDIFF -sel 1 -vis 1
+lakerSetActiveLayer -layerName PDIFF -purpose drawing
+lakerSingleSel -point (-2.426,2.092) -traversedist 0.04
+lakerRedraw
+lakerSetActiveLayer -layerName PDIFF -purpose drawing
+lakerSetColPat -layerName PDIFF -vis 0
+lakerSingleSel -point (-2.004,1.963) -traversedist 0.04
+lakerRedraw
+lakerSetColPat -layerName POLY1 -vis 0
+lakerSingleSel -point (-2.804,1.923) -traversedist 0.04
+lakerRedraw
+lakerSetColPat -layerName METAL1 -vis 0
+lakerSingleSel -point (-2.0,1.128) -traversedist 0.04
+lakerRedraw
+lakerSetColPat -layerName PIMP -vis 0
+lakerSetColPat -layerName PIMP -vis 1
+lakerSetColPat -layerName PIMP -sel 1 -vis 1
+lakerSetActiveLayer -layerName PIMP -purpose drawing
+lakerSetColPat -layerName NIMP -vis 0
+lakerSetColPat -layerName CONT -vis 0
+lakerSingleSel -point (-2.523,2.083) -traversedist 0.04
+lakerRedraw
+lakerSingleSel
+lakerSingleSel -point (-1.197,0.449) -traversedist 0.04
+lakerSingleSel -point (-1.635,1.168) -traversedist 0.04
+lakerSetColPat -layerName NIMP -vis 1
+lakerSetColPat -layerName NIMP -sel 1 -vis 1
+lakerSetActiveLayer -layerName NIMP -purpose drawing
+lakerSingleSel -point (-2.527,1.786) -traversedist 0.04
+lakerCreateRect -layerName NIMP -point (-1.725,1.06) (-0.43,1.36)
+lakerSingleSel -point (-2.912,1.304) -traversedist 0.04
+lakerUndo
+lakerRedraw
+lakerClearConn
+lakerSingleSel -point (-3.085,0.959) -traversedist 0.04
+lakerSingleSel -point (-1.775,1.581) -traversedist 0.04
+lakerSingleSel -point (-2.442,0.927) -traversedist 0.04
+lakerSingleSel -point (-1.257,1.778) -traversedist 0.04
+lakerSingleSel
+lakerSingleSel -point (-1.245,1.268) -traversedist 0.04
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (-1.852,1.083) -traversedist 0.04
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerChangeSelMode -mode Vertex
+lakerSetActiveLayer -layerName NWELL -purpose drawing
+lakerCreateRect -layerName NWELL -point (-0.725,1.095) (0.745,2.785)
+lakerSetActiveLayer -layerName PIMP -purpose drawing
+lakerCreateRect -layerName PIMP -point (-0.545,1.035) (0.565,2.345)
+lakerCreateRect -layerName PIMP -point (-0.545,-0.265) (0.565,0.015)
+lakerSetActiveLayer -layerName DIFF -purpose drawing
+lakerCreateRect -layerName DIFF -point (-0.425,2.365) (0.445,2.605)
+lakerCreateRect -layerName DIFF -point (-0.35,1.215) (0.31,1.865)
+lakerCreateRect -layerName DIFF -point (-0.35,0.31) (0.31,0.74)
+lakerCreateRect -layerName DIFF -point (-0.425,-0.245) (0.445,-0.005)
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerSetActiveLayer -layerName NIMP -purpose drawing
+lakerCreateRect -layerName NIMP -point (-0.545,2.345) (0.565,2.625)
+lakerCreateRect -layerName NIMP -point (-0.545,0.015) (0.565,1.035)
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerSetColPat -layerName CONT -sel 1 -vis 1
+lakerSetActiveLayer -layerName CONT -purpose drawing
+lakerRedraw
+lakerRedraw
+lakerCreateRect -layerName CONT -point (-0.34,2.425) (-0.22,2.545)
+lakerCreateRect -layerName CONT -point (-0.05,2.425) (0.07,2.545)
+lakerCreateRect -layerName CONT -point (0.24,2.425) (0.36,2.545)
+lakerCreateRect -layerName CONT -point (-0.29,1.685) (-0.17,1.805)
+lakerCreateRect -layerName CONT -point (0.13,1.685) (0.25,1.805)
+lakerCreateRect -layerName CONT -point (-0.29,1.275) (-0.17,1.395)
+lakerCreateRect -layerName CONT -point (0.13,1.275) (0.25,1.395)
+lakerCreateRect -layerName CONT -point (-0.305,0.915) (-0.185,1.035)
+lakerSetColPat -layerName POLY1 -sel 1 -vis 1
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerRedraw
+lakerCreateRect -layerName POLY1 -point (-0.07,0.13) (0.03,2.045)
+lakerZoomInByArea -point (-1.217,0.429) (1.029,1.489)
+lakerSingleSel
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerSingleSel
+lakerCreateRect -layerName POLY1 -point (-0.365,0.875) (0.03,1.075)
+lakerZoomAll
+lakerSetActiveLayer -layerName CONT -purpose drawing
+lakerCreateRect -layerName CONT -point (0.13,0.56) (0.25,0.68)
+lakerCreateRect -layerName CONT -point (-0.29,0.37) (-0.17,0.49)
+lakerCreateRect -layerName CONT -point (-0.34,-0.185) (-0.22,-0.065)
+lakerCreateRect -layerName CONT -point (-0.05,-0.185) (0.07,-0.065)
+lakerCreateRect -layerName CONT -point (0.24,-0.185) (0.36,-0.065)
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerSetColPat -layerName METAL1 -sel 1 -vis 1
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerSetActiveLayer -layerName CONT -purpose drawing
+lakerRedraw
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerCreateRect -layerName METAL1 -point (-0.425,2.305) (0.445,2.665)
+lakerCreateRect -layerName METAL1 -point (-0.29,1.215) (-0.17,2.305)
+lakerCreateRect -layerName METAL1 -point (0.13,0.5) (0.25,1.865)
+lakerCreateRect -layerName METAL1 -point (-0.065,0.76) (0.25,1.02)
+lakerZoomInByArea -point (-0.689,0.288) (1.303,1.228)
+lakerUndo
+lakerSingleSel
+lakerCreateRect -layerName METAL1 -point (-0.065,0.76) (0.25,1.02)
+lakerCreateRect -layerName METAL1 -point (-0.355,0.67) (-0.185,1.075)
+lakerCreateRect -layerName METAL1 -point (-0.305,1.075) (-0.185,1.095)
+lakerZoomAll
+lakerCreateRect -layerName METAL1 -point (-0.29,0.055) (-0.17,0.55)
+lakerCreateRect -layerName METAL1 -point (-0.425,-0.305) (0.445,0.055)
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerSaveDesign
+lakerCalibreDRC
+New connection accepted, fd = 18
+
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+Received from RVE: [ mgc_rve_export_layout "new_1005" "GDSII" "/home/user/wrk/standard_113/drc/new_1005.calibre.db" ]
+Transferring library (test) to GDSII (/home/user/wrk/standard_113/drc/new_1005.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib test -topCell {new_1005} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 21
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+Calibre process exit.
+lakerCalibreDRC
+New connection accepted, fd = 18
+
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+New connection accepted, fd = 23
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+Calibre process exit.
+lakerCalibreLVS
+New connection accepted, fd = 18
+
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+Received from RVE: [ mgc_rve_export_layout "new_1005" "GDSII" "/home/user/wrk/standard_113/lvs/new_1005.calibre.db" ]
+Transferring library (test) to GDSII (/home/user/wrk/standard_113/lvs/new_1005.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib test -topCell {new_1005} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 25
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+Calibre process exit.
+lakerChangeSelMode -mode Object
+lakerCreateText -layerName METAL1 -point (0.07,2.485) -justify CenterCenter -height 0.300000 -text {VDD}
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerSingleSel
+lakerAttribute -index 1 -purpose pin
+lakerSetColPat -layerName METAL1 -purpose pin -sel 1 -vis 1
+lakerSetActiveLayer -layerName METAL1 -purpose pin
+lakerTechEditor
+lakerTFeActUnit
+lakerTFeActPurpose
+lakerTFeActLayerStream
+lakerSingleSel -point (-2.623,2.662) -traversedist 0.04
+lakerSingleSel -point (-2.269,1.722) -traversedist 0.04
+lakerTFeLoadFromFile -file /home/user/wrk/standard_113/laker/standard.tf -section
+lakerTFeActLayerRule
+lakerTFeActLayerRule -action modify -seq 116 -newData {{space NDIFF NTN} {0.52 } {NT_N.C.1}}
+wtAskUser: "Data has been modified. Abort?", answer:  "Yes"
+lakerTFeClose
+lakerSingleSel -point (-1.876,2.067) -traversedist 0.04
+lakerSaveDesign
+lakerCloseDesign
+wtAskUser: "The recovery cell view exists. Open the recovery file? Library: test, Cell: new, View: layout After opening, please save cell view to remove recovery file.", answer:  "Yes"
+The color name 'ID_WHITE' of the 'DT' layer was not defined in default.dsp file.
+lakerOpenDesign -lib test -cell new -mode edit
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerSingleSel -point (-1.476,1.315) -traversedist 0.04
+lakerSingleSel -point (-2.239,1.231) -traversedist 0.04
+lakerChangeSelMode -mode Object
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerSetColPat -layerNo 6 -purpose drawing -layerName CONT -outlineColor green -fillColor green -stipple bigX -style solid -width 1 -streamNo 6 -dataTypeNo 0 -apply 1
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerSetColPat -layerNo 3 -purpose system -layerName Ruler -outlineColor lime -fillColor lime -stipple blank -style line_solid -width 1
+lakerRuler -point (-2.075,1.685) (-0.995,1.685)
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerAlignObj -point (0.85,1.809) -mode start
+lakerAlignObj -mode end
+lakerClearRuler
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerSetActiveLayer -layerName CONT -purpose drawing
+lakerCreateRect -layerName CONT -point (-2.63,1.705) (-2.125,2.245)
+lakerSingleSel
+lakerAttribute -index 1 -point (-2.63,1.705) (-2.51,1.825)
+lakerSingleSel -point (-2.122,1.825) -traversedist 0.04
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSelInsideGroup -selInside 0
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName CONT
+lakerSingleSel -point (-2.203,1.379) -traversedist 0.04
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerUndo
+lakerSingleSel
+lakerZoomInByArea -point (-3.256,1.219) (-1.752,1.929)
+lakerZoomAll
+lakerZoomInByArea -point (-3.439,0.885) (-0.973,2.049)
+lakerZoomAll
+lakerZoomInByArea -point (-3.914,0.745) (-0.696,2.263)
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSelInsideGroup -selInside 0
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName CONT
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerUndo
+lakerAreaSel -point (-2.74,1.535) (-2.015,1.938)
+lakerChangeSelMode -mode Object
+lakerSelInsideGroup -selInside 0
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName CONT
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName CONT
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName CONT
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName CONT
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerUndo
+lakerUndo
+lakerUndo
+lakerSingleSel -point (-2.317,1.59) -traversedist 0.018
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerAttribute -index 1 -layerName DIFF
+lakerSingleSel -point (-2.995,1.68) -traversedist 0.018
+lakerSingleSel
+lakerSingleSel -point (-2.256,1.793) -traversedist 0.018
+lakerSingleSel -point (-2.326,1.7) -traversedist 0.018
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSetActiveLayer -layerName DIFF -purpose drawing
+lakerChangeSelMode -mode Object
+lakerSelInsideGroup -selInside 0
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName DIFF
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName DIFF
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName DIFF
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName DIFF
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName DIFF
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName DIFF
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName DIFF
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (-3.295,1.765) -offsetPoint (-2.295,1.765)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (-3.295,1.735) -offsetPoint (-3.295,1.225)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (-2.79,1.445) -traversedist 0.018
+lakerAreaSel -point (-2.846,0.99) (-2.1,1.457)
+lakerSetActiveLayer -layerName DIFF -purpose drawing
+lakerChangeSelMode -mode Object
+lakerSelInsideGroup -selInside 0
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName DIFF
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName DIFF
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName DIFF
+lakerSingleSel -point (-1.875,1.411) -traversedist 0.018
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerUndo
+lakerSingleSel -point (-3.078,1.601) -traversedist 0.018
+lakerSingleSel
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerChangeSelMode -mode Object
+lakerSelInsideGroup -selInside 0
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName METAL1
+lakerSingleSel -point (-2.092,1.278) -traversedist 0.018
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName METAL1
+lakerSingleSel
+lakerBoolean -op {SIZE 0.06 0.06 0.06 0.06} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName METAL1
+lakerSingleSel -point (-2.11,1.484) -traversedist 0.018
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerUndo
+lakerSingleSel
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerChangeSelMode -mode Object
+lakerSelInsideGroup -selInside 0
+lakerBoolean -op {SIZE 0.0 0.0 0.0 0.0} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName METAL1
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerSingleSel
+lakerStretchObj -refPoint (-1.575,1.805) -ignoreNet 0 -offsetPoint (-1.575,1.255)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (-1.794,1.405) -traversedist 0.018
+lakerZoomInByArea -point (-2.005,0.957) (-0.991,1.435)
+lakerZoomAll
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (-2.04,1.77) -offsetPoint (-2.04,1.77)
+lakerChangeSelMode -mode Vertex
+lakerAttribute -index 1 -layerName METAL1 -purpose slot
+lakerStretchObj -refPoint (-1.535,1.76) -ignoreNet 0 -offsetPoint (-0.995,1.76)
+lakerSingleSel -point (-1.06,1.456) -traversedist 0.04
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (-2.47,1.715) -ignoreNet 0 -offsetPoint (-1.96,1.715)
+lakerStretchObj -refPoint (-2.04,1.74) -ignoreNet 0 -offsetPoint (-2.955,1.74)
+lakerSingleSel -point (-2.092,1.604) -traversedist 0.04
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerZoomInByArea -point (-4.493,0.516) (-0.903,2.21)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSelInsideGroup -selInside 0
+lakerBoolean -op {SIZE 0.0 0.0 0.0 0.0} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName METAL1
+lakerSingleSel
+lakerBoolean -op {SIZE 0.0 0.0 0.0 0.0} -truncate 1.414 -snap 0 -convert 1 -newObj 1 -layerName METAL1
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerSingleSel -point (-3.646,1.8) -traversedist 0.02
+lakerChangeGrid -dx 0.005 -dy 0.005 -snapContactGrid 0
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (-2.63,1.705) -ignoreNet 0 -offsetPoint (-2.63,1.645)
+lakerSingleSel
+lakerStretchObj -refPoint (-2.63,1.765) -ignoreNet 0 -offsetPoint (-2.63,1.765)
+lakerSingleSel
+lakerStretchObj -refPoint (-2.855,1.765) -ignoreNet 0 -offsetPoint (-2.51,1.765)
+lakerSingleSel
+lakerStretchObj -refPoint (-2.8,1.645) -ignoreNet 0 -offsetPoint (-2.8,0.73)
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (-3.095,1.305) -ignoreNet 0 -offsetPoint (-3.865,1.305)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (-3.13,1.515) -ignoreNet 0 -offsetPoint (-3.865,1.515)
+lakerZoomAll
+lakerAreaSel -point (-2.967,0.905) (-0.63,2.199)
+lakerSingleSel -point (-2.043,0.628) -traversedist 0.04
+lakerSingleSel
+lakerSingleSel -point (-2.926,2.271) -traversedist 0.04
+lakerAreaSel -point (-2.69,1.135) (-2.45,1.645)
+lakerSingleSel -point (-2.456,0.825) -traversedist 0.04
+lakerAreaSel -point (-2.69,0.92) (-2.085,1.375)
+lakerChangeSelMode -mode Object
+lakerDeselectAll
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerAreaSel -point (-2.69,0.773) (-2.123,1.645)
+lakerSingleSel -point (-2.613,0.825) -traversedist 0.04
+lakerAreaSel -point (-2.971,0.725) (-2.015,1.516)
+lakerMakeCell -replace 1 -cell obj_1
+lakerSingleSel -point (-2.485,0.263) -traversedist 0.04
+lakerSingleSel
+lakerSingleSel -point (-2.131,0.56) -traversedist 0.04
+lakerSingleSel -point (-2.4,0.427) -traversedist 0.04
+lakerZoomInByArea -point (-3.527,0.644) (-1.205,1.74)
+lakerSingleSel
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerSingleSel -point (-2.018,1.281) -traversedist 0.013
+lakerCreateInstance -point (-2.74,0.825) -cell obj_1 -lib test -view layout
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerZoomAll
+lakerSingleSel -point (-1.89,0.126) -traversedist 0.04
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerCreateRect -layerName POLY1 -point (-4.25,0.225) (-3.775,2.115)
+lakerAlignObj -point (-3.983,2.102) -mode start
+lakerAlignObj -mode end
+lakerAlignObj -point (-3.995,2.118) -mode start
+lakerAlignObj -mode end
+lakerAlignObj -point (-4.015,2.094) -mode start
+lakerAlignObj -refObj 1 -refPoint (-4.015,2.135) -traversedist 0.02 -space 0.18
+lakerAlignObj -point (-4.015,2.09) -mode start
+lakerAlignObj -snapMode anyangle -refObj 1 -refPoint (-4.015,2.105) -traversedist 0.02 -space 0.18
+lakerAlignObj -

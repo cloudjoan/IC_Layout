@@ -1,0 +1,170 @@
+Command Line: /dq3/qa/LEO/PACK/laker201212/platform/LINUX64/bin/laker
+uname(Linux spx517 2.6.32-220.el6.x86_64 #1 SMP Wed Nov 9 08:03:13 EST 2011 x86_64)
+source /dq3/qa/LEO/PACK/laker201212/gift/gift.tcl
+Please specify a cell.
+lakerCopyCell -lib lab2 -cell stopLayer -toLib lab1 -toCell stopLayer -updateInst newCopied
+lakerOpenDesign -lib lab1 -cell stopLayer -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerCloseDesign
+lakerRenLib -lib lab1 -rename lab -update 1
+lakerOpenDesign -lib lab -cell stopLayer -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerTechDump -lib lab2 -tech lab2.tf
+wtAskUser: "Some cells are still opened. Replacing the technology file under this situation may introduce unpredictable problems. Continue?", answer:  "Yes"
+lakerTechReplace -lib lab -tech /home1/york_liu/training/L1_Lab/lab1/lab2.tf
+lakerSingleSel -point (68.997,7.168) -traversedist 0.395
+lakerZoomAll
+lakerZoomAll
+lakerSingleSel -point (84.662,0.104) -traversedist 0.395
+lakerChangeSelMode -mode Object
+lakerZoomAll
+lakerSetActiveLayer -layerName RSYMBOL -purpose drawing
+lakerLayerTap
+lakerChangeSelMode -mode Vertex
+lakerSetActiveLayer -layerName RSYMBOL -purpose drawing
+lakerLayerTap
+lakerSingleSel -point (70.931,0.499) -traversedist 0.395
+lakerChangeSelMode -mode Object
+lakerConnChecker -addNet -net netA -startPoint (73.73,3.895)
+lakerConnChecker -toMaxLevel -net netA -speedMode -traceViaArray 1
+lakerChangeSelMode -mode Vertex
+lakerCloseDesign
+lakerTechDump -lib lab -tech lab.tf
+lakerOpenDesign -lib lab -cell NA2 -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerCloseDesign
+lakerLME
+lakerLME -purge 1
+lakerLME -logicName analogADP -mapPath /dq3/qa/LEO/PACK/laker201212/share/adplib/32/analogADP.lib++
+lakerLME -logicName sourceADP -mapPath /dq3/qa/LEO/PACK/laker201212/share/adplib/32/sourceADP.lib++
+lakerLME -logicName borderADP -mapPath /dq3/qa/LEO/PACK/laker201212/share/adplib/32/borderADP.lib++
+lakerLME -logicName digitalADP -mapPath /dq3/qa/LEO/PACK/laker201212/share/adplib/32/digitalADP.lib++
+lakerLME -logicName cpu -mapPath ./cpu.lib++
+lakerLME -logicName lab -mapPath ./lab.lib++
+lakerLMESave
+lakerLMEClose
+lakerNewLib -lib new -tech /home1/york_liu/training/L1_Lab/lab1/laker_demo.tf -path .
+lakerNewCell -lib new -cell new
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (-0.023,0.639) -traversedist 0.068
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (0.554,1.115) -traversedist 0.068
+lakerChangeSelMode -mode Object
+lakerZoomOut
+lakerZoomOut
+lakerCreateText -layerName PWELL -point (0.96,-0.98) -height 1.000000 -text {data[02]} {data[04]} {data[06]} {data[08]} {data[10]} -offsetPoint (0.96,1.44)
+lakerZoomOut
+lakerZoomInByArea -point (-10.599,-3.795) (18.339,11.535)
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerCreateText -layerName PWELL -point (9.005,1.165) -height 1.000000 -text {data[002]} {data[004]} {data[006]} {data[008]} {data[010]} -offsetPoint (9.005,3.955)
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (-13.254,-7.499) (36.428,18.821)
+lakerZoomInByArea -point (1.571,3.975) (21.781,14.681)
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerCreateText -layerName PWELL -point (16.97,8.81) -height 1.000000 -text {data[002]} {data[004]} {data[006]} {data[008]} {data[010]} -offsetPoint (6.625,8.81)
+lakerCreateText -layerName PWELL -point (7.055,11.0) -height 1.000000 -text {data[002]} {data[004]} {data[006]} {data[008]} {data[010]} -offsetPoint (7.055,9.53)
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerZoomAll
+lakerChangeSelMode -mode Vertex
+lakerAreaSel -point (-25.209,-6.1) (24.435,15.964)
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerChangeSelMode -mode Object
+lakerSetActiveLayer -layerName POLY -purpose drawing
+lakerSetActiveLayer -layerName MET2 -purpose drawing
+lakerCreateText -layerName MET2 -point (6.375,3.415) -height 1.000000 -text {data[002]} {data[004]} {data[006]} {data[008]} {data[010]} -offsetPoint (6.375,5.78)
+lakerZoomAll
+lakerChangeSelMode -mode Vertex
+lakerZoomOut
+lakerSingleSel -point (2.933,14.674) -traversedist 0.517
+lakerSingleSel -point (-4.723,7.224) -traversedist 0.517
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (-1.878,8.0) -traversedist 0.517
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerAreaSel -point (2.623,0.81) (17.78,15.191)
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (15.035,0.81) -offsetPoint (8.985,0.81)
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (9.45,2.05) -offsetPoint (9.45,0.035)
+lakerChangeSelMode -mode Vertex
+lakerZoomInByArea -point (-4.199,-0.535) (4.685,4.171)
+lakerZoomInByArea -point (-0.741,0.672) (1.109,1.652)
+lakerZoomInByArea -point (0.171,1.256) (0.523,1.442)
+lakerZoomInByArea -point (0.307,1.373) (0.391,1.417)
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (0.307,1.373) (0.391,1.417).
+lakerZoomInByArea -point (0.285,1.377) (0.369,1.421)
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (0.285,1.377) (0.369,1.421).
+lakerChangeSelMode -mode DevObj
+lakerPanXY -point (0.0,0.0) -snapcursor 1
+lakerMoveObj -ignoreNet 0 -refPoint (0.325,1.4) -offsetPoint (0.0,0.0)
+lakerChangeSelMode -mode Vertex
+lakerZoomAll
+lakerSingleSel -point (-2.149,4.702) -traversedist 0.259
+lakerSaveDesign
+lakerCloseDesign
+lakerDelCell -lib lab -cell NA2
+lakerCopyCell -lib new -cell new -toLib lab -toCell replace -updateInst newCopied
+lakerOpenDesign -lib lab -cell replace -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerZoomOut
+lakerAreaSel -point (-1.89,-3.795) (9.85,12.397)
+lakerAreaSel -point (-1.683,-1.365) (7.99,12.397)
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerChangeSelMode -mode Object
+lakerSetActiveLayer -layerName MET2 -purpose label
+lakerSetActiveLayer -layerName MET2 -purpose drawing
+lakerPanXY -point (0.0,0.0) -snapcursor 1
+lakerChangeSelMode -mode Vertex
+lakerUndo
+lakerZoomAll
+lakerSingleSel
+lakerSingleSel -point (7.292,5.943) -traversedist 0.259
+lakerSingleSel -point (-2.899,9.513) -traversedist 0.259
+lakerAreaSel -point (-1.14,-0.445) (7.035,10.728)
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (-5.434,4.547) -traversedist 0.259
+lakerReplaceObj -find 1 -index 1 -matchCase 1 -regular 0 -type Text -searProp {String == {*[*]}}
+lakerReplaceObj -repProp {String {*<*>}} -matchCase 1 -regular 0 -type Text -searProp {String == {*[*]}}
+lakerZoomAll
+lakerSingleSel -point (9.104,5.529) -traversedist 0.259
+lakerZoomAll
+lakerSingleSel -point (7.862,9.254) -traversedist 0.259
+lakerReplaceObj -find 1 -index 1 -matchCase 1 -regular 0 -type Text -searProp {String == {*<*>}}
+lakerReplaceObj -repProp {String {*[*]}} -matchCase 1 -regular 0 -type Text -searProp {String == {*<*>}}
+lakerSingleSel -point (5.18,10.103) -traversedist 0.072
+lakerZoomAll
+lakerSaveDesign
+lakerCloseDesign
+lakerDelLib -lib new
+lakerLME
+lakerLME -purge 1
+lakerLME -logicName analogADP -mapPath /dq3/qa/LEO/PACK/laker201212/share/adplib/32/analogADP.lib++
+lakerLME -logicName sourceADP -mapPath /dq3/qa/LEO/PACK/laker201212/share/adplib/32/sourceADP.lib++
+lakerLME -logicName borderADP -mapPath /dq3/qa/LEO/PACK/laker201212/share/adplib/32/borderADP.lib++
+lakerLME -logicName digitalADP -mapPath /dq3/qa/LEO/PACK/laker201212/share/adplib/32/digitalADP.lib++
+lakerLME -logicName cpu -mapPath ./cpu.lib++
+lakerLME -logicName lab -mapPath ./lab.lib++
+lakerLME -logicName PAD -mapPath /home1/york_liu/training/L1_Lab/lab1/PAD.lib++
+lakerLMESave
+lakerLMEClose
+lakerOpenDesign -lib PAD -cell PAD -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerCloseDesign

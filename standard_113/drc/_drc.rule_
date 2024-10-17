@@ -1,0 +1,24 @@
+//
+//  Rule file generated on Fri Oct 11 22:37:30 2024
+//  by Calibre Interactive v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "NORX1.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "NORX1"
+
+DRC RESULTS DATABASE "NORX1.drc.results" ASCII
+DRC CELL NAME YES CELL SPACE XFORM
+
+DRC SUMMARY REPORT "NORX1.drc.summary" REPLACE HIER
+
+DRC MAXIMUM RESULTS 1000
+
+DRC MAXIMUM VERTEX 4096
+
+DRC ICSTATION YES
+
+INCLUDE "/home/user/wrk/standard_113/drc/drc.rule"

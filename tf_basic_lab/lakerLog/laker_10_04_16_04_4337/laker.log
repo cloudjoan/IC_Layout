@@ -1,0 +1,183 @@
+Command Line: /data1/synopsys/laker/laker_v2023.06-2.aut/platform/LINUX64/bin/laker
+uname(Linux leon 3.10.0-1160.105.1.el7.x86_64 #1 SMP Mon Nov 6 06:58:51 EST 2023 x86_64)
+source /data1/synopsys/laker/laker_v2023.06-2.aut/gift/gift.tcl
+lakerOpenDesign -lib lab -cell top -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerTechEditor
+lakerTFeActUnit
+lakerSingleSel -point (-0.803,-0.246) -traversedist 0.013
+lakerCloseDesign
+lakerTFeLoadFromLib -lib lab -section
+lakerTFeActVerifyRule
+lakerTFeActLayerRule
+lakerTFeActVerifyRule
+lakerTFeActMagicCell
+lakerTFeComment
+lakerTFeComment
+lakerTFeComment
+lakerTFeActUnit
+lakerTFeActPurpose
+lakerTFeActLayerStream
+lakerTFeActMaskResolution
+lakerTFeActLVSRule
+lakerTFeActAbstractCell
+lakerTFeActAbstractCell -part genPolyPin
+lakerTFeActAbstractCell -part genBlockage
+lakerTFeActAbstractCell -part genPinAntenna
+lakerTFeActAbstractCell -part genBoundary
+lakerTFeActAreaEstimation
+lakerTFeActAreaEstimation
+lakerTFeActSubstrateExtraction
+lakerTFeActDeviceRule
+lakerTFeActNetRoute
+lakerTFeActConnection
+lakerTFeActMagicCell
+lakerTFeActAreaEstimation
+lakerTFeActAbstractCell
+lakerTFeActLVSRule
+lakerTFeActMaskResolution
+lakerTFeActLVSRule
+lakerTFeActDeviceRule
+lakerTFeActMagicCell
+lakerTFeActVerifyRule
+lakerTFeActVerifyRule -part drcRule
+lakerTFeActLayerRule
+lakerTFeActLayerStream
+lakerTFeActLayerRule
+lakerTFeActLayerStream
+lakerTFeActPurpose
+lakerTFeActUnit
+lakerTFeComment
+lakerTFeActDeviceRule
+lakerTFeActAreaEstimation
+lakerTFeActSubstrateExtraction
+lakerTFeActNetRoute
+lakerTFeActDeviceRule
+lakerTFeActDeviceRule
+lakerTFeActNetRoute
+lakerTFeActNetRoute -part connRule
+lakerTFeActNetRoute -part spaceRule
+lakerTFeActAreaEstimation
+lakerTFeActAbstractCell
+lakerTFeActLVSRule
+lakerTFeActMaskResolution
+lakerTFeActGroup
+lakerTFeActMagicCell
+lakerTFeActConnection
+lakerTFeActMagicCell
+lakerTFeActLayerRule
+lakerTFeActLayerStream
+lakerTFeActPurpose
+lakerTFeActLayerStream
+lakerTFeActLayerStream -section streamIO
+lakerTFeActUnit
+lakerTFeActPurpose
+lakerTFeActUnit
+lakerTFeActConnection
+lakerTFeActNetRoute
+lakerTFeActNetRoute -part connRule
+lakerTFeActNetRoute -part stubRule
+lakerTFeActNetRoute -part connRule
+lakerTFeActSubstrateExtraction
+lakerTFeActAreaEstimation
+lakerTFeActAbstractCell
+lakerTFeActLVSRule
+lakerTFeActMaskResolution
+lakerTFeActLVSRule
+lakerTFeActAbstractCell
+lakerTFeActLVSRule
+lakerTFeActLVSRule
+wtAskUser: "Data has been modified. Abort?", answer:  "Yes"
+wtAskUser: "Reload the comments?", answer:  "Yes"
+lakerTFeLoadFromFile -file /home/user/wrk/tf_basic_lab/basic.tf -section
+lakerTFeActLayerStream
+lakerTFeActLayerRule
+lakerTFeActVerifyRule
+lakerTFeActMagicCell
+lakerTFeActLayerStream
+lakerTFeActLayerRule
+lakerTFeActLayerStream
+lakerTFeActLayerRule
+lakerTFeActVerifyRule
+lakerTFeActLayerRule
+lakerTFeActLayerStream
+lakerTFeActPurpose
+lakerTFeActUnit
+lakerTFeActPurpose
+lakerTFeActDeviceRule
+lakerTFeActNetRoute
+lakerTFeActAreaEstimation
+lakerTFeActSubstrateExtraction
+wtAskUser: "Substrate checking rules are valid.", answer:  "OK"
+Substrate checking rules are valid.
+lakerTFeActSubstrateExtraction -check
+wtAskUser: "Reload the comments?", answer:  "Yes"
+lakerTFeLoadFromLib -lib labNew -section
+lakerTFeActLayerRule
+lakerTFeActLayerStream
+lakerTFeActLayerRule
+lakerTFeActLayerRule
+lakerTFeActVerifyRule
+lakerTFeActMagicCell
+lakerTFeActConnection
+lakerTFeActNetRoute
+lakerTFeActDeviceRule
+lakerTFeActMagicCell
+Scan directory: labNew.lib++ ...
+Please check lockfile(/home/user/wrk/tf_basic_lab/labNew.lib++/cell_1/layout.lock) is alive or not
+Scan 8    
+
+
+Check kept information ...
+Scan 8    
+
+Save library data
+
+### Refreshing library is done ###
+The Cell: newCell in Library: labNew exists.
+lakerNewCell -lib labNew -cell call_A
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerSingleSel -point (-0.051,0.241) -traversedist 0.007
+lakerAreaSel -point (-0.163,0.222) (0.041,0.468)
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerSingleSel -point (-0.224,0.426) -traversedist 0.007
+lakerCreateInstance -point (0.403,0.143) -cell top -lib example -view layout
+lakerZoomAll
+lakerMaxViewLevel
+lakerSingleSel -point (-0.317,0.224) -traversedist 0.013
+lakerAreaSel -point (-0.306,0.027) (0.183,0.35)
+lakerSingleSel -point (-0.384,0.138) -traversedist 0.013
+lakerSingleSel -point (-0.279,0.346) -traversedist 0.013
+lakerCreateInstance -point (-0.084,-0.325) -cell abstractCell -lib lab -view layout
+A layer(98) purpose(252) pair in the current library is not found. New layer created with the layer name of L98.
+A layer(3) purpose(246) pair in the current library is not found. New layer created with the layer name of L3.
+lakerZoomAll
+lakerSaveDesign -autosave
+lakerSingleSel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerSingleSel
+lakerSingleSel -point (-4.825,10.066) -traversedist 0.177
+lakerSingleSel -point (-4.4,4.54) -traversedist 0.177
+lakerSingleSel -point (-2.682,6.913) -traversedist 0.177
+lakerCloseDesign
+lakerTFeActLayerStream
+lakerTFeActLayerRule
+lakerTFeActLayerStream
+lakerTFeActPurpose
+lakerTFeActLayerStream
+lakerTFeActPurpose
+lakerTFeActLayerRule
+lakerTFeActLayerStream
+lakerTFeActVerifyRule
+lakerTFeActLayerRule
+lakerTFeActVerifyRule
+lakerTFeActMagicCell
+lakerTFeActConnection
+lakerTFeActMagicCell
+lakerTFeActNetRoute
+lakerTFeActNetRoute
+lakerTFeActConnection
+wtAskUser: "Data has been modified. Abort?", answer:  "Yes"
+lakerTFeClose
+au time 61201.771413 106.494601 274.708460 delta 108605440 108605440 total 471465984 471465984

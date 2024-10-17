@@ -1,0 +1,49 @@
+#VERSION#BRANCH#2009.09
+#VERSION#cnlDATE#10/23/2009
+#VERSION#cnlENV#Linux.0
+#VERSION#RUNTIME#2010/01/30
+#VERSION#PLATFORM#Linux
+#VERSION#SYSTEM#32-bit
+#VERSION#uname#(Linux vmware 2.6.9-42.ELsmp #1 SMP Sat Aug 12 09:39:11 CDT 2006 i686)
+lakerTechReplace -lib lab -tech \
+           /home/dragon/lab/TFtraining2010/tf_basic_lab/basic_slide.tf \
+           -updateMCell 1 -updateMCellList { All }
+lakerLME
+lakerSetActiveWnd Wnd1
+lakerLME -purge 1
+lakerLME -logicName lab -mapPath ./tf_basic_lab/lab.lib++
+lakerLME -logicName analogADP -mapPath \
+         /tools/laker/current/share/adplib/32/analogADP.lib++
+lakerLME -logicName sourceADP -mapPath \
+         /tools/laker/current/share/adplib/32/sourceADP.lib++
+lakerLME -logicName borderADP -mapPath \
+         /tools/laker/current/share/adplib/32/borderADP.lib++
+lakerLME -logicName digitalADP -mapPath \
+         /tools/laker/current/share/adplib/32/digitalADP.lib++
+lakerLMESave
+lakerLME -purge 1
+lakerLME -logicName lab -mapPath ./tf_basic_lab/lab.lib++
+lakerLME -logicName analogADP -mapPath \
+         /tools/laker/current/share/adplib/32/analogADP.lib++
+lakerLME -logicName sourceADP -mapPath \
+         /tools/laker/current/share/adplib/32/sourceADP.lib++
+lakerLME -logicName borderADP -mapPath \
+         /tools/laker/current/share/adplib/32/borderADP.lib++
+lakerLME -logicName digitalADP -mapPath \
+         /tools/laker/current/share/adplib/32/digitalADP.lib++
+lakerLMESave
+lakerLMEClose
+lakerLME
+lakerLME -purge 1
+lakerLME -logicName lab -mapPath ./lab.lib++
+lakerLME -logicName analogADP -mapPath \
+         /tools/laker/current/share/adplib/32/analogADP.lib++
+lakerLME -logicName sourceADP -mapPath \
+         /tools/laker/current/share/adplib/32/sourceADP.lib++
+lakerLME -logicName borderADP -mapPath \
+         /tools/laker/current/share/adplib/32/borderADP.lib++
+lakerLME -logicName digitalADP -mapPath \
+         /tools/laker/current/share/adplib/32/digitalADP.lib++
+lakerLMESave
+lakerLMEClose
+lakerExit

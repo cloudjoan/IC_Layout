@@ -1,0 +1,77 @@
+       ###############################################
+       ##                                           ##
+       ##    FileName:  gdsIn.log                   ##
+       ##    GenDate :  29-Jun-2023   14:19:41      ##
+       ##                                           ##
+       ##    Laker:  2021.03 (Linux x86_64/64bit) 04/19/2021  ##
+       ##############################################N
+
+Command: gdsIn -64 -s Preserve -IoLayerMapMode Map -sumExtraLayer 1 -label Preserve -mode Overwrite -o /home/user/wrk/standard_112/laker/test -t /home/user/wrk/standard_112/laker/standard.tf -Vm 4096 -Pi 102 -Pn 102 -SkipWarnNo 100 /home/user/wrk/standard_112/gds/test.gds
+Host/OS: vmxr7aoooo   Linux 3.10.0-1160.66.1.el7.x86_64
+
+##### Stream Library #####
+
+   userUnit: micron
+   dbScale : 0.001000
+
+##### Stream Cells #####
+
+   1.INVX1                
+
+##### Stream Error File(gdsIn.err) #####
+
+ All cells have no fatal,warn,info message.
+
+
+
+##### Stream Property Attribute #####
+
+      1. Generate Inst Name As Prop No: 102
+      2. Generate Net As Prop No:       102
+
+      propAttri(1-127): NONE
+
+
+
+##### Stream Summary #####
+
+                   Resort Primary Cell(s)
+
+--------------------------------------------------------------------------
+   1.INVX1                
+
+
+                   Resort Cell(s) Summary
+
+cellName     #cInst  #array    #rect    #poly    #path    #text  bBox(um)
+--------------------------------------------------------------------------------------------------
+INVX1             0       0       38        0        0        0 (-0.300,-0.180) (1.170,2.910)
+
+
+                   Resort Layer(s) Summary
+
+Laker                Stream
+layerName   purpose  layerNo  dataType    #rect    #poly    #path    #text
+--------------------------------------------------------------------------
+DIFF        drawing        1        0         4        0        0        0
+NWELL       drawing        2        0         1        0        0        0
+POLY1       drawing        3        0         3        0        0        0
+NIMP        drawing        4        0         2        0        0        0
+PIMP        drawing        5        0         2        0        0        0
+CONT        drawing        6        0        13        0        0        0
+METAL1      drawing        7        0         9        0        0        0
+METAL1      dummy        7        1         4        0        0        0
+
+
+
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off
+
+ EXE Start Time = 29-Jun-2023   14:19:41                  
+ EXE Stop  Time = 29-Jun-2023   14:19:41                  
+
+ #Elapsed Time  = 00:00:00
+ #CPU Time      = 00:00:00
+
+ #Memory 398152 K,Peak 398152 K
+ There are 0 cells that have extra layers.
+ Total #Fatal = 0, #Warn = 0

@@ -1,0 +1,116 @@
+Command Line: /data1/synopsys/laker/laker_v2023.06-2.aut/platform/LINUX64/bin/laker
+uname(Linux leon 3.10.0-1160.105.1.el7.x86_64 #1 SMP Mon Nov 6 06:58:51 EST 2023 x86_64)
+source /data1/synopsys/laker/laker_v2023.06-2.aut/gift/gift.tcl
+Scan directory: labNew.lib++ ...
+Scan 1    
+
+
+Check kept information ...
+Scan 1    
+
+Save library data
+
+### Refreshing library is done ###
+The Cell: newCell in Library: labNew exists.
+lakerTechEditor
+lakerTFeActUnit
+lakerTFeClose
+lakerTechEditor
+lakerTFeActUnit
+lakerTFeActPurpose
+lakerTFeActLayerStream
+lakerTFeActLayerRule
+lakerTFeActLayerStream
+lakerTFeLoadFromLib -lib labNew -section
+wtAskUser: "Reload the comments?", answer:  "Yes"
+lakerTFeLoadFromFile -file /home/user/wrk/tf_basic_lab/basicNew.tf -section
+lakerTFeSaveToLib -lib labNew -partial 0
+lakerTFeSaveToLib -lib labNew -partial 0
+wtAskUser: "Reload the comments?", answer:  "Yes"
+lakerTFeLoadFromLib -lib labNew -section
+lakerNewCell -lib labNew -cell cell_1
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerZoomAll
+lakerSetColPat -layerName CoreBdry -purpose cell -sel 0
+lakerSetColPat -layerName CoreBdry -purpose cell -sel 1
+lakerSetActiveLayer -layerName CoreBdry -purpose cell
+lakerSetActiveLayer -layerName PinBorder -purpose substrate
+lakerSetActiveLayer -layerName TEST -purpose pin
+lakerAreaSel -point (-0.187,0.279) (0.024,0.452)
+lakerCreateRect -layerName TEST -purpose pin -point (-0.085,0.26) (0.107,0.408)
+lakerSetActiveLayer -layerName OD1 -purpose drawing1
+lakerCreateRect -layerName OD1 -purpose drawing1 -point (-0.245,0.258) (-0.142,0.392)
+lakerSetActiveLayer -layerName POLY -purpose drawing
+lakerCreateRect -layerName POLY -point (-0.241,0.477) (-0.083,0.508)
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerCreateRect -layerName PWELL -point (-0.273,0.02) (0.227,0.52)
+lakerCreateRect -layerName PWELL -point (0.228,-0.269) (0.728,0.231)
+lakerCreateRect -layerName PWELL -point (-0.813,-0.124) (-0.313,0.376)
+lakerCreateRect -layerName PWELL -point (0.305,-0.097) (0.805,0.403)
+lakerZoomAll
+lakerCreateRect -layerName PWELL -point (-0.57,-0.013) (-0.07,0.487)
+lakerCreateRect -layerName PWELL -point (-0.187,-0.624) (0.313,-0.124)
+lakerCreateRect -layerName PWELL -point (-0.805,0.05) (-0.305,0.55)
+lakerSetActiveLayer -layerName MET2 -purpose drawing
+lakerCreateRect -layerName MET2 -point (-0.838,0.272) (-0.584,0.57)
+lakerCreateRect -layerName MET2 -point (-0.281,-0.155) (-0.186,-0.068)
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerCreateRect -layerName PWELL -point (0.409,0.027) (0.909,0.527)
+lakerSetActiveLayer -layerName NWELL -purpose drawing
+lakerCreateRect -layerName NWELL -point (-0.104,0.33) (0.124,0.477)
+lakerCreateRect -layerName NWELL -point (-0.394,0.393) (-0.241,0.508)
+lakerCreateRect -layerName NWELL -point (0.367,0.324) (0.503,0.499)
+lakerDsgDrag
+lakerDsgDrag
+lakerCreateRect -layerName NWELL -point (0.367,0.479) (0.471,0.562)
+lakerSetAbsMode
+lakerSetAbsMode
+lakerSetLayoutMode
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerCreateRect -layerName NWELL -point (-0.871,0.371) (-0.241,0.508)
+lakerChangeSelMode -mode DevObj
+lakerAreaSel -point (-0.879,-0.316) (0.869,0.581)
+lakerDeleteObj
+lakerAreaSel -point (0.089,0.079) (0.269,0.355)
+lakerChangeSelMode -mode Vertex
+lakerZoomAll
+lakerCreateRect -layerName NWELL -point (-0.08,0.047) (0.281,0.367)
+lakerCreateRect -layerName NWELL -point (0.718,-0.122) (0.972,0.408)
+lakerCreateRect -layerName NWELL -point (-0.545,0.194) (0.404,0.211)
+lakerSetActiveLayer -layerName TEST -purpose pin
+lakerCreateRect -layerName TEST -purpose pin -point (-0.561,0.052) (-0.223,0.3)
+lakerCreateRect -layerName TEST -purpose pin -point (-0.581,-0.235) (-0.372,-0.045)
+lakerSetActiveLayer -layerName ESD -purpose drawing
+lakerSetActiveLayer -layerName VIA1 -purpose drawing
+lakerSetActiveLayer -layerName MET2 -purpose drawing
+lakerCreateRect -layerName MET2 -point (-0.473,0.041) (-0.178,0.423)
+lakerCreateRect -layerName MET2 -point (-0.708,-0.66) (1.174,0.495)
+lakerChangeSelMode -mode DevObj
+lakerAreaSel -point (-0.763,-0.638) (1.376,0.564)
+lakerDeleteObj
+lakerSingleSel
+lakerDeleteObj
+lakerTFeActLayerRule
+lakerTFeActLayerRule -action modify -seq 1 -newData {{space POLY NWELL} {0.2 } {N.POLY.0.2}}
+wtAskUser: "Some cells are still opened. Replacing the technology file under this situation may introduce unpredictable problems. Continue?", answer:  "Cancel"
+wtAskUser: "The file "/home/user/wrk/tf_basic_lab/basicNew.tf" exists. Overwrite it anyway?", answer:  "Yes"
+lakerTFeSaveToFile -file /home/user/wrk/tf_basic_lab/basicNew.tf
+lakerSingleSel -point (0.255,0.322) -traversedist 0.007
+lakerChangeSelMode -mode Vertex
+lakerCloseDesign
+lakerTFeSaveToLib -lib labNew -partial 0
+lakerTFeSaveToLib -lib labNew -partial 0
+wtAskUser: "The autosave cell view exists. Open the autosave file?", answer:  "Yes"
+lakerOpenDesign -lib labNew -cell cell_1 -mode edit -autosave
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerAreaSel -point (-0.882,-0.674) (1.04,0.623)
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSetActiveLayer -layerName NWELL -purpose drawing
+lakerCreateRect -layerName NWELL -point (-0.893,0.071) (-0.533,0.384)
+lakerSetActiveLayer -layerName POLY -purpose drawing
+lakerCreateRect -layerName POLY -point (-0.333,0.073) (-0.088,0.281)
+lakerSingleSel -point (-0.476,0.183) -traversedist 0.007
+lakerSingleSel -point (-0.648,0.523) -traversedist 0.007

@@ -1,0 +1,6 @@
+mgc_rve_context "INVX3" 1000
+mgc_rve_highlight_index 0 "M5" "#00000000FFFF"
+mgc_rve_property "w" 3.7e-07  "l" 1e-07  "model" "pmos1v"
+mgc_rve_layer "pgate"
+mr 0.865 1.62 0.965 1.99
+mgc_rve_zoom 0.844 1.541 0.986 2.069 1

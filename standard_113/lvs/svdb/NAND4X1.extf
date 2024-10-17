@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1728568119 1728568120
+lvs_ExtOutFile RUNDIR /home/user/wrk/standard_113/lvs
+lvs_ExtOutFile RULES_FILE _lvs.rule_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 1 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST NAND4X1.sp
+lvs_ExtOutFile EXTRACTION_REPORT NAND4X1.lvs.report.ext
+lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/NAND4X1.pathchk.erc
+lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/NAND4X1.pathchk.rep

@@ -1,0 +1,15 @@
+#  lib libraryName
+#      filter pattern
+#          ...
+#  lib libraryName2
+#      ...
+lib t
+    filter pattern
+        {*}      
+        {METAL1*}
+        
+lib test
+    filter pattern
+        {*}      
+        {TEXT}   
+        

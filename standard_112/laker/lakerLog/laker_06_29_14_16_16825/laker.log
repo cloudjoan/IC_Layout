@@ -1,0 +1,258 @@
+Command Line: /data1/synopsys/laker/L-2021.03-3/platform/LINUX64/bin/laker
+uname(Linux vmxr7aoooo 3.10.0-1160.66.1.el7.x86_64 #1 SMP Wed Apr 27 20:34:34 UTC 2022 x86_64)
+source /data1/synopsys/laker/L-2021.03-3/gift/gift.tcl
+Transferring GDSII(/home/user/wrk/standard_112/gds/test.gds) to library(test) ...
+	Please wait a moment...
+lakerImportStream -file /home/user/wrk/standard_112/gds/test.gds -tech /home/user/wrk/standard_112/laker/standard.tf -path /home/user/wrk/standard_112/laker -lib test -IoLayerMapMode Map -sumExtraLayer 1 -case Preserve -label Preserve -maxVerti 4096 -instProp 102 -netProp 102 -keepPCell 0
+Import-Stream Job completed.
+There are 0 cells that have extra layers.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsIn.log) and (gdsIn.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+The color name 'whit' of the 'DT' layer was not defined in default.dsp file.
+lakerOpenDesign -lib test -cell INVX1 -mode edit
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerLayerTable -side left
+lakerSingleSel -point (2.121,0.123) -traversedist 0.116
+lakerZoomAll
+lakerSingleSel -point (2.07,1.67) -traversedist 0.075
+lakerSetColPat -visall 0
+lakerSetColPat -selall 0
+lakerSetColPat -layerName DIFF -sel 1 -vis 1
+lakerSetActiveLayer -layerName DIFF -purpose drawing
+lakerRedraw
+lakerSetColPat -layerName PIMP -sel 1 -vis 1
+lakerSetActiveLayer -layerName PIMP -purpose drawing
+lakerSingleSel -point (-1.185,0.826) -traversedist 0.075
+lakerRedraw
+lakerSetColPat -layerName NIMP -sel 1 -vis 1
+lakerSetActiveLayer -layerName NIMP -purpose drawing
+lakerRedraw
+lakerSingleSel
+lakerSingleSel -point (-0.959,1.806) -traversedist 0.075
+lakerSetActiveLayer -layerName PIMP -purpose drawing
+lakerSetActiveLayer -layerName PIMP -purpose drawing
+lakerSetColPat -layerNo 5 -purpose drawing -layerName PIMP -outlineColor magenta -fillColor magenta -stipple cross -style solid -width 1 -streamNo 5 -dataTypeNo 0 -apply 1
+lakerRedraw
+lakerSetActiveLayer -layerName PIMP -purpose drawing
+lakerSetActiveLayer -layerName PIMP -purpose drawing
+lakerSetColPat -layerNo 5 -purpose drawing -layerName PIMP -outlineColor magenta -fillColor magenta -stipple blank -style solid -width 1 -streamNo 5 -dataTypeNo 0 -apply 1
+lakerRedraw
+lakerSingleSel -point (-1.253,1.263) -traversedist 0.075
+lakerDeselectAll
+lakerZoomAll
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerSingleSel -point (-1.75,1.55) -traversedist 0.075
+lakerZoomAll
+lakerZoomInByArea -point (-0.545,2.031) (1.445,3.089)
+lakerSetActiveLayer -layerName NWELL -purpose drawing
+lakerSingleSel -point (-0.036,3.007) -traversedist 0.023
+lakerSingleSel -point (0.344,3.049) -traversedist 0.023
+lakerSingleSel
+lakerSingleSel -point (0.375,2.993) -traversedist 0.023
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (-1.525,0.99) (2.649,3.21)
+lakerZoomOut
+lakerZoomInByArea -point (-1.698,0.735) (2.578,3.009)
+lakerZoomInByArea -point (-0.296,0.84) (1.216,1.644)
+lakerZoomAll
+lakerCalibreDRC
+//  Calibre v2022.1_36.16    Tue Mar 1 14:27:08 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.1_36.16  Tue Mar 1 14:27:08 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+
+New connection accepted, fd = 19
+
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+Received from RVE: [ mgc_rve_export_layout "INVX1" "GDSII" "/home/user/wrk/standard_112/drc/INVX1.calibre.db" ]
+Transferring library (test) to GDSII (/home/user/wrk/standard_112/drc/INVX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_112/laker/ -lib test -topCell {INVX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 22
+
+lakerZoomInByArea -point (-1.157,0.88) (2.141,2.634)
+lakerAreaSel -point (0.286,2.105) (0.605,2.23)
+lakerStretchObj -refPoint (0.395,2.155) -ignoreNet 0 -offsetPoint (0.395,1.935)
+lakerAreaSel -point (0.496,1.728) (0.755,1.855)
+lakerStretchObj -refPoint (0.65,1.82) -ignoreNet 0 -offsetPoint (0.65,1.69)
+Received from RVE: [ mgc_rve_export_layout "INVX1" "GDSII" "/home/user/wrk/standard_112/drc/INVX1.calibre.db" ]
+Transferring library (test) to GDSII (/home/user/wrk/standard_112/drc/INVX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_112/laker/ -lib test -topCell {INVX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 22
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_112/drc/query_results" ]
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_112/drc/query_results" ]
+lakerZoomOut
+lakerZoomOut
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_112/drc/query_results" ]
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+lakerZoomAll
+lakerUndo
+lakerRedo
+lakerUndo
+lakerRedo
+lakerUndo
+lakerUndo
+Calibre process exit.
+lakerSingleSel -point (1.776,-0.116) -traversedist 0.075
+lakerCalibreLVS
+//  Calibre v2022.1_36.16    Tue Mar 1 14:27:08 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.1_36.16  Tue Mar 1 14:27:08 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+
+New connection accepted, fd = 19
+
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+Received from RVE: [ mgc_rve_export_layout "INVX1" "GDSII" "/home/user/wrk/standard_112/lvs/INVX1.calibre.db" ]
+Transferring library (test) to GDSII (/home/user/wrk/standard_112/lvs/INVX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_112/laker/ -lib test -topCell {INVX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 24
+
+lakerSingleSel -point (-2.526,-0.229) -traversedist 0.075
+lakerSingleSel -point (-2.006,1.776) -traversedist 0.075
+lakerSingleSel -point (-1.615,2.054) -traversedist 0.075
+lakerSetActiveLayer -layerName METAL1 -purpose pin
+lakerSetActiveLayer -layerName METAL1 -purpose pin
+lakerZoomInByArea -point (-0.245,2.162) (1.505,3.092)
+lakerChangeSelMode -mode Object
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (-0.915,0.47) (1.725,1.874)
+lakerCreateText -layerName METAL1 -purpose pin -point (0.16,1.095) -justify CenterCenter -height 0.200000 -text {A}
+lakerCreateText -layerName METAL1 -purpose pin -point (0.6,1.005) -justify CenterCenter -height 0.200000 -text {Y}
+lakerZoomAll
+lakerZoomInByArea -point (-0.415,2.074) (1.489,3.086)
+lakerCreateText -layerName METAL1 -purpose pin -point (0.43,2.61) -justify CenterCenter -height 0.200000 -text {VDD}
+lakerZoomAll
+lakerZoomInByArea -point (-0.2,-0.268) (1.22,0.488)
+lakerCreateText -layerName METAL1 -purpose pin -point (0.44,0.005) -justify CenterCenter -height 0.200000 -text {VSS}
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (0.341,-0.223) -traversedist 0.017
+lakerDeselectAll
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (-2.879,-0.66) (4.029,3.014)
+lakerZoomInByArea -point (-0.813,0.935) (2.127,2.499)
+lakerSetColPat -modCategory DesignSet -use 1
+lakerSetColPat -visall 0
+lakerSetColPat -selall 0
+lakerSetColPat -layerName PIMP -sel 1 -vis 1
+lakerSetActiveLayer -layerName PIMP -purpose drawing
+lakerZoomOut
+lakerZoomInByArea -point (-1.139,0.81) (2.253,2.614)
+lakerSingleSel
+lakerStretchObj -refPoint (0.39,1.155) -ignoreNet 0 -offsetPoint (0.39,1.615)
+lakerSetColPat -layerName DIFF -sel 1 -vis 1
+lakerSetActiveLayer -layerName DIFF -purpose drawing
+lakerDeselectAll
+lakerRedraw
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (-6.944,-3.04) (6.294,4.0)
+lakerZoomAll
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerZoomAll
+Received from RVE: [ mgc_rve_export_layout "INVX1" "GDSII" "/home/user/wrk/standard_112/lvs/INVX1.calibre.db" ]
+Transferring library (test) to GDSII (/home/user/wrk/standard_112/lvs/INVX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_112/laker/ -lib test -topCell {INVX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 24
+
+lakerZoomOut
+lakerZoomAll
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_112/lvs/query_results" ]
+lakerZoomAll
+lakerCalibreRVE
+New connection accepted, fd = 25
+
+//  Calibre v2022.1_36.16    Tue Mar 1 14:27:08 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.1_36.16  Tue Mar 1 14:27:08 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+//  Graphical User-Interface startup.... Complete.
+//
+//  calibreqdb license acquired.
+//  RVE authorized.
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+Calibre process exit.
+lakerSaveDesign
+lakerCloseDesign
+Calibre process exit.
+au time 6787.822072 105.014080 132.259869 delta 65462272 65462272 total 424927232 424927232

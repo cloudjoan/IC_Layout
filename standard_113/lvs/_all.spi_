@@ -1,0 +1,28 @@
+//
+//  Rule file generated on Wed Oct 9 15:06:50 2024
+//  by Calibre Interactive v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "INVX3.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "INVX3"
+
+SOURCE PATH "/home/user/wrk/standard_113/cdl/all.spi"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "INVX3"
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "INVX3.lvs.report"
+
+LVS EXECUTE ERC YES
+
+ERC RESULTS DATABASE "INVX3.erc.results"
+ERC CELL NAME YES CELL SPACE XFORM
+
+DRC ICSTATION YES
+
+INCLUDE "/home/user/wrk/standard_113/cdl/all.spi"

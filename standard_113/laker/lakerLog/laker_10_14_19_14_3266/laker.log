@@ -1,0 +1,61 @@
+Command Line: /data1/synopsys/laker/laker_v2023.06-2.aut/platform/LINUX64/bin/laker
+uname(Linux leon 3.10.0-1160.105.1.el7.x86_64 #1 SMP Mon Nov 6 06:58:51 EST 2023 x86_64)
+source /data1/synopsys/laker/laker_v2023.06-2.aut/gift/gift.tcl
+wtAskUser: "The autosave cell view exists. Open the autosave file?", answer:  "Yes"
+The color name 'ID_WHITE' of the 'DT' layer was not defined in default.dsp file.
+lakerOpenDesign -lib test -cell try_inv -mode readOnly -autosave
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerSingleSel -point (1.233,1.843) -traversedist 0.041
+lakerZoomAll
+lakerSingleSel
+lakerSingleSel
+lakerZoomInByArea -point (-1.861,1.053) (1.915,2.405)
+lakerAreaSel -point (-0.642,1.175) (0.915,1.942)
+lakerSingleSel
+lakerZoomAll
+lakerAreaSel -point (-0.612,0.835) (1.265,1.756)
+lakerSingleSel -point (-0.958,1.664) -traversedist 0.054
+lakerDistance -point (-0.049,1.545) (-0.044,1.22)
+lakerDistance -point (0.833,2.31) (0.79,1.545)
+lakerDistance -point (0.481,1.545) (0.503,1.22)
+lakerDistance -point (-0.027,0.745) (-0.011,0.315)
+lakerCloseDesign
+wtAskUser: "The autosave cell view exists. Open the autosave file?", answer:  "Yes"
+The color name 'ID_WHITE' of the 'DT' layer was not defined in default.dsp file.
+lakerOpenDesign -lib test -cell DFFQX1 -mode readOnly -autosave
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerAreaSel -point (-0.384,-0.035) (2.12,2.947)
+lakerSingleSel -point (-1.254,2.123) -traversedist 0.155
+lakerSingleSel -point (-1.254,2.123) -traversedist 0.155
+lakerAreaSel -point (-0.244,0.055) (1.76,2.372)
+lakerSingleSel -point (1.885,1.082) -traversedist 0.155
+lakerSingleSel -point (-0.99,3.118) -traversedist 0.155
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerAreaSel -point (-0.337,-0.205) (1.9,2.418)
+lakerSingleSel -point (-0.943,1.564) -traversedist 0.155
+Check reference done!
+lakerCheckReference
+lakerSingleSel -point (-5.558,6.365) -traversedist 0.155
+lakerSingleSel -point (-2.31,3.77) -traversedist 0.155
+lakerSingleSel -point (-1.145,2.791) -traversedist 0.155
+Check reference done!
+lakerCheckReference
+lakerSingleSel -point (-5.946,6.893) -traversedist 0.155
+lakerCloseDesign
+wtAskUser: "The autosave cell view exists. Open the autosave file?", answer:  "Yes"
+The color name 'ID_WHITE' of the 'DT' layer was not defined in default.dsp file.
+lakerOpenDesign -lib test -cell DFFQX1 -mode readOnly -autosave
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerSingleSel -point (-5.542,5.308) -traversedist 0.155
+lakerCloseDesign
+wtAskUser: "The autosave cell view exists. Open the autosave file?", answer:  "Yes"
+The color name 'ID_WHITE' of the 'DT' layer was not defined in default.dsp file.
+lakerOpenDesign -lib test -cell DFFQX1 -mode readOnly -autosave
+lakerSetActiveLayer -layerName ref -purpose drawing
+Check reference done!
+lakerCheckReference
+lakerSingleSel -point (-2.155,3.584) -traversedist 0.155
+lakerSingleSel -point (-5.837,6.66) -traversedist 0.155
+lakerCloseDesign
+au time 1180.360285 21.745464 47.411983 delta 99446784 99446784 total 462307328 462307328

@@ -1,0 +1,92 @@
+       ###############################################
+       ##                                           ##
+       ##    FileName:  gdsIn.log                   ##
+       ##    GenDate :   8-Oct-2024   12:35:12      ##
+       ##                                           ##
+       ##    Laker: 2023.06-2 (Linux x86_64/64bit) 03/22/2024  ##
+       ##############################################N
+
+Command: gdsIn -64 -s Preserve -IoLayerMapMode Filter -l /home/user/wrk/standard_113/laker/layer.map -sumExtraLayer 1 -label Preserve -mode Overwrite -o /home/user/wrk/standard_113/laker/test3 -t /home/user/wrk/standard_113/laker/standard.tf -Vm 4096 -Pi 102 -Pn 102 -SkipWarnNo 100 /home/user/wrk/standard_113/gds/test.gds
+Host/OS: leon   Linux 3.10.0-1160.105.1.el7.x86_64
+##### Mapping Layer Table #####
+
+      file: /home/user/wrk/standard_113/laker/layer.map
+      1. streamLayer(2),dataType(0) --> name(NWELL),dataType(drawing),layer(2)
+      2. streamLayer(1),dataType(0) --> name(DIFF),dataType(drawing),layer(1)
+      3. streamLayer(5),dataType(0) --> name(PIMP),dataType(drawing),layer(5)
+      4. streamLayer(4),dataType(0) --> name(NIMP),dataType(drawing),layer(4)
+      5. streamLayer(3),dataType(0) --> name(POLY1),dataType(drawing),layer(3)
+      6. streamLayer(6),dataType(0) --> name(CONT),dataType(drawing),layer(6)
+      7. streamLayer(7),dataType(0) --> name(METAL1),dataType(drawing),layer(7)
+      8. streamLayer(7),dataType(1) --> name(METAL1),dataType(dummy),layer(7)
+      9. streamLayer(7),dataType(2) --> name(METAL1),dataType(slot),layer(7)
+      10. streamLayer(67),dataType(2) --> name(TEXT),dataType(drawing),layer(238)
+
+
+
+##### Stream Library #####
+
+   userUnit: micron
+   dbScale : 0.001000
+
+##### Stream Cells #####
+
+   1.INVX1                
+
+##### Stream Error File(gdsIn.err) #####
+
+ All cells have no fatal,warn,info message.
+
+
+
+##### Stream Property Attribute #####
+
+      1. Generate Inst Name As Prop No: 102
+      2. Generate Net As Prop No:       102
+
+      propAttri(1-127): NONE
+
+
+
+##### Stream Summary #####
+
+                   Resort Primary Cell(s)
+
+--------------------------------------------------------------------------
+   1.INVX1                
+
+
+                   Resort Cell(s) Summary
+
+cellName     #cInst  #array    #rect    #poly    #path    #text  bBox(um)
+--------------------------------------------------------------------------------------------------
+INVX1             0       0       38        0        0        0 (-0.300,-0.180) (1.170,2.910)
+
+
+                   Resort Layer(s) Summary
+
+Laker                Stream
+layerName   purpose  layerNo  dataType    #rect    #poly    #path    #text
+--------------------------------------------------------------------------
+DIFF        drawing        1        0         4        0        0        0
+NWELL       drawing        2        0         1        0        0        0
+POLY1       drawing        3        0         3        0        0        0
+NIMP        drawing        4        0         2        0        0        0
+PIMP        drawing        5        0         2        0        0        0
+CONT        drawing        6        0        13        0        0        0
+METAL1      drawing        7        0         9        0        0        0
+METAL1      dummy        7        1         4        0        0        0
+
+
+
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off
+
+ EXE Start Time =  8-Oct-2024   12:35:12                  
+ EXE Stop  Time =  8-Oct-2024   12:35:12                  
+
+ #Elapsed Time  = 00:00:00
+ #CPU Time      = 00:00:00
+
+ #Memory 461512 K,Peak 461512 K
+ There are 0 cells that have extra layers.
+ Total #Fatal = 0, #Warn = 0

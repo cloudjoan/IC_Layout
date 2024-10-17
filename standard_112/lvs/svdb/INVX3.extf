@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1688455625 1688455626
+lvs_ExtOutFile RUNDIR /home/user/wrk/standard_112/lvs
+lvs_ExtOutFile RULES_FILE _lvs.rule_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 1 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST INVX3.sp
+lvs_ExtOutFile EXTRACTION_REPORT INVX3.lvs.report.ext
+lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/INVX3.pathchk.erc
+lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/INVX3.pathchk.rep

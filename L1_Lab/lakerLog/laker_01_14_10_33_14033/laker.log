@@ -1,0 +1,508 @@
+Command Line: /dq3/qa/LEO/PACK/laker201212/platform/LINUX64/bin/laker
+uname(Linux spx517 2.6.32-220.el6.x86_64 #1 SMP Wed Nov 9 08:03:13 EST 2011 x86_64)
+source /dq3/qa/LEO/PACK/laker201212/gift/gift.tcl
+lakerLME
+lakerLMEClose
+lakerOpenDesign -lib lab1 -cell top -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerZoomAll
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerViewLevelInc
+lakerViewLevelInc
+lakerViewLevelInc
+lakerViewLevelInc
+lakerViewLevelInc
+lakerMinViewLevel
+lakerSingleSel -point (-3.521,17.87) -traversedist 0.538
+lakerSingleSel -point (39.729,13.028) -traversedist 0.538
+lakerSingleSel -point (-4.328,1.248) -traversedist 0.538
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerSingleSel
+lakerMaxViewLevel
+lakerSingleSel -point (-2.929,17.493) -traversedist 0.538
+lakerMinViewLevel
+lakerSingleSel -point (-7.34,23.949) -traversedist 0.538
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerSingleSel -point (-5.35,16.202) -traversedist 0.538
+lakerMaxViewLevel
+lakerSetColPat -visall 0
+lakerSetColPat -layerName MET1 -sel 1 -vis 1
+lakerZoomAll
+lakerZoomAll
+lakerZoomOut
+lakerAreaSel -point (-0.993,-8.81) (42.475,35.837)
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (31.605,-3.865) -offsetPoint (59.9,-3.865)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (14.93,18.408) -traversedist 1.076
+lakerZoomOut
+lakerZoomInByArea -point (-9.109,-18.603) (117.077,48.317)
+lakerZoomOut
+lakerZoomInByArea -point (-32.429,-33.037) (143.239,60.125)
+lakerSetColPat -modCategory RoutingSet -use 1
+lakerSetColPat -modCategory RoutingSet -use 0
+lakerSetColPat -layerName PDIF -sel 1 -vis 1
+lakerSetActiveLayer -layerName PDIF -purpose drawing
+lakerSetActiveLayer -layerName PDIF -purpose drawing
+lakerSingleSel -point (-10.965,43.076) -traversedist 1.522
+lakerSetColPat -layerName POLY -purpose blockage -sel 1 -vis 1
+lakerSetActiveLayer -layerName POLY -purpose blockage
+lakerSetActiveLayer -layerName POLY -purpose blockage
+lakerSetActiveLayer -layerName POLY -purpose blockage
+lakerSingleSel
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerSingleSel -point (8.367,24.504) -traversedist 1.522
+lakerZoomAll
+lakerSingleSel -point (23.429,18.946) -traversedist 0.538
+lakerSingleSel -point (22.515,18.515) -traversedist 0.538
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerViewLevelInc
+lakerChangeSelMode -mode Object
+lakerViewLevelInc
+lakerViewLevelInc
+lakerViewLevelInc
+lakerViewLevelInc
+lakerMinViewLevel
+lakerViewLevelInc
+lakerMinViewLevel
+lakerViewLevelInc
+lakerMinViewLevel
+lakerViewLevelInc
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerSingleSel -point (-3.951,-1.604) -traversedist 0.538
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerReturnOne
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerSingleSel -point (24.559,16.848) -traversedist 0.538
+lakerViewLevelInc
+lakerViewLevelInc
+lakerMinViewLevel
+lakerSingleSel -point (23.913,18.193) -traversedist 0.538
+lakerSingleSel -point (22.945,17.386) -traversedist 0.538
+lakerViewLevelInc
+lakerViewLevelInc
+lakerSingleSel -point (22.945,17.386) -traversedist 0.538
+lakerSingleSel -point (25.85,17.224) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (23.859,18.462) -traversedist 0.538
+lakerSingleSel -point (26.28,17.924) -traversedist 0.538
+lakerSingleSel
+lakerEditInPlace -zoomto 0
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerSingleSel -point (25.635,19.215) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerReturnOne
+lakerReturnOne
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerSingleSel -point (24.451,17.493) -traversedist 0.538
+lakerSingleSel -point (21.439,20.882) -traversedist 0.538
+lakerViewLevelInc
+lakerViewLevelInc
+lakerSingleSel -point (21.708,21.474) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerSingleSel -point (-1.853,-2.68) -traversedist 0.538
+lakerReturnOne
+lakerReturnOne
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerSingleSel -point (25.204,15.126) -traversedist 0.538
+lakerMinViewLevel
+lakerViewLevelInc
+lakerSingleSel -point (19.448,20.075) -traversedist 0.538
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerViewLevelInc
+lakerViewLevelInc
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerSingleSel -point (21.17,18.623) -traversedist 0.538
+lakerZoomAll
+lakerSingleSel -point (24.613,15.557) -traversedist 0.538
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerSingleSel -point (24.075,17.278) -traversedist 0.538
+lakerViewLevelInc
+lakerViewLevelInc
+lakerSingleSel
+lakerSingleSel -point (19.233,20.936) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerSingleSel -point (-13.527,3.452) -traversedist 0.538
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerMinViewLevel
+lakerIncreaseSel -point (24.236,21.42) -traversedist 0.538
+lakerSingleSel -point (24.236,21.42) -traversedist 0.538
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerViewLevelInc
+lakerViewLevelInc
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (26.98,19.322) -traversedist 0.538
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (20.686,16.148) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerReturnOne
+lakerReturnOne
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerSingleSel -point (26.388,19.753) -traversedist 0.538
+lakerSingleSel -point (26.173,13.943) -traversedist 0.538
+lakerSingleSel -point (20.847,21.582) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerReturnOne
+lakerReturnOne
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerMinViewLevel
+lakerViewLevelInc
+lakerViewLevelInc
+lakerSingleSel -point (25.527,24.863) -traversedist 0.538
+lakerEIPDisplayTop
+lakerSingleSel -point (24.882,22.281) -traversedist 0.538
+lakerSingleSel
+lakerSingleSel -point (21.815,21.367) -traversedist 0.538
+lakerViewLevelInc
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerSingleSel -point (25.42,23.088) -traversedist 0.538
+lakerEIPDisplayNormal
+lakerSingleSel -point (21.546,21.474) -traversedist 0.538
+lakerMinViewLevel
+lakerViewLevelInc
+lakerViewLevelInc
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (25.151,19.161) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerSingleSel -point (25.688,20.129) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerEditInPlace -descend 1
+lakerReturnOne
+lakerSingleSel -point (-3.072,7.598) -traversedist 0.225
+lakerReturnOne
+lakerReturnOne
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerSingleSel -point (23.698,18.354) -traversedist 0.538
+lakerSingleSel -point (18.857,22.98) -traversedist 0.538
+lakerSingleSel -point (20.148,16.095) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerReturnOne
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerSingleSel -point (26.334,18.3) -traversedist 0.538
+lakerMinViewLevel
+lakerViewLevelInc
+lakerViewLevelInc
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerSingleSel -point (21.762,21.205) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerEditInPlace -descend 1
+lakerSingleSel -point (-5.021,6.991) -traversedist 0.225
+lakerReturnOne
+lakerReturnOne
+lakerReturnOne
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerViewLevelInc
+lakerViewLevelInc
+lakerSingleSel
+lakerSingleSel -point (23.106,21.797) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerSingleSel
+lakerSingleSel -point (24.29,20.882) -traversedist 0.538
+lakerSingleSel -point (16.544,15.826) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerSingleSel -point (23.537,18.085) -traversedist 0.538
+lakerChangeSelMode -mode Object
+lakerEditInPlace -descend 1
+lakerZoomOut
+lakerSingleSel -point (-6.909,14.069) -traversedist 0.449
+lakerPanUp
+lakerPanUp
+lakerSingleSel -point (24.367,33.973) -traversedist 0.449
+lakerZoomAll
+lakerSingleSel -point (12.481,10.654) -traversedist 0.225
+lakerReturnOne
+lakerSingleSel -point (12.431,7.733) -traversedist 0.225
+lakerSingleSel -point (13.285,7.89) -traversedist 0.225
+lakerReturnOne
+lakerReturnOne
+lakerZoomInByArea -point (12.509,-1.496) (74.587,31.426)
+lakerReturnTop
+lakerZoomAll
+lakerSingleSel -point (65.066,19.161) -traversedist 0.538
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerSingleSel -point (65.066,19.161) -traversedist 0.538
+lakerZoomAll
+lakerSingleSel -point (66.464,9.478) -traversedist 0.538
+lakerZoomAll
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerSingleSel -point (16.651,22.442) -traversedist 0.538
+lakerZoomAll
+lakerMaxViewLevel
+lakerSingleSel -point (18.641,21.689) -traversedist 0.538
+lakerSetColPat -visall 0
+lakerSetColPat -layerName MET1 -sel 1 -vis 1
+lakerRedraw
+lakerChangeSelMode -mode Object
+lakerRedraw
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerRedraw
+lakerSingleSel -point (17.458,10.5) -traversedist 0.538
+lakerSetActiveLayer -layerName POLY -purpose drawing
+lakerSetActiveLayer -layerName POLY -purpose drawing
+lakerChangeSelMode -mode Vertex
+lakerCloseDesign
+lakerLME
+lakerLMEClose
+lakerLME
+lakerLME -purge 1
+lakerLME -logicName lab1 -mapPath ./lab1.lib++
+lakerLME -logicName cpu -mapPath ./cpu.lib++
+lakerLME -logicName analogADP -mapPath /dq3/qa/LEO/PACK/laker201212/share/adplib/32/analogADP.lib++
+lakerLME -logicName sourceADP -mapPath /dq3/qa/LEO/PACK/laker201212/share/adplib/32/sourceADP.lib++
+lakerLME -logicName borderADP -mapPath /dq3/qa/LEO/PACK/laker201212/share/adplib/32/borderADP.lib++
+lakerLME -logicName digitalADP -mapPath /dq3/qa/LEO/PACK/laker201212/share/adplib/32/digitalADP.lib++
+lakerLME -logicName lab2 -mapPath lab2.lib++
+lakerLMESave
+lakerLMEClose
+lakerOpenDesign -lib lab2 -cell top -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerZoomAll
+lakerOpenDesign -lib lab1 -cell top -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerSingleSel
+lakerEditInPlace -descend 1
+lakerZoomInByArea -point (-27.139,-1.496) (57.645,31.426)
+lakerReturnTop
+lakerViewLevelInc
+lakerViewLevelInc
+lakerSingleSel
+lakerSingleSel
+lakerEditInPlace -zoomto 0
+lakerZoomInByArea -point (-27.139,-1.496) (57.645,31.426)
+lakerReturnTop
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (-9.827,17.147) -traversedist 0.74
+lakerChangeSelMode -mode Object
+lakerEditInPlace -zoomto 0
+lakerZoomInByArea -point (-27.139,-1.496) (57.645,31.426)
+lakerReturnTop
+lakerSingleSel -point (-6.424,18.331) -traversedist 0.74
+lakerChangeSelMode -mode Object
+lakerEditInPlace -descend 1
+lakerSingleSel -point (-4.851,9.479) -traversedist 0.309
+lakerZoomAll
+lakerZoomInByArea -point (-27.139,-1.496) (57.645,31.426)
+lakerReturnTop
+lakerCloseDesign
+lakerOpenDesign -lib lab1 -cell measure -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerZoomInByArea -point (330.668,245.346) (556.154,332.904)
+lakerZoomAll
+lakerZoomInByArea -point (316.725,305.613) (445.315,355.545)
+lakerZoomInByArea -point (347.582,313.249) (421.526,341.961)
+lakerSingleSel
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (364.369,293.666) (535.851,360.254)
+lakerSingleSel -point (501.136,336.163) -traversedist 1.496
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (278.158,226.704) (504.746,314.69)
+lakerSingleSel -point (465.993,280.88) -traversedist 1.977
+lakerZoomOut
+lakerZoomInByArea -point (467.409,255.868) (573.321,296.994)
+lakerSingleSel -point (556.316,266.958) -traversedist 0.924
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (316.304,190.569) (476.742,252.869)
+lakerZoomInByArea -point (365.863,207.755) (407.863,224.063)
+lakerZoomOut
+lakerZoomOut
+lakerSingleSel -point (337.167,220.527) -traversedist 1.466
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (365.753,280.273) (502.381,333.327)
+lakerZoomOut
+lakerZoomInByArea -point (328.326,299.051) (454.206,347.931)
+lakerCloseDesign
+lakerCloseDesign
+lakerOpenDesign -lib cpu -cell CPU -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerZoomAll
+lakerChangeSelMode -mode Object
+lakerConnChecker -addNet -net LakerNet__1 -startPoint (461.165,106.005)
+Connection Tracer Report:
+	Layer:MET3  Length = 0.000000  Area = 801.820000  Perimeter = 2710.600000
+	Layer:CONT  Length = 0.000000  Area = 32.160000  Perimeter = 321.600000
+	Layer:POLY  Length = 0.000000  Area = 1231.320000  Perimeter = 7137.500000
+	Layer:VIA1  Length = 0.000000  Area = 25.500000  Perimeter = 204.000000
+	Layer:VIA2  Length = 0.000000  Area = 30.250000  Perimeter = 242.000000
+	Layer:MET1  Length = 0.000000  Area = 388.075000  Perimeter = 1489.900000
+	Layer:MET2  Length = 0.000000  Area = 1008.925000  Perimeter = 3405.900000
+
+lakerConnChecker -toMaxLevel -net LakerNet__1 -speedMode -traceViaArray 1
+lakerConnChecker -addNet -net LakerNet__2 -startPoint (457.81,103.77)
+Connection Tracer Report:
+	Layer:MET3  Length = 0.000000  Area = 801.820000  Perimeter = 2710.600000
+	Layer:CONT  Length = 0.000000  Area = 32.160000  Perimeter = 321.600000
+	Layer:POLY  Length = 0.000000  Area = 1231.320000  Perimeter = 7137.500000
+	Layer:VIA1  Length = 0.000000  Area = 25.500000  Perimeter = 204.000000
+	Layer:VIA2  Length = 0.000000  Area = 30.250000  Perimeter = 242.000000
+	Layer:MET1  Length = 0.000000  Area = 388.075000  Perimeter = 1489.900000
+	Layer:MET2  Length = 0.000000  Area = 1008.925000  Perimeter = 3405.900000
+
+lakerConnChecker -toMaxLevel -net LakerNet__2 -speedMode -traceViaArray 1
+lakerConnChecker -addNet -net LakerNet__3 -startPoint (464.52,106.005)
+Connection Tracer Report:
+	Layer:MET3  Length = 0.000000  Area = 801.820000  Perimeter = 2710.600000
+	Layer:CONT  Length = 0.000000  Area = 32.160000  Perimeter = 321.600000
+	Layer:POLY  Length = 0.000000  Area = 1231.320000  Perimeter = 7137.500000
+	Layer:VIA1  Length = 0.000000  Area = 25.500000  Perimeter = 204.000000
+	Layer:VIA2  Length = 0.000000  Area = 30.250000  Perimeter = 242.000000
+	Layer:MET1  Length = 0.000000  Area = 388.075000  Perimeter = 1489.900000
+	Layer:MET2  Length = 0.000000  Area = 1008.925000  Perimeter = 3405.900000
+
+lakerConnChecker -toMaxLevel -net LakerNet__3 -speedMode -traceViaArray 1
+lakerConnChecker -addNet -net LakerNet__4 -startPoint (463.405,107.125)
+Connection Tracer Report:
+	Layer:MET3  Length = 0.000000  Area = 801.820000  Perimeter = 2710.600000
+	Layer:CONT  Length = 0.000000  Area = 32.160000  Perimeter = 321.600000
+	Layer:POLY  Length = 0.000000  Area = 1231.320000  Perimeter = 7137.500000
+	Layer:VIA1  Length = 0.000000  Area = 25.500000  Perimeter = 204.000000
+	Layer:VIA2  Length = 0.000000  Area = 30.250000  Perimeter = 242.000000
+	Layer:MET1  Length = 0.000000  Area = 388.075000  Perimeter = 1489.900000
+	Layer:MET2  Length = 0.000000  Area = 1008.925000  Perimeter = 3405.900000
+
+lakerConnChecker -toMaxLevel -net LakerNet__4 -speedMode -traceViaArray 1
+lakerConnChecker -addNet -net LakerNet__5 -startPoint (458.93,102.65)
+Connection Tracer Report:
+	Layer:MET3  Length = 0.000000  Area = 801.820000  Perimeter = 2710.600000
+	Layer:CONT  Length = 0.000000  Area = 32.160000  Perimeter = 321.600000
+	Layer:POLY  Length = 0.000000  Area = 1231.320000  Perimeter = 7137.500000
+	Layer:VIA1  Length = 0.000000  Area = 25.500000  Perimeter = 204.000000
+	Layer:VIA2  Length = 0.000000  Area = 30.250000  Perimeter = 242.000000
+	Layer:MET1  Length = 0.000000  Area = 388.075000  Perimeter = 1489.900000
+	Layer:MET2  Length = 0.000000  Area = 1008.925000  Perimeter = 3405.900000
+
+lakerConnChecker -toMaxLevel -net LakerNet__5 -speedMode -traceViaArray 1
+lakerConnChecker -addNet -net LakerNet__6 -startPoint (462.285,104.89)
+Connection Tracer Report:
+	Layer:MET3  Length = 0.000000  Area = 801.820000  Perimeter = 2710.600000
+	Layer:CONT  Length = 0.000000  Area = 32.160000  Perimeter = 321.600000
+	Layer:POLY  Length = 0.000000  Area = 1231.320000  Perimeter = 7137.500000
+	Layer:VIA1  Length = 0.000000  Area = 25.500000  Perimeter = 204.000000
+	Layer:VIA2  Length = 0.000000  Area = 30.250000  Perimeter = 242.000000
+	Layer:MET1  Length = 0.000000  Area = 388.075000  Perimeter = 1489.900000
+	Layer:MET2  Length = 0.000000  Area = 1008.925000  Perimeter = 3405.900000
+
+lakerConnChecker -toMaxLevel -net LakerNet__6 -speedMode -traceViaArray 1
+lakerConnChecker -addNet -net LakerNet__7 -startPoint (462.285,104.89)
+Connection Tracer Report:
+	Layer:MET3  Length = 0.000000  Area = 801.820000  Perimeter = 2710.600000
+	Layer:CONT  Length = 0.000000  Area = 32.160000  Perimeter = 321.600000
+	Layer:POLY  Length = 0.000000  Area = 1231.320000  Perimeter = 7137.500000
+	Layer:VIA1  Length = 0.000000  Area = 25.500000  Perimeter = 204.000000
+	Layer:VIA2  Length = 0.000000  Area = 30.250000  Perimeter = 242.000000
+	Layer:MET1  Length = 0.000000  Area = 388.075000  Perimeter = 1489.900000
+	Layer:MET2  Length = 0.000000  Area = 1008.925000  Perimeter = 3405.900000
+
+lakerConnChecker -toMaxLevel -net LakerNet__7 -speedMode -traceViaArray 1
+lakerConnChecker -save CPU_trace
+lakerConnChecker -addNet -net LakerNet__8 -startPoint (463.405,109.365)
+Connection Tracer Report:
+	Layer:MET3  Length = 0.000000  Area = 801.820000  Perimeter = 2710.600000
+	Layer:CONT  Length = 0.000000  Area = 32.160000  Perimeter = 321.600000
+	Layer:POLY  Length = 0.000000  Area = 1231.320000  Perimeter = 7137.500000
+	Layer:VIA1  Length = 0.000000  Area = 25.500000  Perimeter = 204.000000
+	Layer:VIA2  Length = 0.000000  Area = 30.250000  Perimeter = 242.000000
+	Layer:MET1  Length = 0.000000  Area = 388.075000  Perimeter = 1489.900000
+	Layer:MET2  Length = 0.000000  Area = 1008.925000  Perimeter = 3405.900000
+
+lakerConnChecker -toMaxLevel -net LakerNet__8 -speedMode -traceViaArray 1
+lakerMainWin
+lakerConnChecker -addNet -net LakerNet__9 -startPoint (465.64,101.535)
+Connection Tracer Report:
+	Layer:MET3  Length = 0.000000  Area = 801.820000  Perimeter = 2710.600000
+	Layer:CONT  Length = 0.000000  Area = 32.160000  Perimeter = 321.600000
+	Layer:POLY  Length = 0.000000  Area = 1231.320000  Perimeter = 7137.500000
+	Layer:VIA1  Length = 0.000000  Area = 25.500000  Perimeter = 204.000000
+	Layer:VIA2  Length = 0.000000  Area = 30.250000  Perimeter = 242.000000
+	Layer:MET1  Length = 0.000000  Area = 388.075000  Perimeter = 1489.900000
+	Layer:MET2  Length = 0.000000  Area = 1008.925000  Perimeter = 3405.900000
+
+lakerConnChecker -toMaxLevel -net LakerNet__9 -speedMode -traceViaArray 1
+lakerMainWin
+lakerSingleSel
+lakerSingleSel -point (541.7,70.215) -traversedist 11.185
+lakerConnChecker -clear
+lakerClearHighLight
+Net information is not found.
+lakerConnBrowser -show 1
+lakerConnBrowser -view CPU_trace
+lakerConnBrowser -net LakerNet__7
+lakerConnBrowser -net LakerNet__7
+lakerConnBrowser -clear
+lakerCloseDesign
+lakerOpenDesign -lib cpu -cell CPU -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+Net information is not found.
+lakerConnBrowser -show 1
+lakerChangeSelMode -mode Object
+lakerConnChecker -addNet -net LakerNet__1 -startPoint (470.115,104.89)
+lakerConnChecker -toMaxLevel -net LakerNet__1 -speedMode -traceViaArray 1
+lakerChangeSelMode -mode Vertex
+Net information is not found.
+lakerConnBrowser -show 1
+lakerConnBrowser -view CPU_trace
+lakerCloseDesign
+au time 17530.394448 524.228306 1087.827625 delta 69279744 69279744 total 364011520 364011520

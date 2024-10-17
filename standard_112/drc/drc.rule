@@ -1,0 +1,2118 @@
+// *****************************************************************************
+// * 0.18um Calibre DRC COMMAND FILE 
+// *****************************************************************************
+//
+// DUMMY LAYER REQUIRED:
+//
+//  1) HOTWL   - Hot N-Well
+//               N-Well not connected to the most positive voltage Vdd is defined as Hot N-Well. 
+//               It must follow different width and space rules from the N-Well connected to 
+//               Vdd (Cold N-Well). Use "HOTWL" layer to exactly cover the Hot N-Well area for 
+//               correct N-Well DRC.
+//
+//  2) EXCL    - unDRC area
+//               If there's any area with different rules and not to be checked in this run, 
+//               use the "EXCL" layer to exactly cover the area to be excluded.
+//
+//  3) SDI     - I/O ESD Protection Circuit
+//               For I/O guidance rule checking, use "SDI" layer to designate the ESD area to 
+//               checked. The whole ESD devices should be covered by "SDI".
+//
+//  4) DPDMY   - Dummy Pad area
+//               For chip corner dummy pad, use "DPDUMMY" layer to cover dummy pad area.
+//
+//  5) PLDMY   - Power Line
+//               For chip corner power line, use "PLDUMMY" layer to cover whole power line area.
+//
+//  6) RWDMY   - NWell Resistor
+//               The N-Well region covered by both RWDMY and RPO is the NW within OD resistor.
+//               The N-Well region covered by only RWDMY is the NW under STI resistor.
+//
+//  7) DRCDMY  - TSMC reserved layer
+// 
+//  8) ESD1DMY - IO ESD region dummy layer, RPO must enclose whole gate
+//     ESD2DMY - RPO enclose gate 0.05 for 3.3V
+//
+//  9) DMN2V   - dummy layer to avoid N2V in N+ poly resistor
+//     DMP2V   - dummy layer to avoid P2V in P+ poly resistor
+//
+// 10) ESEXCL  - dummy layer to cover SRAM cell.
+//
+// 11) RLPPDMY - LPP high resistance poly resistor
+//               Use "RLPPDMY" to exactly cover LPP high resistance poly resistor area.
+//
+// 12) WBDMY   - dummy layer to cover the CUP pad
+//-------------------------------------------------------------------------------------------
+
+//#DEFINE CHECK_SRAM_EXCL // enable when check M2 and upward layers in SRAM region covered by EXCL 
+
+#DEFINE 3.3V 	// when HIGH_VOLTAGE = 3.3V
+//#DEFINE 2.5V 	// when HIGH_VOLTAGE = 2.5V
+//#DEFINE 5V 	// when HIGH_VOLTAGE = 5V
+
+#DEFINE 1.8V 	// when CORE_VOLTAGE = 1.8V
+//#DEFINE 1.5V 	// when CORE_VOLTAGE = 1.5V for Low-voltage process
+
+
+//
+// ENVIRONMENT SETUP
+//------------------
+PRECISION    1000
+RESOLUTION     5   //Set layout grid  check to 0.005
+
+LAYOUT SYSTEM GDSII
+LAYOUT PATH "layout.gds" 
+LAYOUT PRIMARY "layout" 
+
+DRC RESULTS DATABASE "DRC_RES.db" 
+DRC SUMMARY REPORT "DRC.rep"  
+DRC CHECK TEXT ALL
+DRC MAXIMUM RESULTS ALL 
+//DRC INCREMENTAL CONNECT YES
+
+FLAG OFFGRID YES     // For layout grid check. default grid value is resolution size
+FLAG ACUTE YES
+FLAG SKEW YES
+FLAG NONSIMPLE YES
+
+
+
+
+// DRAWN LAYER DEFINITIONS
+//------------------------
+LAYER  NWELi       2   // nwell technology
+LAYER  DIFFi       1   // active areas
+LAYER DOD        1340    		// Dummy OD (DIFF)
+LAYER MAP 3   DATATYPE 1 1340  		// Mapping (3;1) to 1340 for dummy OD as default
+LAYER ODBLK      1350    		// DOD blocking for insertion
+LAYER MAP 150 DATATYPE 20 1350
+LAYER  PDIFFi      11  // active areas
+LAYER  NDIFFi      12  // active areas
+LAYER  OD2i        16   // define thick gate oxides
+LAYER  POLYi       3  // polysilicon gates, interconnect
+LAYER DPO        1342   	 		// Dummy Poly
+LAYER MAP 13  DATATYPE 1 1342  		// Mapping (13;1) to 1342 for dummy PO
+LAYER POBLK      1351    		// DPO blocking for insertion
+LAYER MAP 150 DATATYPE 21 1351
+LAYER  PPi         5   // P+ S/D imlant
+LAYER  NPi         4   // N+ S/D imlant
+LAYER  BJTDUMMY     49  // BJT dummy layer
+LAYER  COi         6  // Define connect for M1 to S/D and Gate
+LAYER  M1i         7  // First Metal layer
+LAYER  VIA1i       17  // Define connect for M2 to M1
+LAYER  M2i         18  // Second Metal layer
+LAYER  VIA2i       27  // Define connect for M3 to M2
+LAYER  M3i         28  // Third Metal layer
+LAYER  VIADi       167  // Define connect form top metal to MD
+LAYER  MDi         168 // Definition of metal above MTop for redistribution interconnection
+LAYER  CBi         19  // Passivation opening for Bond Pad
+LAYER  CBDi        169 // Definition of passivation window for bump
+LAYER  UBMi        170 // Bond pad definition for RDL
+LAYER  RPOi        34  // Salicided Block Layer
+LAYER  NTNi        129 // Native NMOS blocked implantation
+LAYER  PLMIDEi     89  // Polymide (if drawn)
+//LAYER  FUSEi       235 // Fuse window
+LAYER  DNWi        82  // Deep N-WELL
+LAYER  VTMPi       23  // blocking region of PMOS VT implantation
+LAYER  VTMNi       24  // blocking region of NMOS VT implantation
+LAYER  PV_P         71  // PV_P pmos varactor p+ implant layer
+LAYER  PV_N         72  // PV_N pmos varactor n+ blocking layer
+LAYER  HRIi        48  // high resistor implant
+
+//
+// Metal Slot layers
+//
+LAYER MAP 16 DATATYPE 2 321
+LAYER  M1SLOTi    321  // Metal1 slot (if drawn)
+LAYER MAP 18 DATATYPE 2 322
+LAYER  M2SLOTi    322  // Metal2 slot (if drawn)
+LAYER MAP 28 DATATYPE 2 323
+LAYER  M3SLOTi    323  // Metal3 slot (if drawn)
+LAYER MAP 168 DATATYPE 2 328
+LAYER  MDSLOTi  328    // MD slot (if drawn)
+
+//
+// Dummy Metal layers
+//
+LAYER MAP 16 DATATYPE 1 316
+LAYER  M1DMY    316
+LAYER MAP 18 DATATYPE 1 318
+LAYER  M2DMY    318
+LAYER MAP 28 DATATYPE 1 329
+LAYER  M3DMY    329
+LAYER MAP 168 DATATYPE 1 340
+LAYER  MDDMY    340    
+
+//
+// Capacitor Top Metal Layers
+//
+LAYER MAP 67 DATATYPE 2 257
+LAYER CTM2i   257       // Capacitor Top Metal-2
+LAYER MAP 67 DATATYPE 3 258
+LAYER CTM3i   258       // Capacitor Top Metal-3
+LAYER MAP 67 DATATYPE 4 259
+LAYER CTM4i   259       // Capacitor Top Metal-4
+LAYER MAP 67 DATATYPE 5 260
+LAYER CTM5i   260       // Capacitor Top Metal-5
+//
+// Dummy Layers
+//
+LAYER  HOTWL       51  // Hot N-Well (SEE README HOT_NWEL NOTES)
+LAYER  EXCL        55  // Exclude layer
+LAYER  DRCDMY      60  // DRC I/O waiver
+LAYER  RWDMY       52  // NWEL resistor dummy layer
+LAYER  DPDMY       65  // dummy pad area dummy layer
+LAYER  PLDMY       66  // power line area dummy layer
+LAYER  SDI         58  // IO ESD region dummy layer
+LAYER  ESD1DMY    136  // IO ESD region dummy layer, RPO must enclose whole gate
+LAYER  ESD2DMY    137  // IO ESD region dummy layer, RPO enclose gate 0.05 for 3.3V
+LAYER  ESD3DMY    234
+LAYER  CTMDMY     131  // Cover metal as a capacitor bottom plate
+LAYER  RLPPDMY    134  // HRI high Poly resistor dummy layer
+LAYER  DMN2V      184  // dummy layer to avoid N2V in N+ poly resistor
+LAYER  DMP2V      149  // dummy layer to avoid P2V in P+ poly resistor
+LAYER  ESEXCL      76  // dummy layer to cover SRAM cell
+LAYER  VARDMY     138  // dummy layer to cover varactor device
+LAYER  PMDMY      236  // dummy layer to cover fuse window and protection ring structur
+LAYER  FWI        235  // Fuse window when x, (x+1) = 3 
+LAYER  LMARK        263  // L target window for bump process
+LAYER MAP 63 DATATYPE 1 263
+LAYER  LWI        363  // L target window for bump process
+LAYER MAP 63 DATATYPE 2 363
+LAYER  WBDMY      183  // dummy layer to cover the CUP pad
+LAYER  ESDi        30  // For 0.18um 1.8V/5V on i/o esd's implant only.
+LAYER  INDDMY     364  // dummy layer to define inductor
+LAYER MAP 139 DATATYPE 0 364
+LAYER LOGO       178  			// Dummy layer for product labels and LOGO
+
+LAYER  POLY2       14   // Poly2 for caps and res 
+LAYER  RPDMY       54   // dummy layer to form OD/POLY resistor 
+
+LAYOUT TOP LAYER M1i VIA1i M1SLOTi M1DMY
+LAYOUT TOP LAYER M2i VIA2i M2SLOTi M2DMY
+LAYOUT TOP LAYER MDi VIADi MDSLOTi MDDMY M3i M3SLOTi CBi 
+
+ALL_OD   = ODi    OR  DOD
+ALL_POLY = POLYi  OR  DPO
+
+
+ODi    = (DIFFi OR NDIFFi) OR PDIFFi
+NRODi  = ODi NOT RPOi
+NPODi  = NPi AND NRODi
+PPODi  = PPi AND NRODi
+NONWRi = NWELi NOT INTERACT RWDMY  // NWEL - NWR(OD) - NWR(STI)
+//NTAPi  = NPODi AND NWELi
+NTAPi  = NPODi AND NONWRi   // NWELL pick up
+PTAPi  = PPODi NOT NWELi    // PWELL pick up
+PACTi  = PPODi AND NONWRi   // PMOSi  
+PSDi   = PACTi NOT POLYi    // PMOS source/drain,separated
+NACTi  = NPODi NOT NWELi    // NMOSi
+NSDi   = NACTi NOT POLYi    // NMOS source/drain,separated  
+ILP1i  = POLYi NOT RPOi     // interconnection poly
+
+M1xd   = (M1i OR M1DMY) NOT M1SLOTi
+M1x = M1i NOT M1SLOTi
+LAYER DM1EXCL    371
+LAYER MAP 150 DATATYPE 1 371
+M2xd   = (M2i OR M2DMY) NOT M2SLOTi
+M2x = M2i NOT M2SLOTi
+LAYER DM2EXCL    372
+LAYER MAP 150 DATATYPE 2 372
+M3xd   = (M3i OR M3DMY) NOT M3SLOTi
+M3x = M3i NOT M3SLOTi
+LAYER DM3EXCL    373
+LAYER MAP 150 DATATYPE 3 373
+MDxd   = (MDi OR MDDMY) NOT MDSLOTi
+Mdx = MDi NOT MDSLOTi
+LAYER DMDEXCL    380
+LAYER MAP 150 DATATYPE 15 380
+
+/////////////////////////////////////////////////////////////////////////////////
+//
+// GLOBAL DERIVED LAYERS FOR RULE CHECKS
+//--------------------------------------
+CHIP         = EXTENT
+BULK         = SIZE CHIP BY 1.0
+
+PWELi = BULK NOT NWELi
+//
+// EXCLUDE UNCHECKED REGIONS
+//--------------------------
+
+#IFDEF CHECK_SRAM_EXCL
+EXCL_S  = CHIP NOT BULK  // an empty layer to disable the usage of EXCL
+#ELSE
+EXCL_S  = COPY EXCL      // EXCL_S = EXCL
+#ENDIF
+
+PWEL  = PWELi NOT EXCL
+NWEL    = NWELi NOT INSIDE EXCL
+OD      = ODi NOT EXCL
+OD2     = OD2i   NOT EXCL
+POLY    = POLYi  NOT EXCL
+PP      = PPi    NOT INSIDE EXCL
+NP      = NPi    NOT INSIDE EXCL
+CO      = COi    NOT EXCL
+M1      = M1xd    NOT EXCL
+VIA1    = VIA1i   NOT EXCL
+M2      = M2xd    NOT INSIDE EXCL_S
+VIA2    = VIA2i   NOT INSIDE EXCL_S
+M3	= M3xd	  NOT INSIDE EXCL_S
+VIAD    = VIADi   NOT INSIDE EXCL_S
+MD	= MDxd	  NOT INSIDE EXCL_S
+CB      = CBi    NOT EXCL_S
+CBD     = CBDi   NOT EXCL_S
+RPO     = RPOi   NOT EXCL
+NTN     = NTNi   NOT EXCL
+PLMIDE  = PLMIDEi NOT EXCL_S
+//FUSE    = FUSEi  NOT EXCL
+FW      = FWI    NOT EXCL_S
+LW      = LWI    NOT EXCL_S
+DNW     = DNWi   NOT EXCL
+VTMP    = VTMPi NOT EXCL
+VTMN    = VTMNi NOT EXCL
+HRI     = HRIi  NOT EXCL
+
+CTM2    = CTM2i NOT EXCL_S
+CTM3    = CTM3i NOT EXCL_S
+CTM4    = CTM4i NOT EXCL_S
+CTM5    = CTM5i NOT EXCL_S
+ESD     = ESDi NOT EXCL_S
+
+NPOD         = NP AND OD              // N+ OD region
+PPOD         = PP AND OD	      // P+ OD region
+
+RNWEL    = NWEL INTERACT RWDMY    	// NWEL resistor (UNDER OD & STI)
+NONWR	 = NWEL NOT RNWEL		// NWEL - NWR(OD) - NWR(STI)
+
+NTAP         = NPOD AND NONWR         // NWEL tap diffusion
+NACT         = NPOD NOT NWEL          // NMOS device active diffusion
+PTAP         = PPOD NOT NWEL          // Substrate (pwell) tap diffusion
+PACT         = PPOD AND NWEL
+DACT 	     = NACT OR PACT
+DSTP         = NTAP OR PTAP
+ALL_GATE     = POLY AND OD              // Gate regions for NMOS and PMOS
+POLY_ISO     = POLY NOT OD              // Interconnect POLY
+LVGT         = ALL_GATE NOT OD2         // 1.8V gate
+HVGT         = ALL_GATE AND OD2		// 3.3V gate
+GATE_W       = POLY INSIDE EDGE OD      // Gate width
+GATE_L       = OD INSIDE EDGE POLY      // Channel length
+
+FPO1         = COPY POLY_ISO            // field poly
+RPO_NOT_SDI  = RPO NOT SDI
+
+//PORES        = FPO1 AND RPO_NOT_SDI     // POLY resistor region
+PORES1       = FPO1 AND RPO_NOT_SDI     // POLY resistor region
+PORES        = PORES1 INTERACT RPDMY    // POLY resistor region
+
+ILP1         = POLY_ISO NOT RPO         // interconnection poly
+FFOD          = (OD OUTSIDE RWDMY) OUTSIDE ALL_GATE
+ODRES        = FFOD AND RPO_NOT_SDI	// OD resistor region
+
+HRDMY        = (DMP2V OR DMN2V) OR RLPPDMY //high resistance poly resistor dummy layer for DRC
+HREP         = PORES AND HRDMY          // high precision and resistacne poly resistor
+HVN_GOX      = NPOD AND OD2               // Device n-type diffusion for thick gate NMOS
+HVP_GOX      = PPOD AND OD2               // Device p-type diffusion for thick gate PMOS
+HV_NGATE_W   = GATE_W INSIDE EDGE HVN_GOX // 3.3V NMOS gate edges
+HV_PGATE_W   = GATE_W INSIDE EDGE HVP_GOX // 3.3V PMOS gate edges
+
+BUTT_NTAP    = NTAP TOUCH PACT              // NWEL tap butting p-type active diffusion
+NONB_NTAP    = NTAP NOT TOUCH PACT          // Non-butting ntap
+BUTT_PTAP    = PTAP TOUCH NACT              // Pwell tap butting n-type active diffusion
+NONB_PTAP    = PTAP NOT TOUCH NACT          // Non-butting ptap 
+PP_BEDGE     = BUTT_PTAP COIN EDGE NACT     // PP edge to form butted tap
+NP_BEDGE     = BUTT_NTAP COIN EDGE PACT     // NP edge to form butted tap
+
+OD2_BEDGE    = OD2 INSIDE EDGE OD
+
+ACT_OD  = OD INTERACT POLY
+PNSD    = ACT_OD NOT ALL_GATE
+SDPO2 = PNSD INTERACT POLY == 2             // S/D between two Poly gate
+
+CO_DIFF    = CO OUTSIDE POLY_ISO        // Diffusion contacts + floating contacts
+CO_POLY    = CO NOT OUTSIDE POLY_ISO    // POLY contacts
+
+GATE_NP     = ALL_GATE AND NP
+GATE_PP     = ALL_GATE AND PP
+
+// For checks such as N2V.C.4:
+EXGATE_NP          = SIZE ((SIZE GATE_NP BY 0.03) AND POLY) BY 0.32
+EXGATE_PP          = SIZE ((SIZE GATE_PP BY 0.03) AND POLY) BY 0.32
+
+
+IMP     = PP OR NP
+ASD1    = PNSD ENCLOSE CO_DIFF
+
+FUSE_LMARK = (CB OR FW) OR LW
+RNGX       = PMDMY NOT FUSE_LMARK
+
+
+
+#IFNDEF 3.3V
+#IFNDEF 2.5V
+#IFNDEF 5V
+OPTION.HIGH_VOLTAGE { @ There must be specified an option of HIGH_VOLTAGE
+  COPY CHIP
+}
+#ENDIF
+#ENDIF
+#ENDIF
+
+#IFNDEF 1.8V
+#IFNDEF 1.5V
+OPTION.CORE_VOLTAGE { @ There must be specified an option of CORE_VOLTAGE
+  COPY CHIP
+}
+#ENDIF
+#ENDIF
+
+HRI.WARN { @ RLPPDMY overlap OD is not allowed
+  RLPPDMY AND OD   
+}
+
+
+//
+// NWEL CHECKS
+//=============
+CONNECT    NTAPi NWELi
+CONNECT    NTAPi PSDi
+CONNECT    PTAPi NSDi
+CONNECT    M1xd ILP1i NTAPi PTAPi PSDi NSDi BY COi
+CONNECT    M1xd M2xd BY VIA1i
+//Exclude the via upon CTM region
+VIAt   = VIA2i NOT INTERACT CTM2i
+VIAc   = VIA2i AND CTM2i
+CONNECT    M2xd M3xd BY VIAt 
+CONNECT    M3xd CTM2i BY VIAc
+CONNECT    M3xd MDxd BY VIADi
+
+DRC UNSELECT CHECK NW.S.1 NW.W.2 
+
+HOT_NWEL = (NWEL AND HOTWL) OR RNWEL
+
+NW.W.1 { @ Minimum NWEL width < 0.6
+  INT NWEL < 0.6 ABUT < 90 SINGULAR REGION
+}
+NW.W.2 { @ Minimum HOT_NWEL width < 2.10
+  INT HOT_NWEL < 2.10 ABUT < 90 SINGULAR REGION
+}
+NW.S.1 { @ Minimum different potential NWEL space < 1.40
+  NWEL_NODAL = STAMP NWEL BY NWELi
+  EXT NWEL_NODAL < 1.40 SINGULAR REGION ABUT < 90 NOT CONNECTED
+  EXT RNWEL NWEL < 1.40 SINGULAR REGION ABUT < 90
+  EXT RNWEL < 1.40 SINGULAR REGION ABUT < 90
+}
+NW.S.2 { @ Minimum same potential NWEL space < 0.6
+  EXT NWEL < 0.60 REGION ABUT < 90 SINGULAR 
+}
+
+
+// NWEL (within OD) RESISTOR CHECKS
+//====================================
+
+NWRES = RNWEL INTERACT RPO      // NWEL resistor (UNDER OD)
+ODWR  = OD INTERACT NWRES       // OD area of NW resistor
+NPWR  = NP INTERACT NWRES       // N+ implant on NW resistor terminals
+COWR  = CO_DIFF INTERACT NWRES  // Contact on NW resistor terminals
+RHWR  = ODWR NOT RPO            // Non-Salicided area of NW resistor
+
+NWR.E.1 {@ Min. OD enclose NWEL resistor < 1.0
+  ENC NWRES ODWR < 1.0 ABUT<90 SINGULAR REGION
+  NWRES CUT ODWR    
+}
+NWR.E.2 {@ Min. NWEL resistor enclose CO < 0.3
+  ENC COWR NWRES < 0.3 ABUT<90 SINGULAR REGION
+  COWR CUT NWRES    
+}
+NWR.C.1 {@ Min. RPO hole enclose NWEL < 0.3
+  ENC NWRES RHWR < 0.3 ABUT<90 SINGULAR REGION
+}
+NWR.C.2 {@ Min. RPO enclose OD (with NWEL resistor) < 0.22
+  ENC ODWR RPO < 0.22 ABUT<90 SINGULAR REGION
+}
+NWR.C.3 {@ Min. RPO hole enclose NWEL resistor CO < 0.3
+  ENC COWR RHWR < 0.3 ABUT<90 SINGULAR REGION
+  COWR CUT RHWR    
+}
+NWR.O.1 {@ Min. RPO overlap NP < 0.4
+    INT NPWR RPO < 0.4 ABUT < 90 SINGULAR REGION
+    X = RPO INTERACT NWRES
+    H = HOLES X INNER
+    H NOT NPWR
+}
+NWR.R.1 {@ NW resistor doped by implants not allowed.
+  RWDMY AND NPOD
+  RWDMY AND PPOD
+}
+//NWEL under STI
+NWRES_STI = RNWEL NOT INTERACT RPO	// NWEL resistor (UNDER STI)
+ODWR_STI  = OD INTERACT NWRES_STI
+NPWR_STI  = NP INTERACT NWRES_STI
+NWR.E.3 { @ Min. extension of NP to OD (NWEL resistor under STI) 0.18 um
+  ENC ODWR_STI NPWR_STI < 0.18 ABUT < 90 SINGULAR REGION
+  ODWR_STI NOT NPWR_STI
+}
+
+
+
+#IFNDEF 5V
+// NT_N
+//======
+
+NTN_OD = OD NOT OUTSIDE NTN
+NTN_PO = POLY AND NTN
+NTN_GATE_W = NTN_PO INSIDE EDGE NTN_OD
+NTN_PO_W    = NTN_PO COIN INSIDE EDGE POLY
+
+NT_N.I.2 {@ only one OD region allowed to be put in an NT_N region
+   NTN ENCLOSE OD > 1
+}
+NT_N.I.3 {@ A P+GATE is not allowed to be put in an NT_N region
+   NTN AND GATE_PP
+}
+NT_N.I.4 {@ A bent poly region is not allowed to put in an NT_N region
+  EXT NTN_PO_W < 0.18 ABUT == 90 INTERSECTING ONLY
+  INT NTN_PO_W < 0.18 ABUT == 90 INTERSECTING ONLY
+  EXT NTN_PO_W < 0.18 ABUT == 135 INTERSECTING ONLY
+  INT NTN_PO_W < 0.18 ABUT == 135 INTERSECTING ONLY
+}
+NT_N.W.1 {@ Minimum width of a NT_N region < 0.74
+   INT NTN < 0.74 SINGULAR ABUT<90 REGION
+}
+#IFDEF 1.8V
+NT_N.W.2 {@ Minimum poly gate dimension of a 1.8V blocked NT_N device < 0.5
+   INT NTN_GATE_W < 0.5 ABUT<90 REGION
+}
+#ENDIF
+#IFDEF 1.5V
+NT_N.W.2.LV {@ Minimum poly gate dimension of a 1.5V blocked NT_N device < 0.37
+   INT NTN_GATE_W < 0.37 ABUT<90 REGION
+}
+#ENDIF
+NT_N.W.2B {@ Minimum poly gate dimension of a 3.3V blocked NT_N device < 1.2
+   Z = NTN_GATE_W INSIDE EDGE OD2
+   INT Z < 1.2 ABUT<90 REGION
+}
+NT_N.E.1 {@ Maximum and Minimum extension from NT_N region beyond an NP OD region 0.26
+  A = NTN INTERACT NPOD
+  B = NPOD INTERACT NTN
+  C = SIZE B BY 0.26
+  D = SIZE A BY -0.26
+  A XOR C
+  B XOR D
+}
+NT_N.S.1 {@ Minimum space between two NT_N regions < 0.86
+   EXT NTN < 0.86 ABUT<90 SINGULAR REGION
+}
+
+#IFDEF 1.5V
+#IFDEF 3.3V
+NT_N.E.2.LV {@ OD2 enclose 3.3V NTN < 0.86um
+   ENC NTN OD2 < 0.86 ABUT<90 SINGULAR
+   NTN CUT OD2    
+}
+#ENDIF
+#IFDEF 2.5V
+NT_N.E.2.LV {@ OD2 enclose 2.5V NTN < 0.86um
+   ENC NTN OD2 < 0.86 ABUT<90 SINGULAR
+   NTN CUT OD2
+}
+#ENDIF
+#ENDIF
+NT_N.C.1 {@ MInimum clearance from NT_N to OD < 0.52
+   EXT OD NTN < 0.52 SINGULAR ABUT<90 REGION
+   OD CUT NTN    
+}
+NT_N.C.2 {@ Minimum clearance frome a NT_N region to NWEL edge < 1.66
+   EXT NTN NWEL < 1.66 SINGULAR ABUT<90 REGION
+   NTN AND NWEL    
+}
+#IFDEF 1.5V
+NT_N.C.3.LV { @ OD2 space to 1.5V NTN < 0.86um
+   EXT NTN OD2 < 0.86 ABUT<90 SINGULAR
+}
+#ENDIF
+NT_N.PO.1 {@ Minimum overlap of a PO region extended into field oxide(endcap) < 0.35
+   ENC NTN_OD POLY < 0.35 ABUT<90 SINGULAR REGION
+}
+
+#ENDIF  //#IFNDEF 5V
+
+
+// OD CHECKS
+//==============
+OD.W.1_OD.W.2 { @ Min. OD width for MOS and interconnect < 0.1
+  INT OD < 0.1 SINGULAR ABUT < 90 REGION 
+}
+OD.S.1 { @ Minimum OD spacing < 0.15
+  EXT OD < 0.15 ABUT < 90 SINGULAR REGION 
+}
+OD.C.1 { @ NWEL olap NPOD tie down < 0.12
+   ENC NPOD NONWR < 0.12 SINGULAR ABUT<90 REGION
+   NPOD CUT NONWR    
+}
+OD.C.2_OD.C.3 { @ Minimum NWEL to NPOD space < 0.3
+   A = NPOD NOT INSIDE NWEL
+   X = A NOT ODWR
+   EXT X NWEL < 0.3 SINGULAR ABUT<90 REGION
+   X CUT NWEL
+}
+OD.C.4 { @ NWEL overlap PPOD < 0.12
+   ENC PPOD NWEL < 0.12 SINGULAR ABUT<90 REGION
+   PPOD CUT NWEL    
+}
+OD.C.5 { @ NWEL space PPOD outside NW < 0.12
+   EXT PTAP NWEL < 0.12 SINGULAR ABUT<90 REGION
+}
+// OD.C.6 is taken care of by PP.C.4 and NP.C.4
+// OD.S.2 is not necessary to check
+
+OD.W.3 { @ Length of active with width < 0.42 um, connected to butted strap <= 0.8 um 
+  SD = (DACT INTERACT ALL_GATE) NOT ALL_GATE
+  NP_PP_BTE     = NPOD COIN OUTSIDE EDGE PPOD  
+  BUTTED_EDGE = LENGTH NP_PP_BTE < 0.42
+  CHECK_SD = SD WITH EDGE BUTTED_EDGE
+  NARROW_SD = INT (CHECK_SD COIN INSIDE EDGE OD) < 0.42 ABUT < 90 OPPOSITE REGION 
+  CHECK_OD = (NARROW_SD WITH EDGE BUTTED_EDGE) OR (NARROW_SD WITH EDGE GATE_W)
+  PATH LENGTH (OD COIN INSIDE EDGE CHECK_OD) > 0.8
+     }
+OD.A.1 { @ Minimum area of stand-alone OD region < 0.202
+  OD AREA < 0.202
+}
+
+
+
+
+
+
+
+
+// OD2 CHECKS
+//===============
+OD2.E.1 { @ Minimum OD2 olap OD < 0.32
+  // This only applies to active OD
+  CHECK_EDGE_N = ENC [NACT] OD2 < 0.32 SINGULAR ABUT <90 
+  CHECK_EDGE_N NOT COIN OUTSIDE EDGE PTAP
+  CHECK_EDGE_P = ENC [PACT] OD2 < 0.32 SINGULAR ABUT <90 
+  CHECK_EDGE_P NOT COIN OUTSIDE EDGE NTAP
+  OD2 INSIDE DACT		// OD2 totally inside OD
+  Y = DACT INTERACT OD2
+  Z = Y NOT OD2
+  Z OUTSIDE ALL_GATE
+}
+#IFNDEF 5V
+#IFDEF 1.8V
+OD2.S.1 { @ Minimum OD2 spacing < 0.45
+  // Merge if space < 0.45 um
+  EXT OD2 < 0.45 SINGULAR ABUT <90 REGION
+}
+#ENDIF
+#ENDIF
+#IFDEF 1.5V
+OD2.S.1.LV { @ Minimum OD2 spacing < 0.86
+  // Merge if space < 0.86 um
+  EXT OD2 < 0.86 SINGULAR ABUT <90 REGION
+}
+#ENDIF
+OD2.C.1 { @ Minimum OD2 space to OD < 0.32
+  EXT OD2 NACT < 0.32 SINGULAR ABUT <90 REGION
+  EXT OD2 PACT < 0.32 SINGULAR ABUT <90 REGION
+}
+OD2.C.2 { @ Minimum OD2 space to gate < 0.4
+  A = OD2 INSIDE EDGE DACT
+  EXT A GATE_W < 0.400 ABUT <90
+}
+OD2.E.2 { @ Minimum enclosure of gate by OD2 < 0.4
+  ENC GATE_W OD2_BEDGE < 0.400 ABUT < 90 REGION 
+  ALL_GATE CUT OD2    
+}
+#IFDEF 1.5V
+OD2.E.4.LV { @ OD2 enclose NWEL >= 0.86um/Align if less than 0.86um
+  ENC NWEL OD2 < 0.86 ABUT>0<90 SINGULAR REGION
+}
+OD2.C.4.LV { @ OD2 to NWEL >= 0.86um/Align if less than 0.86um
+  EXT NWEL OD2 < 0.86 ABUT>0<90 SINGULAR REGION
+  ENC OD2 NWEL < 0.86 ABUT>0<90 SINGULAR REGION
+}
+OD2.O.1.LV { @OD2 overlaps NWEL >= 0.86um
+  INT NWEL OD2 < 0.86 ABUT>0<90 SINGULAR MEASURE COINCIDENT REGION
+}
+#ENDIF
+
+
+// POLY checks
+//=============
+
+//PO.W.1A is checked by PO.W.3
+//PO.W.2A is checked by PO.W.3
+
+PO.W.3 { @ Min. POLY width for interconnect, 1.8V NMOS, 1.8V PMOS < 0.1
+  INT POLY < 0.1 SINGULAR ABUT < 90 REGION
+}
+#IFDEF 3.3V
+PO.W.1B { @ Minimum POLY gate length 3.3V pmos < 0.30
+  INT HV_PGATE_W < 0.30 ABUT < 90 REGION
+}
+PO.W.2B { @ Minimum POLY gate length 3.3v nmos < 0.35
+  INT HV_NGATE_W < 0.35 ABUT < 90 REGION
+}
+#ENDIF
+#IFDEF 2.5V
+PO.W.1B { @ Minimum POLY gate length 2.5V pmos < 0.26
+  INT HV_PGATE_W < 0.26 ABUT < 90 REGION
+}
+PO.W.2B { @ Minimum POLY gate length 2.5v nmos < 0.26
+  INT HV_NGATE_W < 0.26 ABUT < 90 REGION
+}
+#ENDIF
+#IFDEF 5V
+PO.W.1B { @ Minimum POLY gate length 5.0V pmos < 0.5
+  INT HV_PGATE_W < 0.5 ABUT < 90 REGION
+}
+PO.W.2B { @ Minimum POLY gate length 5.0v nmos < 0.6
+  INT HV_NGATE_W < 0.6 ABUT <90 REGION
+}
+#ENDIF
+
+PO.S.1 { @ Minimum POLY space on OD with contact < 0.12
+         // Select device OD enclosing contacts
+         // Get gate edges (width) along s/d region
+         // Find spacing violations between edges
+  Y = ALL_GATE COINCIDENT OUTSIDE EDGE ASD1
+  EXT Y < 0.12 REGION
+}
+PO.S.2_PO.S.3 { @ Min. POLY space: on OD w/o contact and interconnect < 0.12
+    EXT POLY < 0.12 SINGULAR ABUT <90 REGION
+}
+PO.C.1 { @ Minimum POLY on field space to active < 0.1
+  EXT POLY OD < 0.1 ABUT < 89.5 REGION SINGULAR
+}
+PO.C.2 { @ Minimum OD overhang gate < 0.2
+  ENC POLY OD < 0.2 SINGULAR ABUT < 89.5 REGION
+}
+PO.O.1 { @ Minimum POLY overhang active < 0.18
+  ENC OD POLY < 0.18 SINGULAR ABUT < 89.5 REGION
+}
+PO.R.1A { @ 90 degree gate not allowed/L and U shape gate are not allowed
+      // 0.18 value is arbitrary, note the angle
+  EXT GATE_W < 0.18 ABUT == 90 INTERSECTING ONLY
+  INT GATE_W < 0.18 ABUT == 90 INTERSECTING ONLY
+}
+
+PO.R.1B { @ 45 degree 1.8V gate min. length < 0.21
+  INT LVGT < 0.21 ANGLED == 2 OPPOSITE REGION
+}
+
+PO.R.2 { @ Maximum POLY length between contacts when PO width less than 0.24um > 50.00
+  LONG_PO = AREA ILP1 > 0.18*50
+  CHECK_PO = LONG_PO INTERACT CO
+  CHECK_CO = CO INTERACT CHECK_PO
+  CO_A = SIZE CHECK_CO BY 50 / 2 INSIDE OF CHECK_PO STEP 0.25 
+  PO_A = CHECK_PO INTERACT CO_A == 1
+  PO_B = CHECK_PO INTERACT CO_A > 1
+  CO_B = CO_A INTERACT PO_A
+  CO_C = SIZE CO_B BY 50 / 2 INSIDE OF PO_A STEP 0.25 
+  BAD = (PO_A NOT CO_C) OR (PO_B NOT CO_A)
+  BAD_EDGE = BAD COIN INSIDE EDGE POLY
+  ERROR = INT BAD_EDGE <= 0.24 ABUT < 90 REGION
+  CHECK_PO INTERACT ERROR
+}
+
+
+
+// PP CHECKS
+//============
+
+PPE4_NWELC = SIZE NWELi BY 0.43
+PPE4_NWELS = SIZE PPE4_NWELC BY 0.18
+PPE4_OD = PPE4_NWELS AND PTAP
+PPE4_C1 = ENC PPE4_OD PP < 0.18 ABUT >0<90 OPPOSITE REGION
+PPE4_C2 = ENC PPE4_OD PP < 0.18 ABUT >0<90 CORNER REGION
+PPE4_C3 = ENC PPE4_OD PP < 0.18 ABUT >0<90 PROJ==0 REGION
+PPE4_C4 = (SIZE PPE4_C2 BY 0.005) NOT PPE4_OD
+PPE4_ALL = (PPE4_C1 OR PPE4_C3) OR PPE4_C4
+PPE4_CHECKOD = PPE4_ALL COIN OUTSIDE EDGE PPE4_OD
+
+NPC3_C1 = EXT PPE4_OD NP < 0.18 ABUT >0<90 OPPOSITE REGION
+NPC3_C2 = EXT PPE4_OD NP < 0.18 ABUT >0<90 CORNER REGION
+NPC3_C3 = EXT PPE4_OD NP < 0.18 ABUT >0<90 PROJ==0 REGION
+NPC3_C4 = (SIZE NPC3_C2 BY 0.005) NOT PPE4_OD
+NPC3_ALL = (NPC3_C1 OR NPC3_C3) OR NPC3_C4
+NPC3_CHECKOD = NPC3_ALL COIN OUTSIDE EDGE PPE4_OD
+ 
+NPE4_NWELC = SIZE NWELi BY -0.43
+NPE4_NWELS = SIZE NPE4_NWELC BY -0.18
+NPE4_OD = NTAP NOT NPE4_NWELS
+NPE4_C1 = ENC NPE4_OD NP < 0.18 ABUT >0<90 OPPOSITE REGION
+NPE4_C2 = ENC NPE4_OD NP < 0.18 ABUT >0<90 CORNER REGION
+NPE4_C3 = ENC NPE4_OD NP < 0.18 ABUT >0<90 PROJ==0 REGION
+NPE4_C4 = (SIZE NPE4_C2 BY 0.005) NOT NPE4_OD
+NPE4_ALL = (NPE4_C1 OR NPE4_C3) OR NPE4_C4
+NPE4_CHECKOD = NPE4_ALL COIN OUTSIDE EDGE NPE4_OD
+
+PPC3_C1 = EXT NPE4_OD PP < 0.18 ABUT >0<90 OPPOSITE REGION
+PPC3_C2 = EXT NPE4_OD PP < 0.18 ABUT >0<90 CORNER REGION
+PPC3_C3 = EXT NPE4_OD PP < 0.18 ABUT >0<90 PROJ==0 REGION
+PPC3_C4 = (SIZE PPC3_C2 BY 0.005) NOT NPE4_OD
+PPC3_ALL = (PPC3_C1 OR PPC3_C3) OR PPC3_C4
+PPC3_CHECKOD = PPC3_ALL COIN OUTSIDE EDGE NPE4_OD
+
+PP.W.1 { @ PP width < 0.240
+  INT PP < 0.240 SINGULAR ABUT < 90 REGION 
+}
+PP.S.1 { @ PP space < 0.240
+  EXT PP < 0.240 ABUT < 90 SINGULAR REGION
+}
+PP.C.1 { @ PP space to n active in pwell < 0.160
+         // N active in pwell can be butting or
+         // non-butting. The non-butting n active is not
+         // allowed to touch PP.
+  EXT PP NACT < 0.160 ABUT >0<90 REGION
+  X = EXT PP [NACT] < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT PPOD
+}
+PP.C.2 { @ PP space to non-butting NTAP < 0.02 with PWEL space >= 0.43
+  EXT PP NTAP < 0.02 ABUT>0<90 REGION
+}
+//PP.C.3 { @ PP space to non-butting NTAP < 0.02 with PWEL space < 0.43
+//  PPC3_CHECKOD OUTSIDE EDGE NPE4_NWELC
+//}
+// PP.C.4 is checked by NP.C.5 and PP.R.1
+PP.O.1 { @ PP extends into p active < 0.230
+  INT OD PP < 0.230 SINGULAR REGION ABUT >0<90
+}
+PP.E.1 { @ PP olap OD < 0.180
+  ENC PACT PP < 0.180 SINGULAR ABUT >0<90 REGION
+  Y = ENC [PACT] PP < 0.001 ABUT == 0
+  Z = EXPAND EDGE Y OUTSIDE BY 0.001
+  Z NOT INTERACT NPOD
+}
+PP.E.1_NP.E.1 { @ Implant can not coincident OD edge except butted diffusion
+  IMP COIN INSIDE EDGE OD
+}  
+PP.E.3 { @ Minimum enclosure of PTAP by PP < 0.02 with NWEL space >= 0.43
+  ENC PTAP PP < 0.02 ABUT>0<90 SINGULAR REGION
+  X = ENC [PTAP] PP < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT NPOD
+}
+PP.E.4 { @ Min. enc. of PTAP by PP < 0.18 with NWEL space < 0.43
+  PPE4_CHECKOD INSIDE EDGE PPE4_NWELC
+}
+
+// PP.C.6 not necessary to check
+// PP.E.5 not necessary to check
+ 
+//PP.A.1 { @ Minimum area of PP < 0.3844
+//  PP AREA < 0.3844
+//}
+PP.E.6 { @ Min enc of POLY resistor by PP < 0.18
+  ENC PORES PP < 0.18 ABUT <90 REGION
+  (RPO AND POLY) NOT IMP
+}
+PP.R.1_NP.R.1 { @ PP and NP not allowed to overlap
+  PP AND NP
+}
+// PP.R.2 @ PP not generated by reverse NP
+
+PP.R.3_NP.R.3 { @ OD must be fully covered by PP and NP ,except OD without interacting CO OR PO
+   ((OD INTERACT POLYi )NOT ODWR) NOT IMP
+   ((OD INTERACT COi )NOT ODWR) NOT IMP
+
+}
+ 
+
+
+// NP CHECKS
+//============
+ 
+NP.W.1 { @ NP width < 0.240
+  INT NP < 0.240 SINGULAR ABUT < 90 REGION
+}
+NP.S.1 { @ NP space < 0.240
+  EXT NP < 0.240 ABUT < 90 SINGULAR REGION
+}
+NP.C.1 { @ NP space to p active in NWEL < 0.160
+         // P active in NWEL can be butting or
+         // non-butting. The non-butting p active is not
+         // allowed to touch NP.
+  EXT NP PACT < 0.160 ABUT >0<90 REGION
+  X = EXT NP [PACT] < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT NPOD
+}
+NP.C.2 { @ NP space to non-butting ptap < 0.02 with NWEL space >= 0.43
+  EXT NP PTAP < 0.02 ABUT>0<90 REGION
+}
+NP.C.3 { @ NP space to non-butting ptap < 0.18 with NWEL space < 0.43
+  NPC3_CHECKOD INSIDE EDGE PPE4_NWELC
+}
+// NP.C.4 is checked by PP.C.5 and NP.R.1
+//NP.C.5 { @ NP extension over (N gate) + (field poly within 0.35um) < 0.18
+//         // This rule must extend out of gate in the direction of PO by 0.18
+//  EXGATE_NP NOT NP
+//}
+NP.O.1 { @ NP extends into n active < 0.230
+  INT OD NP < 0.230 SINGULAR REGION ABUT >0<90
+}
+NP.E.1 { @ NP olap OD < 0.180
+  X = NACT NOT ODWR
+  ENC X NP < 0.180 SINGULAR ABUT >0<90 REGION
+  Y = ENC [X] NP < 0.001 ABUT == 0
+  Z  = EXPAND EDGE Y OUTSIDE BY 0.001
+  Z NOT INTERACT PPOD
+}
+NP.E.3 { @ Minimum enclosure of NTAP by NP < 0.02 with PWEL space >= 0.43
+  ENC NTAP NP < 0.02 ABUT>0<90 SINGULAR REGION
+  X = ENC [NTAP] NP < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT PPOD
+}
+//NP.E.4 { @ Min. enc. of NTAP by NP < 0.02 with PWEL space < 0.43
+//  NPE4_CHECKOD OUTSIDE EDGE NPE4_NWELC
+//}
+
+// NP.C.6 Not necessary to check
+// NP.E.5 Not necessary to check
+
+//NP.A.1 { @ Minimum area of NP < 0.3844
+//  NP AREA < 0.3844
+//}
+NP.E.6 { @ Min enc of POLY resistor by NP < 0.18
+  ENC PORES NP < 0.18 ABUT <90 REGION
+}
+// NP.R.2 @ NP not generated by reverse PP
+
+
+
+// RPO checks
+//===========
+CB_HOLE = HOLES CB 
+CB_SR = CB TOUCH CB_HOLE ==1
+RPO_NOT_SR = RPO NOT INTERACT CB_SR
+
+RPO.W.1 { @ Minimum RPO width < 0.430
+  INT RPO < 0.43 SINGULAR ABUT < 90 REGION
+}
+RPO.S.1 { @ Minimum RPO space < 0.43
+  EXT RPO < 0.43 ABUT < 90 SINGULAR REGION
+}
+RPO.C.1 { @ Minimum RPO space to OD < 0.22
+  EXT RPO OD < 0.22 SINGULAR ABUT < 90 REGION
+}
+RPO.C.2 { @ Minimum RPO space to CO < 0.22
+  EXT RPO CO < 0.22 ABUT < 90 SINGULAR REGION 
+  CO AND RPO     
+}
+RPO.C.3 { @ Minimum RPO space to gate < 0.45
+  A = (((ALL_GATE NOT DRCDMY) NOT ESD1DMY) NOT ESD2DMY) NOT ESD3DMY   
+  EXT RPO A < 0.45 ABUT < 90 SINGULAR REGION 
+  RPO AND A
+}
+RPO.C.4 { @ Minimum RPO overhang OD < 0.22
+  ENC OD RPO < 0.22 ABUT < 90 SINGULAR REGION
+  RPO_NOT_SR INSIDE OD    
+}
+RPO.E.1 { @ Minimum OD overhang RPO < 0.22
+  ENC RPO OD < 0.22 ABUT < 90 SINGULAR REGION
+}
+RPO.C.5 { @ Minimum RPO overhang POLY < 0.22
+  ENC POLY RPO < 0.22 ABUT < 90 SINGULAR REGION
+  RPO_NOT_SR INSIDE POLY
+}
+RPO.C.6 { @ Minimum clearance RPO to unrelated poly < 0.3um
+  EXT RPO POLY_ISO < 0.30 ABUT < 90 SINGULAR REGION
+}
+RPO.A.1 { @ RPO min. area < 2 um*um
+  AREA RPO < 2
+}
+
+
+
+// CO checks
+//===============
+CO.W.1 { @ contact width != 0.12
+  NOT RECTANGLE CO == 0.12 BY == 0.12 ORTHOGONAL ONLY
+}
+CO.S.1 { @ contact spacing < 0.14
+  EXT CO < 0.14 ABUT < 90 SINGULAR REGION
+}
+
+CO.S.2  { @ Min space between two contacts in larger than 4x4 array.
+  A = SIZE CO BY 0.30/2 OVERUNDER  // space < 0.3um treat as array
+  B = SIZE A BY 0.7 UNDEROVER                        // (0.22*3+0.3*2) = 1.26  (3 COs Mix.)
+  C = B INTERACT CO >= 16                  // 1.63-0.22 = 1.41       (Max. CO shift space) 
+  D = CO INTERACT C                        // so 1.26 < CONTY width < 1.41
+  EXT D < 0.28                             // & we use CONTY width = 1.4
+}
+
+CO.C.1_CO.R.1 { @ diff contact to gate space < 0.1, or contact on gate
+  EXT CO_DIFF ALL_GATE < 0.1 SINGULAR ABUT <90 REGION
+  CO_DIFF AND ALL_GATE    
+}
+CO.C.2 { @ poly contact space to OD < 0.12
+  EXT CO_POLY OD < 0.12 ABUT <90 SINGULAR REGION
+}
+CO.E.1 { @ active olap contact < 0.06, also floating contacts
+  ENC CO_DIFF OD < 0.06 SINGULAR ABUT < 90 REGION
+  CO_DIFF OUTSIDE EDGE OD    
+}
+CO.E.2 { @ poly olap contact < 0.04
+  ENC CO_POLY POLY_ISO < 0.04 SINGULAR ABUT < 90 REGION
+  CO_POLY CUT POLY_ISO    
+}
+CO.E.3 { @ implant olap contact < 0.06
+  ENC CO_DIFF PP < 0.06 ABUT < 90 SINGULAR REGION 
+  PP INSIDE EDGE CO_DIFF    
+}
+CO.E.4 { @ implant olap contact < 0.06
+  ENC CO_DIFF NP < 0.06 ABUT < 90 SINGULAR REGION 
+  NP INSIDE EDGE CO_DIFF    
+}
+// CO.R.2 is checked by CO.E.3/CO.E.4
+// CO.R.3 is checked by RPO.C.2
+
+
+// M1 checks
+//=============
+
+M1.W.1 { @ M1 width < 0.12
+  INT M1 < 0.12 SINGULAR REGION ABUT < 90
+}
+M1.S.1 { @ M1 spacing < 0.12
+  EXT M1 < 0.12 ABUT < 90 SINGULAR REGION
+}
+M1.S.2 { @ Wide M1 (>10um) min. to M1 < 0.6 um
+  M1_S5 = SHRINK (SHRINK (SHRINK (SHRINK M1 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M1_G5 = GROW (GROW (GROW (GROW M1_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M1_Wide = M1_G5 AND M1
+  M1_Exp = SIZE M1_Wide BY 1 INSIDE OF M1 STEP 0.161
+  M1_Branch = M1_Exp NOT M1_Wide
+  M1_Branch_edge = M1_Branch COIN INSIDE EDGE M1
+  M1_Check = M1 AND (SIZE M1_Exp BY 0.6)
+  M1_Branch_Check = M1 AND (EXPAND EDGE M1_Branch_edge OUTSIDE BY 0.6 CORNER FILL)
+  M1_WideC = STAMP M1_Wide BY M1xd
+  M1_CheckC = STAMP M1_Check BY M1xd
+  M1_BranchC = STAMP M1_Branch BY M1xd
+  M1_Branch_CheckC = STAMP M1_Branch_Check BY M1xd
+  EXT M1_WideC M1_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+  EXT M1_BranchC M1_Branch_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+}
+M1.E.2 { @ Min extension of M1 end-of-line region beyond CO region is 0.06 um
+  X = ENC [CO] M1 < 0.06 ABUT < 90 OPPOSITE   // a narrow side
+  INT X < 0.22 ABUT == 90 INTERSECTING ONLY          // adjacent narrow sides
+}
+
+M1.A.1{ @ Min M1 area < 0.07
+  AREA M1 < 0.07
+}
+
+// Density check M1.R.1 included at the end of this file
+
+
+
+
+    
+// VIA1 checks
+//=============
+
+VIA1.W.1 { @ VIA1 must be 0.26 x 0.26 um
+  A = NOT RECTANGLE VIA1 == 0.26 BY == 0.26 ORTHOGONAL ONLY
+  A OUTSIDE RNGX   // exclude from metal fuse protection ring area
+}
+
+VIA1.S.1 { @ VIA1 SPACING < 0.26
+  EXT VIA1 < 0.26 ABUT < 90 SINGULAR REGION 
+}
+
+VIA1.E.1 { @ Min extension of a M1 region beyond a VIA1 region is 0.01 um
+  ENC VIA1 M1 < 0.01 ABUT<90 SINGULAR 
+  VIA1 NOT M1    
+}
+ 
+VIA1.E.2 { @ Min extension of M1 end-of-line region beyond VIA1 region is 0.06 um
+   X = ENC [VIA1] M1 < 0.06 ABUT < 90 OPPOSITE         // a narrow side
+   INT X < 0.26  ABUT == 90 INTERSECTING ONLY     // adjacent narrow sides
+}
+
+// VIA1.C.1 does not require a DRC check
+
+
+// M2 checks
+//=============
+
+M2.W.1 { @ M2 width < 0.28
+  INT M2 < 0.28 SINGULAR REGION ABUT < 90
+}
+
+M2.S.1 { @ M2 spacing < 0.28
+  EXT M2 < 0.28 ABUT < 90 SINGULAR REGION
+}
+
+M2.S.2 { @ Wide M2 (>10um) min.spacing to M2 < 0.6 um
+  M2_S5 = SHRINK (SHRINK (SHRINK (SHRINK M2 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M2_G5 = GROW (GROW (GROW (GROW M2_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M2_Wide = M2_G5 AND M2
+  M2_Exp = SIZE M2_Wide BY 1 INSIDE OF M2 STEP 0.196
+  M2_Branch = M2_Exp NOT M2_Wide
+  M2_Branch_edge = M2_Branch COIN INSIDE EDGE M2
+  M2_Check = M2 AND (SIZE M2_Exp BY 0.6)
+  M2_Branch_Check = M2 AND (EXPAND EDGE M2_Branch_edge OUTSIDE BY 0.6 CORNER FILL)
+  M2_WideC = STAMP M2_Wide BY M2xd
+  M2_CheckC = STAMP M2_Check BY M2xd
+  M2_BranchC = STAMP M2_Branch BY M2xd
+  M2_Branch_CheckC = STAMP M2_Branch_Check BY M2xd
+  EXT M2_WideC M2_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+  EXT M2_BranchC M2_Branch_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+}
+
+M2.E.1 { @ Min extension of a M2 region beyond a VIA1 region is 0.01 um
+   ENC VIA1 M2 < 0.01 ABUT<90 SINGULAR 
+   VIA1 NOT M2    
+}
+ 
+M2.E.2 { @ Min extension of M2 end-of-line region beyond VIA1 region is 0.06um
+   X = ENC [VIA1] M2 < 0.06 ABUT < 90 OPPOSITE		// a narrow side
+   INT X < 0.26 ABUT == 90 INTERSECTING ONLY       // adjacent narrow sides
+}
+
+M2.A.1{ @ Min M2 area region < 0.202
+  AREA M2 < 0.202
+}
+// Density check M2.R.1 included at the end of this file
+
+
+
+
+
+
+CB_CUP = CB INTERACT WBDMY
+
+// VIA2 checks
+//=============
+VIA2R = VIA2 OUTSIDE CB_CUP
+
+VIA2.W.1 { @ VIA2 must be 0.36 x 0.36 um
+  A = NOT RECTANGLE VIA2R == 0.36 BY == 0.36 ORTHOGONAL ONLY
+  A OUTSIDE RNGX     // exclude from metal fuse protection ring area
+}
+
+VIA2.S.1 { @ VIA2 spacing < 0.35
+  EXT VIA2R < 0.35 ABUT < 90 SINGULAR REGION
+}
+ 
+VIA2.E.1 { @ Min extension of a M2 region beyond a VIA2 region is 0.01 um
+  ENC VIA2R M2 < 0.01 ABUT<90 SINGULAR 
+  VIA2R NOT M2    
+}
+VIA2.E.2 { @ Min extension of a M2 end-of-line region beyond VIA2 region is 0.06 um
+  X = ENC [VIA2R] M2 < 0.06 OPPOSITE 			// a narrow side
+  INT X < 0.36 ABUT == 90 INTERSECTING ONLY	// adjacent narrow sides
+}
+ 
+// VIA2.C.1 does not require check
+
+// VIAD checks
+//=============
+VIADR = VIAD OUTSIDE CB_CUP
+
+VIAD.W.1 { @ VIAD must be 0.36 x 0.36 um
+  A = NOT RECTANGLE VIADR == 0.36 BY == 0.36 ORTHOGONAL ONLY
+  A OUTSIDE RNGX     // exclude from metal fuse protection ring area
+}
+
+VIAD.S.1 { @ VIAD spacing < 0.35
+  EXT VIADR < 0.35 ABUT < 90 SINGULAR REGION
+}
+ 
+VIAD.E.1 { @ Min extension of a M3 region beyond a VIAD region is 0.01 um
+  ENC VIADR M3 < 0.01 ABUT<90 SINGULAR 
+  VIADR NOT M3    
+}
+VIAD.E.2 { @ Min extension of a M3 end-of-line region beyond VIAD region is 0.06 um
+  X = ENC [VIADR] M3 < 0.06 OPPOSITE 			// a narrow side
+  INT X < 0.36 ABUT == 90 INTERSECTING ONLY	// adjacent narrow sides
+}
+ 
+// VIAD.C.1 does not require check
+
+
+
+
+// M3 checks
+//=============
+M3.W.1 { @ M3 width < 0.44
+  INT M3 < 0.44 SINGULAR REGION ABUT < 90
+}
+M3.S.1 { @ M3 spacing < 0.46
+  EXT M3 < 0.46 ABUT < 90 SINGULAR REGION
+}
+M3.S.2 { @ Wide M3 (>10um) min.spacing to M3 < 0.6 um
+  M3_S5 = SHRINK (SHRINK (SHRINK (SHRINK M3 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M3_G5 = GROW (GROW (GROW (GROW M3_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M3_Wide = M3_G5 AND M3
+  M3_Exp = SIZE M3_Wide BY 1 INSIDE OF M3 STEP 0.322
+  M3_Branch = M3_Exp NOT M3_Wide
+  M3_Branch_edge = M3_Branch COIN INSIDE EDGE M3
+  M3_Check = M3 AND (SIZE M3_Exp BY 0.6)
+  M3_Branch_Check = M3 AND (EXPAND EDGE M3_Branch_edge OUTSIDE BY 0.6 CORNER FILL)
+  M3_WideC = STAMP M3_Wide BY M3xd
+  M3_CheckC = STAMP M3_Check BY M3xd
+  M3_BranchC = STAMP M3_Branch BY M3xd
+  M3_Branch_CheckC = STAMP M3_Branch_Check BY M3xd
+  EXT M3_WideC M3_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+  EXT M3_BranchC M3_Branch_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+}
+M3.E.1 { @ Min extension of a M3 region beyond a VIA2 region is 0.09 um
+   ENC VIA2 M3 < 0.09 ABUT<90 SINGULAR 
+   VIA2 NOT M3    
+}
+M3.A.1 { @ Min M3 area region < 0.562
+  AREA M3 < 0.562
+}
+
+// MD checks
+//=============
+MD.W.1 { @ MD width < 0.44
+  INT MD < 0.44 SINGULAR REGION ABUT < 90
+}
+MD.S.1 { @ MD spacing < 0.46
+  EXT MD < 0.46 ABUT < 90 SINGULAR REGION
+}
+MD.S.2 { @ Wide MD (>10um) min.spacing to MD < 0.6 um
+  MD_S5 = SHRINK (SHRINK (SHRINK (SHRINK MD RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  MD_G5 = GROW (GROW (GROW (GROW MD_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  MD_Wide = MD_G5 AND MD
+  MD_Exp = SIZE MD_Wide BY 1 INSIDE OF MD STEP 0.322
+  MD_Branch = MD_Exp NOT MD_Wide
+  MD_Branch_edge = MD_Branch COIN INSIDE EDGE MD
+  MD_Check = MD AND (SIZE MD_Exp BY 0.6)
+  MD_Branch_Check = MD AND (EXPAND EDGE MD_Branch_edge OUTSIDE BY 0.6 CORNER FILL)
+  MD_WideC = STAMP MD_Wide BY MDxd
+  MD_CheckC = STAMP MD_Check BY MDxd
+  MD_BranchC = STAMP MD_Branch BY MDxd
+  MD_Branch_CheckC = STAMP MD_Branch_Check BY MDxd
+  EXT MD_WideC MD_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+  EXT MD_BranchC MD_Branch_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+}
+MD.E.1 { @ Min extension of a MD region beyond a VIAD region is 0.09 um
+   ENC VIAD MD < 0.09 ABUT<90 SINGULAR 
+   VIAD NOT MD    
+}
+MD.A.1 { @ Min MD area region < 0.562
+  AREA MD < 0.562
+}
+
+DISCONNECT
+
+
+
+// METAL RATIO CHECKS
+//======================
+
+
+CHIP_MD = CHIP INTERACT MDxd
+MD.R.1 { @ Min MD area coverage < 30%
+  ERR = DENSITY MDxd < 0.3 PRINT MD_DENSITY.log
+  ERR INTERACT CHIP_MD
+}  
+
+
+
+// Dummy Pad
+//==========
+
+GROUP DUMMY_PAD_CHECK ADP.S.2 ADP.W.3 ADP.W.4
+
+DP_V1 = DPDMY AND VIA1
+DP_V2 = DPDMY AND VIA2
+DP_VD = DPDMY AND VIAD
+
+ADP.R.0A { @ chip corner dummy pad structure should be M1/M2.../M3
+  DPDMY NOT M1
+  DPDMY NOT M2
+  DPDMY NOT M3
+}  
+
+ADP.R.0B { @ chip corner dummy pad structure should be VIA1/VIA2.../VIA3
+  DPDMY NOT ENCLOSE VIA1
+  DPDMY NOT ENCLOSE VIA2
+}
+
+ADP.R.0C { @ Via structure in Dummy Pad
+  GRP1 = COPY DP_V2  
+  GRP2 = DP_V1 OR DP_VD
+  GRP1 AND GRP2
+}
+ADP.S.1_VIA1 { @ Via1 spacing (the same level) < 0.58um.
+  EXT DP_V1 < 0.58 ABUT<90 SINGULAR REGION
+}
+ADP.S.1_VIA2 { @ Via2 spacing (the same level) < 0.58um.
+  EXT DP_V2 < 0.58 ABUT<90 SINGULAR REGION
+}
+ADP.S.1_VIAD { @ ViaD spacing (the same level) < 0.58um.
+  EXT DP_VD < 0.58 ABUT<90 SINGULAR REGION
+}
+
+
+ADP.C.2_V1_V2 { @ Via1 and Via2 spacing < 0.16um.
+  EXT DP_V1 DP_V2 < 0.16 ABUT<90 SINGULAR
+}
+ADP.C.2_V2_VD { @ Via2 and ViaD spacing < 0.16um.
+  EXT DP_V2 DP_VD < 0.16 ABUT<90 SINGULAR
+}
+
+ADP.E.1_V1_M1 { @ Metal1 enclose Via1 in dummy pad < 3um.
+  ENC DP_V1 M1 < 3 ABUT<90 SINGULAR
+}
+ADP.E.1_V1_M2 { @ Metal2 enclose Via1 in dummy pad < 3um.
+  ENC DP_V1 M2 < 3 ABUT<90 SINGULAR
+}
+ADP.E.1_V2_M2 { @ Metal2 enclose Via2 in dummy pad < 3um.
+  ENC DP_V2 M2 < 3 ABUT<90 SINGULAR
+}
+ADP.E.1_V2_M3 { @ Metal3 enclose Via2 in dummy pad < 3um.
+  ENC DP_V2 M3 < 3 ABUT<90 SINGULAR
+}
+ADP.E.1_VD_M3 { @ Meta3l enclose ViaD in dummy pad < 3um.
+  ENC DP_VD M3 < 3 ABUT<90 SINGULAR
+}
+ADP.E.1_VD_MD { @ MD enclose ViaD in dummy pad < 3um.
+  ENC DP_VD MD < 3 ABUT<90 SINGULAR
+}
+
+// ADP.W.1 is checked by VIAx.W.1 ( x= 1..1)
+// ADP.W.2 is checked by VIA2.W.1
+
+// Guideline
+
+ADP.S.2 { @ dummy pad spacing < 2um.
+  EXT DPDMY < 2 ABUT<90 SINGULAR REGION
+}
+
+ADP.W.3 { @ dummy pad width > 80um
+  DPADG = INT DPDMY <= 80 REGION OPPOSITE ABUT>0<90
+  DPDMY NOT DPADG
+}
+
+ADP.W.4 { @ dummy pad width < 40um
+  INT DPDMY < 40  ABUT>0<90 SINGULAR
+}
+
+
+
+// Power Line
+//===========
+
+PL_V1 = PLDMY AND VIA1
+PL_V2 = PLDMY AND VIA2
+PL_VD = PLDMY AND VIAD
+
+ADP.R.0D { @ Via structure in Power Line
+  GRP1 = COPY PL_V2  
+  GRP2 = PL_V1 OR PL_VD
+  GRP1 AND GRP2
+}
+
+ADP.S.4_V1 { @ Via1 spacing (the same level) < 0.58um.
+  EXT PL_V1 < 0.58 ABUT<90 SINGULAR REGION
+}
+ADP.S.4_V2 { @ Via2 spacing (the same level) < 0.58um.
+  EXT PL_V2 < 0.58 ABUT<90 SINGULAR REGION
+}
+ADP.S.4_VD { @ ViaD spacing (the same level) < 0.58um.
+  EXT PL_VD < 0.58 ABUT<90 SINGULAR REGION
+}
+
+ADP.C.3_V1_V2 { @ Vias spacing (different level) in chip corner power line < 0.23um.
+  EXT PL_V1 PL_V2 < 0.23 ABUT<90 SINGULAR
+}
+ADP.C.3_V2_VD { @ Vias spacing (different level) in chip corner power line < 0.23um.
+  EXT PL_V2 PL_VD < 0.23 ABUT<90 SINGULAR
+}
+
+ADP.E.2_V1_M1 { @ Metal1 enclose Via1 in chip corner power line < 0.2um.
+  ENC PL_V1 M1 < 0.2 ABUT<90 SINGULAR
+}
+ADP.E.2_V1_M2 { @ Metal2 enclose Via1 in chip corner power line < 0.2um.
+  ENC PL_V1 M2 < 0.2 ABUT<90 SINGULAR
+}
+ADP.E.2_V2_M2 { @ Metal2 enclose Via2 in chip corner power line < 0.2um.
+  ENC PL_V2 M2 < 0.2 ABUT<90 SINGULAR
+}
+ADP.E.2_V2_M3 { @ Metal3 enclose Via2 in chip corner power line < 0.2um.
+  ENC PL_V2 M3 < 0.2 ABUT<90 SINGULAR
+}
+ADP.E.2_VD_M3 { @ Metal3 enclose ViaD in chip corner power line < 0.2um.
+  ENC PL_VD M3 < 0.2 ABUT<90 SINGULAR
+}
+ADP.E.2_VD_MD { @ MD enclose ViaD in chip corner power line < 0.2um.
+  ENC PL_VD MD < 0.2 ABUT<90 SINGULAR
+}
+
+
+
+//METAL SLOT CHECKS
+//================
+//Bonding pad ,chip corner dummy pad ,and inductor need not put slot
+CB_NON_CUP = CBi NOT INTERACT WBDMY
+SLT_EXD  = CB_NON_CUP OR DPDMY
+SLT_EXDT = CBi OR DPDMY
+
+PAD_EXD = UBMi NOT INTERACT MDxd
+
+M1EXD = M1xd NOT SLT_EXD
+
+//M1 SLOT CHECKS
+//==============
+
+M1InnerHole = HOLES M1EXD INNER
+M1BigHole   = SIZE M1InnerHole BY -5
+M1Hole      = M1InnerHole OUTSIDE M1BigHole 
+M1HoleSpace = M1Hole NOT M1EXD
+FIM1c       = M1EXD OR M1HoleSpace
+LM1XA       = (SIZE (SIZE FIM1c BY 1.0 UNDEROVER) BY 17.5 UNDEROVER TRUNCATE 17.5) AND FIM1c
+LM1X        = ENCLOSE RECTANGLE LM1XA 35.005 35.005
+M1HoleD    = M1HoleSpace AND LM1X
+
+AMS.1.M1 { @ Wide Metal (>35um) must have slot.
+  A = (SIZE ( SIZE M1EXD BY 1.0 UNDEROVER ) BY 17.5 UNDEROVER TRUNCATE 17.5 ) AND M1EXD
+  ENCLOSE RECTANGLE A 35.005 35.005    
+}
+
+CONNECT M1HoleD LM1X
+AMS.DN.M1 { @ Min. Hole density for metal lines that need to apply slot  1.5%
+    NET AREA RATIO LM1X M1HoleD < 0.015
+	[ AREA(M1HoleD) / AREA(LM1X) ] RDB M1Hole.density2 LM1X M1HoleD 
+}
+DISCONNECT
+
+M1HOC  = HOLES M1EXD INNER EMPTY
+M1HOD  = SIZE M1HOC BY 5 UNDEROVER TRUNCATE 5  // Assume Metal Slot < 10um
+M1HO   = M1HOC OUTSIDE M1HOD         // Metal slot (include not in wide metal)
+FIM1   = M1EXD OR M1HO               // Metal with slot fill in
+M1WMA1 = (SIZE FIM1 BY 17.5 UNDEROVER) AND FIM1
+M1WMA  = ENCLOSE RECTANGLE M1WMA1 35.005 35.005
+M1WM   = M1WMA NOT OUTSIDE M1HO
+M1SLT  = M1HO INSIDE M1WM
+
+AM.W.1.M1 { @ Min. width for metal connected to wide metal 10um.
+  M1WMD = M1WMA AND M1EXD
+  M1WME = M1WMD TOUCH M1SLT
+  S_FIM1 = M1xd NOT M1WME
+  S_FIM1E = S_FIM1 COIN OUTSIDE EDGE M1WME // check edge
+  G_FIM1E = PATH LENGTH S_FIM1E >= 10      // good edge
+  B_FIM1E = PATH LENGTH S_FIM1E < 10       // bad edge
+  B_FIM1E TOUCH EDGE (M1WME NOT TOUCH EDGE G_FIM1E)
+}
+
+//M2EXD = M2xd NOT SLT_EXDT             
+M2EXD = ( M2xd NOT SLT_EXDT ) NOT CTM2 
+
+//M2 SLOT CHECKS
+//==============
+
+M2InnerHole = HOLES M2EXD INNER
+M2BigHole   = SIZE M2InnerHole BY -5
+M2Hole      = M2InnerHole OUTSIDE M2BigHole 
+M2HoleSpace = M2Hole NOT M2EXD
+FIM2c       = M2EXD OR M2HoleSpace
+LM2XA       = (SIZE (SIZE FIM2c BY 1.0 UNDEROVER) BY 17.5 UNDEROVER TRUNCATE 17.5) AND FIM2c
+LM2X        = ENCLOSE RECTANGLE LM2XA 35.005 35.005
+M2HoleD    = M2HoleSpace AND LM2X
+
+AMS.1.M2 { @ Wide Metal (>35um) must have slot.
+  A = (SIZE ( SIZE M2EXD BY 1.0 UNDEROVER ) BY 17.5 UNDEROVER TRUNCATE 17.5 ) AND M2EXD
+  ENCLOSE RECTANGLE A 35.005 35.005    
+}
+
+CONNECT M2HoleD LM2X
+AMS.DN.M2 { @ Min. Hole density for metal lines that need to apply slot  1.5%
+    NET AREA RATIO LM2X M2HoleD < 0.015
+	[ AREA(M2HoleD) / AREA(LM2X) ] RDB M2Hole.density2 LM2X M2HoleD 
+}
+DISCONNECT
+
+M2HOC  = HOLES M2EXD INNER EMPTY
+M2HOD  = SIZE M2HOC BY 5 UNDEROVER TRUNCATE 5  // Assume Metal Slot < 10um
+M2HO   = M2HOC OUTSIDE M2HOD         // Metal slot (include not in wide metal)
+FIM2   = M2EXD OR M2HO               // Metal with slot fill in
+M2WMA1 = (SIZE FIM2 BY 17.5 UNDEROVER) AND FIM2
+M2WMA  = ENCLOSE RECTANGLE M2WMA1 35.005 35.005
+M2WM   = M2WMA NOT OUTSIDE M2HO
+M2SLT  = M2HO INSIDE M2WM
+
+AM.W.1.M2 { @ Min. width for metal connected to wide metal 10um.
+  M2WMD = M2WMA AND M2EXD
+  M2WME = M2WMD TOUCH M2SLT
+  S_FIM2 = M2xd NOT M2WME
+  S_FIM2E = S_FIM2 COIN OUTSIDE EDGE M2WME // check edge
+  G_FIM2E = PATH LENGTH S_FIM2E >= 10      // good edge
+  B_FIM2E = PATH LENGTH S_FIM2E < 10       // bad edge
+  B_FIM2E TOUCH EDGE (M2WME NOT TOUCH EDGE G_FIM2E)
+}
+PAD_EXD3 = SIZE PAD_EXD BY 2 INSIDE OF M3xd STEP 0.32 
+M3EXD = M3xd NOT ( SLT_EXDT OR PAD_EXD3 )
+
+//M3 SLOT CHECKS
+//==============
+
+M3InnerHole = HOLES M3EXD INNER
+M3BigHole   = SIZE M3InnerHole BY -5
+M3Hole      = M3InnerHole OUTSIDE M3BigHole 
+M3HoleSpace = M3Hole NOT M3EXD
+FIM3c       = M3EXD OR M3HoleSpace
+LM3XA       = (SIZE (SIZE FIM3c BY 1.0 UNDEROVER) BY 17.5 UNDEROVER TRUNCATE 17.5) AND FIM3c
+LM3X        = ENCLOSE RECTANGLE LM3XA 35.005 35.005
+M3HoleD    = M3HoleSpace AND LM3X
+
+AMS.1.M3 { @ Wide Metal (>35um) must have slot.
+  A = (SIZE ( SIZE M3EXD BY 1.0 UNDEROVER ) BY 17.5 UNDEROVER TRUNCATE 17.5 ) AND M3EXD
+  ENCLOSE RECTANGLE A 35.005 35.005    
+}
+
+CONNECT M3HoleD LM3X
+AMS.DN.M3 { @ Min. Hole density for metal lines that need to apply slot  1.5%
+    NET AREA RATIO LM3X M3HoleD < 0.015
+	[ AREA(M3HoleD) / AREA(LM3X) ] RDB M3Hole.density2 LM3X M3HoleD 
+}
+DISCONNECT
+
+M3HOC  = HOLES M3EXD INNER EMPTY
+M3HOD  = SIZE M3HOC BY 5 UNDEROVER TRUNCATE 5  // Assume Metal Slot < 10um
+M3HO   = M3HOC OUTSIDE M3HOD         // Metal slot (include not in wide metal)
+FIM3   = M3EXD OR M3HO               // Metal with slot fill in
+M3WMA1 = (SIZE FIM3 BY 17.5 UNDEROVER) AND FIM3
+M3WMA  = ENCLOSE RECTANGLE M3WMA1 35.005 35.005
+M3WM   = M3WMA NOT OUTSIDE M3HO
+M3SLT  = M3HO INSIDE M3WM
+
+AM.W.1.M3 { @ Min. width for metal connected to wide metal 10um.
+  M3WMD = M3WMA AND M3EXD
+  M3WME = M3WMD TOUCH M3SLT
+  S_FIM3 = M3xd NOT M3WME
+  S_FIM3E = S_FIM3 COIN OUTSIDE EDGE M3WME // check edge
+  G_FIM3E = PATH LENGTH S_FIM3E >= 10      // good edge
+  B_FIM3E = PATH LENGTH S_FIM3E < 10       // bad edge
+  B_FIM3E TOUCH EDGE (M3WME NOT TOUCH EDGE G_FIM3E)
+}
+
+//MD SLOT CHECKS
+//==============
+// Bonding pad, chip corner dummy pad, and inductor need not put slot
+
+UBM_EXDD    = SIZE UBMi BY 2 INSIDE OF MDxd STEP 0.32 	// For RDL
+MDEXD       = MDxd NOT ( DPDMY OR UBM_EXDD )
+MDInnerHole = HOLES MDEXD INNER
+MDBigHole   = SIZE MDInnerHole BY -5  	// Holes with width less than 10um will be filled back
+MDHole      = MDInnerHole OUTSIDE MDBigHole	
+MDHoleSpace = MDHole NOT MDEXD
+FIMDc       = MDEXD OR MDHoleSpace
+LMDXA       = (SIZE (SIZE FIMDc BY 1.0 UNDEROVER) BY 17.5 UNDEROVER TRUNCATE 17.5) AND FIMDc
+LMDX        = ENCLOSE RECTANGLE LMDXA 35.005 35.005 
+MDHoleD     = MDHoleSpace AND LMDX
+
+AMS.1.MD { @ Wide Metal (>35um) must have slot
+  A = (SIZE ( SIZE MDEXD BY 1.0 UNDEROVER ) BY 17.5 UNDEROVER TRUNCATE 17.5) AND MDEXD
+  ENCLOSE RECTANGLE A 35.005 35.005    
+}
+
+CONNECT MDHoleD LMDX
+AMS.DN.MD { @ Min. Hole density for metal lines that need to apply slot  1.5%
+  NET AREA RATIO LMDX MDHoleD < 0.015
+    [ AREA(MDHoleD) / AREA(LMDX) ] RDB MDHole.density2 LMDX MDHoleD 
+}
+DISCONNECT
+
+MDHOC = HOLES MDEXD INNER EMPTY
+MDHOD  = SIZE MDHOC BY 5 UNDEROVER TRUNCATE 5   // Assume Metal Slot < 10um
+MDHO   = MDHOC OUTSIDE MDHOD         // Metal slot (include not in wide metal)
+FIMD   = MDEXD OR MDHO                  // Metal with slot fill in
+MDWMA1 = (SIZE FIMD BY 17.5 UNDEROVER) AND FIMD
+MDWMA  = ENCLOSE RECTANGLE MDWMA1 35.005 35.005
+MDWM   = MDWMA NOT OUTSIDE MDHO
+MDSLT = MDHO INSIDE MDWM
+
+AM.W.1.MD { @ Min. width for metal connected to wide metal 10um.
+  MDWMD = MDWMA AND MDEXD
+  MDWME = MDWMD TOUCH MDSLT
+  S_FIMD = MDxd NOT MDWME
+  S_FIMDE = S_FIMD COIN OUTSIDE EDGE MDWME
+  G_FIMDE = PATH LENGTH S_FIMDE >= 10
+  B_FIMDE = PATH LENGTH S_FIMDE < 10
+  B_FIMDE TOUCH EDGE (MDWME NOT TOUCH EDGE G_FIMDE)
+}
+
+
+//I/O ESD Guidance 
+//================
+
+EPACT = PACT AND SDI
+ENACT = NACT AND SDI
+ECO = (CO AND SDI) AND OD
+EPMOS = EPACT ENCLOSE ALL_GATE
+ENMOS = ENACT ENCLOSE ALL_GATE
+EGTE = ALL_GATE AND SDI
+EGTE_W = EGTE INSIDE EDGE OD
+EPSD = EPMOS NOT EGTE
+ENSD = ENMOS NOT EGTE
+ENSD_NCO = (ENSD NOT INTERACT ECO) NOT INTERACT PTAP
+ENSD_WCO = ENSD NOT ENSD_NCO
+ENSD_SRC = ENSD_WCO OUTSIDE RPO
+
+ESD1_GATE = EGTE AND ESD1DMY
+ESD1_NCS_GATE = ESD1_GATE NOT INTERACT ENSD_NCO
+ESD1_TOL = (ENMOS AND ESD1DMY) INTERACT ENSD_NCO
+ESD1_NCS = (ENMOS AND ESD1DMY) NOT INTERACT ENSD_NCO
+ENSD_NCO_ESD1DMY = ENSD_NCO INTERACT ESD1DMY
+ESD1_TOL_GATE = EGTE INTERACT ENSD_NCO_ESD1DMY
+ESD1_TOL_GATE1 = ESD1_TOL_GATE NOT INTERACT ENSD_SRC
+ESD1_TOL_GATE2 = ESD1_TOL_GATE INTERACT ENSD_SRC 
+ESD1_NCS_GATE_W = ESD1_NCS_GATE INSIDE EDGE OD
+ESD1_TOL_GATE1_W = ESD1_TOL_GATE1 INSIDE EDGE OD
+ESD1_TOL_GATE2_W = ESD1_TOL_GATE2 INSIDE EDGE OD
+
+ESD2_GATE = EGTE AND ESD2DMY
+ESD2_REG_GATE = ESD2_GATE NOT INTERACT ENSD_NCO
+ESD2_TOL_GATE = ESD2_GATE INTERACT ENSD_NCO
+ESD2_TOL_GATE1 = ESD2_TOL_GATE NOT INTERACT ENSD_SRC
+ESD2_TOL_GATE2 = ESD2_TOL_GATE INTERACT ENSD_SRC 
+ESD2_TOL = (ENMOS AND ESD2DMY) INTERACT ENSD_NCO
+ESD2_REG = (ENMOS AND ESD2DMY) NOT INTERACT ENSD_NCO
+ESD2_REG_GATE_W = ESD2_REG_GATE INSIDE EDGE OD
+ESD2_TOL_GATE1_W = ESD2_TOL_GATE1 INSIDE EDGE OD
+ESD2_TOL_GATE2_W = ESD2_TOL_GATE2 INSIDE EDGE OD
+
+RPO1 = ((RPO AND SDI) OUTSIDE ESD1DMY) OUTSIDE ESD2DMY
+EGTE1 = ((EGTE OUTSIDE ESD1DMY) OUTSIDE ESD2DMY) NOT INTERACT ENSD_NCO
+EGTE1_W = EGTE1 INSIDE EDGE OD
+
+ERPO = RPO AND SDI
+ERPOH = HOLES ERPO
+ERPOA = ERPOH OR ERPO
+ECOS = ECO OUTSIDE ERPOA
+
+HEGT = EGTE AND OD2
+LEGT = EGTE NOT OD2
+HEGN = HEGT AND NP
+HEGP = HEGT AND PP
+
+
+#IFNDEF 5V
+ESD.22 { @ ESD1DMY is for NMOS only / ESD2DMY is for 3.3V NMOS only
+  ESD1DMY AND GATE_PP
+  ESD2DMY AND GATE_PP
+  ESD2DMY AND (GATE_NP NOT OD2)
+}
+
+ESD.GUIDE.4 { @ I/O - Gate 20um <= width <= 60um.
+  PATH LENGTH EGTE_W > 0 < 20
+  PATH LENGTH EGTE_W > 60 < 999
+}
+ESD.5A { @ For 3.3V high voltage tolerant NMOS, RPO should completely cover 1st poly gate
+         @ and overlap 2nd poly gate >= 0.05um
+  X = ESD2_TOL_GATE NOT RPO
+  ESD2_TOL NOT INTERACT X
+  ESD2_TOL_GATE2 OUTSIDE RPO
+  ESD2_TOL_GATE1 NOT RPO
+  INT ESD2_TOL_GATE2 RPO < 0.05 ABUT<90 OPPOSITE REGION
+  //For 3.3V high voltage tolerant NMOS, 1st and 2nd poly gate spacing is >=0.25um 
+  //is checked by ESD.5H
+}
+
+ESD.5B { @ For 1.8V high voltage tolerant NMOS, RPO should completely cover 1st poly gate
+         @ and should not cover 2nd poly gate, RPO space to 2nd poly gate >= 0.25um
+  X = ESD1_TOL_GATE AND RPO
+  ESD1_TOL NOT INTERACT X
+  ESD1_TOL_GATE1 NOT RPO
+  ESD1_TOL_GATE2 AND RPO
+  Y = RPO INTERACT ESD1_TOL_GATE1
+  EXT Y ESD1_TOL_GATE2_W < 0.25 ABUT<90 OPPOSITE REGION
+  //For 1.8V high voltage tolerant NMOS, 1st and 2nd poly gate spacing is >=0.25um
+  //is checked by ESD.5I
+}
+
+ESD.5C { @ For 3.3V regular NMOS, RPO needs to overlap poly gate >= 0.05um
+  X = ESD2_REG_GATE NOT RPO
+  ESD2_REG NOT INTERACT X
+  ESD2_REG_GATE OUTSIDE RPO
+  INT ESD2_REG_GATE RPO < 0.05 ABUT<90 OPPOSITE REGION 
+}
+
+ESD.WARN.1 { @ CO can't inserted between gate and RPO for 1.8V NMOS and all PMOS I/O pattern.
+  RED  = (EPSD OR ENSD) INTERACT RPO1
+  XRPO = RED NOT RPO1
+  XRPG = XRPO TOUCH EGTE1
+  XRPG INTERACT ECO
+}
+ESD.5D { @ For the grounded gate ESD protection device between Vcc/Vss, RPO should fully cover
+         @ all poly gate and source drain.
+  ESD1_NCS_GATE NOT RPO	 
+}
+ESD.5E { @ For all PMOS and 1.8V regular NMOS, RPO space to gate 0.45um
+  EXT RPO1 EGTE1_W < 0.45 ABUT<90 OPPOSITE REGION
+  EGTE1 AND RPO1
+}
+ESD.5F { @ For 3.3V high voltage tolerant, 3.3V regular NMOS, and 1.8V NMOS high voltage tolerant
+         @ min. width of RPO on drain side and RPO edge to OD edge 1.95um
+  X = (ENSD_WCO AND ESD2DMY) AND RPO
+  INT X < 1.95 ABUT<90 REGION
+  Z = ((ENSD_WCO AND ESD1DMY) AND RPO) INTERACT ESD1_TOL_GATE1
+  INT Z < 1.95 ABUT<90 REGION
+}
+ESD.5G { @ For 1.8V regular NMOS and all PMOS 
+         @ min. width of RPO on drain side and RPO edge to OD edge 1.5um
+//Y = RPO1 AND OD                
+  Y = RPO AND (OD INTERACT POLY) 
+  INT Y < 1.5 ABUT<90 REGION
+}
+ESD.5H { @ For 3.3V high voltage tolerant NMOS, 1st and 2nd poly gate spacing is >=0.25um
+  X = ENSD_NCO INTERACT ESD2DMY
+  INT X < 0.25 ABUT<90 REGION
+}
+ESD.5I { @ For 1.8V high voltage tolerant NMOS, 1st and 2nd poly gate spacing is >=0.25um
+  INT ENSD_NCO_ESD1DMY < 0.25 ABUT<90 REGION
+}
+ESD.6 { @ Min. space between CO on source side to poly gate 0.75um
+  EXT ECOS EGTE_W < 0.75 ABUT<90 OPPOSITE REGION
+  X = ECO AND ESD1_NCS     
+  EXT X EGTE_W < 0.75 ABUT<90 OPPOSITE REGION
+}  
+#IFDEF 1.5V
+ESD.9A { @ 1.5V IO ESD NMOS/PMOS gate length < 0.25um
+  INT LEGT < 0.25 ABUT<90 SINGULAR REGION
+}
+#ENDIF
+#IFDEF 1.8V
+ESD.9A { @ 1.8V IO ESD NMOS/PMOS gate length < 0.25um
+  INT LEGT < 0.25 ABUT<90 SINGULAR REGION
+}
+#ENDIF
+#IFDEF 2.5V
+ESD.9B { @ 2.5V IO ESD NMOS gate length < 0.3um
+  INT HEGN < 0.3 ABUT<90 SINGULAR REGION
+}
+ESD.9C { @ 2.5V IO ESD PMOS gate length < 0.3um
+  INT HEGP < 0.3 ABUT<90 SINGULAR REGION
+}
+#ENDIF
+#IFDEF 3.3V
+ESD.9B { @ 3.3V IO ESD NMOS gate length < 0.4um
+  INT HEGN < 0.4 ABUT<90 SINGULAR REGION
+}
+ESD.9C { @ 3.3V IO ESD PMOS gate length < 0.3um
+  INT HEGP < 0.3 ABUT<90 SINGULAR REGION
+}
+#ENDIF
+#ENDIF
+
+// begin of ESD.11, butted or inserted pickup is not allowed
+
+ESD.11 { @ Butting or inserted pickup between source diffusion of ESD devices are prohibited
+  
+  EAct = EPACT OR ENACT
+  DTap = NTAP OR PTAP
+  EActUp3 = SIZE EAct BY 3 OUTSIDE OF DTap STEP 0.22*0.7
+  D1 = DTap INTERACT EActUp3
+  
+  D1R1 = SHRINK D1 RIGHT BY 0.001
+  D1R2 = D1 NOT D1R1 
+  D1R3 = LENGTH D1R2 > 0.001
+  D1R4 = D1 TOUCH EDGE D1R3
+  D1R5 = EXT [D1R4] EAct < 3 ABUT < 90 OPPOSITE  
+  D1L  = D1 WITH EDGE D1R5 
+  D1L1 = SHRINK D1L LEFT BY 0.001
+  D1L2 = D1L NOT D1L1 
+  D1L3 = LENGTH D1L2 > 0.001
+  D1L4 = D1L TOUCH EDGE D1L3
+  D1L5 = EXT [D1L4] EAct < 3 ABUT < 90 OPPOSITE  
+  D1X  = D1L WITH EDGE D1L5 
+  
+  D1T1 = SHRINK D1 TOP BY 0.001
+  D1T2 = D1 NOT D1T1 
+  D1T3 = LENGTH D1T2 > 0.001
+  D1T4 = D1 TOUCH EDGE D1T3
+  D1T5 = EXT [D1T4] EAct < 3 ABUT < 90 OPPOSITE  
+  D1B  = D1 WITH EDGE D1T5 
+  D1B1 = SHRINK D1B BOTTOM BY 0.001
+  D1B2 = D1B NOT D1B1 
+  D1B3 = LENGTH D1B2 > 0.001
+  D1B4 = D1B TOUCH EDGE D1B3
+  D1B5 = EXT [D1B4] EAct < 3 ABUT < 90 OPPOSITE  
+  D1Y  = D1B WITH EDGE D1B5 
+  DTap2Check=D1X OR D1Y
+ 
+  DTapHole = HOLES DTap2Check INNER
+  DTapSuspect = DTap2Check NOT TOUCH DTapHole
+  ENCLOSE RECTANGLE DTapSuspect 0.22 20
+
+}
+
+
+
+
+// LATCH-UP CHECKS
+//==================
+
+GROUP LATCH_UP_CHECK LAT.2 LAT.3P LAT.3N
+
+PMOS = (PACT ENCLOSE ALL_GATE) INTERACT COi //Interact CONTi to filter out filler cell.
+NMOS = (NACT ENCLOSE ALL_GATE) INTERACT COi
+PASD = PMOS NOT ALL_GATE
+NASD = NMOS NOT ALL_GATE
+
+
+LAT.2 { @ I/O - NMOS to PMOS space < 15um.     
+  EXT EPMOS ENMOS < 15 ABUT>0<90 SINGULAR
+}
+
+LAT.3P { @ N-well pickup OD to PMOS space > 30um
+  NWELi_US = SIZE NWELi BY - 0.085 // 0.12/1.415 = 0.085
+  // 30/1.415 = 21.201, (0.6 + 2 * 0.085)/1.415 = 0.544
+  NTAP_OS = SIZE NTAP BY 21.201 INSIDE OF NWELi_US STEP 0.544 TRUNCATE 0.544
+  PASD_FAR = PASD NOT NTAP_OS
+  PASD_FAR_FILTER = SIZE PASD_FAR BY 30
+  NTAP_NEAR = NTAP INTERACT PASD_FAR_FILTER
+
+  // doing an more accurate sizing
+  NTAP_NEAR_OS = SIZE NTAP_NEAR BY 0.10
+  NTAP_90_CORNER = INT NTAP_NEAR_OS < 0.06 ABUT==90 INTERSECTING ONLY REGION
+  NTAP_OCT = NTAP_NEAR_OS NOT NTAP_90_CORNER
+  NTAP_135_CORNER = INT NTAP_OCT < 0.04 ABUT>134<136 INTERSECTING ONLY REGION
+  NTAP_HEX = NTAP_OCT NOT NTAP_135_CORNER
+  // 30-0.10 = 29.9
+  NTAP_HEX_OS = SIZE NTAP_HEX BY 29.9 INSIDE OF NWELi_US STEP 0.544 TRUNCATE 0.544
+  PASD_FAR NOT NTAP_HEX_OS
+}
+
+LAT.3N { @ P-well pickup OD to NMOS space > 30um
+  PWELi_US = SIZE PWELi BY - 0.085 // 0.12/1.415 = 0.085
+  // 30/1.415 = 21.201, (0.86 + 2 * 0.085)/1.415 = 0.728
+  PTAP_OS = SIZE PTAP BY 21.201 INSIDE OF PWELi_US STEP 0.728 TRUNCATE 0.728
+  NASD_FAR = NASD NOT PTAP_OS
+  NASD_FAR_FILTER = SIZE NASD_FAR BY 30
+  PTAP_NEAR = PTAP INTERACT NASD_FAR_FILTER
+
+  // doing an more accurate sizing
+  PTAP_NEAR_OS = SIZE PTAP_NEAR BY 0.10
+  PTAP_90_CORNER = INT PTAP_NEAR_OS < 0.06 ABUT==90 INTERSECTING ONLY REGION
+  PTAP_OCT = PTAP_NEAR_OS NOT PTAP_90_CORNER
+  PTAP_135_CORNER = INT PTAP_OCT < 0.04 ABUT>134<136 INTERSECTING ONLY REGION
+  PTAP_HEX = PTAP_OCT NOT PTAP_135_CORNER
+  // 30-0.10 = 29.9
+  PTAP_HEX_OS = SIZE PTAP_HEX BY 29.9 INSIDE OF PWELi_US STEP 0.728 TRUNCATE 0.728
+  NASD_FAR NOT PTAP_HEX_OS
+}
+
+
+
+
+
+// DRC UNSELECT CHECK DENSITY_CHECK
+
+EXCLUDE CELL "InputExcludeCell" 
+
+//
+//   CTM CHECK
+//=============== 
+
+
+CTM.TITLE.1 { @ MiM capacitors should be placed between the top two interconnect metal layers
+  COPY CTM5
+  COPY CTM3
+  COPY CTM4
+} 
+TCTM  = CTM2 INTERACT VIA2      // capacitor top plate
+DCTM  = CTM2 NOT INTERACT VIA2  // dummy CTM
+
+
+DPM2 = M2 INTERACT DCTM   // M2 as a dummy capacitor bottom plate
+BPM2A= M2 INTERACT TCTM
+BPM2 = BPM2A AND CTMDMY   // M2 as a capacitor bottom plate
+
+CTM.W.1 { @ CTM (as capacitor top plate) width >= 4 um
+  INT TCTM < 4 ABUT < 90 SINGULAR REGION
+}
+CTM.W.2 { @ Minimum width of a dummy CTM region >= 0.4um
+  INT DCTM < 0.4 ABUT < 90 SINGULAR REGION
+}
+//CTM.W.3 is checked by CTM.W.2
+CTM.S.1 { @ CTM (as capacitor top plate) space < 1.2 um
+  EXT TCTM < 1.2 ABUT < 90 SINGULAR REGION
+}
+CTM.S.2 { @ Minimum space between a dummy CTM to a CTM regions 0.8um
+  EXT DCTM TCTM < 0.8 ABUT < 90 SINGULAR REGION
+  EXT DCTM < 0.8 ABUT < 90 SINGULAR REGION
+}
+CTM.S.3 { @ Minimum space between two Mn+1 of both dummy and real capacitor bottom plate < 0.8um
+  EXT BPM2 DPM2 < 0.8 ABUT < 90 SINGULAR REGION
+}
+CTM.S.6 { @ Min. space between two Mn+1 as capacitor bottom plate < 0.8 um
+  EXT BPM2 < 0.8 ABUT < 90 SINGULAR REGION
+}
+CTM.E.1 { @ CTM enclose Via < 0.24 um
+  ENC VIA2 CTM2 < 0.24 ABUT<90 SINGULAR REGION
+  VIA2 CUT CTM2    
+}
+CTM.E.2 { @ bottom plate Metal enclose Via < 0.12 um
+  ENC VIA1 BPM2 < 0.12 ABUT<90 SINGULAR REGION
+  ENC VIA2 BPM2 < 0.12 ABUT<90 SINGULAR REGION
+}
+CTM.E.3 { @ bottom plate Metal enclose CTM < 0.4 um
+  ENC CTM2 M2 < 0.4 ABUT<90 SINGULAR REGION
+  CTM2 NOT M2    
+}
+CTM.C.1 { @ CTM space to Via < 0.4 um
+  EXT VIA1 CTM2 < 0.4 ABUT<90 SINGULAR REGION
+  EXT VIA2 CTM2 < 0.4 ABUT<90 SINGULAR REGION
+}
+//CTM.R.1 is checked by CTM.E.3
+CTM.R.2 { @ Min. density of a CTM < 3%
+   DENSITY CTM2i > 0 < 0.03 PRINT CTM2i.density
+}
+//CTM.R.3 is no need to be checked
+ 
+CTMV2 = VIA2 AND CTM2            // via locate on CTM
+CBMV2 = (VIA2 AND BPM2) NOT CTM2 // via locate on bottom plate
+ 
+CTM.S.4 { @ min space between two vias locate on CTM < 2um
+  EXT CTMV2 < 2 ABUT < 90 SINGULAR REGION
+}
+CONNECT CTMV2 TCTM
+CTM.S.4a { @ min vias density on CTM < 1%
+  NET AREA RATIO CTMV2 TCTM < 0.01
+  [
+      AREA(CTMV2) / AREA(TCTM)
+  ] RDB VIA2_DENSITY.log CTMV2 TCTM
+}
+
+DISCONNECT
+CTM.S.5 { @ min space between two vias locate on buttom plate < 4um
+  EXT CBMV2 < 4 ABUT < 90 SINGULAR REGION
+}
+CTM.R.4 { @ dummy layer enclose bottom plate metal < 2um.
+//  ENC BPM2A CTMDMY < 2 ABUT < 90 SINGULAR REGION 
+    TCTM NOT CTMDMY   // CTMDMY is needed to sepcify MiM capacitor region and separates from metal interconnection region for DRC purpose.	
+}
+CTM.I.1 { @ max width of a CTM region as a capacitor top plate > 30um
+  ENCLOSE RECTANGLE TCTM 4 30.005 ORTHOGONAL ONLY // 4um is min TCTM width
+}
+CTM.I.2 { @ max width of a capacitor bottom plate > 35um
+  SIZE BPM2 BY 17.5 UNDEROVER
+}
+CTM.I.3 { @ ViaN under CTM is not allowed.
+  VIA1 AND CTM2
+}
+CTM.I.4 { @ device under CTM is not allowed
+  (((PORES OR RNWEL) OR  ODRES ) OR DACT) AND CTM2 
+}
+CTM.A.1 { @ Min. area of CTM region 0.202
+  AREA CTM2 < 0.202
+}
+
+ODWR_STII  = OD INTERACT NWRES
+NPWR_STII  = NP INTERACT NWRES
+NWRR1 = ODWR_STII NOT NWRES
+NWRR2 = NWRR1 NOT NPWR_STII
+NWRR3 = NWRR2 SIZE BY -0.3
+NWRR4 = NWRR3 SIZE BY  0.3
+NWRR5 = NWRR4 TOUCH==1 NWRES
+CAL.ERR.ODNW { @ OD only over one NWELL resistor
+               @ Define by CALibre exclude IP/LIB REGION!
+  NWRR4 NOT NWRR5
+}
+
+ALRDMY = RWDMY OR RPDMY
+NWELLR = NWEL INTERACT RWDMY
+POLY1R = POLY INTERACT RPDMY
+POLY2R = POLY2 INTERACT RPDMY
+ODR = OD INTERACT RPDMY
+NWODR = NWELLR OR ODR
+P1P2R = POLY1R OR POLY2R
+ALRES = NWODR OR P1P2R
+/* 
+CAL.ERR.STRS { @ all res avoide over OD2 by huang LAYOUT II
+               @ Define by CALibre exclude IP/LIB REGION!
+  OD2 AND ALRES
+}
+*/
+
+CAL.ERR.PAD1 { @ PAD MUST TOTAL INSIDE TOP METAL!!!2004/11/25
+               @ Define by CALibre exclude IP/LIB REGION!
+  ERPAD1 = NOT CB M3
+  CB INTERACT ERPAD1
+}
+
+CAL.ERR.PAD2 { @ IF TOP METAL > 40um MUST HAVE CB STRUCT!!!(EXCLUDE NON-PAD REGION)
+               @ Define by CALibre exclude IP/LIB REGION!
+PADM3 = M3 SIZE BY 20 UNDEROVER
+PADM3 NOT INTERACT CB
+}
+
+CAL.ERR.ESDDMY { @ ESD1DMY ESD2DMY ESD3DMY DON'T ALLOW OVER PMOS AREA
+                 @ Define by CALibre exclude IP/LIB REGION!
+  ESD1DMY AND (OD INTERACT GATE_PP)
+  ESD2DMY AND (OD INTERACT GATE_PP)
+  ESD3DMY AND (OD INTERACT GATE_PP)
+}
+
+CAL.ERR.DMNP2V { @ DMN2V overlap DMP2V is not allowed
+                 @ Define by CALibre exclude IP/LIB REGION!
+  DMN2V AND DMP2V
+}
+
+CAL.ERR.FUSE.M1 { @ Metal1 routing layer inside fuse window
+                  @ Define by CALibre exclude IP/LIB REGION!
+  X = M1 INTERACT FW
+  X NOT INSIDE FW
+  X NOT INTERACT CO
+}
+
+CAL.ERR.FUSE.M2 { @ Metal2 routing layer inside fuse window
+                  @ Define by CALibre exclude IP/LIB REGION!
+  X = M2 INTERACT FW
+  X NOT INSIDE FW
+  X NOT INTERACT VIA1
+}
+
+CAL.ERR.FUSE.M3 { @ Metal3 routing layer inside fuse window
+                  @ Define by CALibre exclude IP/LIB REGION!
+  X = M3 INTERACT FW
+  X NOT INSIDE FW
+  X NOT INTERACT VIA2
+}
+
+CAL.ERR.FUSE.MD { @ MD routing layer inside fuse window
+                  @ Define by CALibre exclude IP/LIB REGION!
+  X = MD INTERACT FW
+  X NOT INSIDE FW
+  X NOT INTERACT VIAD
+}
+
+LAYOUT INPUT EXCEPTION SEVERITY PATH_ENDSEGMENT_SHORT 2  // 2005/09/26 add path endsegment length check option //   LAYOUT INPUT EXCEPTION SEVERITY PATH_ENDSEGMENT_SHORT 2 // 
+
+// DNW CHECKS
+//==============
+
+DNW.I.1 { @ DNW must be surrounded or fully covered by NW
+    DNW OUTSIDE EDGE NWEL
+}
+
+// DNW.I.4 is definition of RW
+RWi = PWELi INSIDE DNWi
+RW = RWi NOT INSIDE EXCL
+
+DNW.I.6 { @ DNW is not allowed as a resistor
+  AND DNW RWDMY
+}
+DNW.I.7 { @ NW resistor is not allowed to connect DNW
+  INTERACT RNWEL DNW
+  INTERACT NWRES DNW
+}
+DNW.W.1 { @ Min. DNW width < 3
+  INT DNW < 3 ABUT<90 SINGULAR REGION
+}
+DNW.S.1 { @ Min. DNW space < 5
+  EXT DNW < 5 ABUT<90 REGION
+}
+DNW.E.1 { @ Min. extension of NW beyond DNW < 1.5
+  DNW_RW = DNW ENCLOSE RW //exclude DNW without RW
+  ENC DNW_RW NWEL < 1.5 ABUT<90 SINGULAR REGION
+}
+DNW.O.1 { @ Min. overlap of NW into DNW < 2.0
+  INT DNW NWEL < 2.0 ABUT<90 SINGULAR // MEASURE COINCIDENT
+}
+DNW.C.1 { @ Min. DNW space to NW < 3.5
+  X = NWEL OUTSIDE DNW
+  EXT DNW X < 3.5 ABUT<90 SINGULAR REGION
+}
+DNW.C.2_DNW.C.3 { @ Min. NWEL to NPOD in DNW spacing < 0.50
+  ND_ACT = NPOD AND DNW
+  EXT ND_ACT NONWR < 0.50 SINGULAR ABUT <90 OVERLAP  REGION
+}
+//DNW.C.3 is check by DNW.C.2
+DNW.C.4 { @ Min. DNW space to N+OD outside NW < 3
+  A = PWEL NOT DNW
+  B = NPOD AND A
+  EXT B DNW < 3.0 ABUT<90 SINGULAR
+} 
+
+MOSOD2 = OD2 AND (OD INTERACT ALL_GATE)
+CAL.ERR.DMP2V { @ DMP2V DON'T ALLOW OVER ANY MOS OD2 REGION
+                @ Define by CALibre exclude IP/LIB REGION!
+  DMP2V AND MOSOD2
+}
+CAL.ERR.DMN2V { @ DMN2V DON'T ALLOW OVER ANY MOS OD2 REGION
+                @ Define by CALibre exclude IP/LIB REGION!
+  DMN2V AND MOSOD2
+}
+
+LAYER PSUB2 50 //  dummy layer for subtrate isolation
+
+// CUP PAD Structure Rule Check
+VARIABLE PAD_MIN_WIDTH 20
+
+CUP_M1CB = M1 INTERACT CB
+CUP_M2CB = M2 INTERACT CB
+CUP_M3CB = M3 INTERACT CB
+
+CUP_SIZE_M1 = SIZE CUP_M1CB BY PAD_MIN_WIDTH UNDEROVER
+CUP_SIZE_M2 = SIZE CUP_M2CB BY PAD_MIN_WIDTH UNDEROVER
+CUP_SIZE_M3 = SIZE CUP_M3CB BY PAD_MIN_WIDTH UNDEROVER
+
+CUP_PADM1 = CUP_SIZE_M1 AND CUP_M1CB
+CUP_PADM2 = CUP_SIZE_M2 AND CUP_M2CB
+CUP_PADM3 = CUP_SIZE_M3 AND CUP_M3CB
+
+CUP_PAD_VIA1 = VIA1 INTERACT CUP_PADM1
+CUP_PAD_VIA2 = VIA2 INTERACT CUP_PADM2
+
+PAD_VIA_CUP2 = CUP_PAD_VIA2 INTERACT WBDMY
+VIA_MERGE = SIZE PAD_VIA_CUP2 BY 0.7 OVERUNDER
+VIA_SPACE = VIA_MERGE NOT PAD_VIA_CUP2
+
+CUP_CB_CUP = CB INTERACT WBDMY
+
+CB.R.3.1 { @ pad structure must be MT/VIAT/Mtop-1
+  CUP_CB_CUP NOT INTERACT CUP_PADM3
+  CUP_CB_CUP NOT ENCLOSE VIA2
+  CUP_CB_CUP NOT INTERACT CUP_PADM2
+}
+CBVIAT.EN.2 { @ VIAT enclosure by metal < 2
+  ENC PAD_VIA_CUP2 M2  < 2 ABUT < 90 REGION
+  ENC PAD_VIA_CUP2 M3 < 2 ABUT < 90 REGION
+}
+CBVIAT.W.2 { @ CBVIAT.W.3 is also checked. Width of VIAT must = 0.28um, Length of VIAT must = 3.44um
+  NOT RECTANGLE PAD_VIA_CUP2 == 0.28 BY == 3.44 ORTHOGONAL ONLY
+}
+CBVIAT.S.3 { @ space of two line VIAT (in parallel direction) = 1.3
+  NOT RECTANGLE VIA_SPACE == 1.3 BY == 3.44 ORTHOGONAL ONLY
+}
+CBVIAT.S.4 { @ space of two line VIAT (in perpendicular direction) = 2
+  X = EXT VIA_MERGE < 2.5 OPPOSITE REGION
+  NOT RECTANGLE X == 2 BY == 3.44 ORTHOGONAL ONLY
+}
+
+CONNECT PAD_VIA_CUP2 CUP_CB_CUP
+
+CBVIAT.DN.1 { @ Ratio of total mesh VIAT area to CB area < 0.08
+  NET AREA RATIO CUP_CB_CUP PAD_VIA_CUP2 <0.08
+  [AREA(PAD_VIA_CUP2)/AREA(CUP_CB_CUP)
+  ] RDB via2_density.log CUP_CB_CUP PAD_VIA_CUP2
+}
+
+CB_NONCUP = CB NOT INTERACT WBDMY
+
+CB.R.2a { @ pad structure must be MT/VIAT/Mtop-1...M1
+  CB_NONCUP NOT INTERACT CUP_PADM1
+  CB_NONCUP NOT INTERACT CUP_PADM2
+  CB_NONCUP NOT INTERACT CUP_PADM3
+  CB_NONCUP NOT ENCLOSE VIA1
+  CB_NONCUP NOT ENCLOSE VIA2
+}
+
+CAL.ERR.OFFGRID { @ The Grid size is recommended to be 0.005
+                  @ Vertice is drawn off-grid.
+  DRAWN OFFGRID
+}

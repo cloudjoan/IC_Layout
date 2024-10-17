@@ -1,0 +1,17 @@
+NORX1 1000
+SOFTCHK nxwell CONTACT.
+0 0 0 Oct 11 19:59:08 2024                                                      
+SOFTCHK psub CONTACT.
+1 1 2 Oct 11 19:59:08 2024                                                      
+Net VSS is selected for stamping.
+Rejected nets: 2
+p 1 4
+CN NORX1 c 1 0 0 1 0 0 0
+DN 2
+LL psub
+OL pplug
+SC  SCONNECT  tpdiff psub BY pplug
+-2495 -315
+-1625 -315
+-1625 -75
+-2495 -75

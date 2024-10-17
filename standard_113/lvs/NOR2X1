@@ -1,0 +1,21 @@
+//  Runset file generated on Fri Oct 11 22:22:37 2024
+//  by Calibre Interactive v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+lvs.rulesFile.value = "/home/user/wrk/standard_113/lvs/lvs.rule"
+lvs.runDir.value = "/home/user/wrk/standard_113/lvs"
+lvs.layout.layoutFile.value = "NORX1.calibre.db"
+cmn.layout.defFiles.value = [ "NORX1.def" ]
+lvs.layout.topCell.value = "NORX1"
+lvs.layout.layoutNetlist.value = "NORX1.sp"
+lvs.source2.sourceFile.value = "NORX1.sp"
+lvs.source.sourceFile.value = "/home/user/wrk/standard_113/cdl/all.spi"
+lvs.source.topCell.value = "NOR2X1"
+lvs.source.topCellFDI.value = "NORX1"
+lvs.reports.lvsReport.value = "NORX1.lvs.report"
+lvs.ercdb.resultsFile.value = "NORX1.erc.results"
+lvs.ercSummaryReport.report.value = "NORX1.erc.summary"
+

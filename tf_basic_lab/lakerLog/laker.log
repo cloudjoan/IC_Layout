@@ -1,0 +1,4 @@
+Command Line: /tools/laker/current/platform/REDHAT9/bin/laker
+uname(Linux vmware 2.6.9-42.ELsmp #1 SMP Sat Aug 12 09:39:11 CDT 2006 i686)
+source /tools/TCL/LCD_TCL/lcd.tclsource /tools/TCL/MyTCL/MyTCL.tclsource /tools/laker/current/gift/gift.tcllakerTechReplace -lib lab -tech /home/dragon/lab/TFtraining2010/tf_basic_lab/basic_slide.tf -updateMCell 1 -updateMCellList { All }
+au time 52 0.365944 1.408786 delta 25642328 25468928 total 25931776 25931776

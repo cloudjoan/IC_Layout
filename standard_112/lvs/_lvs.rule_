@@ -1,0 +1,28 @@
+//
+//  Rule file generated on Tue Jul 4 16:08:33 2023
+//  by Calibre Interactive v2022.1_36.16    Tue Mar 1 14:27:08 PST 2022
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "test.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "test"
+
+SOURCE PATH "/home/user/wrk/standard_112/cdl/all.spi"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "test"
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "test.lvs.report"
+
+LVS EXECUTE ERC YES
+
+ERC RESULTS DATABASE "test.erc.results"
+ERC CELL NAME YES CELL SPACE XFORM
+
+DRC ICSTATION YES
+
+INCLUDE "/home/user/wrk/standard_112/lvs/lvs.rule"

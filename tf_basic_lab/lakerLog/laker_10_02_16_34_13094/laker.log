@@ -1,0 +1,102 @@
+Command Line: /data1/synopsys/laker/laker_v2023.06-2.aut/platform/LINUX64/bin/laker
+uname(Linux leon 3.10.0-1160.105.1.el7.x86_64 #1 SMP Mon Nov 6 06:58:51 EST 2023 x86_64)
+source /data1/synopsys/laker/laker_v2023.06-2.aut/gift/gift.tcl
+Please specify a cell.
+lakerNewCell -lib labNew -cell cell_6
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerSetActiveLayer -layerName NWELL -purpose drawing
+lakerSingleSel -point (-0.086,0.362) -traversedist 0.007
+lakerCreateRect -layerName NWELL -point (-0.104,0.077) (0.256,0.355)
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerCreateRect -layerName PWELL -point (0.347,-0.087) (0.847,0.413)
+lakerCalibreDRC
+New connection accepted, fd = 18
+
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+lakerSaveDesign -autosave
+Calibre process exit.
+lakerCalibreLVS
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+
+New connection accepted, fd = 18
+
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+Calibre process exit.
+lakerCreateRect -layerName PWELL -point (-0.074,-0.07) (0.426,0.43)
+lakerSetActiveLayer -layerName NWELL -purpose drawing
+lakerCreateRect -layerName NWELL -point (-0.323,-0.035) (-0.108,0.381)
+lakerSaveDesign
+lakerCloseDesign
+lakerTechEditor
+lakerTFeActUnit
+lakerTFeLoadFromLib -lib labNew -section
+lakerTFeActLayerStream
+lakerTFeActLayerRule
+lakerTFeActLayerRule -action add -newData {{width  NWELL} {0.7 } {NW}}
+Failed to create technology data in library.
+Failed to replace library "labNew".
+lakerTFeActLayerStream
+lakerTFeActLayerRule
+wtAskUser: "Reload the comments?", answer:  "Yes"
+lakerTFeLoadFromLib -lib labNew -section
+wtAskUser: "The active Layer Rule is valid.", answer:  "OK"
+lakerTFeActLayerRule -action check
+lakerTFeActLayerRule -action add -newData {{width  NWELL} {0.7 } {NW.W.0.7}}
+Failed to create technology data in library.
+Failed to replace library "labNew".
+Failed to create technology data in library.
+Failed to replace library "labNew".
+wtAskUser: "The file "/home/user/wrk/tf_basic_lab/basicNew.tf" exists. Overwrite it anyway?", answer:  "Yes"
+lakerTFeSaveToFile -file /home/user/wrk/tf_basic_lab/basicNew.tf
+Failed to create technology data in library.
+lakerNewCell -lib labNew -cell cell_7
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerCreateRect -layerName PWELL -point (-0.19,-0.025) (0.31,0.475)
+lakerSetActiveLayer -layerName NWELL -purpose drawing
+lakerCreateRect -layerName NWELL -point (0.38,0.172) (0.547,0.405)
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerSetActiveLayer -layerName NWELL -purpose drawing
+lakerSingleSel -point (0.674,0.375) -traversedist 0.005
+lakerCreateRect -layerName NWELL -point (0.696,-0.078) (1.081,0.463)
+lakerCreateRect -layerName NWELL -point (0.51,0.005) (1.313,0.

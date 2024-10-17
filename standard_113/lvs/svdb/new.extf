@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1727856496 1727856497
+lvs_ExtOutFile RUNDIR /home/user/wrk/standard_113/lvs
+lvs_ExtOutFile RULES_FILE _lvs.rule_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 1 3 3 1 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST new.sp
+lvs_ExtOutFile EXTRACTION_REPORT new.lvs.report.ext
+lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/new.pathchk.erc
+lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/new.pathchk.rep

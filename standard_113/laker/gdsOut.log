@@ -1,0 +1,115 @@
+       ###############################################
+       ##                                           ##
+       ##    FileName:  gdsOut.log                  ##
+       ##    GenDate :  15-Oct-2024   13:14:16      ##
+       ##                                           ##
+       ##    Laker: 2023.06-2 (Linux x86_64/64bit) 03/22/2024  ##
+       #############################################AN
+
+Command: gdsOut -64 -SkipWarnNo 100 -keepPCell off -s Preserve -label Preserve -filterAllSysLayer "All" -reduceMCell off -maxAryColRow off -precisionForMag 5 -reduceDevice off -filterText off -convertPolyText off -pathToPolygon off -purposeMap on -designIntention off -Ref -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterDummyCell -Vm 4096 -l /home/user/wrk/standard_113/laker/layer.map -o /home/user/wrk/standard_113/gds/test_2.gds test
+Host/OS: leon   Linux 3.10.0-1160.105.1.el7.x86_64
+
+
+##### Mapping Layer Table #####
+
+      file: /home/user/wrk/standard_113/laker/layer.map
+      1. name(NWELL),purp(drawing),layer(2) --> streamLayer(2),dataType(0)
+      2. name(DIFF),purp(drawing),layer(1) --> streamLayer(1),dataType(0)
+      3. name(PIMP),purp(drawing),layer(5) --> streamLayer(5),dataType(0)
+      4. name(NIMP),purp(drawing),layer(4) --> streamLayer(4),dataType(0)
+      5. name(POLY1),purp(drawing),layer(3) --> streamLayer(3),dataType(0)
+      6. name(CONT),purp(drawing),layer(6) --> streamLayer(6),dataType(0)
+      7. name(METAL1),purp(drawing),layer(7) --> streamLayer(7),dataType(0)
+      8. name(METAL1),purp(dummy),layer(7) --> streamLayer(7),dataType(1)
+      9. name(METAL1),purp(slot),layer(7) --> streamLayer(7),dataType(2)
+      10. name(TEXT),purp(drawing),layer(238) --> streamLayer(67),dataType(2)
+
+
+##### Stream Cells #####
+
+   1.BUFX2                   2.CLKINVX1                3.DFFQX1               
+   4.DFFQX1_111501           5.DFFQX1_111502           6.DFF_CO1              
+   7.INVX16                  8.INVX3                   9.INVX8                
+  10.NAND4X1                11.NOR2X8                 12.NORX1                
+  13.new                    14.new_1005               15.new_1007             
+  16.obj_1                  17.try_inv                18.INVX1                
+  19.POLY_GATE            
+
+
+##### Stream Error File(gdsOut.err) #####
+
+   1.new2 (original cell:test.new2.layout): 1-Warn .
+   2.new_1008 (original cell:test.new_1008.layout): 1-Warn .
+   3.new_1011 (original cell:test.new_1011.layout): 1-Warn .
+   4.test (original cell:test.test.layout): 1-Warn .
+   5.test2 (original cell:test.test2.layout): 1-Warn .
+
+
+##### Stream Summary #####
+
+                   Resort Primary Cell(s)
+
+--------------------------------------------------------------------------
+   1.BUFX2                   2.CLKINVX1                3.DFFQX1               
+   4.DFFQX1_111501           5.DFFQX1_111502           6.DFF_CO1              
+   7.INVX16                  8.INVX3                   9.INVX8                
+  10.NAND4X1                11.NOR2X8                 12.NORX1                
+  13.new                    14.new_1005               15.new_1007             
+  16.obj_1                  17.try_inv              
+
+
+                   Resort Cell(s) Summary
+
+cellName     #cInst  #array    #rect    #poly    #path    #text  bBox(um)
+--------------------------------------------------------------------------------------------------
+BUFX2             0       0       57        0        0        4 (-1.040,-0.155) (1.720,2.935)
+CLKINVX1          0       0       38        0        0        0 (-0.420,-0.290) (1.050,2.800)
+DFFQX1           22       0      187        0      234      116 (-0.320,-5.010) (11.875,8.865)
+DFFQX1_111501      23       0      184        0      248      114 (-0.320,-5.010) (11.875,8.865)
+DFFQX1_111502      23       0      184        0      229      114 (-0.320,-5.010) (11.875,8.865)
+DFF_CO1           0       0        2        0        1        0 (0.000,0.000) (0.240,0.240)
+INVX1             0       0       38        0        0        0 (-0.300,-0.180) (1.170,2.910)
+INVX16            0       0      157        0        2        4 (-0.375,1.210) (7.545,4.300)
+INVX3             0       0       51        0        2        4 (0.375,-0.310) (2.625,2.780)
+INVX8             0       0       89        0        2        4 (0.690,-0.435) (5.110,2.655)
+NAND4X1           0       0       50        3        1       12 (0.000,-0.685) (2.735,2.405)
+NOR2X8            0       0      152        0        1        0 (-1.735,-0.200) (6.170,2.890)
+NORX1             0       0       40        1        0        5 (-0.655,-0.385) (1.165,2.705)
+POLY_GATE         0       0        6        0        0        0 (0.000,0.020) (0.240,0.220)
+new               0       0       33        0        0        4 (-0.630,-0.495) (0.840,2.595)
+new_1005          1       0       32        0        0        1 (-0.725,-0.305) (0.745,2.785)
+new_1007          1       0        2        0        0        0 (-0.860,-0.387) (3.135,2.703)
+obj_1             0       0        4        0        0        0 (0.000,0.000) (0.240,0.240)
+try_inv           0       0       37        0        0        4 (-0.640,-0.300) (1.190,2.790)
+
+
+                   Resort Layer(s) Summary
+
+Laker                Stream
+layerName   purpose  layerNo  dataType    #rect    #poly    #path    #text
+--------------------------------------------------------------------------
+DIFF        drawing        1        0       236        0        0        0
+NWELL       drawing        2        0        13        0        0        0
+POLY1       pin        3      251         0        0        0        1
+POLY1       drawing        3        0       135        3      237        0
+NIMP        drawing        4        0        25        0        0        0
+PIMP        drawing        5        0        24        0        0        0
+CONT        drawing        6        0       689        0        0        0
+METAL1      dummy        7        1        12        0        0        0
+METAL1      pin        7      251         0        0        0       72
+METAL1      drawing        7        0       209        1      450        0
+TEXT        drawing       67        2         0        0       33      313
+
+
+
+
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off
+
+ EXE Start Time = 15-Oct-2024   13:14:16                  
+ EXE Stop  Time = 15-Oct-2024   13:14:16                  
+
+ #Elapsed Time  = 00:00:00
+ #CPU Time      = 00:00:00
+
+ #Memory 495508 K,Peak 495508 K
+ Total #Fatal = 0, #Warn = 5

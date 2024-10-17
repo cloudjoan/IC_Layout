@@ -1,0 +1,10 @@
+#  lib libraryName
+#      filter pattern
+#          ...
+#  lib libraryName2
+#      ...
+lib test
+    filter pattern
+        {*}      
+        {M1*}    
+        

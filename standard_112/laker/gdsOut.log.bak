@@ -1,0 +1,65 @@
+       ###############################################
+       ##                                           ##
+       ##    FileName:  gdsOut.log                  ##
+       ##    GenDate :   4-Jul-2023   16:16:09      ##
+       ##                                           ##
+       ##    Laker:  2021.03 (Linux x86_64/64bit) 04/19/2021  ##
+       ##############################################N
+
+Command: gdsOut -64 -SkipWarnNo 100 -keepPCell off -s Preserve -label Preserve -T "test" -filterAllSysLayer "All" -reduceMCell off -maxAryColRow off -precisionForMag 5 -reduceDevice off -filterText off -convertPolyText off -pathToPolygon off -purposeMap on -designIntention off -Ref -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -Vm 4096 -o /home/user/wrk/standard_112/drc/test.calibre.db test
+Host/OS: vmxr7aoooo   Linux 3.10.0-1160.66.1.el7.x86_64
+
+
+##### Stream Cells #####
+
+   1.test                 
+
+
+##### Stream Error File(gdsOut.err) #####
+
+ All cells have no fatal,warn,info message.
+
+
+##### Stream Summary #####
+
+                   Resort Primary Cell(s)
+
+--------------------------------------------------------------------------
+   1.test                 
+
+
+                   Resort Cell(s) Summary
+
+cellName     #cInst  #array    #rect    #poly    #path    #text  bBox(um)
+--------------------------------------------------------------------------------------------------
+test              0       0      103        0        0        4 (-0.820,0.470) (1.490,3.565)
+
+
+                   Resort Layer(s) Summary
+
+Laker                Stream
+layerName   purpose  layerNo  dataType    #rect    #poly    #path    #text
+--------------------------------------------------------------------------
+DIFF        drawing        1        0        12        0        0        0
+NWELL       drawing        2        0         3        0        0        0
+POLY1       drawing        3        0         9        0        0        0
+NIMP        drawing        4        0         6        0        0        0
+PIMP        drawing        5        0         6        0        0        0
+CONT        drawing        6        0        38        0        0        0
+METAL1      dummy        7        1         6        0        0        0
+METAL1      pin       40        0         0        0        0        4
+METAL1      drawing        7        0        23        0        0        0
+
+
+
+
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off
+
+ EXE Start Time =  4-Jul-2023   16:16:09                  
+ EXE Stop  Time =  4-Jul-2023   16:16:09                  
+
+ #Elapsed Time  = 00:00:00
+ #CPU Time      = 00:00:00
+
+ #Memory 420968 K,Peak 420968 K
+ Total #Fatal = 0, #Warn = 0

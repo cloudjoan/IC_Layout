@@ -1,0 +1,4 @@
+Command Line: /data1/synopsys/laker/L-2021.03-3/platform/LINUX64/bin/laker
+uname(Linux vmxr7aoooo 3.10.0-1160.66.1.el7.x86_64 #1 SMP Wed Apr 27 20:34:34 UTC 2022 x86_64)
+source /data1/synopsys/laker/L-2021.03-3/gift/gift.tcl
+au time 37.860867 1.326500 0.772785 delta 44294144 44294144 total 403759104 403759104

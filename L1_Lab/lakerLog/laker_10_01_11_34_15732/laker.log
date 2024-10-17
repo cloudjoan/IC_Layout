@@ -1,0 +1,69 @@
+Command Line: /data1/synopsys/laker/laker_v2023.06-2.aut/platform/LINUX64/bin/laker
+uname(Linux leon 3.10.0-1160.105.1.el7.x86_64 #1 SMP Mon Nov 6 06:58:51 EST 2023 x86_64)
+source /data1/synopsys/laker/laker_v2023.06-2.aut/gift/gift.tcl
+lakerNewLib -lib new -tech /home/user/wrk/L1_Lab/laker_demo.tf -path .
+lakerNewCell -lib new -cell new
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerZoomAll
+lakerChangeSelMode -mode Object
+lakerZoomOut
+lakerZoomOut
+lakerCreateText -layerName PWELL -point (-2.585,-2.25) -height 1.000000 -text {data[002]ZZZZ} {data[004]ZZZZ} {data[006]ZZZZ} {data[008]ZZZZ} {data[010]ZZZZ} -offsetPoint (-2.585,-3.22)
+lakerZoomAll
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSaveDesign
+lakerCloseDesign
+lakerOpenDesign -lib lab -cell replace -mode edit
+lakerSetActiveLayer -layerName PWELL -purpose drawing
+lakerZoomAll
+lakerSingleSel
+lakerSingleSel
+lakerRotate90 -refPoint (2.455,9.96)
+lakerUndo
+lakerSingleSel -point (-3.062,7.094) -traversedist 0.136
+lakerReplaceObj -find 1 -index 1 -matchCase 1 -regular 0 -type Text -searProp {String == {*[*]}}
+lakerReplaceObj -repProp {String {*<*>}} -matchCase 1 -regular 0 -type Text -searProp {String == {*[*]}}
+lakerZoomAll
+lakerSingleSel -point (-3.593,3.953) -traversedist 0.136
+lakerCloseDesign
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+X Error: error code: 3. X_GetProperty - BadWindow (invalid Window parameter)
+au time 4737.261322 68.781295 194.676050 delta 110100480 110100480 total 472961024 472961024

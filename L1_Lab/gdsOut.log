@@ -1,0 +1,71 @@
+       ###############################################
+       ##                                           ##
+       ##    FileName:  gdsOut.log                  ##
+       ##    GenDate :  11-Oct-2024   11:56:47      ##
+       ##                                           ##
+       ##    Laker: 2023.06-2 (Linux x86_64/64bit) 03/22/2024  ##
+       ##############################################N
+
+Command: gdsOut -64 -SkipWarnNo 100 -keepPCell off -s Preserve -label Preserve -T "PAD" -filterAllSysLayer "All" -reduceMCell off -maxAryColRow off -precisionForMag 5 -reduceDevice off -filterText off -convertPolyText off -pathToPolygon off -purposeMap on -designIntention off -Ref -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -Vm 1024 -o /home/user/wrk/standard_113/drc/PAD.calibre.db PAD
+Host/OS: leon   Linux 3.10.0-1160.105.1.el7.x86_64
+
+
+##### Reference Libraries #####
+
+   1.cpu                  
+
+##### Stream Cells #####
+
+   1.PAD                     2.AN2D1                
+
+
+##### Stream Error File(gdsOut.err) #####
+
+ All cells have no fatal,warn,info message.
+
+
+##### Stream Summary #####
+
+                   Resort Primary Cell(s)
+
+--------------------------------------------------------------------------
+   1.PAD                  
+
+
+                   Resort Cell(s) Summary
+
+cellName     #cInst  #array    #rect    #poly    #path    #text  bBox(um)
+--------------------------------------------------------------------------------------------------
+AN2D1             0       0       92       11        0        3 (-0.320,0.000) (1.160,2.610)
+PAD               1       0       15        0        0       12 (-2.165,1.195) (102.225,101.215)
+
+
+                   Resort Layer(s) Summary
+
+Laker                Stream
+layerName   purpose  layerNo  dataType    #rect    #poly    #path    #text
+--------------------------------------------------------------------------
+NWELL       drawing        2        0         0        1        0        0
+PP          drawing        7        0         3        1        0        0
+NP          drawing        8        0         3        1        0        0
+PDIF        drawing       11        0        17        1        0        0
+NDIF        drawing       12        0         8        1        0        0
+POLY        drawing       13        0         4        3        0        0
+CONT        drawing       15        0        26        0        0        0
+MET1        drawing       16        0        31        3        0        3
+CB          drawing       19        0        15        0        0        0
+TEXT        drawing       55        0         0        0        0       12
+
+
+
+
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off
+
+ EXE Start Time = 11-Oct-2024   11:56:47                  
+ EXE Stop  Time = 11-Oct-2024   11:56:47                  
+
+ #Elapsed Time  = 00:00:00
+ #CPU Time      = 00:00:00
+
+ #Memory 467980 K,Peak 467980 K
+ Total #Fatal = 0, #Warn = 0

@@ -1,0 +1,289 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         INVX16.lvs.report
+LAYOUT NAME:              INVX16.sp ('INVX16')
+SOURCE NAME:              /home/user/wrk/standard_113/cdl/all.spi ('INVX16')
+RULE FILE:                _lvs.rule_
+CREATION TIME:            Wed Oct  9 23:21:29 2024
+CURRENT DIRECTORY:        /home/user/wrk/standard_113/lvs
+USER NAME:                user
+CALIBRE VERSION:          v2022.4_37.20    Fri Dec 2 17:41:13 PST 2022
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  CORRECT        INVX16                        INVX16
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   // LVS COMPONENT TYPE PROPERTY
+   // LVS COMPONENT SUBTYPE PROPERTY
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "?VDD?" "?VCC?"
+   LVS GROUND NAME                        "?VSS?"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       YES
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS RELAX INITIAL CPOINTS              NONE
+   LVS REVERSE WL                         NO
+   // LVS NETLIST FILTER DEVICES          NO
+   // LVS PRESERVE BOX PORTS              NO
+   LVS SPICE PREFER PINS                  YES
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NAMES
+   LVS COMPARE CASE STRICT                NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        65536
+   // LVS SIGNATURE MAXIMUM
+   LVS FILTER UNUSED OPTION               AB RC RE RG
+   LVS REPORT OPTION                      A B C D S
+   LVS REPORT UNITS                       YES
+   LVS SWAPPABLE HCELL PINS               GENERAL
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+   LVS EXPAND ON ERROR                    NO
+   LVS EXPAND AMBIGUOUSLY HIGH SHORTED HCELLS NO
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  YES
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 YES
+   LVS REDUCE PARALLEL BIPOLAR            NO
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Filter
+
+   LVS FILTER  R  R <= 0 SHORT SOURCE
+
+   // Trace Property
+
+   TRACE PROPERTY  c(l1)  c c 20
+   TRACE PROPERTY  m(c3)  l l 5
+   TRACE PROPERTY  m(c3)  w w 5
+   TRACE PROPERTY  m(c4)  l l 5
+   TRACE PROPERTY  m(c4)  w w 5
+   TRACE PROPERTY  c(s6)  c c 20
+   TRACE PROPERTY  c(s5)  c c 20
+   TRACE PROPERTY  c(s4)  c c 20
+   TRACE PROPERTY  c(s3)  c c 20
+   TRACE PROPERTY  mn(nd)  l l 5
+   TRACE PROPERTY  mn(nd)  w w 5
+   TRACE PROPERTY  mn(nl)  l l 5
+   TRACE PROPERTY  mn(nl)  w w 5
+   TRACE PROPERTY  m(c1)  l l 5
+   TRACE PROPERTY  m(c1)  w w 5
+   TRACE PROPERTY  mn(nn)  l l 5
+   TRACE PROPERTY  mn(nn)  w w 5
+   TRACE PROPERTY  m(c2)  l l 5
+   TRACE PROPERTY  m(c2)  w w 5
+   TRACE PROPERTY  mn(nmos1v)  l l 5
+   TRACE PROPERTY  mn(nmos1v)  w w 5
+   TRACE PROPERTY  mp(pmos1v)  l l 5
+   TRACE PROPERTY  mp(pmos1v)  w w 5
+   TRACE PROPERTY  mp(pd)  l l 5
+   TRACE PROPERTY  mp(pd)  w w 5
+   TRACE PROPERTY  r(nr)  r r 20
+   TRACE PROPERTY  r(m3)  r r 20
+   TRACE PROPERTY  r(ns)  r r 20
+   TRACE PROPERTY  r(m4)  r r 20
+   TRACE PROPERTY  r(pr)  r r 20
+   TRACE PROPERTY  r(m5)  r r 20
+   TRACE PROPERTY  r(ps)  r r 20
+   TRACE PROPERTY  r(m6)  r r 20
+   TRACE PROPERTY  r(wo)  r r 20
+   TRACE PROPERTY  r(wr)  r r 20
+   TRACE PROPERTY  r(nd)  r r 20
+   TRACE PROPERTY  r(pd)  r r 20
+   TRACE PROPERTY  r(ni)  r r 20
+   TRACE PROPERTY  r(pi)  r r 20
+   TRACE PROPERTY  r(m1)  r r 20
+   TRACE PROPERTY  r(m2)  r r 20
+   TRACE PROPERTY  c(pc)  c c 20
+   TRACE PROPERTY  c(m2)  c c 20
+   TRACE PROPERTY  c(m3)  c c 20
+   TRACE PROPERTY  c(m4)  c c 20
+   TRACE PROPERTY  c(m5)  c c 20
+   TRACE PROPERTY  c(fc)  c c 20
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         INVX16
+SOURCE CELL NAME:         INVX16
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Nets:               4         4
+
+ Instances:         16         1    *    MN (4 pins)
+                    16         1    *    MP (4 pins)
+                ------    ------
+ Total Inst:        32         2
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Nets:               4         4
+
+ Instances:          1         1         _invv (4 pins)
+                ------    ------
+ Total Inst:         1         1
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Nets:                4          4            0            0
+
+   Instances:           1          1            0            0    _invv
+                  -------    -------    ---------    ---------
+   Total Inst:          1          1            0            0
+
+
+o Statistics:
+
+   32 layout mos transistors were reduced to 2.
+     30 mos transistors were deleted by parallel reduction.
+
+
+o Initial Correspondence Points:
+
+   Nets:         VDD VSS Y A
+
+
+o Voltage Names Matched by Wildcard:
+
+   Power Names from Layout:
+
+                 VDD
+
+   Ground Names from Layout:
+
+                 VSS
+
+   Power Names from Source:
+
+                 VDD
+
+   Ground Names from Source:
+
+                 VSS
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

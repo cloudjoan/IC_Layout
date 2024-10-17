@@ -1,0 +1,429 @@
+       ###############################################
+       ##                                           ##
+       ##    FileName:  gdsIn.log                   ##
+       ##    GenDate :  11-Oct-2024   10:48:41      ##
+       ##                                           ##
+       ##    Laker: 2023.06-2 (Linux x86_64/64bit) 03/22/2024  ##
+       ##############################################N
+
+Command: gdsIn -64 -s Preserve -IoLayerMapMode Map -l /home/user/wrk/L1_Lab/layer.map -sumExtraLayer 1 -label Preserve -mode Overwrite -o /home/user/wrk/L1_Lab/gds -t /home/user/wrk/L1_Lab/laker_demo.tf -CorrectNon90Inst -Vm 1024 -Pi 102 -Pn 102 -SkipWarnNo 100 /home/user/wrk/L1_Lab/CPU.db
+Host/OS: leon   Linux 3.10.0-1160.105.1.el7.x86_64
+##### Mapping Layer Table #####
+
+      file: /home/user/wrk/L1_Lab/layer.map
+      1. streamLayer(21),dataType(0) --> name(OD),dataType(drawing),layer(10)
+      2. streamLayer(22),dataType(0) --> name(POLY),dataType(drawing),layer(13)
+      3. streamLayer(23),dataType(0) --> name(CONT),dataType(drawing),layer(15)
+      4. streamLayer(24),dataType(0) --> name(MET1),dataType(drawing),layer(16)
+
+
+
+##### Stream Library #####
+
+   userUnit: micron
+   dbScale : 0.001000
+
+##### Stream Cells #####
+
+   1.chip                    2.ERR_CELL                3.$$CON                
+   4.$$FVIA12                5.$$FVIA23                6.top                  
+   7.logo                    8.CPU                     9.DFCN1Q               
+  10.XOR2D1                 11.INV0                   12.HA1D1                
+  13.AOI22D0                14.BUFT1                  15.LH1Q                 
+  16.maprom                 17.mprom                  18.INV2                 
+  19.AN3D1                  20.NR3D1                  21.DFXCN1               
+  22.ND2D0                  23.AN2D1                  24.AOI222D0             
+  25.OAI21D0                26.AOI21D0                27.NR2D0                
+  28.XNR2D1                 29.CK1D1                  30.AN7D1                
+  31.MUX2D1                 32.ND3D0                  33.INR2D0               
+  34.NR6D1                  35.FA1D1                  36.OAI31D1              
+  37.NR3D0                  38.NR8D1                  39.$$VIA23              
+  40.$$VIA12                41.$$FVIA12_960_960_10_2   42.$$VIA12_960_960_1_2  
+  43.$$VIA23_960_960_1_2    44.$$VIA12_960_960_5_2    45.$$VIA23_960_960_5_2  
+  46.$$VIA23_960_960_4_2    47.$$FVIA12_960_960_10_10   48.$$FVIA12_960_960_5_10 
+  49.MCELL_CON_6400910      50.MCELL_PCO_755391       51.padcell              
+  52.pc3b02d                53.pc3b02u                54.pc3b03d              
+  55.pc3b04u                56.pc3c04                 57.pc3d21               
+  58.pc3b05u                59.pc3t02                 60.pp3b01               
+  61.pt3b02d              
+
+##### Stream Error File(gdsIn.err) #####
+
+   1.$$CON : 3-Warn 
+   2.$$FVIA12 : 2-Warn 
+   3.$$FVIA12_960_960_10_10 : 3-Warn 
+   4.$$FVIA12_960_960_10_2 : 3-Warn 
+   5.$$FVIA12_960_960_5_10 : 3-Warn 
+   6.$$FVIA23 : 2-Warn 
+   7.$$VIA12 : 3-Warn 
+   8.$$VIA12_960_960_1_2 : 3-Warn 
+   9.$$VIA12_960_960_5_2 : 3-Warn 
+  10.$$VIA23 : 3-Warn 
+  11.$$VIA23_960_960_1_2 : 2-Warn 
+  12.$$VIA23_960_960_4_2 : 3-Warn 
+  13.$$VIA23_960_960_5_2 : 2-Warn 
+  14.AN2D1 : 8-Warn 
+  15.AN3D1 : 8-Warn 
+  16.AN7D1 : 8-Warn 
+  17.AOI21D0 : 8-Warn 
+  18.AOI222D0 : 8-Warn 
+  19.AOI22D0 : 8-Warn 
+  20.BUFT1 : 8-Warn 
+  21.CK1D1 : 8-Warn 
+  22.CPU : 4-Warn 
+  23.DFCN1Q : 8-Warn 
+  24.DFXCN1 : 8-Warn 
+  25.ERR_CELL : 5-Warn 
+  26.FA1D1 : 8-Warn 
+  27.HA1D1 : 8-Warn 
+  28.INR2D0 : 8-Warn 
+  29.INV0 : 8-Warn 
+  30.INV2 : 8-Warn 
+  31.LH1Q : 8-Warn 
+  32.MCELL_CON_6400910 : 1-Warn 
+  33.MCELL_PCO_755391 : 3-Warn 
+  34.MUX2D1 : 8-Warn 
+  35.ND2D0 : 8-Warn 
+  36.ND3D0 : 8-Warn 
+  37.NR2D0 : 8-Warn 
+  38.NR3D0 : 8-Warn 
+  39.NR3D1 : 8-Warn 
+  40.NR6D1 : 8-Warn 
+  41.NR8D1 : 8-Warn 
+  42.OAI21D0 : 8-Warn 
+  43.OAI31D1 : 8-Warn 
+  44.XNR2D1 : 8-Warn 
+  45.XOR2D1 : 8-Warn 
+  46.logo : 9-Info 1-Warn 
+  47.maprom : 3-Warn 
+  48.mprom : 4-Warn 
+  49.pc3b02d : 13-Warn 
+  50.pc3b02u : 13-Warn 
+  51.pc3b03d : 13-Warn 
+  52.pc3b04u : 13-Warn 
+  53.pc3b05u : 13-Warn 
+  54.pc3c04 : 12-Warn 
+  55.pc3d21 : 13-Warn 
+  56.pc3t02 : 13-Warn 
+  57.pp3b01 : 3-Info 13-Warn 
+  58.pt3b02d : 13-Warn 
+
+
+
+##### Stream Property Attribute #####
+
+      1. Generate Inst Name As Prop No: 102
+      2. Generate Net As Prop No:       102
+
+      propAttri(102): #rec(0) #poly(0) #path(4655) #inst(4661) #array(0)
+
+
+##### Extra Layers Summary #####
+
+                   Resort Extra Layer(s) & Cell(s)
+
+Stream Layer (55,0)
+--------------------------------------------------------------------------
+   1.ERR_CELL                2.CPU                     3.pc3b02d              
+   4.pc3b02u                 5.pc3b03d                 6.pc3b04u              
+   7.pc3d21                  8.pc3b05u                 9.pc3t02               
+  10.pp3b01                 11.pt3b02d              
+
+Stream Layer (29,0)
+--------------------------------------------------------------------------
+   1.$$FVIA23                2.CPU                     3.maprom               
+   4.mprom                   5.$$VIA23                 6.$$VIA23_960_960_1_2  
+   7.$$VIA23_960_960_5_2     8.$$VIA23_960_960_4_2     9.MCELL_CON_6400910    
+  10.MCELL_PCO_755391       11.pc3b02d                12.pc3b02u              
+  13.pc3b03d                14.pc3b04u                15.pc3c04               
+  16.pc3d21                 17.pc3b05u                18.pc3t02               
+  19.pp3b01                 20.pt3b02d              
+
+Stream Layer (28,0)
+--------------------------------------------------------------------------
+   1.$$FVIA23                2.$$VIA23                 3.$$VIA23_960_960_1_2  
+   4.$$VIA23_960_960_5_2     5.$$VIA23_960_960_4_2     6.MCELL_PCO_755391     
+   7.pc3b02d                 8.pc3b02u                 9.pc3b03d              
+  10.pc3b04u                11.pc3c04                 12.pc3d21               
+  13.pc3b05u                14.pc3t02                 15.pp3b01               
+  16.pt3b02d              
+
+Stream Layer (19,0)
+--------------------------------------------------------------------------
+   1.pc3b02d                 2.pc3b02u                 3.pc3b03d              
+   4.pc3b04u                 5.pc3c04                  6.pc3d21               
+   7.pc3b05u                 8.pc3t02                  9.pp3b01               
+  10.pt3b02d              
+
+Stream Layer (18,0)
+--------------------------------------------------------------------------
+   1.$$FVIA12                2.CPU                     3.maprom               
+   4.mprom                   5.$$VIA23                 6.$$VIA12              
+   7.$$FVIA12_960_960_10_2    8.$$VIA12_960_960_1_2     9.$$VIA12_960_960_5_2  
+  10.$$VIA23_960_960_4_2    11.$$FVIA12_960_960_10_10   12.$$FVIA12_960_960_5_10 
+  13.MCELL_PCO_755391       14.pc3b02d                15.pc3b02u              
+  16.pc3b03d                17.pc3b04u                18.pc3c04               
+  19.pc3d21                 20.pc3b05u                21.pc3t02               
+  22.pp3b01                 23.pt3b02d              
+
+Stream Layer (17,0)
+--------------------------------------------------------------------------
+   1.$$FVIA12                2.logo                    3.maprom               
+   4.mprom                   5.$$VIA12                 6.$$FVIA12_960_960_10_2 
+   7.$$VIA12_960_960_1_2     8.$$VIA12_960_960_5_2     9.$$FVIA12_960_960_10_10 
+  10.$$FVIA12_960_960_5_10   11.pc3b02d                12.pc3b02u              
+  13.pc3b03d                14.pc3b04u                15.pc3c04               
+  16.pc3d21                 17.pc3b05u                18.pc3t02               
+  19.pp3b01                 20.pt3b02d              
+
+Stream Layer (16,0)
+--------------------------------------------------------------------------
+   1.ERR_CELL                2.$$CON                   3.CPU                  
+   4.DFCN1Q                  5.XOR2D1                  6.INV0                 
+   7.HA1D1                   8.AOI22D0                 9.BUFT1                
+  10.LH1Q                   11.mprom                  12.INV2                 
+  13.AN3D1                  14.NR3D1                  15.DFXCN1               
+  16.ND2D0                  17.AN2D1                  18.AOI222D0             
+  19.OAI21D0                20.AOI21D0                21.NR2D0                
+  22.XNR2D1                 23.CK1D1                  24.AN7D1                
+  25.MUX2D1                 26.ND3D0                  27.INR2D0               
+  28.NR6D1                  29.FA1D1                  30.OAI31D1              
+  31.NR3D0                  32.NR8D1                  33.$$VIA12              
+  34.$$FVIA12_960_960_10_2   35.$$VIA12_960_960_1_2    36.$$VIA12_960_960_5_2  
+  37.$$FVIA12_960_960_10_10   38.$$FVIA12_960_960_5_10   39.pc3b02d              
+  40.pc3b02u                41.pc3b03d                42.pc3b04u              
+  43.pc3c04                 44.pc3d21                 45.pc3b05u              
+  46.pc3t02                 47.pp3b01                 48.pt3b02d              
+
+Stream Layer (15,0)
+--------------------------------------------------------------------------
+   1.$$CON                   2.DFCN1Q                  3.XOR2D1               
+   4.INV0                    5.HA1D1                   6.AOI22D0              
+   7.BUFT1                   8.LH1Q                    9.INV2                 
+  10.AN3D1                  11.NR3D1                  12.DFXCN1               
+  13.ND2D0                  14.AN2D1                  15.AOI222D0             
+  16.OAI21D0                17.AOI21D0                18.NR2D0                
+  19.XNR2D1                 20.CK1D1                  21.AN7D1                
+  22.MUX2D1                 23.ND3D0                  24.INR2D0               
+  25.NR6D1                  26.FA1D1                  27.OAI31D1              
+  28.NR3D0                  29.NR8D1                  30.pc3b02d              
+  31.pc3b02u                32.pc3b03d                33.pc3b04u              
+  34.pc3c04                 35.pc3d21                 36.pc3b05u              
+  37.pc3t02                 38.pp3b01                 39.pt3b02d              
+
+Stream Layer (13,0)
+--------------------------------------------------------------------------
+   1.$$CON                   2.DFCN1Q                  3.XOR2D1               
+   4.INV0                    5.HA1D1                   6.AOI22D0              
+   7.BUFT1                   8.LH1Q                    9.INV2                 
+  10.AN3D1                  11.NR3D1                  12.DFXCN1               
+  13.ND2D0                  14.AN2D1                  15.AOI222D0             
+  16.OAI21D0                17.AOI21D0                18.NR2D0                
+  19.XNR2D1                 20.CK1D1                  21.AN7D1                
+  22.MUX2D1                 23.ND3D0                  24.INR2D0               
+  25.NR6D1                  26.FA1D1                  27.OAI31D1              
+  28.NR3D0                  29.NR8D1                  30.pc3b02d              
+  31.pc3b02u                32.pc3b03d                33.pc3b04u              
+  34.pc3c04                 35.pc3d21                 36.pc3b05u              
+  37.pc3t02                 38.pp3b01                 39.pt3b02d              
+
+Stream Layer (12,0)
+--------------------------------------------------------------------------
+   1.ERR_CELL                2.DFCN1Q                  3.XOR2D1               
+   4.INV0                    5.HA1D1                   6.AOI22D0              
+   7.BUFT1                   8.LH1Q                    9.INV2                 
+  10.AN3D1                  11.NR3D1                  12.DFXCN1               
+  13.ND2D0                  14.AN2D1                  15.AOI222D0             
+  16.OAI21D0                17.AOI21D0                18.NR2D0                
+  19.XNR2D1                 20.CK1D1                  21.AN7D1                
+  22.MUX2D1                 23.ND3D0                  24.INR2D0               
+  25.NR6D1                  26.FA1D1                  27.OAI31D1              
+  28.NR3D0                  29.NR8D1                
+
+Stream Layer (11,0)
+--------------------------------------------------------------------------
+   1.ERR_CELL                2.DFCN1Q                  3.XOR2D1               
+   4.INV0                    5.HA1D1                   6.AOI22D0              
+   7.BUFT1                   8.LH1Q                    9.INV2                 
+  10.AN3D1                  11.NR3D1                  12.DFXCN1               
+  13.ND2D0                  14.AN2D1                  15.AOI222D0             
+  16.OAI21D0                17.AOI21D0                18.NR2D0                
+  19.XNR2D1                 20.CK1D1                  21.AN7D1                
+  22.MUX2D1                 23.ND3D0                  24.INR2D0               
+  25.NR6D1                  26.FA1D1                  27.OAI31D1              
+  28.NR3D0                  29.NR8D1                
+
+Stream Layer (10,0)
+--------------------------------------------------------------------------
+   1.pc3b02d                 2.pc3b02u                 3.pc3b03d              
+   4.pc3b04u                 5.pc3c04                  6.pc3d21               
+   7.pc3b05u                 8.pc3t02                  9.pp3b01               
+  10.pt3b02d              
+
+Stream Layer (8,0)
+--------------------------------------------------------------------------
+   1.DFCN1Q                  2.XOR2D1                  3.INV0                 
+   4.HA1D1                   5.AOI22D0                 6.BUFT1                
+   7.LH1Q                    8.INV2                    9.AN3D1                
+  10.NR3D1                  11.DFXCN1                 12.ND2D0                
+  13.AN2D1                  14.AOI222D0               15.OAI21D0              
+  16.AOI21D0                17.NR2D0                  18.XNR2D1               
+  19.CK1D1                  20.AN7D1                  21.MUX2D1               
+  22.ND3D0                  23.INR2D0                 24.NR6D1                
+  25.FA1D1                  26.OAI31D1                27.NR3D0                
+  28.NR8D1                  29.pc3b02d                30.pc3b02u              
+  31.pc3b03d                32.pc3b04u                33.pc3c04               
+  34.pc3d21                 35.pc3b05u                36.pc3t02               
+  37.pp3b01                 38.pt3b02d              
+
+Stream Layer (7,0)
+--------------------------------------------------------------------------
+   1.ERR_CELL                2.DFCN1Q                  3.XOR2D1               
+   4.INV0                    5.HA1D1                   6.AOI22D0              
+   7.BUFT1                   8.LH1Q                    9.INV2                 
+  10.AN3D1                  11.NR3D1                  12.DFXCN1               
+  13.ND2D0                  14.AN2D1                  15.AOI222D0             
+  16.OAI21D0                17.AOI21D0                18.NR2D0                
+  19.XNR2D1                 20.CK1D1                  21.AN7D1                
+  22.MUX2D1                 23.ND3D0                  24.INR2D0               
+  25.NR6D1                  26.FA1D1                  27.OAI31D1              
+  28.NR3D0                  29.NR8D1                  30.pc3b02d              
+  31.pc3b02u                32.pc3b03d                33.pc3b04u              
+  34.pc3c04                 35.pc3d21                 36.pc3b05u              
+  37.pc3t02                 38.pp3b01                 39.pt3b02d              
+
+Stream Layer (2,0)
+--------------------------------------------------------------------------
+   1.DFCN1Q                  2.XOR2D1                  3.INV0                 
+   4.HA1D1                   5.AOI22D0                 6.BUFT1                
+   7.LH1Q                    8.INV2                    9.AN3D1                
+  10.NR3D1                  11.DFXCN1                 12.ND2D0                
+  13.AN2D1                  14.AOI222D0               15.OAI21D0              
+  16.AOI21D0                17.NR2D0                  18.XNR2D1               
+  19.CK1D1                  20.AN7D1                  21.MUX2D1               
+  22.ND3D0                  23.INR2D0                 24.NR6D1                
+  25.FA1D1                  26.OAI31D1                27.NR3D0                
+  28.NR8D1                  29.pc3b02d                30.pc3b02u              
+  31.pc3b03d                32.pc3b04u                33.pc3c04               
+  34.pc3d21                 35.pc3b05u                36.pc3t02               
+  37.pp3b01                 38.pt3b02d              
+
+
+
+##### Stream Summary #####
+
+                   Resort Primary Cell(s)
+
+--------------------------------------------------------------------------
+   1.$$CON                   2.$$FVIA12                3.$$FVIA23             
+   4.ERR_CELL                5.chip                    6.top                  
+
+
+
+                   Resort Cell(s) Summary
+
+cellName     #cInst  #array    #rect    #poly    #path    #text  bBox(um)
+--------------------------------------------------------------------------------------------------
+$$CON             0       0        3        0        0        0 (-0.600,-0.600) (0.600,0.600)
+$$FVIA12          0       0        3        0        0        0 (-0.450,-0.450) (0.450,0.450)
+$$FVIA12_960_960_10_10       0       0      102        0        0        0 (-4.770,-4.770) (4.770,4.770)
+$$FVIA12_960_960_10_2       0       0       22        0        0        0 (-4.770,-0.930) (4.770,0.930)
+$$FVIA12_960_960_5_10       0       0       52        0        0        0 (-2.370,-4.770) (2.370,4.770)
+$$FVIA23          0       0        3        0        0        0 (-0.450,-0.450) (0.450,0.450)
+$$VIA12           0       0        3        0        0        0 (-0.450,-0.450) (0.450,0.450)
+$$VIA12_960_960_1_2       0       0        4        0        0        0 (-0.450,-0.930) (0.450,0.930)
+$$VIA12_960_960_5_2       0       0       12        0        0        0 (-2.370,-0.930) (2.370,0.930)
+$$VIA23           0       0        3        0        0        0 (-0.450,-0.450) (0.450,0.450)
+$$VIA23_960_960_1_2       0       0        4        0        0        0 (-0.450,-0.930) (0.450,0.930)
+$$VIA23_960_960_4_2       0       0       10        0        0        0 (-1.890,-0.930) (1.890,0.930)
+$$VIA23_960_960_5_2       0       0       12        0        0        0 (-2.370,-0.930) (2.370,0.930)
+AN2D1             0       0       92       11        0        3 (-1.600,0.000) (5.800,13.050)
+AN3D1             0       0       95       14        0        4 (-1.600,0.000) (7.200,13.050)
+AN7D1             0       0      218       20        0        8 (-1.600,0.000) (15.600,13.050)
+AOI21D0           0       0       95       10        0        4 (-1.600,0.000) (5.800,13.050)
+AOI222D0          0       0      174       14        0        7 (-1.600,0.000) (11.400,13.050)
+AOI22D0           0       0      113       11        0        5 (-1.600,0.000) (7.200,13.050)
+BUFT1             0       0       98       12        0        5 (-1.600,0.000) (8.600,13.050)
+CK1D1             0       0       74        9        0        3 (-1.600,0.000) (4.400,13.050)
+CPU            4617       0        0        0     4655      546 (-16.835,0.000) (480.565,452.500)
+DFCN1Q            0       0      350       34        0        4 (-1.600,0.000) (26.800,13.050)
+DFXCN1            0       0      411       46        0        7 (-1.600,0.000) (35.200,13.050)
+ERR_CELL          0       0        1        5        0        6 (2.075,1.625) (11.925,7.950)
+FA1D1             0       0      405       41        0        5 (-1.600,0.000) (32.400,13.050)
+HA1D1             0       0      280       26        0        4 (-1.600,0.000) (19.800,13.050)
+INR2D0            0       0       97       10        0        3 (-1.600,0.000) (5.800,13.050)
+INV0              0       0       58        3        0        2 (-1.600,0.000) (3.000,13.050)
+INV2              0       0       84        4        0        2 (-1.600,0.000) (5.800,13.050)
+LH1Q              0       0      190       21        0        3 (-1.600,0.000) (14.200,13.050)
+MCELL_CON_6400910       1       0        2        0        0        0 (-0.200,-0.200) (0.700,0.700)
+MCELL_PCO_755391       0       0        3        0        0        0 (-0.200,-0.200) (0.700,0.700)
+MUX2D1            0       0      134       16        0        4 (-1.600,0.000) (10.000,13.050)
+ND2D0             0       0       82        5        0        3 (-1.600,0.000) (4.400,13.050)
+ND3D0             0       0      109        4        0        4 (-1.600,0.000) (5.800,13.050)
+NR2D0             0       0       79        5        0        3 (-1.600,0.000) (4.400,13.050)
+NR3D0             0       0       80        9        0        4 (-1.600,0.000) (7.200,13.050)
+NR3D1             0       0      127       14        0        4 (-1.600,0.000) (11.400,13.050)
+NR6D1             0       0      210       23        0        7 (-1.600,0.000) (17.000,13.050)
+NR8D1             0       0      224       22        0        9 (-1.600,0.000) (19.800,13.050)
+OAI21D0           0       0       95        7        1        4 (-1.600,0.000) (5.800,13.050)
+OAI31D1           0       0      155       16        0        5 (-1.600,0.000) (11.400,13.050)
+XNR2D1            0       0      136       15        0        3 (-1.600,0.000) (10.000,13.050)
+XOR2D1            0       0      135       15        0        3 (-1.600,0.000) (10.000,13.050)
+chip              0       0        0        0        0        0 (***,***) (***,***)
+logo              0       0        4       11        0        0 (61.975,27.875) (466.470,201.685)
+maprom            0       0       87        0        0        0 (0.000,0.000) (149.550,143.700)
+mprom             0       0       87        0        0        0 (0.000,0.000) (149.550,143.700)
+padcell          40       0        0        0        0        0 (-548.510,-15.900) (1498.020,2028.040)
+pc3b02d           0       0     6544      306        0        3 (-4.800,-15.900) (91.200,450.800)
+pc3b02u           0       0     6547      303        0        3 (-4.800,-15.900) (91.200,450.800)
+pc3b03d           0       0     6552      306        0        3 (-4.800,-15.900) (91.200,450.800)
+pc3b04u           0       0     6545      303        0        3 (-4.800,-15.900) (91.200,450.800)
+pc3b05u           0       0     6555      302        0        3 (-0.200,0.000) (95.800,466.700)
+pc3c04            0       0     5977       58        0        2 (-4.800,-15.900) (91.200,450.850)
+pc3d21            0       0     5984      209        0        4 (-0.200,0.000) (95.800,466.700)
+pc3t02            0       0     6494      301        0        3 (-0.200,0.000) (95.800,466.700)
+pp3b01            0       0     4741      162        0        3 (-4.800,0.000) (91.200,466.750)
+pt3b02d           0       0     6544      305        0        3 (-0.200,0.000) (95.800,466.700)
+top               3       0        0        0        0        0 (-5.655,-0.410) (2040.875,2043.530)
+
+
+                   Resort Layer(s) Summary
+
+Laker                Stream
+layerName   purpose  layerNo  dataType    #rect    #poly    #path    #text
+--------------------------------------------------------------------------
+
+
+                   Resort Extra Layer(s) Summary
+
+Laker                Stream
+layerName   purpose  layerNo  datatype    #rect    #poly    #path    #text
+--------------------------------------------------------------------------
+TEXT        drawing       55        0       372        0        0        9
+MET3        drawing       29        0        93      174     1505        6
+VIA2        drawing       28        0      7745        0        0        0
+CB          drawing       19        0        10        0        0        0
+MET2        drawing       18        0       455      269     2894      529
+VIA1        drawing       17        0     13555       11        0        0
+MET1        drawing       16        0      2522     1180      256      140
+CONT        drawing       15        0     40549        0        0        0
+POLY        drawing       13        0       212     1082        1        0
+NDIF        drawing       12        0       461       31        0        0
+PDIF        drawing       11        0       786       40        0        0
+OD          drawing       10        0       211       56        0       20
+NP          drawing        8        0       148       67        0        0
+PP          drawing        7        0       140       71        0        0
+NWELL       drawing        2        0        41       27        0        0
+
+
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off
+
+ EXE Start Time = 11-Oct-2024   10:48:41                  
+ EXE Stop  Time = 11-Oct-2024   10:48:41                  
+
+ #Elapsed Time  = 00:00:00
+ #CPU Time      = 00:00:00
+
+ #Memory 446788 K,Peak 446788 K
+ There are 58 cells that have extra layers.
+ Total #Fatal = 0, #Warn = 409

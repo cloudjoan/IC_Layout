@@ -1,0 +1,10 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/INVX1.dv
+dv_start unmatched                                
+dv_cell {INVX1} {INVX1} unmatched
+dv_obj_count -transformed_nets {4 4} -transformed_inst {1 1} -transformed_port {0 0}
+dv_discrep 1 {Property Errors}
+dv_discrep_line {} -ldev {M1} {} -lloc {(0.355,1.620)} {  MP(pmos1v)                               } -sdev {mp0} {  MP(pmos1v)}
+dv_discrep_line {}  {w} {: }  {0.37 u} {                                                 }  {w} {: }  {0.65 u} {             }  {      43.1%} {}
+dv_discrep_line {}
+dv_end
