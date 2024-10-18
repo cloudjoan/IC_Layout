@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1729249782 1729249783
+lvs_ExtOutFile RUNDIR /home/user/wrk/standard_113/lvs
+lvs_ExtOutFile RULES_FILE _lvs.rule_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 1 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST AND2X1.sp
+lvs_ExtOutFile EXTRACTION_REPORT AND2X1.lvs.report.ext
+lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/AND2X1.pathchk.erc
+lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/AND2X1.pathchk.rep

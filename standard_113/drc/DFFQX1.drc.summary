@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Fri Oct 18 14:14:33 2024
+Execution Date/Time:       Fri Oct 18 17:33:46 2024
 Calibre Version:           v2022.4_37.20    Fri Dec 2 17:41:13 PST 2022
 Rule File Pathname:        _drc.rule_
 Rule File Title:           
@@ -36,7 +36,7 @@ Layer 3 contains unmapped objects and is the source layer of LAYER MAP == 3 DATA
 LAYER PDIFFi .... TOTAL Original Geometry Count = 0  (0)
 LAYER NDIFFi .... TOTAL Original Geometry Count = 0  (0)
 LAYER DIFFi ..... TOTAL Original Geometry Count = 18 (18)
-LAYER POLYi ..... TOTAL Original Geometry Count = 29 (81)
+LAYER POLYi ..... TOTAL Original Geometry Count = 35 (83)
 LAYER RPOi ...... TOTAL Original Geometry Count = 0  (0)
 LAYER NPi ....... TOTAL Original Geometry Count = 2  (2)
 LAYER PPi ....... TOTAL Original Geometry Count = 2  (2)
@@ -44,7 +44,7 @@ LAYER RWDMY ..... TOTAL Original Geometry Count = 0  (0)
 LAYER NWELi ..... TOTAL Original Geometry Count = 1  (1)
 LAYER M1SLOTi ... TOTAL Original Geometry Count = 0  (0)
 LAYER M1DMY ..... TOTAL Original Geometry Count = 0  (0)
-LAYER M1i ....... TOTAL Original Geometry Count = 33 (46)
+LAYER M1i ....... TOTAL Original Geometry Count = 34 (46)
 LAYER M2SLOTi ... TOTAL Original Geometry Count = 0  (0)
 LAYER M2DMY ..... TOTAL Original Geometry Count = 0  (0)
 LAYER M2i ....... TOTAL Original Geometry Count = 0  (0)
@@ -56,7 +56,7 @@ LAYER MDDMY ..... TOTAL Original Geometry Count = 0  (0)
 LAYER MDi ....... TOTAL Original Geometry Count = 0  (0)
 LAYER EXCL ...... TOTAL Original Geometry Count = 0  (0)
 LAYER OD2i ...... TOTAL Original Geometry Count = 0  (0)
-LAYER COi ....... TOTAL Original Geometry Count = 26 (39)
+LAYER COi ....... TOTAL Original Geometry Count = 40 (52)
 LAYER VIA1i ..... TOTAL Original Geometry Count = 0  (0)
 LAYER VIA2i ..... TOTAL Original Geometry Count = 0  (0)
 LAYER VIADi ..... TOTAL Original Geometry Count = 0  (0)
@@ -328,6 +328,6 @@ RULECHECK CAL.ERR.OFFGRID ... TOTAL Result Count = 0 (0)
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 2
-TOTAL Original Layer Geometries: 111 (189)
+TOTAL Original Layer Geometries: 132 (204)
 TOTAL DRC RuleChecks Executed:   231
 TOTAL DRC Results Generated:     0 (0)

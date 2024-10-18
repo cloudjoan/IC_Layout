@@ -15,7 +15,7 @@ REPORT FILE NAME:         DFFQX1.lvs.report
 LAYOUT NAME:              DFFQX1.sp ('DFFQX1')
 SOURCE NAME:              /home/user/wrk/standard_113/cdl/all.spi ('DFFQX1')
 RULE FILE:                _lvs.rule_
-CREATION TIME:            Fri Oct 18 14:15:19 2024
+CREATION TIME:            Fri Oct 18 17:35:21 2024
 CURRENT DIRECTORY:        /home/user/wrk/standard_113/lvs
 USER NAME:                user
 CALIBRE VERSION:          v2022.4_37.20    Fri Dec 2 17:41:13 PST 2022
@@ -258,10 +258,18 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
 
 o Initial Correspondence Points:
 
-   Nets:         CKbb mout qbint CKb Q D CK
+   Nets:         VDD VSS CKbb mout qbint CKb Q D CK
 
 
 o Voltage Names Matched by Wildcard:
+
+   Power Names from Layout:
+
+                 VDD
+
+   Ground Names from Layout:
+
+                 VSS
 
    Power Names from Source:
 

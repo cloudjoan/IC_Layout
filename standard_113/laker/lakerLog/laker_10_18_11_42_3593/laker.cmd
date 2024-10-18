@@ -3778,3 +3778,4605 @@ lakerPreSel -point (-1.405,3.228) -traversedist 0.032
 lakerZoomAll
 lakerPreSel -point (0.837,2.841) -traversedist 0.026
 lakerSaveAsDesign -cell DFFQX1_1018_F -IgnoreLogicSchematicView 0
+lakerPreSel -point (2.036,-0.135) -traversedist 0.026
+lakerZoomAll
+lakerPreSel -point (-0.44,1.6) -traversedist 0.026
+lakerDistance -point (0.0,2.82) (5.835,2.825)
+lakerZoomInByArea -point (-1.8,-0.083) (3.542,3.245)
+lakerDistance -point (0.675,2.506) (0.775,2.52)
+lakerDistance -point (0.875,2.532) (1.045,2.504)
+lakerDistance -point (1.78,2.506) (1.95,2.514)
+lakerDeselectAll
+lakerPreSel -point (0.977,2.561) -traversedist 0.02
+lakerAreaSel -point (0.977,2.24) (1.08,2.561)
+lakerPreSel -point (1.012,2.534) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (-1.796,2.828) -traversedist 0.02
+lakerSetColPat -layerName NWELL -vis 0
+lakerSetColPat -layerName PIMP -vis 0
+lakerSetColPat -layerName NIMP -vis 0
+lakerPreSel -point (-0.923,2.377) -traversedist 0.02
+lakerSingleSel -point (-0.923,2.377) -traversedist 0.02
+lakerRedraw
+lakerPreSel -point (0.947,3.022) -traversedist 0.02
+lakerAreaSel -point (0.947,0.425) (1.265,3.022)
+lakerPreSel -point (1.163,2.526) -traversedist 0.02
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.206,2.891) -traversedist 0.02
+lakerZoomInByArea -point (-0.226,1.178) (2.522,2.89)
+lakerPreSel -point (1.045,2.516) -traversedist 0.01
+lakerAlignObj -point (1.045,2.516) -mode start
+lakerPreSel -point (0.875,2.494) -traversedist 0.01
+lakerAlignObj -refObj 1 -refPoint (0.875,2.495) -traversedist 0.005 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.265,1.685) -traversedist 0.01
+lakerDistance -point (0.89,1.867) (0.995,1.861)
+lakerZoomOut
+lakerUndo
+lakerPreSel -point (-0.225,2.424) -traversedist 0.02
+lakerSingleSel -point (-0.225,2.424) -traversedist 0.02
+lakerPreSel -point (-0.205,3.309) -traversedist 0.02
+lakerZoomInByArea -point (-1.225,1.015) (2.457,3.309)
+lakerPreSel -point (0.931,1.666) -traversedist 0.014
+lakerDistance -point (0.89,1.775) (1.045,1.745)
+lakerZoomInByArea -point (0.437,1.331) (1.661,2.093)
+lakerZoomOut
+lakerZoomOut
+lakerDeselectAll
+lakerPreSel -point (0.932,2.587) -traversedist 0.018
+lakerAreaSel -point (0.932,2.49) (0.95,2.587)
+lakerPreSel -point (0.925,2.566) -traversedist 0.018
+lakerAreaSel -point (0.925,0.525) (1.32,2.566)
+lakerPreSel -point (1.059,2.509) -traversedist 0.018
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.115,1.975) -offsetPoint (1.095,1.975)
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (0.909,1.533) -traversedist 0.018
+lakerDistance -point (0.89,1.81) (1.025,1.77)
+lakerZoomOut
+lakerPreSel -point (1.221,1.15) -traversedist 0.036
+lakerZoomIn
+lakerPreSel -point (1.137,1.435) -traversedist 0.018
+lakerZoomIn
+lakerPreSel -point (0.907,1.677) -traversedist 0.009
+lakerDistance -point (0.89,1.729) (1.025,1.725)
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.125,1.825) -offsetPoint (1.115,1.825)
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.161,1.766) -traversedist 0.009
+lakerZoomAll
+lakerPreSel -point (0.609,2.312) -traversedist 0.026
+lakerZoomInByArea -point (-0.059,1.016) (2.021,2.312)
+lakerPreSel -point (0.917,1.576) -traversedist 0.008
+lakerClearRuler
+lakerPreSel -point (0.941,1.709) -traversedist 0.008
+lakerDistance -point (0.89,1.878) (1.015,1.869)
+lakerZoomOut
+lakerPreSel -point (1.27,2.292) -traversedist 0.015
+lakerAreaSel -point (1.27,0.68) (1.575,2.292)
+lakerPreSel -point (1.299,1.607) -traversedist 0.015
+lakerDeselectAll
+lakerPreSel -point (1.097,2.043) -traversedist 0.015
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.25,2.29) -traversedist 0.015
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.257,2.289) -traversedist 0.015
+lakerDeselectAll
+lakerPreSel -point (1.296,2.274) -traversedist 0.015
+lakerAreaSel -point (1.296,0.685) (1.555,2.274)
+lakerPreSel -point (1.359,1.726) -traversedist 0.015
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.359,2.121) -traversedist 0.015
+lakerAlignObj -point (1.359,2.121) -mode start
+lakerPreSel -point (1.134,1.686) -traversedist 0.015
+lakerAlignObj -refObj 1 -refPoint (1.135,1.685) -traversedist 0.008 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (-0.396,1.707) -traversedist 0.015
+lakerSingleSel -point (-0.396,1.707) -traversedist 0.015
+lakerPreSel -point (0.471,1.892) -traversedist 0.015
+lakerZoomInByArea -point (0.471,1.269) (1.543,1.937)
+lakerPreSel -point (1.103,1.544) -traversedist 0.004
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Shape Mcell Route}
+lakerPreSel -point (1.135,1.604) -traversedist 0.004
+lakerAreaSel -point (1.135,1.465) (1.17,1.604)
+lakerPreSel -point (1.135,1.465) -traversedist 0.004
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerUndo
+lakerRedo
+lakerPreSel -point (0.895,1.395) -traversedist 0.004
+lakerSingleSel -point (0.895,1.395) -traversedist 0.004
+lakerPreSel -point (0.816,1.535) -traversedist 0.004
+lakerSingleSel
+lakerPreSel -point (0.926,1.539) -traversedist 0.004
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Shape Mcell Route}
+lakerChopObj -point (1.135,1.46) (1.135,1.605) (1.18,1.605) (1.18,1.46) 
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.184,1.464) -traversedist 0.004
+lakerZoomOut
+lakerPreSel -point (1.362,1.325) -traversedist 0.008
+lakerZoomOut
+lakerPreSel -point (1.471,1.144) -traversedist 0.016
+lakerSingleSel -point (1.471,1.144) -traversedist 0.016
+lakerPreSel -point (1.5,1.209) -traversedist 0.016
+lakerSaveDesign -autosave
+lakerPreSel -point (1.555,2.588) -traversedist 0.016
+lakerAreaSel -point (1.555,1.38) (1.875,2.588)
+lakerPreSel -point (1.084,1.336) -traversedist 0.016
+lakerIncreaseSel
+lakerPreSel -point (1.596,2.011) -traversedist 0.016
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.671,2.116) -traversedist 0.016
+lakerAlignObj -point (1.671,2.116) -mode start
+lakerPreSel -point (1.379,2.149) -traversedist 0.016
+lakerAlignObj -refObj 1 -refPoint (1.38,2.15) -traversedist 0.008 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.141,1.243) -traversedist 0.016
+lakerSingleSel -point (1.141,1.243) -traversedist 0.016
+lakerPreSel -point (0.911,1.313) -traversedist 0.016
+lakerSingleSel
+lakerStretchObj -refPoint (0.91,1.315) -ignoreNet 0 -offsetPoint (1.055,1.315)
+lakerPreSel -point (1.647,1.608) -traversedist 0.016
+lakerSingleSel
+lakerStretchObj -refPoint (1.645,1.61) -ignoreNet 0 -offsetPoint (1.49,1.61)
+lakerPreSel -point (1.744,1.646) -traversedist 0.016
+lakerSingleSel
+lakerStretchObj -refPoint (1.745,1.645) -ignoreNet 0 -offsetPoint (1.605,1.645)
+lakerPreSel -point (1.864,1.738) -traversedist 0.016
+lakerSingleSel -point (1.864,1.738) -traversedist 0.016
+lakerPreSel -point (1.863,1.714) -traversedist 0.016
+lakerSingleSel -point (1.863,1.714) -traversedist 0.016
+lakerPreSel -point (1.861,1.722) -traversedist 0.016
+lakerUndo
+lakerUndo
+lakerUndo
+lakerUndo
+lakerPreSel -point (-0.377,2.003) -traversedist 0.016
+lakerSingleSel -point (-0.377,2.003) -traversedist 0.016
+lakerPreSel -point (1.42,2.066) -traversedist 0.016
+lakerDistance -point (1.375,2.112) (1.67,2.125)
+lakerZoomOut
+lakerPanUp
+lakerPanRight
+lakerPanDown
+lakerPanLeft
+lakerZoomInByArea -point (0.036,0.099) (5.422,3.455)
+lakerDistance -point (2.975,2.03) (3.15,2.068)
+lakerPanRight
+lakerPanLeft
+lakerPanLeft
+lakerPanRight
+lakerPanLeft
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerZoomOut
+lakerZoomOut
+lakerZoomAll
+lakerZoomAll
+lakerZoomAll
+lakerPreSel -point (-0.063,3.239) -traversedist 0.026
+lakerZoomInByArea -point (-0.063,-0.365) (5.883,3.339)
+lakerPreSel -point (2.583,1.447) -traversedist 0.022
+lakerDistance -point (1.115,2.103) (1.255,2.105)
+lakerSaveDesign -autosave
+lakerDistance -point (1.375,1.205) (1.61,1.212)
+lakerZoomInByArea -point (0.958,0.769) (2.212,1.551)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.375,2.066) (1.67,2.063)
+lakerZoomOut
+lakerZoomInByArea -point (-1.139,-0.564) (4.913,3.206)
+lakerZoomInByArea -point (0.275,1.408) (2.555,2.828)
+lakerZoomOut
+lakerZoomInByArea -point (1.458,0.897) (2.084,1.287)
+lakerZoomOut
+lakerZoomOut
+lakerPanUp
+lakerPanUp
+lakerZoomOut
+lakerZoomInByArea -point (0.794,1.667) (2.252,2.575)
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (0.086,1.027) (3.392,3.087)
+lakerZoomOut
+lakerPanRight
+lakerPreSel -point (1.434,3.209) -traversedist 0.024
+lakerAreaSel -point (1.434,0.1) (6.29,3.209)
+lakerPreSel -point (0.794,3.178) -traversedist 0.024
+lakerZoomInByArea -point (0.027,0.907) (3.671,3.177)
+lakerPreSel -point (1.124,2.468) -traversedist 0.013
+lakerZoomInByArea -point (0.841,1.476) (2.433,2.468)
+lakerPreSel -point (1.417,2.222) -traversedist 0.006
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.67,2.191) -traversedist 0.006
+lakerAlignObj -point (1.67,2.191) -mode start
+lakerPreSel -point (1.375,2.191) -traversedist 0.006
+lakerAlignObj -refObj 1 -refPoint (1.375,2.19) -traversedist 0.003 -space 0.18
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.472,1.974) -traversedist 0.006
+lakerZoomOut
+lakerPreSel -point (1.662,1.311) -traversedist 0.012
+lakerZoomOut
+lakerPreSel -point (1.688,0.65) -traversedist 0.024
+lakerZoomInByArea -point (1.062,0.806) (2.22,1.528)
+lakerDistance -point (1.375,1.178) (1.495,1.18)
+lakerZoomOut
+lakerZoomOut
+lakerPanRight
+lakerPanRight
+lakerPanLeft
+lakerZoomOut
+lakerDistance -point (0.0,2.837) (5.72,2.765)
+lakerZoomOut
+lakerZoomAll
+lakerClearRuler
+lakerPreSel -point (4.481,1.309) -traversedist 0.026
+lakerSingleSel -point (4.481,1.309) -traversedist 0.026
+lakerPreSel -point (2.18,2.184) -traversedist 0.026
+lakerDistance -point (0.0,2.786) (5.72,2.783)
+lakerZoomInByArea -point (1.796,0.665) (4.772,2.519)
+lakerDistance -point (3.155,1.255) (3.335,1.289)
+lakerZoomOut
+lakerPreSel -point (3.193,3.136) -traversedist 0.022
+lakerDeselectAll
+lakerPreSel -point (3.239,3.142) -traversedist 0.022
+lakerAreaSel -point (3.239,-0.19) (5.975,3.142)
+lakerPreSel -point (3.153,2.103) -traversedist 0.022
+lakerSingleSel
+lakerPreSel -point (3.331,3.204) -traversedist 0.022
+lakerSingleSel -point (3.331,3.204) -traversedist 0.022
+lakerPreSel -point (3.142,2.101) -traversedist 0.022
+lakerDistance -point (3.155,2.101) (3.335,2.103)
+lakerZoomInByArea -point (2.27,0.848) (5.146,2.64)
+lakerDistance -point (3.155,2.064) (3.335,2.066)
+lakerZoomOut
+lakerPreSel -point (3.347,3.242) -traversedist 0.021
+lakerDeselectAll
+lakerPreSel -point (3.226,3.121) -traversedist 0.021
+lakerAreaSel -point (3.226,-0.055) (6.01,3.121)
+lakerPreSel -point (2.83,2.202) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (3.345,1.718) -traversedist 0.021
+lakerAlignObj -point (3.345,1.718) -mode start
+lakerPreSel -point (3.16,1.633) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (3.16,1.635) -traversedist 0.011 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (6.152,1.071) -traversedist 0.021
+lakerSingleSel -point (6.152,1.071) -traversedist 0.021
+lakerPreSel -point (2.96,2.655) -traversedist 0.021
+lakerDeselectAll
+lakerPreSel -point (3.294,2.802) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (3.286,2.804) -traversedist 0.021
+lakerStretchObj -refPoint (3.285,2.805) -ignoreNet 0 -offsetPoint (3.325,2.805)
+lakerPreSel -point (2.128,3.272) -traversedist 0.021
+lakerZoomInByArea -point (2.128,2.377) (3.698,3.355)
+lakerPreSel -point (2.906,3.072) -traversedist 0.006
+lakerSaveDesign -autosave
+lakerDistance -point (3.11,2.82) (3.26,2.825)
+lakerDistance -point (2.84,2.824) (2.99,2.82)
+lakerDistance -point (2.55,2.821) (2.72,2.812)
+lakerZoomOut
+lakerZoomOut
+lakerPanDown
+lakerPanDown
+lakerZoomInByArea -point (2.503,-0.195) (3.533,0.447)
+lakerDistance -point (3.105,0.177) (3.215,0.185)
+lakerZoomOut
+lakerZoomOut
+lakerPreSel -point (3.28,0.143) -traversedist 0.015
+lakerSingleSel
+lakerPreSel -point (3.295,0.163) -traversedist 0.015
+lakerStretchObj -refPoint (3.295,0.165) -ignoreNet 0 -offsetPoint (3.31,0.165)
+lakerPreSel -point (3.263,-0.124) -traversedist 0.015
+lakerSingleSel -point (3.263,-0.124) -traversedist 0.015
+lakerZoomOut
+lakerPreSel -point (3.379,-0.585) -traversedist 0.03
+lakerSingleSel -point (3.379,-0.585) -traversedist 0.03
+lakerZoomOut
+lakerPreSel -point (0.41,3.456) -traversedist 0.061
+lakerSingleSel -point (0.41,3.456) -traversedist 0.061
+lakerPreSel -point (-0.688,3.829) -traversedist 0.061
+lakerZoomInByArea -point (-1.165,-1.088) (6.725,3.828)
+lakerPreSel -point (2.755,1.516) -traversedist 0.029
+lakerDistance -point (0.0,2.862) (5.66,2.841)
+lakerClearRuler
+lakerPreSel -point (2.706,2.503) -traversedist 0.029
+lakerDistance -point (3.395,1.738) (3.605,1.773)
+lakerDistance -point (3.155,1.77) (3.275,1.764)
+lakerDistance -point (0.0,2.824) (5.66,2.783)
+lakerDistance -point (3.155,2.155) (3.275,2.152)
+lakerDistance -point (3.155,2.217) (3.335,2.211)
+lakerDistance -point (2.86,2.091) (3.035,2.117)
+lakerDistance -point (2.845,1.049) (3.035,1.087)
+lakerDistance -point (2.86,1.852) (3.035,1.802)
+lakerDistance -point (2.6,1.817) (2.74,1.846)
+lakerZoomInByArea -point (1.558,-0.536) (7.554,3.2)
+lakerPanLeft
+lakerClearRuler
+lakerPreSel -point (2.989,2.293) -traversedist 0.022
+lakerAreaSel -point (2.989,0.49) (3.28,2.293)
+lakerPreSel -point (3.258,0.456) -traversedist 0.022
+lakerSingleSel -point (3.258,0.456) -traversedist 0.022
+lakerPreSel -point (3.018,2.803) -traversedist 0.022
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (3.069,0.147) -traversedist 0.022
+lakerSingleSel
+lakerPreSel -point (3.06,0.123) -traversedist 0.022
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (3.116,2.614) -traversedist 0.022
+lakerZoomOut
+lakerPreSel -point (2.928,3.16) -traversedist 0.044
+lakerAreaSel -point (2.928,-0.44) (5.965,3.16)
+lakerPreSel -point (1.939,3.116) -traversedist 0.044
+lakerZoomInByArea -point (1.13,-0.474) (6.892,3.116)
+lakerPreSel -point (2.901,2.063) -traversedist 0.021
+lakerDistance -point (2.86,2.123) (3.035,2.131)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (3.038,2.086) -traversedist 0.021
+lakerAlignObj -point (3.038,2.086) -mode start
+lakerPreSel -point (2.867,2.044) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (2.865,2.045) -traversedist 0.011 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.844,1.468) -traversedist 0.021
+lakerSingleSel -point (2.844,1.468) -traversedist 0.021
+lakerDistance -point (2.9,1.68) (2.95,1.568)
+lakerDistance -point (3.185,1.48) (3.211,1.325)
+lakerPreSel -point (3.164,1.521) -traversedist 0.021
+lakerSingleSel
+lakerStretchObj -refPoint (3.165,1.52) -ignoreNet 0 -offsetPoint (3.165,1.47)
+lakerDistance -point (3.193,1.43) (3.193,1.325)
+lakerPreSel -point (3.019,1.556) -traversedist 0.021
+lakerClearRuler
+lakerPreSel -point (3.356,1.383) -traversedist 0.021
+lakerDistance -point (3.364,1.43) (3.356,1.325)
+lakerPreSel -point (3.144,1.464) -traversedist 0.021
+lakerSingleSel
+lakerStretchObj -refPoint (3.145,1.465) -ignoreNet 0 -offsetPoint (3.145,1.485)
+lakerPreSel -point (3.211,1.391) -traversedist 0.021
+lakerDistance -point (3.206,1.45) (3.198,1.325)
+lakerPreSel -point (3.174,1.498) -traversedist 0.021
+lakerSingleSel
+lakerStretchObj -refPoint (3.175,1.5) -ignoreNet 0 -offsetPoint (3.175,1.485)
+lakerDistance -point (3.311,1.435) (3.309,1.325)
+lakerPreSel -point (3.473,1.268) -traversedist 0.021
+lakerClearRuler
+lakerPreSel -point (3.532,1.217) -traversedist 0.021
+lakerDistance -point (3.37,1.435) (3.37,1.325)
+lakerPreSel -point (3.183,1.489) -traversedist 0.021
+lakerSingleSel
+lakerStretchObj -refPoint (3.185,1.49) -ignoreNet 0 -offsetPoint (3.185,1.505)
+lakerDistance -point (3.193,1.45) (3.193,1.325)
+lakerPreSel -point (3.193,1.492) -traversedist 0.021
+lakerSingleSel
+lakerStretchObj -refPoint (3.195,1.49) -ignoreNet 0 -offsetPoint (3.195,1.485)
+lakerDistance -point (3.373,1.445) (3.351,1.325)
+lakerPreSel -point (3.464,1.172) -traversedist 0.021
+lakerClearRuler
+lakerPreSel -point (3.268,1.4) -traversedist 0.021
+lakerDistance -point (3.368,1.445) (3.368,1.325)
+lakerDistance -point (2.9,1.683) (2.95,1.545)
+lakerPreSel -point (2.891,1.671) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (2.814,1.481) -traversedist 0.021
+lakerSingleSel -point (2.814,1.481) -traversedist 0.021
+lakerSaveDesign -autosave
+lakerPreSel -point (2.812,1.479) -traversedist 0.021
+lakerSingleSel -point (2.812,1.479) -traversedist 0.021
+lakerZoomInByArea -point (1.938,1.048) (3.868,2.25)
+lakerPreSel -point (3.003,1.495) -traversedist 0.007
+lakerDistance -point (2.889,1.68) (2.95,1.538)
+lakerDistance -point (2.969,1.545) (2.888,1.68)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.966,1.544) -traversedist 0.007
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.965,1.543) -traversedist 0.007
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerDistance -point (2.969,1.545) (2.882,1.68)
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.835,1.572) -traversedist 0.007
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerClearRuler
+lakerPreSel -point (2.963,1.538) -traversedist 0.007
+lakerSingleSel
+lakerPreSel -point (2.83,1.564) -traversedist 0.007
+lakerSingleSel -point (2.83,1.564) -traversedist 0.007
+lakerPreSel -point (2.971,1.543) -traversedist 0.007
+lakerDistance -point (2.97,1.545) (2.883,1.68)
+lakerZoomOut
+lakerDistance -point (3.1,2.12) (3.22,2.11)
+lakerZoomOut
+lakerClearRuler
+lakerPreSel -point (5.381,1.218) -traversedist 0.029
+lakerSaveDesign
+lakerPreSel -point (0.003,2.777) -traversedist 0.029
+lakerSingleSel
+lakerPreSel -point (5.906,1.866) -traversedist 0.029
+lakerSingleSel -point (5.906,1.866) -traversedist 0.029
+lakerPreSel -point (5.906,1.863) -traversedist 0.029
+lakerDistance -point (0.0,2.814) (5.605,2.78)
+lakerZoomInByArea -point (-0.034,-0.319) (5.828,3.333)
+lakerZoomOut
+lakerClearRuler
+lakerPreSel -point (-2.965,4.586) -traversedist 0.043
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerPreSel -point (-0.935,3.281) -traversedist 0.043
+lakerSingleSel -point (-0.935,3.281) -traversedist 0.043
+lakerRedraw
+lakerSingleSel -point (-0.935,3.281) -traversedist 0.043
+lakerPreSel -point (-0.584,3.359) -traversedist 0.043
+lakerZoomInByArea -point (-0.584,-0.994) (6.56,3.456)
+lakerPreSel -point (3.222,3.194) -traversedist 0.026
+lakerAreaSel -point (3.222,-0.515) (5.765,3.194)
+lakerPreSel -point (2.183,3.068) -traversedist 0.026
+lakerZoomInByArea -point (1.236,-0.389) (6.784,3.067)
+lakerPreSel -point (3.235,1.273) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (3.286,2.061) -traversedist 0.021
+lakerAlignObj -point (3.286,2.061) -mode start
+lakerPreSel -point (3.096,2.135) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (3.095,2.135) -traversedist 0.01 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (3.334,0.467) -traversedist 0.021
+lakerSingleSel
+lakerDistance -point (3.32,0.641) (3.44,0.66)
+lakerDeselectAll
+lakerPreSel -point (3.286,1.468) -traversedist 0.021
+lakerSingleSel
+lakerStretchObj -refPoint (3.285,1.47) -ignoreNet 0 -offsetPoint (3.345,1.47)
+lakerPreSel -point (3.399,1.518) -traversedist 0.021
+lakerDistance -point (3.1,1.7) (3.22,1.721)
+lakerPreSel -point (3.346,1.743) -traversedist 0.021
+lakerSingleSel
+lakerDistance -point (3.34,1.768) (3.48,1.766)
+lakerDeselectAll
+lakerPreSel -point (3.211,0.143) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (3.213,0.177) -traversedist 0.021
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (5.31,-0.071) -traversedist 0.021
+lakerZoomOut
+lakerPreSel -point (5.047,-0.672) -traversedist 0.041
+lakerSingleSel -point (5.047,-0.672) -traversedist 0.041
+lakerDistance -point (0.0,2.821) (5.545,2.833)
+lakerDeselectAll
+lakerPreSel -point (5.798,3.297) -traversedist 0.041
+lakerAreaSel -point (5.798,-0.74) (6.74,3.297)
+lakerPreSel -point (6.208,1.167) -traversedist 0.041
+lakerZoomInByArea -point (1.666,-0.073) (7.596,3.621)
+lakerPreSel -point (6.677,1.704) -traversedist 0.022
+lakerSingleSel -point (6.677,1.704) -traversedist 0.022
+lakerPreSel -point (5.722,3.217) -traversedist 0.022
+lakerAreaSel -point (5.722,-0.025) (6.5,3.217)
+lakerPreSel -point (5.775,2.465) -traversedist 0.022
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (5.951,2.772) -traversedist 0.022
+lakerAlignObj -point (5.951,2.772) -mode start
+lakerPreSel -point (5.551,2.726) -traversedist 0.022
+lakerAlignObj -refObj 1 -refPoint (5.55,2.725) -traversedist 0.011 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (5.922,2.423) -traversedist 0.022
+lakerDistance -point (5.545,2.739) (5.665,2.733)
+lakerZoomOut
+lakerPanLeft
+lakerPanRight
+lakerSaveDesign
+lakerPanLeft
+lakerZoomAll
+lakerDeselectAll
+lakerPreSel -point (1.011,-0.192) -traversedist 0.025
+lakerSingleSel -point (1.011,-0.192) -traversedist 0.025
+lakerPreSel -point (1.071,-0.24) -traversedist 0.025
+lakerSingleSel -point (1.071,-0.24) -traversedist 0.025
+lakerClearRuler
+lakerPreSel -point (3.216,2.803) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (3.251,2.78) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (3.241,2.778) -traversedist 0.025
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (2.478,3.253) -traversedist 0.025
+lakerSingleSel -point (2.478,3.253) -traversedist 0.025
+lakerPreSel -point (1.371,0.18) -traversedist 0.025
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.656,-0.207) -traversedist 0.025
+lakerSingleSel -point (1.656,-0.207) -traversedist 0.025
+lakerPreSel -point (1.311,0.303) -traversedist 0.025
+lakerAreaSel -point (1.311,0.07) (1.405,0.303)
+lakerPreSel -point (1.731,-0.385) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (1.721,-0.412) -traversedist 0.025
+lakerSingleSel -point (1.721,-0.412) -traversedist 0.025
+lakerPreSel -point (1.481,0.283) -traversedist 0.025
+lakerAreaSel -point (1.481,0.005) (1.75,0.283)
+lakerPreSel -point (1.751,-0.012) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (0.978,0.285) -traversedist 0.025
+lakerAreaSel -point (0.978,0.065) (1.25,0.285)
+lakerPreSel -point (1.261,0.023) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (2.358,2.903) -traversedist 0.025
+lakerAreaSel -point (2.358,2.675) (2.94,2.903)
+lakerPreSel -point (2.921,2.683) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (2.805,2.795) -offsetPoint (3.355,2.795)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (3.318,3.218) -traversedist 0.025
+lakerSingleSel -point (3.318,3.218) -traversedist 0.025
+lakerPreSel -point (2.153,3.318) -traversedist 0.025
+lakerSaveDesign
+lakerPreSel -point (-0.244,3.65) -traversedist 0.025
+lakerCalibreDRC
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (0.955,1.744) -traversedist 0.003
+lakerZoomOut
+lakerPreSel -point (0.968,1.837) -traversedist 0.006
+lakerDistance -point (0.975,1.843) (0.875,1.826)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.375,2.125) (1.565,2.149)
+lakerDeselectAll
+lakerPreSel -point (0.937,2.564) -traversedist 0.023
+lakerAreaSel -point (0.937,1.625) (1.235,2.564)
+lakerPreSel -point (1.14,1.598) -traversedist 0.023
+lakerSingleSel
+lakerPreSel -point (1.106,1.643) -traversedist 0.023
+lakerSingleSel
+lakerPreSel -point (1.19,1.622) -traversedist 0.023
+lakerSingleSel
+lakerPreSel -point (1.178,1.582) -traversedist 0.023
+lakerDeselectAll
+lakerPreSel -point (1.133,1.622) -traversedist 0.023
+lakerSingleSel
+lakerPreSel -point (1.156,1.595) -traversedist 0.023
+lakerDistance -point (1.135,1.618) (1.255,1.631)
+lakerZoomInByArea -point (0.105,1.26) (2.153,2.536)
+lakerDistance -point (0.89,1.865) (1.015,1.862)
+lakerZoomOut
+lakerDistance -point (1.375,0.896) (1.56,0.902)
+lakerDistance -point (1.375,1.224) (1.495,1.222)
+lakerDistance -point (1.735,1.175) (1.915,1.175)
+lakerZoomInByArea -point (1.287,0.825) (2.419,1.531)
+lakerDistance -point (1.699,1.42) (1.71,1.27)
+lakerZoomOut
+lakerPreSel -point (1.634,1.222) -traversedist 0.008
+lakerSingleSel
+lakerDistance -point (1.715,1.295) (1.835,1.285)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.711,1.056) -traversedist 0.008
+lakerAlignObj -point (1.711,1.056) -mode start
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.682,1.211) -traversedist 0.008
+lakerAlignObj -point (1.682,1.211) -mode start
+lakerPreSel -point (0.906,1.724) -traversedist 0.008
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Instance Array Device Mcell}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.647,1.227) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.64,1.242) -traversedist 0.008
+lakerStretchObj -refPoint (1.64,1.24) -ignoreNet 0 -offsetPoint (1.67,1.24)
+lakerPreSel -point (1.652,1.242) -traversedist 0.008
+lakerStretchObj -refPoint (1.65,1.24) -ignoreNet 0 -offsetPoint (1.63,1.24)
+lakerPreSel -point (1.711,1.147) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.712,1.165) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.715,1.159) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.716,1.154) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.719,1.159) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.722,1.159) -traversedist 0.008
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerPreSel -point (1.722,1.168) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.721,1.159) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.724,1.161) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.724,1.152) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.726,1.155) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.802,1.076) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.803,1.069) -traversedist 0.008
+lakerZoomOut
+lakerPreSel -point (1.639,1.237) -traversedist 0.017
+lakerSingleSel
+lakerPreSel -point (1.379,1.406) -traversedist 0.017
+lakerZoomInByArea -point (1.379,0.728) (2.547,1.456)
+lakerPreSel -point (1.722,1.152) -traversedist 0.004
+lakerSingleSel
+lakerPreSel -point (1.726,1.154) -traversedist 0.004
+lakerSingleSel
+lakerPreSel -point (1.729,1.155) -traversedist 0.004
+lakerSingleSel
+lakerPreSel -point (1.725,1.16) -traversedist 0.004
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerPreSel -point (1.487,1.268) -traversedist 0.004
+lakerSingleSel
+lakerPreSel -point (1.499,1.268) -traversedist 0.004
+lakerSingleSel
+lakerPreSel -point (1.516,1.261) -traversedist 0.004
+lakerStretchObj -refPoint (1.515,1.26) -ignoreNet 0 -offsetPoint (1.575,1.26)
+lakerPreSel -point (1.515,1.264) -traversedist 0.004
+lakerSingleSel
+lakerPreSel -point (1.509,1.259) -traversedist 0.004
+lakerSingleSel
+lakerZoomIn
+lakerPreSel -point (1.792,1.104) -traversedist 0.002
+lakerZoomOut
+lakerPreSel -point (1.665,1.065) -traversedist 0.004
+lakerZoomOut
+lakerPreSel -point (1.533,1.167) -traversedist 0.009
+lakerSingleSel
+lakerPreSel -point (0.909,1.819) -traversedist 0.009
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Instance Array Device Mcell}
+lakerSmashObj -level 1
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.541,1.259) -traversedist 0.009
+lakerSingleSel
+lakerPreSel -point (1.527,1.261) -traversedist 0.009
+lakerStretchObj -refPoint (1.525,1.26) -ignoreNet 0 -offsetPoint (1.575,1.26)
+lakerPreSel -point (1.778,1.039) -traversedist 0.009
+lakerSingleSel
+lakerPreSel -point (1.597,1.255) -traversedist 0.009
+lakerSingleSel
+lakerPreSel -point (1.548,1.244) -traversedist 0.009
+lakerSingleSel
+lakerPreSel -point (1.759,1.157) -traversedist 0.009
+lakerSingleSel
+lakerPreSel -point (1.781,1.095) -traversedist 0.009
+lakerSingleSel
+lakerDistance -point (1.785,1.25) (1.915,1.25)
+lakerZoomOut
+lakerZoomInByArea -point (1.201,0.691) (2.485,1.491)
+lakerDeselectAll
+lakerPreSel -point (1.745,1.158) -traversedist 0.005
+lakerSingleSel
+lakerPreSel -point (1.748,1.158) -traversedist 0.005
+lakerStretchObj -refPoint (1.75,1.16) -ignoreNet 0 -offsetPoint (1.76,1.16)
+lakerPreSel -point (1.754,1.118) -traversedist 0.005
+lakerSingleSel
+lakerDistance -point (1.795,1.234) (1.915,1.227)
+lakerClearRuler
+lakerZoomOut
+lakerPreSel -point (1.72,1.04) -traversedist 0.01
+lakerZoomOut
+lakerPreSel -point (1.853,1.758) -traversedist 0.019
+lakerSaveDesign
+lakerPreSel -point (0.871,0.815) -traversedist 0.019
+lakerDistance -point (1.12,0.863) (1.255,0.88)
+lakerDistance -point (1.115,2.091) (1.255,2.092)
+lakerDeselectAll
+lakerPreSel -point (0.936,2.567) -traversedist 0.019
+lakerAreaSel -point (0.936,1.465) (1.225,2.567)
+lakerPreSel -point (1.162,1.862) -traversedist 0.019
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.055,2.28) -offsetPoint (1.075,2.28)
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (0.949,2.054) -traversedist 0.019
+lakerDistance -point (0.875,2.079) (1.035,2.083)
+lakerZoomInByArea -point (0.149,1.241) (2.121,2.469)
+lakerZoomIn
+lakerZoomIn
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (-1.163,0.052) (3.267,2.812)
+lakerPreSel -point (1.207,1.237) -traversedist 0.016
+lakerSingleSel
+lakerPreSel -point (1.199,1.201) -traversedist 0.016
+lakerDistance -point (1.135,2.178) (1.255,2.152)
+lakerDistance -point (0.875,2.271) (1.035,2.271)
+lakerDistance -point (0.875,1.866) (0.995,1.852)
+lakerDeselectAll
+lakerPreSel -point (1.156,1.429) -traversedist 0.016
+lakerSingleSel
+lakerStretchObj -refPoint (1.155,1.43) -ignoreNet 0 -offsetPoint (1.125,1.43)
+lakerPreSel -point (1.05,1.422) -traversedist 0.016
+lakerSingleSel
+lakerStretchObj -refPoint (1.05,1.42) -ignoreNet 0 -offsetPoint (1.02,1.42)
+lakerPreSel -point (1.194,1.129) -traversedist 0.016
+lakerDeselectAll
+lakerPreSel -point (1.271,1.168) -traversedist 0.016
+lakerSaveDesign
+lakerPreSel -point (1.159,1.124) -traversedist 0.016
+lakerSingleSel
+lakerPreSel -point (0.855,1.096) -traversedist 0.016
+lakerZoomIn
+lakerPreSel -point (0.953,1.264) -traversedist 0.008
+lakerZoomOut
+lakerPreSel -point (0.854,1.096) -traversedist 0.016
+lakerZoomOut
+lakerPreSel -point (1.319,0.891) -traversedist 0.033
+lakerPanRight
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (2.778,1.384) -traversedist 0.002
+lakerSingleSel
+lakerPreSel -point (2.893,1.295) -traversedist 0.002
+lakerDistance -point (2.885,1.292) (2.95,1.284)
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (3.05,1.25) (3.18,1.26)
+lakerDistance -point (2.81,1.68) (2.868,1.32)
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 0
+lakerSelKind -selkind \
+           {Shape Device Mcell Route IsDevFlatten IsMCellFlatten IsRouteFlatten}
+lakerPreSel -point (1.121,2.259) -traversedist 0.014
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerPreSel -point (2.448,1.683) -traversedist 0.014
+lakerZoomInByArea -point (2.292,0.563) (3.964,1.605)
+lakerPreSel -point (2.719,1.304) -traversedist 0.006
+lakerZoomOut
+lakerPreSel -point (2.616,1.659) -traversedist 0.012
+lakerZoomInByArea -point (2.616,1.089) (3.628,1.719)
+lakerPreSel -point (2.784,1.32) -traversedist 0.004
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 0
+lakerSelKind -selkind \
+           {Shape Device Mcell Route IsDevFlatten IsMCellFlatten IsRouteFlatten}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerPreSel -point (3.009,1.493) -traversedist 0.004
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 0
+lakerSelKind -selkind \
+           {Shape Device Mcell Route IsDevFlatten IsMCellFlatten IsRouteFlatten}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerPreSel -point (2.616,1.676) -traversedist 0.004
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerPreSel -point (2.622,1.656) -traversedist 0.004
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerPreSel -point (2.723,1.583) -traversedist 0.004
+lakerSingleSel
+lakerPreSel -point (2.619,1.68) -traversedist 0.004
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerPreSel -point (2.709,1.565) -traversedist 0.004
+lakerSingleSel
+lakerPreSel -point (3.008,1.502) -traversedist 0.004
+lakerZoomOut
+lakerPreSel -point (2.894,1.6) -traversedist 0.007
+lakerZoomOut
+lakerPreSel -point (4.147,1.94) -traversedist 0.015
+lakerZoomOut
+lakerPreSel -point (4.244,2.195) -traversedist 0.03
+lakerDistance -point (4.39,2.183) (4.24,2.18)
+lakerDistance -point (5.545,2.773) (0.0,2.77)
+lakerClearRuler
+lakerPreSel -point (-0.06,3.192) -traversedist 0.03
+lakerZoomInByArea -point (-0.06,-0.534) (5.98,3.228)
+lakerPreSel -point (2.516,1.973) -traversedist 0.022
+lakerZoomInByArea -point (2.302,0.728) (4.298,1.972)
+lakerPreSel -point (3.196,1.455) -traversedist 0.007
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 0
+lakerSelKind -selkind \
+           {Shape Device Mcell Route IsDevFlatten IsMCellFlatten IsRouteFlatten}
+lakerPreSel -point (3.02,1.496) -traversedist 0.007
+lakerCreatePath -layerName POLY1 -point (3.02,1.495) (2.775,1.495) (2.775,1.31) \
+           -width 0.100000 0.000000 -routeStatus fixed
+lakerPreSel -point (3.253,1.406) -traversedist 0.007
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerPreSel -point (3.159,1.498) -traversedist 0.007
+lakerSingleSel
+lakerPreSel -point (3.164,1.528) -traversedist 0.007
+lakerSingleSel
+lakerPreSel -point (3.136,1.302) -traversedist 0.007
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Shape Mcell Route}
+lakerChopObj -point (2.925,1.1) (2.925,1.44) (3.09,1.44) (3.09,1.1) 
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (2.916,1.444) -traversedist 0.007
+lakerAreaSel -point (2.916,1.42) (3.095,1.444)
+lakerPreSel -point (3.162,1.513) -traversedist 0.007
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Shape Mcell Route}
+lakerChopObj -point (2.905,1.41) (2.905,1.445) (3.1,1.445) (3.1,1.41) 
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (3.181,1.419) -traversedist 0.007
+lakerSingleSel
+lakerPreSel -point (2.879,1.631) -traversedist 0.007
+lakerDeselectAll
+lakerPreSel -point (2.879,1.624) -traversedist 0.007
+lakerSingleSel
+lakerDistance -point (2.885,1.68) (2.874,1.545)
+lakerPreSel -point (2.936,1.085) -traversedist 0.007
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Shape Mcell Route}
+lakerPreSel -point (2.951,1.077) -traversedist 0.007
+lakerAreaSel -point (2.885,1.077) (2.951,1.24)
+lakerPreSel -point (2.911,1.16) -traversedist 0.007
+lakerSingleSel
+lakerChopObj -point (2.885,1.085) (2.885,1.265) (2.935,1.265) (2.935,1.085) 
+lakerPreSel -point (2.893,1.074) -traversedist 0.007
+lakerSingleSel
+lakerSaveDesign -autosave
+lakerDistance -point (2.845,1.249) (2.885,1.247)
+lakerZoomOut
+lakerPreSel -point (2.602,0.836) -traversedist 0.015
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (2.723,1.555) -traversedist 0.015
+lakerSaveDesign
+lakerPreSel -point (2.726,1.502) -traversedist 0.015
+lakerClearRuler
+lakerPreSel -point (3.386,1.449) -traversedist 0.015
+lakerSingleSel
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (3.701,1.246) -traversedist 0.003
+lakerSingleSel
+lakerPreSel -point (3.623,1.169) -traversedist 0.003
+lakerZoomOut
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (3.713,1.142) -traversedist 0.003
+lakerSingleSel
+lakerPreSel -point (3.64,1.131) -traversedist 0.003
+lakerZoomOut
+lakerPreSel -point (3.869,1.037) -traversedist 0.007
+lakerZoomOut
+lakerPreSel -point (3.578,1.156) -traversedist 0.014
+lakerDistance -point (3.38,1.239) (3.44,1.236)
+lakerZoomOut
+lakerZoomInByArea -point (0.863,0.031) (5.655,3.017)
+lakerZoomInByArea -point (1.744,0.483) (4.482,2.189)
+lakerZoomOut
+lakerPreSel -point (3.138,1.253) -traversedist 0.02
+lakerDistance -point (3.1,1.454) (3.22,1.466)
+lakerZoomInByArea -point (2.402,0.524) (4.228,1.662)
+lakerPreSel -point (3.405,1.031) -traversedist 0.007
+lakerDeselectAll
+lakerPreSel -point (3.16,1.33) -traversedist 0.007
+lakerAreaSel -point (3.16,1.095) (3.405,1.33)
+lakerPreSel -point (3.355,1.136) -traversedist 0.007
+lakerSingleSel
+lakerPreSel -point (3.357,1.141) -traversedist 0.007
+lakerStretchObj -refPoint (3.355,1.14) -ignoreNet 0 -offsetPoint (3.305,1.14)
+lakerDistance -point (3.33,1.175) (3.44,1.177)
+lakerPreSel -point (3.148,1.241) -traversedist 0.007
+lakerSingleSel
+lakerPreSel -point (3.148,1.23) -traversedist 0.007
+lakerStretchObj -refPoint (3.15,1.23) -ignoreNet 0 -offsetPoint (3.14,1.23)
+lakerPreSel -point (3.145,1.2) -traversedist 0.007
+lakerDistance -point (3.1,1.198) (3.16,1.205)
+lakerZoomOut
+lakerUndo
+lakerUndo
+lakerPreSel -point (3.666,1.496) -traversedist 0.014
+lakerSingleSel
+lakerZoomOut
+lakerPreSel -point (0.335,2.904) -traversedist 0.027
+lakerDistance -point (0.0,2.804) (5.545,2.839)
+lakerDistance -point (1.375,2.115) (1.555,2.115)
+lakerClearRuler
+lakerPreSel -point (3.397,3.155) -traversedist 0.027
+lakerAreaSel -point (3.397,-0.36) (6.025,3.155)
+lakerPreSel -point (4.146,2.047) -traversedist 0.027
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.949,2.828) -traversedist 0.027
+lakerZoomInByArea -point (1.789,0.036) (6.271,2.828)
+lakerPreSel -point (3.707,1.865) -traversedist 0.017
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (3.444,1.848) -traversedist 0.017
+lakerAlignObj -point (3.444,1.848) -mode start
+lakerPreSel -point (3.439,1.233) -traversedist 0.017
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (3.431,1.235) -traversedist 0.017
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (3.436,1.238) -traversedist 0.017
+lakerAlignObj -point (3.436,1.238) -mode start
+lakerPreSel -point (3.382,1.274) -traversedist 0.017
+lakerAlignObj -refObj 1 -refPoint (3.38,1.275) -traversedist 0.008 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (3.359,1.337) -traversedist 0.017
+lakerDistance -point (3.38,1.273) (3.5,1.261)
+lakerPreSel -point (4.349,1.85) -traversedist 0.017
+lakerSingleSel
+lakerPreSel -point (4.349,1.845) -traversedist 0.017
+lakerZoomOut
+lakerPreSel -point (4.668,2.258) -traversedist 0.033
+lakerPanLeft
+lakerPreSel -point (1.68,2.258) -traversedist 0.033
+lakerPanRight
+lakerPreSel -point (1.465,2.307) -traversedist 0.033
+lakerDistance -point (0.0,2.775) (5.605,2.792)
+lakerPanLeft
+lakerPanRight
+lakerPanLeft
+lakerZoomInByArea -point (-0.268,-0.352) (5.76,3.404)
+lakerDistance -point (1.375,1.207) (1.555,1.216)
+lakerZoomInByArea -point (0.96,0.455) (2.606,1.481)
+lakerZoomOut
+lakerZoomOut
+lakerSaveDesign -autosave
+lakerDistance -point (1.375,2.104) (1.555,2.118)
+lakerZoomOut
+lakerPreSel -point (1.215,3.775) -traversedist 0.049
+lakerDeselectAll
+lakerPreSel -point (0.932,3.195) -traversedist 0.049
+lakerAreaSel -point (0.932,-0.365) (6.095,3.195)
+lakerPreSel -point (-0.004,2.718) -traversedist 0.049
+lakerZoomAll
+lakerPreSel -point (0.895,2.765) -traversedist 0.025
+lakerZoomInByArea -point (0.037,0.515) (3.649,2.765)
+lakerPreSel -point (1.475,1.931) -traversedist 0.013
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.555,2.118) -traversedist 0.013
+lakerAlignObj -point (1.555,2.118) -mode start
+lakerPreSel -point (1.375,2.08) -traversedist 0.013
+lakerAlignObj -refObj 1 -refPoint (1.375,2.08) -traversedist 0.007 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerUndo
+lakerPreSel -point (1.495,1.963) -traversedist 0.013
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.432,2.38) -traversedist 0.013
+lakerZoomOut
+lakerPreSel -point (1.532,3.436) -traversedist 0.027
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerDeselectAll
+lakerPreSel -point (1.414,3.201) -traversedist 0.027
+lakerZoomAll
+lakerAreaSel -point (1.414,-0.235) (5.98,3.201)
+lakerPreSel -point (0.912,2.946) -traversedist 0.025
+lakerZoomInByArea -point (-0.757,-0.089) (4.113,2.945)
+lakerPreSel -point (1.555,1.968) -traversedist 0.018
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.556,2.12) -traversedist 0.018
+lakerAlignObj -point (1.556,2.12) -mode start
+lakerPreSel -point (1.382,2.069) -traversedist 0.018
+lakerAlignObj -refObj 1 -refPoint (1.38,2.07) -traversedist 0.009 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.744,1.666) -traversedist 0.018
+lakerSingleSel
+lakerZoomOut
+lakerPreSel -point (1.301,2.257) -traversedist 0.036
+lakerClearRuler
+lakerPreSel -point (1.637,2.196) -traversedist 0.036
+lakerDistance -point (0.0,2.819) (5.545,2.808)
+lakerZoomOut
+lakerZoomAll
+lakerClearRuler
+lakerPreSel -point (2.791,-0.315) -traversedist 0.025
+lakerSingleSel -point (2.791,-0.315) -traversedist 0.025
+lakerPreSel -point (2.781,-0.27) -traversedist 0.025
+lakerSingleSel -point (2.781,-0.27) -traversedist 0.025
+lakerPreSel -point (2.721,-0.252) -traversedist 0.025
+lakerSingleSel -point (2.721,-0.252) -traversedist 0.025
+lakerClearRuler
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (1.704,1.61) -traversedist 0.005
+lakerSingleSel
+lakerPreSel -point (1.334,1.704) -traversedist 0.005
+lakerZoomOut
+lakerPreSel -point (1.265,1.755) -traversedist 0.009
+lakerDistance -point (1.155,1.859) (1.255,1.862)
+lakerZoomOut
+lakerDistance -point (0.89,1.872) (1.035,1.864)
+lakerPreSel -point (1.18,1.724) -traversedist 0.019
+lakerSingleSel
+lakerPreSel -point (1.18,1.712) -traversedist 0.019
+lakerStretchObj -refPoint (1.18,1.71) -ignoreNet 0 -offsetPoint (1.16,1.71)
+lakerPreSel -point (0.44,2.218) -traversedist 0.019
+lakerZoomInByArea -point (0.394,1.344) (1.796,2.218)
+lakerPreSel -point (1.118,1.639) -traversedist 0.005
+lakerSingleSel
+lakerPreSel -point (1.127,1.642) -traversedist 0.005
+lakerStretchObj -refPoint (1.125,1.64) -ignoreNet 0 -offsetPoint (1.105,1.64)
+lakerDistance -point (0.89,1.79) (1.015,1.77)
+lakerDistance -point (1.135,1.738) (1.255,1.756)
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.566,1.42) (1.629,1.27)
+lakerDistance -point (1.375,1.207) (1.495,1.214)
+lakerDistance -point (1.735,1.177) (1.855,1.193)
+lakerPreSel -point (1.674,1.166) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.692,1.156) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.71,1.072) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.683,1.096) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.681,1.258) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.698,1.153) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.691,1.068) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (0.57,1.839) -traversedist 0.008
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.687,1.187) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.698,1.172) -traversedist 0.008
+lakerSingleSel
+lakerSingleSel
+lakerPreSel -point (1.566,1.661) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.574,1.543) -traversedist 0.008
+lakerDistance -point (1.572,1.54) (1.586,1.66)
+lakerZoomOut
+lakerZoomInByArea -point (1.214,0.79) (2.284,1.456)
+lakerPreSel -point (1.706,1.17) -traversedist 0.004
+lakerSingleSel
+lakerPreSel -point (1.704,1.163) -traversedist 0.004
+lakerSingleSel
+lakerPreSel -point (1.702,1.16) -traversedist 0.004
+lakerSingleSel
+lakerPreSel -point (1.316,1.456) -traversedist 0.004
+lakerRotate90 -refPoint (1.615,1.21)
+lakerPreSel -point (1.709,1.08) -traversedist 0.004
+lakerZoomOut
+lakerPreSel -point (1.665,1.288) -traversedist 0.008
+lakerSingleSel
+lakerAreaSel -point (1.63,1.285) (1.665,1.288)
+lakerPreSel -point (1.671,1.298) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.667,1.304) -traversedist 0.008
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.665,1.305) -offsetPoint (1.605,1.305)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.342,1.395) -traversedist 0.008
+lakerZoomInByArea -point (1.257,0.982) (1.919,1.394)
+lakerPreSel -point (1.707,1.07) -traversedist 0.002
+lakerSingleSel
+lakerPreSel -point (1.706,1.071) -traversedist 0.002
+lakerDistance -point (1.571,1.33) (1.568,1.27)
+lakerZoomOut
+lakerDistance -point (1.565,1.42) (1.565,1.33)
+lakerSaveDesign -autosave
+lakerZoomOut
+lakerDistance -point (1.644,1.11) (1.651,0.99)
+lakerClearRuler
+lakerPreSel -point (1.223,1.24) -traversedist 0.01
+lakerDistance -point (1.6,0.886) (1.775,0.888)
+lakerPreSel -point (1.684,0.563) -traversedist 0.01
+lakerDeselectAll
+lakerPreSel -point (1.841,0.774) -traversedist 0.01
+lakerDistance -point (1.655,1.142) (1.775,1.151)
+lakerZoomOut
+lakerZoomInByArea -point (0.358,0.026) (3.24,1.822)
+lakerSetActiveLayer -layerName METAL1 -purpose pin
+lakerRuler -point (0.98,1.48) (0.98,1.36)
+lakerZoomOut
+lakerDistance -point (1.135,1.592) (1.255,1.602)
+lakerZoomInByArea -point (0.662,0.365) (2.698,1.633)
+lakerDistance -point (1.375,1.226) (1.495,1.208)
+lakerDistance -point (1.558,1.42) (1.568,1.33)
+lakerPreSel -point (1.563,1.329) -traversedist 0.008
+lakerDeselectAll
+lakerPreSel -point (1.54,1.314) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.549,1.327) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (0.863,1.634) -traversedist 0.008
+lakerRotate90 -refPoint (1.555,1.21)
+lakerPreSel -point (1.75,0.992) -traversedist 0.008
+lakerSaveDesign -autosave
+lakerDistance -point (1.675,1.244) (1.855,1.227)
+lakerDeselectAll
+lakerDeselectAll
+lakerPreSel -point (1.592,1.058) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.59,1.053) -traversedist 0.008
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.59,1.055) -offsetPoint (1.645,1.055)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.714,1.062) -traversedist 0.008
+lakerDistance -point (1.655,0.837) (1.775,0.839)
+lakerPreSel -point (1.64,1.257) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.72,1.291) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.467,1.237) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.444,1.254) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.442,1.247) -traversedist 0.008
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.44,1.245) -ignoreNet 0 -offsetPoint (1.44,1.245)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.247,0.829) -traversedist 0.008
+lakerDistance -point (1.12,0.888) (1.255,0.883)
+lakerZoomOut
+lakerZoomInByArea -point (0.462,0.498) (2.418,1.716)
+lakerDistance -point (1.375,1.245) (1.435,1.251)
+lakerZoomOut
+lakerClearRuler
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (1.103,1.859) -traversedist 0.003
+lakerZoomOut
+lakerPreSel -point (1.281,1.721) -traversedist 0.006
+lakerSaveDesign
+lakerPreSel -point (0.901,1.803) -traversedist 0.006
+lakerDistance -point (0.875,1.795) (0.975,1.799)
+lakerSingleSel -point (1.168,1.85) -traversedist 0.006
+lakerPreSel -point (1.166,1.859) -traversedist 0.006
+lakerSingleSel
+lakerPreSel -point (1.166,1.866) -traversedist 0.006
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.165,1.865) -ignoreNet 0 -offsetPoint (1.18,1.865)
+lakerChangeSelMode -mode Object
+lakerDistance -point (0.875,1.831) (0.99,1.841)
+lakerPreSel -point (1.176,1.871) -traversedist 0.006
+lakerSingleSel
+lakerPreSel -point (1.179,1.894) -traversedist 0.006
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.18,1.895) -ignoreNet 0 -offsetPoint (1.185,1.895)
+lakerChangeSelMode -mode Object
+lakerDistance -point (0.875,1.817) (0.995,1.819)
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.08,1.635) -ignoreNet 0 -offsetPoint (1.095,1.635)
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerPreSel -point (1.184,1.623) -traversedist 0.006
+lakerSingleSel
+lakerPreSel -point (1.113,1.639) -traversedist 0.006
+lakerSingleSel
+lakerPreSel -point (1.109,1.636) -traversedist 0.006
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.11,1.635) -ignoreNet 0 -offsetPoint (1.13,1.635)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.183,1.623) -traversedist 0.006
+lakerSingleSel
+lakerPreSel -point (1.184,1.621) -traversedist 0.006
+lakerDistance -point (1.155,1.7) (1.255,1.701)
+lakerDistance -point (0.89,1.773) (1.035,1.752)
+lakerUndo
+lakerUndo
+lakerUndo
+lakerPreSel -point (1.194,1.608) -traversedist 0.006
+lakerSingleSel
+lakerZoomOut
+lakerPreSel -point (0.869,1.843) -traversedist 0.011
+lakerZoomOut
+lakerPreSel -point (-0.137,3.248) -traversedist 0.023
+lakerZoomInByArea -point (-0.891,0.368) (3.731,3.248)
+lakerPreSel -point (-0.156,2.661) -traversedist 0.017
+lakerZoomInByArea -point (-0.402,0.977) (2.302,2.661)
+lakerPreSel -point (1.18,1.567) -traversedist 0.01
+lakerClearRuler
+lakerPreSel -point (1.178,1.621) -traversedist 0.01
+lakerDistance -point (0.875,1.792) (0.975,1.795)
+lakerZoomOut
+lakerDistance -point (0.675,2.505) (0.775,2.507)
+lakerZoomInByArea -point (-0.128,1.329) (2.21,2.785)
+lakerDistance -point (1.135,1.845) (1.255,1.87)
+lakerZoomOut
+lakerDistance -point (1.135,1.763) (1.255,1.749)
+lakerPreSel -point (1.753,1.387) -traversedist 0.017
+lakerZoomOut
+lakerPreSel -point (0.001,2.787) -traversedist 0.035
+lakerSingleSel
+lakerPreSel -point (5.542,2.753) -traversedist 0.035
+lakerSingleSel
+lakerPreSel -point (0.804,2.524) -traversedist 0.035
+lakerDeselectAll
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (0.001,2.76) -traversedist 0.035
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerPreSel -point (4.313,3.947) -traversedist 0.035
+lakerSingleSel -point (4.313,3.947) -traversedist 0.035
+lakerPreSel -point (3.763,3.96) -traversedist 0.035
+lakerDeselectAll
+lakerPreSel -point (0.624,2.76) -traversedist 0.035
+lakerDistance -point (0.0,2.76) (5.545,2.801)
+lakerZoomInByArea -point (-0.707,-0.386) (6.131,3.874)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.375,1.211) (1.435,1.228)
+lakerZoomOut
+lakerSetActiveLayer -layerName CONT -purpose drawing
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerZoomInByArea -point (-0.571,0.055) (2.871,2.199)
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 0
+lakerSelKind -selkind \
+           {Shape Device Mcell Route IsDevFlatten IsMCellFlatten IsRouteFlatten}
+lakerPreSel -point (1.263,0.811) -traversedist 0.013
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerPreSel -point (1.126,0.87) -traversedist 0.013
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 0
+lakerSelKind -selkind \
+           {Shape Device Mcell Route IsDevFlatten IsMCellFlatten IsRouteFlatten}
+lakerPreSel -point (1.268,0.809) -traversedist 0.013
+lakerCreatePath -layerName METAL1 -point (1.27,0.81) (0.975,0.81) (0.975,1.355) \
+           (1.375,1.355) -width 0.120000 0.000000 -routeStatus fixed
+lakerPreSel -point (1.026,1.329) -traversedist 0.013
+lakerDistance -point (1.002,1.48) (0.998,1.415)
+lakerPreSel -point (1.23,0.989) -traversedist 0.013
+lakerDistance -point (1.474,1.11) (1.472,0.99)
+lakerPreSel -point (1.469,0.921) -traversedist 0.013
+lakerZoomOut
+lakerPreSel -point (0.316,2.711) -traversedist 0.025
+lakerZoomInByArea -point (-0.199,0.921) (2.649,2.695)
+lakerPreSel -point (1.135,1.846) -traversedist 0.011
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerPreSel -point (1.181,1.836) -traversedist 0.011
+lakerDistance -point (1.135,1.842) (1.255,1.847)
+lakerZoomOut
+lakerPreSel -point (1.291,1.155) -traversedist 0.021
+lakerUndo
+lakerPreSel -point (1.125,1.25) -traversedist 0.021
+lakerClearRuler
+lakerPreSel -point (2.446,1.492) -traversedist 0.021
+lakerZoomOut
+lakerPreSel -point (0.468,2.339) -traversedist 0.042
+lakerZoomAll
+lakerPreSel -point (1.242,1.863) -traversedist 0.003
+lakerZoomOut
+lakerPreSel -point (0.951,1.752) -traversedist 0.006
+lakerDistance -point (0.89,1.781) (1.015,1.752)
+lakerDistance -point (0.875,1.706) (0.975,1.707)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (0.675,2.523) (0.775,2.507)
+lakerPreSel -point (0.856,3.082) -traversedist 0.023
+lakerDeselectAll
+lakerPreSel -point (0.845,3.093) -traversedist 0.023
+lakerZoomOut
+lakerPreSel -point (0.914,3.213) -traversedist 0.045
+lakerMaxViewLevel
+lakerPreSel -point (1.139,3.181) -traversedist 0.045
+lakerZoomOut
+lakerPreSel -point (1.353,4.564) -traversedist 0.09
+lakerZoomIn
+lakerPreSel -point (1.139,3.172) -traversedist 0.045
+lakerZoomIn
+lakerPreSel -point (0.915,3.154) -traversedist 0.023
+lakerZoomAll
+lakerAreaSel -point (0.915,-0.27) (5.96,3.154)
+lakerPreSel -point (0.543,2.38) -traversedist 0.025
+lakerZoomInByArea -point (0.165,1.605) (1.995,2.745)
+lakerPreSel -point (1.035,2.02) -traversedist 0.007
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.03,2.021) -traversedist 0.007
+lakerAlignObj -point (1.03,2.021) -mode start
+lakerPreSel -point (0.948,2.067) -traversedist 0.007
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (0.877,2.135) -traversedist 0.007
+lakerDistance -point (0.875,2.126) (1.035,2.119)
+lakerZoomOut
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.584,2.087) -traversedist 0.014
+lakerZoomInByArea -point (0.515,1.505) (1.449,2.087)
+lakerPreSel -point (0.973,1.785) -traversedist 0.003
+lakerAlignObj -point (0.973,1.785) -mode start
+lakerPreSel -point (0.876,1.81) -traversedist 0.003
+lakerAlignObj -refObj 1 -refPoint (0.875,1.81) -traversedist 0.002 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (0.879,1.805) -traversedist 0.003
+lakerZoomOut
+lakerPreSel -point (1.221,1.583) -traversedist 0.007
+lakerZoomOut
+lakerPreSel -point (1.443,1.22) -traversedist 0.014
+lakerZoomOut
+lakerPreSel -point (3.162,0.469) -traversedist 0.028
+lakerSingleSel
+lakerPreSel -point (3.162,0.452) -traversedist 0.028
+lakerZoomOut
+lakerPreSel -point (5.342,-0.891) -traversedist 0.055
+lakerSingleSel -point (5.342,-0.891) -traversedist 0.055
+lakerPreSel -point (0.017,2.808) -traversedist 0.055
+lakerSingleSel
+lakerPreSel -point (2.085,2.731) -traversedist 0.055
+lakerDeselectAll
+lakerPreSel -point (-0.414,3.66) -traversedist 0.055
+lakerZoomInByArea -point (-0.414,-1.164) (7.338,3.666)
+lakerPreSel -point (2.893,1.767) -traversedist 0.029
+lakerDistance -point (0.0,2.831) (5.545,2.774)
+lakerPreSel -point (5.27,3.164) -traversedist 0.029
+lakerSingleSel -point (5.27,3.164) -traversedist 0.029
+lakerPreSel -point (0.38,2.51) -traversedist 0.029
+lakerZoomInByArea -point (-0.661,-0.304) (3.855,2.51)
+lakerPreSel -point (1.215,1.476) -traversedist 0.017
+lakerDistance -point (0.875,1.681) (0.995,1.685)
+lakerZoomOut
+lakerZoomInByArea -point (1.163,-0.936) (5.439,1.728)
+lakerZoomOut
+lakerDeselectAll
+lakerPreSel -point (2.464,0.519) -traversedist 0.032
+lakerSingleSel
+lakerPreSel -point (2.445,0.545) -traversedist 0.032
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.445,0.545) -ignoreNet 0 -offsetPoint (2.465,0.545)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.157,2.082) -traversedist 0.032
+lakerZoomInByArea -point (0.958,-0.05) (4.38,2.082)
+lakerPreSel -point (3.066,0.525) -traversedist 0.013
+lakerZoomOut
+lakerPreSel -point (3.118,0.484) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.678,0.993) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.658,1.029) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.688,0.803) -traversedist 0.025
+lakerAreaSel -point (2.688,0.803) (2.72,0.805)
+lakerPreSel -point (3.06,0.494) -traversedist 0.025
+lakerDeselectAll
+lakerPreSel -point (3.063,0.492) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.718,0.892) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.65,0.983) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.668,1.036) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.67,1.021) -traversedist 0.025
+lakerAreaSel -point (2.67,1.021) (2.73,1.035)
+lakerPreSel -point (2.721,0.983) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.673,1.008) -traversedist 0.025
+lakerSingleSel
+lakerAreaSel -point (2.673,1.008) (2.735,1.02)
+lakerPreSel -point (2.703,0.801) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.653,0.778) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.663,0.793) -traversedist 0.025
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.665,0.795) -ignoreNet 0 -offsetPoint (2.73,0.795)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (2.982,0.578) -traversedist 0.025
+lakerSingleSel
+lakerSaveDesign
+lakerPreSel -point (2.832,1.054) -traversedist 0.025
+lakerDistance -point (2.805,1.064) (2.94,1.077)
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (5.49,2.087) (5.665,2.1)
+lakerZoomOut
+lakerDeselectAll
+lakerPreSel -point (5.39,3.329) -traversedist 0.05
+lakerAreaSel -point (5.39,-0.455) (6.26,3.329)
+lakerPreSel -point (6.685,1.094) -traversedist 0.05
+lakerSingleSel -point (6.685,1.094) -traversedist 0.05
+lakerPreSel -point (-0.175,6.227) -traversedist 0.05
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (4.972,3.534) -traversedist 0.05
+lakerSingleSel -point (4.972,3.534) -traversedist 0.05
+lakerPreSel -point (5.306,3.414) -traversedist 0.05
+lakerAreaSel -point (5.306,-0.305) (6.325,3.414)
+lakerPreSel -point (6.7,-0.011) -traversedist 0.05
+lakerSingleSel -point (6.7,-0.011) -traversedist 0.05
+lakerPreSel -point (6.665,1.119) -traversedist 0.05
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerZoomAll
+lakerPreSel -point (5.468,3.228) -traversedist 0.025
+lakerZoomAll
+lakerPreSel -point (5.551,3.213) -traversedist 0.025
+lakerAreaSel -point (5.551,0.795) (5.91,3.213)
+lakerPreSel -point (5.931,0.613) -traversedist 0.025
+lakerSingleSel -point (5.931,0.613) -traversedist 0.025
+lakerPreSel -point (5.586,3.168) -traversedist 0.025
+lakerAreaSel -point (5.586,-0.305) (5.96,3.168)
+lakerPreSel -point (5.758,2.25) -traversedist 0.025
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (5.658,2.795) -traversedist 0.025
+lakerAlignObj -point (5.658,2.795) -mode start
+lakerPreSel -point (5.553,2.865) -traversedist 0.025
+lakerAlignObj -refObj 1 -refPoint (5.555,2.865) -traversedist 0.013 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (5.666,2.795) -traversedist 0.025
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (5.666,2.788) -traversedist 0.025
+lakerAlignObj -point (5.666,2.788) -mode start
+lakerPreSel -point (5.556,2.83) -traversedist 0.025
+lakerAlignObj -refObj 1 -refPoint (5.555,2.83) -traversedist 0.013 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (5.581,2.768) -traversedist 0.025
+lakerDistance -point (5.545,2.855) (5.665,2.855)
+lakerDistance -point (5.49,1.923) (5.665,1.925)
+lakerDistance -point (-0.12,2.185) (0.075,2.195)
+lakerPreSel -point (5.558,0.153) -traversedist 0.025
+lakerDistance -point (5.545,0.17) (5.665,0.188)
+lakerPreSel -point (5.501,3.133) -traversedist 0.025
+lakerAreaSel -point (5.501,-0.165) (6.04,3.133)
+lakerPreSel -point (4.501,1.9) -traversedist 0.025
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (5.566,2.773) -traversedist 0.025
+lakerAlignObj -point (5.566,2.773) -mode start
+lakerPreSel -point (5.493,2.26) -traversedist 0.025
+lakerAlignObj -refObj 1 -refPoint (5.495,2.26) -traversedist 0.013 -space 0.075
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (5.928,1.073) -traversedist 0.025
+lakerSingleSel -point (5.928,1.073) -traversedist 0.025
+lakerPreSel -point (5.788,1.8) -traversedist 0.025
+lakerDistance -point (5.49,2.238) (5.685,2.268)
+lakerDistance -point (5.565,2.725) (5.685,2.705)
+lakerDistance -point (0.0,2.87) (5.565,2.83)
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (4.2,2.116) (4.24,2.125)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (4.24,2.311) (4.41,2.286)
+lakerMaxViewLevel
+lakerZoomIn
+lakerPanDown
+lakerDeselectAll
+lakerPreSel -point (4.298,0.719) -traversedist 0.014
+lakerAreaSel -point (4.265,0.719) (4.298,1.855)
+lakerPreSel -point (4.284,1.105) -traversedist 0.014
+lakerSingleSel
+lakerPreSel -point (4.313,2.123) -traversedist 0.014
+lakerDeselectAll
+lakerPreSel -point (4.238,2.261) -traversedist 0.014
+lakerSingleSel
+lakerStretchObj -refPoint (4.24,2.26) -ignoreNet 0 -offsetPoint (4.26,2.26)
+lakerPreSel -point (4.315,2.173) -traversedist 0.014
+lakerDistance -point (4.26,2.231) (4.41,2.231)
+lakerPreSel -point (4.271,0.859) -traversedist 0.014
+lakerSingleSel
+lakerStretchObj -refPoint (4.27,0.86) -ignoreNet 0 -offsetPoint (4.29,0.86)
+lakerPreSel -point (4.326,0.808) -traversedist 0.014
+lakerDeselectAll
+lakerPreSel -point (4.342,0.835) -traversedist 0.014
+lakerSaveDesign -autosave
+lakerSaveDesign
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (4.28,0.824) -traversedist 0.002
+lakerSingleSel
+lakerPreSel -point (4.408,0.831) -traversedist 0.002
+lakerDistance -point (4.28,0.82) (4.41,0.817)
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (4.2,0.893) (4.28,0.906)
+lakerZoomOut
+lakerZoomInByArea -point (3.053,0.103) (5.461,1.603)
+lakerZoomInByArea -point (3.939,0.758) (4.543,1.134)
+lakerZoomOut
+lakerPreSel -point (4.319,0.81) -traversedist 0.004
+lakerStretchObj -refPoint (4.28,0.855) -ignoreNet 0 -offsetPoint (4.26,0.855)
+lakerPreSel -point (4.314,0.713) -traversedist 0.004
+lakerZoomOut
+lakerPreSel -point (4.387,0.48) -traversedist 0.009
+lakerDistance -point (4.2,0.84) (4.26,0.84)
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.395,1.21) (1.455,1.223)
+lakerZoomOut
+lakerZoomInByArea -point (1.275,2.293) (1.647,2.525)
+lakerPreSel -point (1.491,2.491) -traversedist 0.001
+lakerAreaSel -point (1.491,2.35) (1.51,2.491)
+lakerPreSel -point (1.491,2.35) -traversedist 0.001
+lakerZoomOut
+lakerPreSel -point (1.685,2.433) -traversedist 0.003
+lakerZoomOut
+lakerPreSel -point (1.465,2.32) -traversedist 0.006
+lakerDeselectAll
+lakerPreSel -point (1.468,2.505) -traversedist 0.006
+lakerAreaSel -point (1.468,2.325) (1.51,2.505)
+lakerPreSel -point (1.507,2.322) -traversedist 0.006
+lakerStretchObj -refPoint (1.5,2.425) -ignoreNet 0 -offsetPoint (1.525,2.425)
+lakerZoomOut
+lakerPreSel -point (1.592,2.438) -traversedist 0.011
+lakerZoomOut
+lakerPreSel -point (2.423,1.516) -traversedist 0.022
+lakerSaveDesign
+lakerPreSel -point (1.859,0.905) -traversedist 0.022
+lakerZoomOut
+lakerPreSel -point (0.894,2.074) -traversedist 0.044
+lakerZoomInByArea -point (-0.027,-0.643) (4.333,2.073)
+lakerPreSel -point (2.849,-0.327) -traversedist 0.016
+lakerDistance -point (1.695,1.176) (1.875,1.176)
+lakerDistance -point (1.675,0.891) (1.795,0.902)
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (-1.688,-1.414) (6.058,3.412)
+lakerPreSel -point (1.656,2.876) -traversedist 0.029
+lakerDeselectAll
+lakerPreSel -point (1.235,3.14) -traversedist 0.029
+lakerAreaSel -point (1.235,2.265) (1.475,3.14)
+lakerPreSel -point (1.507,3.177) -traversedist 0.029
+lakerSingleSel -point (1.507,3.177) -traversedist 0.029
+lakerPreSel -point (1.447,3.157) -traversedist 0.029
+lakerAreaSel -point (1.447,-0.46) (4.02,3.157)
+lakerPreSel -point (1.519,3.272) -traversedist 0.029
+lakerSingleSel -point (1.519,3.272) -traversedist 0.029
+lakerPreSel -point (1.433,3.177) -traversedist 0.029
+lakerAreaSel -point (1.433,-0.32) (5.92,3.177)
+lakerPreSel -point (0.819,1.687) -traversedist 0.029
+lakerZoomInByArea -point (0.778,0.391) (2.858,1.687)
+lakerPreSel -point (1.477,1.057) -traversedist 0.008
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.397,1.185) -traversedist 0.008
+lakerAlignObj -point (1.397,1.185) -mode start
+lakerPreSel -point (1.453,1.191) -traversedist 0.008
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.454,1.198) -traversedist 0.008
+lakerAlignObj -point (1.454,1.198) -mode start
+lakerPreSel -point (1.395,1.168) -traversedist 0.008
+lakerAlignObj -refObj 1 -refPoint (1.395,1.17) -traversedist 0.004 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.496,1.073) -traversedist 0.008
+lakerZoomOut
+lakerPreSel -point (1.174,1.107) -traversedist 0.015
+lakerZoomOut
+lakerPreSel -point (5.212,0.125) -traversedist 0.031
+lakerClearRuler
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (2.709,-0.74) -traversedist 0.031
+lakerSingleSel -point (2.709,-0.74) -traversedist 0.031
+lakerPreSel -point (-0.089,2.175) -traversedist 0.031
+lakerDistance -point (0.0,2.8) (5.625,2.76)
+lakerZoomOut
+lakerZoomInByArea -point (-0.438,-0.555) (6.29,3.637)
+lakerDistance -point (1.395,1.195) (1.515,1.215)
+lakerDistance -point (1.755,1.175) (1.935,1.183)
+lakerDistance -point (2.38,1.713) (2.5,1.733)
+lakerDistance -point (2.62,1.188) (2.745,1.195)
+lakerDistance -point (4.26,1.529) (4.53,1.561)
+lakerDistance -point (4.32,2.128) (4.47,2.136)
+lakerDistance -point (4.97,1.529) (5.11,1.529)
+lakerDistance -point (5.07,2.44) (5.17,2.442)
+lakerDistance -point (5.27,1.88) (5.37,1.875)
+lakerPreSel -point (4.906,1.763) -traversedist 0.025
+lakerDeselectAll
+lakerPreSel -point (4.919,1.71) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (4.914,1.72) -traversedist 0.025
+lakerDeselectAll
+lakerPreSel -point (4.899,1.71) -traversedist 0.025
+lakerSingleSel
+lakerStretchObj -refPoint (4.9,1.71) -ignoreNet 0 -offsetPoint (4.9,1.69)
+lakerPreSel -point (2.915,-0.406) -traversedist 0.025
+lakerSingleSel -point (2.915,-0.406) -traversedist 0.025
+lakerPreSel -point (2.626,-0.555) -traversedist 0.025
+lakerSaveDesign -autosave
+lakerPreSel -point (3.502,1.718) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (3.507,1.733) -traversedist 0.025
+lakerAreaSel -point (3.507,1.733) (3.58,1.745)
+lakerPreSel -point (4.894,1.571) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (0.622,2.738) -traversedist 0.025
+lakerAttribute -index 1 -purpose pin -height 0.200000
+lakerPreSel -point (5.011,1.636) -traversedist 0.025
+lakerStretchObj -refPoint (5.01,1.635) -ignoreNet 0 -offsetPoint (5.145,1.635)
+lakerPreSel -point (5.1,1.633) -traversedist 0.025
+lakerStretchObj -refPoint (5.1,1.635) -ignoreNet 0 -offsetPoint (4.95,1.635)
+lakerPreSel -point (5.083,1.611) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (4.968,1.651) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (5.003,1.675) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (5.436,1.197) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (5.419,1.23) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (5.419,1.192) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (5.474,1.205) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (5.461,1.16) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (0.789,2.746) -traversedist 0.025
+lakerAttribute -index 1 -purpose pin -height 0.200000
+lakerPreSel -point (6.161,1.048) -traversedist 0.025
+lakerSingleSel -point (6.161,1.048) -traversedist 0.025
+lakerPreSel -point (4.973,1.646) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.489,2.92) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.37,3.269) -traversedist 0.025
+lakerSingleSel -point (2.37,3.269) -traversedist 0.025
+lakerPreSel -point (2.392,2.88) -traversedist 0.025
+lakerAreaSel -point (2.392,2.71) (3.465,2.88)
+lakerPreSel -point (3.467,2.706) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (3.395,2.805) -offsetPoint (1.815,2.805)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (2.718,-0.162) -traversedist 0.025
+lakerSingleSel -point (2.718,-0.162) -traversedist 0.025
+lakerPreSel -point (3.037,-0.189) -traversedist 0.025
+lakerAreaSel -point (2.275,-0.189) (3.037,0.335)
+lakerPreSel -point (2.407,0.157) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (2.825,0.175) -offsetPoint (3.385,0.175)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (3.311,-0.187) -traversedist 0.025
+lakerSingleSel -point (3.311,-0.187) -traversedist 0.025
+lakerPreSel -point (3.634,-0.244) -traversedist 0.025
+lakerAreaSel -point (2.315,-0.244) (3.634,0.385)
+lakerPreSel -point (2.307,0.321) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (2.43,0.155) -offsetPoint (0.895,0.155)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (2.688,-0.428) -traversedist 0.025
+lakerSingleSel -point (2.688,-0.428) -traversedist 0.025
+lakerPreSel -point (2.382,3.109) -traversedist 0.025
+lakerAreaSel -point (2.382,2.625) (3.55,3.109)
+lakerPreSel -point (2.382,2.625) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (3.37,2.805) -offsetPoint (4.845,2.805)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (4.07,3.219) -traversedist 0.025
+lakerSingleSel -point (4.07,3.219) -traversedist 0.025
+lakerPreSel -point (4.012,2.781) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (4.012,2.778) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (4.804,2.816) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (4.839,2.811) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (4.08,3.147) -traversedist 0.025
+lakerAreaSel -point (4.08,2.625) (4.69,3.147)
+lakerPreSel -point (4.08,2.625) -traversedist 0.025
+lakerViewLevelDec
+lakerPreSel -point (4.57,2.828) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (4.538,2.778) -traversedist 0.025
+lakerSingleSel
+lakerViewLevelDec
+lakerSingleSel
+lakerPreSel -point (4.515,2.801) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (4.548,2.801) -traversedist 0.025
+lakerViewLevelDec
+lakerSingleSel
+lakerPreSel -point (4.707,2.813) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (4.545,2.795) -offsetPoint (4.785,2.795)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (4.785,2.795) -offsetPoint (5.385,2.795)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (4.446,3.234) -traversedist 0.025
+lakerSingleSel -point (4.446,3.234) -traversedist 0.025
+lakerPreSel -point (3.574,-0.154) -traversedist 0.025
+lakerAreaSel -point (2.24,-0.154) (3.574,0.305)
+lakerPreSel -point (2.24,-0.154) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (2.475,0.15) -offsetPoint (3.98,0.15)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (3.968,0.169) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (3.985,0.023) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (4.814,0.167) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (4.821,0.167) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (4.834,-0.366) -traversedist 0.025
+lakerSingleSel -point (4.834,-0.366) -traversedist 0.025
+lakerPreSel -point (4.841,-0.326) -traversedist 0.025
+lakerAreaSel -point (3.965,-0.326) (4.841,0.405)
+lakerPreSel -point (4.067,0.192) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerSaveDesign -autosave
+lakerCopyObj -refPoint (4.225,0.175) -offsetPoint (5.15,0.175)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (5.195,0.164) -traversedist 0.025
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (0.963,0.192) -traversedist 0.025
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (0.965,0.19) -offsetPoint (0.215,0.19)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (0.58,-0.134) -traversedist 0.025
+lakerSingleSel -point (0.58,-0.134) -traversedist 0.025
+lakerPreSel -point (0.924,2.868) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (0.931,2.825) -traversedist 0.025
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (0.93,2.825) -offsetPoint (0.215,2.825)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (3.542,-0.244) -traversedist 0.025
+lakerSingleSel -point (3.542,-0.244) -traversedist 0.025
+lakerSingleSel -point (3.542,-0.244) -traversedist 0.025
+lakerPreSel -point (2.073,1.257) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (1.72,-0.351) -traversedist 0.025
+lakerSingleSel -point (1.72,-0.351) -traversedist 0.025
+lakerPreSel -point (2.113,1.245) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (0.344,2.133) -traversedist 0.025
+lakerAttribute -index 1 -purpose pin -point (2.05,1.235) -height 0.200000
+lakerPreSel -point (0.349,2.131) -traversedist 0.025
+lakerAttribute -index 1 -purpose pin -height 0.150000
+lakerPreSel -point (0.759,2.343) -traversedist 0.025
+lakerAttribute -index 1 -purpose pin -height 0.120000
+lakerPreSel -point (2.733,-0.239) -traversedist 0.025
+lakerSingleSel -point (2.733,-0.239) -traversedist 0.025
+lakerPreSel -point (2.059,1.25) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (2.081,1.25) -traversedist 0.025
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (2.08,1.25) -offsetPoint (2.08,2.825)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (2.166,2.808) -traversedist 0.025
+lakerStretchObj -refPoint (2.165,2.81) -ignoreNet 0 -offsetPoint (0.725,2.81)
+lakerPreSel -point (0.67,2.915) -traversedist 0.025
+lakerAttribute -index 1 -purpose pin -text {VDD}
+lakerPreSel -point (0.622,2.855) -traversedist 0.025
+lakerAttribute -index 1 -purpose pin -height 0.200000
+lakerPreSel -point (0.719,2.878) -traversedist 0.025
+lakerStretchObj -refPoint (0.72,2.88) -ignoreNet 0 -offsetPoint (0.72,2.835)
+lakerPreSel -point (0.802,2.91) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (0.737,2.813) -traversedist 0.025
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (0.735,2.815) -offsetPoint (0.735,0.2)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (0.296,2.121) -traversedist 0.025
+lakerAttribute -index 1 -purpose pin -text {VSS}
+lakerPreSel -point (1.367,-0.244) -traversedist 0.025
+lakerSingleSel -point (1.367,-0.244) -traversedist 0.025
+lakerPreSel -point (0.752,0.192) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (0.727,0.192) -traversedist 0.025
+lakerStretchObj -refPoint (0.725,0.19) -ignoreNet 0 -offsetPoint (0.725,0.225)
+lakerPreSel -point (1.352,-0.336) -traversedist 0.025
+lakerSingleSel -point (1.352,-0.336) -traversedist 0.025
+lakerPreSel -point (1.232,1.815) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (0.62,2.604) -traversedist 0.025
+lakerAttribute -index 1 -purpose pin -height 0.120000
+lakerPreSel -point (1.252,1.832) -traversedist 0.025
+lakerStretchObj -refPoint (1.25,1.83) -ignoreNet 0 -offsetPoint (1.225,1.83)
+lakerPreSel -point (0.737,1.815) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (0.082,0.851) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (4.219,0.518) -traversedist 0.025
+lakerSaveDesign
+lakerPreSel -point (3.52,2.056) -traversedist 0.025
+lakerClearRuler
+lakerPreSel -point (0.344,3.597) -traversedist 0.025
+lakerCalibreDRC
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (4.66,2.759) -traversedist 0.001
+lakerSingleSel
+lakerZoomOut
+lakerPreSel -point (4.665,2.728) -traversedist 0.002
+lakerZoomOut
+lakerPreSel -point (4.675,2.665) -traversedist 0.004
+lakerZoomOut
+lakerPreSel -point (4.778,2.749) -traversedist 0.008
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (4.895,2.5) -traversedist 0.008
+lakerZoomOut
+lakerPreSel -point (5.134,2.21) -traversedist 0.016
+lakerZoomOut
+lakerPreSel -point (5.613,1.629) -traversedist 0.032
+lakerZoomOut
+lakerPreSel -point (6.145,-0.482) -traversedist 0.065
+lakerSaveDesign
+lakerZoomAll
+lakerPreSel -point (3.482,1.738) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (0.506,2.606) -traversedist 0.025
+lakerAttribute -index 1 -purpose pin -height 0.120000
+lakerPreSel -point (3.477,1.707) -traversedist 0.025
+lakerStretchObj -refPoint (3.475,1.705) -ignoreNet 0 -offsetPoint (3.51,1.705)
+lakerPreSel -point (3.761,1.53) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (3.743,1.502) -traversedist 0.025
+lakerSingleSel
+lakerPreSel -point (3.72,1.385) -traversedist 0.025
+lakerSaveDesign
+lakerPreSel -point (0.01,3.648) -traversedist 0.025
+lakerCalibreDRC
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (0.909,3.678) -traversedist 0.025
+lakerCalibreLVS
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (0.749,2.822) -traversedist 0.025
+lakerDistance -point (0.0,2.883) (5.625,2.766)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerDistance -point (5.55,2.064) (5.625,2.784)
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.065,2.156) -traversedist 0.025
+lakerAlignObj -point (0.065,2.156) -mode start
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerDistance -point (0.075,2.163) (0.0,2.893)
+lakerDistance -point (0.075,0.846) (0.0,0.19)
+lakerDistance -point (5.55,0.889) (5.625,0.152)
+lakerCloseDesign
+lakerNewCell -lib leon -cell AND2X1
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerPreSel -point (-0.096,1.424) -traversedist 0.018
+lakerCreateInstance -point (0.17,-0.095) -cell INVX1 -lib leon -view layout
+lakerZoomAll
+lakerPreSel -point (0.828,1.047) -traversedist 0.02
+lakerMaxViewLevel
+lakerPreSel -point (2.076,0.745) -traversedist 0.02
+lakerSingleSel -point (2.076,0.745) -traversedist 0.02
+lakerPreSel -point (0.531,1.66) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (0.709,1.753) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (-1.086,2.971) -traversedist 0.02
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Instance Array Device Mcell}
+lakerSmashObj -level 1
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (-0.922,1.864) -traversedist 0.02
+lakerSingleSel -point (-0.922,1.864) -traversedist 0.02
+lakerPreSel -point (-1.777,2.132) -traversedist 0.02
+lakerSetColPat -modCategory DesignSet -use 1
+lakerPreSel -point (-1.816,2.447) -traversedist 0.02
+lakerSetColPat -visall 0
+lakerSetColPat -selall 0
+lakerPreSel -point (-0.955,2.227) -traversedist 0.02
+lakerSingleSel -point (-0.955,2.227) -traversedist 0.02
+lakerRedraw
+lakerPreSel -point (-1.808,2.183) -traversedist 0.02
+lakerSetColPat -layerName METAL1 -purpose dummy -sel 1 -vis 1
+lakerSetActiveLayer -layerName METAL1 -purpose dummy
+lakerPreSel -point (-0.91,2.142) -traversedist 0.02
+lakerSingleSel -point (-0.91,2.142) -traversedist 0.02
+lakerRedraw
+lakerPreSel -point (-0.299,2.14) -traversedist 0.02
+lakerSingleSel -point (-0.299,2.14) -traversedist 0.02
+lakerSelectAll
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (-1.794,2.511) -traversedist 0.02
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerPreSel -point (-0.797,2.243) -traversedist 0.02
+lakerSingleSel -point (-0.797,2.243) -traversedist 0.02
+lakerRedraw
+lakerPreSel -point (-0.207,2.005) -traversedist 0.02
+lakerSingleSel -point (-0.207,2.005) -traversedist 0.02
+lakerPreSel -point (-0.656,1.541) -traversedist 0.02
+lakerSingleSel -point (-0.656,1.541) -traversedist 0.02
+lakerPreSel -point (-1.725,2.523) -traversedist 0.02
+lakerSetColPat -layerName NWELL -vis 0
+lakerSetColPat -layerName PIMP -vis 0
+lakerSetActiveLayer -layerName NIMP -purpose drawing
+lakerPreSel -point (-1.843,2.541) -traversedist 0.02
+lakerSetColPat -layerName NIMP -vis 0
+lakerPreSel -point (-0.793,2.178) -traversedist 0.02
+lakerSingleSel -point (-0.793,2.178) -traversedist 0.02
+lakerRedraw
+lakerPreSel -point (0.098,1.914) -traversedist 0.02
+lakerSingleSel -point (0.098,1.914) -traversedist 0.02
+lakerPreSel -point (0.344,1.842) -traversedist 0.02
+lakerPanRight
+lakerPreSel -point (1.975,1.842) -traversedist 0.02
+lakerPanLeft
+lakerPreSel -point (0.344,1.842) -traversedist 0.02
+lakerPanRight
+lakerPreSel -point (1.975,1.842) -traversedist 0.02
+lakerPanLeft
+lakerPreSel -point (-0.191,2.15) -traversedist 0.02
+lakerSingleSel -point (-0.191,2.15) -traversedist 0.02
+lakerPreSel -point (0.439,1.751) -traversedist 0.02
+lakerDistance -point (0.455,1.895) (0.505,1.245)
+lakerZoomOut
+lakerZoomInByArea -point (-1.52,-0.599) (3.282,2.735)
+lakerPreSel -point (0.641,1.508) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (0.534,1.546) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (0.575,1.579) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (-0.159,2.318) -traversedist 0.02
+lakerSingleSel -point (-0.159,2.318) -traversedist 0.02
+lakerPreSel -point (-0.082,2.367) -traversedist 0.02
+lakerAreaSel -point (-0.082,1.015) (1.36,2.367)
+lakerPreSel -point (1.385,1.029) -traversedist 0.02
+lakerSingleSel -point (1.385,1.029) -traversedist 0.02
+lakerPreSel -point (-1.178,2.735) -traversedist 0.02
+lakerChangeSelMode -mode Object
+lakerPreSel -point (-0.766,2.13) -traversedist 0.02
+lakerSingleSel -point (-0.766,2.13) -traversedist 0.02
+lakerPreSel -point (-0.184,2.436) -traversedist 0.02
+lakerAreaSel -point (-0.184,0.965) (1.42,2.436)
+lakerPreSel -point (0.37,1.116) -traversedist 0.02
+lakerIncreaseSel
+lakerPreSel -point (1.762,0.752) -traversedist 0.02
+lakerSingleSel -point (1.762,0.752) -traversedist 0.02
+lakerPreSel -point (-0.143,2.365) -traversedist 0.02
+lakerAreaSel -point (-0.143,0.98) (1.265,2.365)
+lakerPreSel -point (0.334,1.109) -traversedist 0.02
+lakerDecreaseSel
+lakerPreSel -point (0.579,1.522) -traversedist 0.02
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (0.58,1.52) -offsetPoint (1.915,1.52)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Object
+lakerPreSel -point (-0.537,2.61) -traversedist 0.02
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerPreSel -point (-0.875,1.922) -traversedist 0.02
+lakerMakeCell -replace 1 -cell PMOS_65
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.652,1.196) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (1.725,1.336) -traversedist 0.02
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.725,1.335) -ignoreNet 0 -offsetPoint (2.15,1.335)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.988,1.334) -traversedist 0.02
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerPreSel -point (2.251,1.289) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (2.352,1.714) -traversedist 0.02
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.35,1.715) -ignoreNet 0 -offsetPoint (1.68,1.715)
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerPreSel -point (1.61,1.583) -traversedist 0.02
+lakerSingleSel -point (1.61,1.583) -traversedist 0.02
+lakerPreSel -point (0.935,1.76) -traversedist 0.02
+lakerUndo
+lakerPreSel -point (1.788,1.267) -traversedist 0.02
+lakerUndo
+lakerUndo
+lakerUndo
+lakerPreSel -point (1.713,0.964) -traversedist 0.02
+lakerSingleSel -point (1.713,0.964) -traversedist 0.02
+lakerPreSel -point (1.8,1.579) -traversedist 0.02
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.8,1.58) -ignoreNet 0 -offsetPoint (1.46,1.58)
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerPreSel -point (2.651,1.401) -traversedist 0.02
+lakerSingleSel -point (2.651,1.401) -traversedist 0.02
+lakerPreSel -point (2.322,1.548) -traversedist 0.02
+lakerSaveDesign -autosave
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.373,1.293) -traversedist 0.02
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.814,1.886) -traversedist 0.02
+lakerAlignObj -point (1.814,1.886) -mode start
+lakerPreSel -point (1.824,1.251) -traversedist 0.02
+lakerAlignObj -refObj 1 -refPoint (1.825,1.25) -traversedist 0.01 -space 0.36
+lakerPreSel -point (2.546,1.008) -traversedist 0.02
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerUndo
+lakerPreSel -point (2.566,1.207) -traversedist 0.02
+lakerSingleSel -point (2.566,1.207) -traversedist 0.02
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (-1.314,2.731) -traversedist 0.02
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.82,1.892) -traversedist 0.02
+lakerAlignObj -point (1.82,1.892) -mode start
+lakerPreSel -point (1.812,1.247) -traversedist 0.02
+lakerAlignObj -refObj 1 -refPoint (1.81,1.245) -traversedist 0.01 -space 0.36
+lakerPreSel -point (1.39,2.411) -traversedist 0.02
+lakerZoomInByArea -point (0.799,0.576) (3.441,2.41)
+lakerPreSel -point (1.811,1.566) -traversedist 0.011
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerDistance -point (1.822,1.605) (1.832,1.245)
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.694,1.771) -traversedist 0.011
+lakerAlignObj -point (1.694,1.771) -mode start
+lakerPreSel -point (1.708,1.775) -traversedist 0.011
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.723,1.733) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (1.733,1.733) -traversedist 0.011
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerPreSel -point (1.858,1.195) -traversedist 0.011
+lakerDistance -point (1.72,1.305) (1.716,1.245)
+lakerPreSel -point (1.699,1.369) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (1.697,1.371) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (1.701,1.356) -traversedist 0.011
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.7,1.355) -ignoreNet 0 -offsetPoint (1.7,1.47)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.707,1.478) -traversedist 0.011
+lakerDistance -point (1.704,1.605) (1.712,1.54)
+lakerDeselectAll
+lakerPreSel -point (1.463,1.398) -traversedist 0.011
+lakerSingleSel -point (1.463,1.398) -traversedist 0.011
+lakerPreSel -point (1.681,1.421) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (1.72,1.464) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (1.708,1.475) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (1.708,1.465) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (1.708,1.464) -traversedist 0.011
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.71,1.465) -ignoreNet 0 -offsetPoint (1.71,1.48)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.71,1.46) -traversedist 0.011
+lakerDistance -point (1.688,1.605) (1.685,1.555)
+lakerDeselectAll
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerPreSel -point (2.593,1.258) -traversedist 0.011
+lakerSingleSel -point (2.593,1.258) -traversedist 0.011
+lakerPreSel -point (1.463,1.637) -traversedist 0.011
+lakerSingleSel -point (1.463,1.637) -traversedist 0.011
+lakerDeselectAll
+lakerPreSel -point (1.713,1.515) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (1.687,1.486) -traversedist 0.011
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.71,1.5) -offsetPoint (1.71,1.49)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.731,1.485) -traversedist 0.011
+lakerDistance -point (1.68,1.605) (1.673,1.545)
+lakerClearRuler
+lakerDistance -point (1.725,1.605) (1.721,1.545)
+lakerDistance -point (1.694,1.425) (1.685,1.245)
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.73,1.3) -ignoreNet 0 -offsetPoint (1.73,2.08)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.743,1.902) -traversedist 0.011
+lakerUndo
+lakerPreSel -point (1.699,1.932) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (1.66,1.244) -traversedist 0.011
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.672,1.231) -traversedist 0.011
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.66,1.244) -traversedist 0.011
+lakerAlignObj -point (1.66,1.244) -mode start
+lakerPreSel -point (1.661,1.305) -traversedist 0.011
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.666,1.249) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (1.667,1.224) -traversedist 0.011
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.694,1.249) -traversedist 0.011
+lakerAlignObj -point (1.694,1.249) -mode start
+lakerPreSel -point (1.712,1.427) -traversedist 0.011
+lakerAlignObj -refObj 1 -refPoint (1.71,1.425) -traversedist 0.005 -space 0.06
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.396,1.682) -traversedist 0.011
+lakerSingleSel -point (1.396,1.682) -traversedist 0.011
+lakerZoomOut
+lakerPreSel -point (1.235,1.799) -traversedist 0.022
+lakerSingleSel -point (1.235,1.799) -traversedist 0.022
+lakerPreSel -point (1.516,2.517) -traversedist 0.022
+lakerAreaSel -point (1.516,2.205) (1.76,2.517)
+lakerPreSel -point (1.977,2.334) -traversedist 0.022
+lakerSingleSel -point (1.977,2.334) -traversedist 0.022
+lakerPreSel -point (1.472,2.657) -traversedist 0.022
+lakerZoomInByArea -point (0.538,0.419) (3.762,2.657)
+lakerPreSel -point (2.128,1.301) -traversedist 0.013
+lakerDistance -point (2.128,1.305) (2.133,1.245)
+lakerDeselectAll
+lakerPreSel -point (2.042,1.807) -traversedist 0.013
+lakerSingleSel -point (2.042,1.807) -traversedist 0.013
+lakerPreSel -point (2.086,1.807) -traversedist 0.013
+lakerSingleSel
+lakerPreSel -point (2.161,1.754) -traversedist 0.013
+lakerSingleSel
+lakerPreSel -point (2.16,1.75) -traversedist 0.013
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerPreSel -point (2.169,1.738) -traversedist 0.013
+lakerSingleSel
+lakerPreSel -point (2.143,1.795) -traversedist 0.013
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.145,1.795) -ignoreNet 0 -offsetPoint (2.145,1.42)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.512,2.488) -traversedist 0.013
+lakerSingleSel -point (1.512,2.488) -traversedist 0.013
+lakerSelKind -selkind {Shape Mcell Route}
+lakerPreSel -point (1.485,2.522) -traversedist 0.013
+lakerAreaSel -point (1.485,2.03) (1.9,2.522)
+lakerPreSel -point (1.657,2.057) -traversedist 0.013
+lakerSingleSel
+lakerPreSel -point (1.617,2.294) -traversedist 0.013
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind {Shape Mcell Route}
+lakerPreSel -point (1.501,2.51) -traversedist 0.013
+lakerAreaSel -point (1.501,2.125) (1.83,2.51)
+lakerPreSel -point (1.726,2.22) -traversedist 0.013
+lakerSingleSel
+lakerPreSel -point (1.728,2.224) -traversedist 0.013
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind {Shape Mcell Route}
+lakerPreSel -point (1.541,2.503) -traversedist 0.013
+lakerAreaSel -point (1.541,2.04) (1.85,2.503)
+lakerPreSel -point (1.74,2.035) -traversedist 0.013
+lakerSingleSel
+lakerChopObj -point (1.5,2.0) (1.5,2.525) (1.82,2.525) (1.82,2.0) 
+lakerPreSel -point (2.388,1.772) -traversedist 0.013
+lakerSingleSel -point (2.388,1.772) -traversedist 0.013
+lakerPreSel -point (1.785,1.617) -traversedist 0.013
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerUndo
+lakerPreSel -point (1.587,2.239) -traversedist 0.013
+lakerSelKind -selkind {Shape Mcell Route}
+lakerPreSel -point (1.582,2.519) -traversedist 0.013
+lakerChopObj -point (1.505,2.185) (1.505,2.505) (1.88,2.505) (1.88,2.185) 
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.347,1.836) -traversedist 0.013
+lakerSingleSel -point (2.347,1.836) -traversedist 0.013
+lakerPreSel -point (2.066,0.928) -traversedist 0.013
+lakerSingleSel
+lakerPreSel -point (2.076,1.33) -traversedist 0.013
+lakerDistance -point (2.107,1.305) (2.107,1.245)
+lakerDistance -point (2.139,1.425) (2.137,1.52)
+lakerDeselectAll
+lakerPreSel -point (2.124,0.934) -traversedist 0.013
+lakerSingleSel
+lakerPreSel -point (2.124,1.045) -traversedist 0.013
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.125,1.045) -ignoreNet 0 -offsetPoint (2.125,1.02)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (2.109,1.037) -traversedist 0.013
+lakerDistance -point (2.094,1.425) (2.096,1.495)
+lakerZoomInByArea -point (1.703,0.884) (2.717,1.588)
+lakerDeselectAll
+lakerPreSel -point (2.111,1.16) -traversedist 0.004
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (2.11,1.16) -offsetPoint (2.11,1.155)
+lakerChangeSelMode -mode Object
+lakerDistance -point (2.112,1.49) (2.115,1.425)
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (2.13,1.04) -offsetPoint (2.13,1.035)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (2.195,1.307) -traversedist 0.004
+lakerDistance -point (2.161,1.485) (2.161,1.425)
+lakerClearRuler
+lakerPreSel -point (2.097,1.397) -traversedist 0.004
+lakerDistance -point (1.96,1.359) (2.06,1.36)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.76,1.506) (1.86,1.513)
+lakerSelKind -selkind {Shape Mcell Route}
+lakerPreSel -point (2.151,0.881) -traversedist 0.017
+lakerChopObj -point (1.97,0.515) (1.97,0.735) (2.38,0.735) (2.38,0.515) 
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.764,0.483) -traversedist 0.017
+lakerSingleSel -point (2.764,0.483) -traversedist 0.017
+lakerPreSel -point (2.512,0.764) -traversedist 0.017
+lakerClearRuler
+lakerPreSel -point (2.822,1.386) -traversedist 0.017
+lakerDistance -point (2.032,1.605) (2.007,1.245)
+lakerPreSel -point (1.459,2.335) -traversedist 0.017
+lakerAreaSel -point (1.459,0.3) (2.445,2.335)
+lakerPreSel -point (2.53,0.976) -traversedist 0.017
+lakerSingleSel -point (2.53,0.976) -traversedist 0.017
+lakerPreSel -point (1.43,2.338) -traversedist 0.017
+lakerAreaSel -point (1.43,0.825) (2.515,2.338)
+lakerPreSel -point (2.326,0.634) -traversedist 0.017
+lakerSingleSel -point (2.326,0.634) -traversedist 0.017
+lakerPreSel -point (1.452,2.377) -traversedist 0.017
+lakerAreaSel -point (1.452,0.795) (2.55,2.377)
+lakerPreSel -point (2.458,0.854) -traversedist 0.017
+lakerSingleSel -point (2.458,0.854) -traversedist 0.017
+lakerPreSel -point (1.387,2.316) -traversedist 0.017
+lakerAreaSel -point (1.387,0.615) (2.67,2.316)
+lakerPreSel -point (0.383,2.646) -traversedist 0.017
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerPreSel -point (0.891,1.981) -traversedist 0.017
+lakerMakeCell -replace 1 -cell PMOS_36
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.47,1.534) -traversedist 0.017
+lakerSingleSel -point (2.47,1.534) -traversedist 0.017
+lakerPreSel -point (1.833,1.828) -traversedist 0.017
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.835,1.83) -ignoreNet 0 -offsetPoint (2.075,1.83)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (2.547,1.711) -traversedist 0.017
+lakerSingleSel -point (2.547,1.711) -traversedist 0.017
+lakerPreSel -point (1.842,1.865) -traversedist 0.017
+lakerAreaSel -point (1.842,1.84) (2.195,1.865)
+lakerPreSel -point (2.177,1.822) -traversedist 0.017
+lakerPanLeft
+lakerPreSel -point (0.825,1.822) -traversedist 0.017
+lakerSaveDesign -autosave
+lakerPreSel -point (1.412,1.451) -traversedist 0.017
+lakerSingleSel -point (1.412,1.451) -traversedist 0.017
+lakerPanRight
+lakerPreSel -point (2.764,1.451) -traversedist 0.017
+lakerPanLeft
+lakerPreSel -point (0.697,0.461) -traversedist 0.017
+lakerDistance -point (0.643,0.77) (0.685,0.34)
+lakerCreateInstance -point (-0.94,0.71) -cell PMOS_65 -lib leon -view layout
+lakerPreSel -point (-0.52,1.066) -traversedist 0.017
+lakerSingleSel
+lakerMaxViewLevel
+lakerPreSel -point (-0.418,0.246) -traversedist 0.017
+lakerSingleSel -point (-0.418,0.246) -traversedist 0.017
+lakerPreSel -point (-0.812,1.225) -traversedist 0.017
+lakerZoomInByArea -point (-1.869,0.396) (0.767,2.226)
+lakerDeselectAll
+lakerPreSel -point (-0.647,1.268) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (-1.705,2.209) -traversedist 0.011
+lakerSelKind -selkind {Instance Array Device Mcell}
+lakerSmashObj -level 1
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (-0.809,1.303) -traversedist 0.011
+lakerZoomOut
+lakerPreSel -point (-1.119,2.111) -traversedist 0.022
+lakerAreaSel -point (-1.119,0.555) (-0.105,2.111)
+lakerPreSel -point (-0.687,1.13) -traversedist 0.022
+lakerSingleSel
+lakerPreSel -point (-1.069,2.094) -traversedist 0.022
+lakerZoomInByArea -point (-1.599,0.647) (0.483,2.093)
+lakerPreSel -point (-0.903,1.286) -traversedist 0.009
+lakerRuler -point (-0.81,1.375) (-0.81,1.315)
+lakerPreSel -point (-0.817,1.009) -traversedist 0.009
+lakerSingleSel
+lakerDeselectAll
+lakerPreSel -point (-0.828,0.907) -traversedist 0.009
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (-0.829,0.906) -traversedist 0.009
+lakerSingleSel
+lakerStretchObj -refPoint (-0.83,0.905) -ignoreNet 0 -offsetPoint (-0.83,1.315)
+lakerPreSel -point (-0.707,1.201) -traversedist 0.009
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerPreSel -point (-0.812,1.043) -traversedist 0.009
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerPreSel -point (-0.809,0.701) -traversedist 0.009
+lakerDistance -point (-0.808,1.555) (-0.809,1.495)
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (-0.404,1.553) -traversedist 0.009
+lakerSingleSel
+lakerStretchObj -refPoint (-0.405,1.555) -ignoreNet 0 -offsetPoint (-0.405,1.165)
+lakerPreSel -point (-0.379,1.269) -traversedist 0.009
+lakerSingleSel
+lakerStretchObj -refPoint (-0.38,1.27) -ignoreNet 0 -offsetPoint (-0.38,1.405)
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerPreSel -point (-0.172,1.394) -traversedist 0.009
+lakerSingleSel -point (-0.172,1.394) -traversedist 0.009
+lakerPreSel -point (-0.315,1.443) -traversedist 0.009
+lakerSingleSel
+lakerPreSel -point (-0.359,1.44) -traversedist 0.009
+lakerSingleSel
+lakerPreSel -point (-0.421,1.418) -traversedist 0.009
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerPreSel -point (-0.139,1.154) -traversedist 0.009
+lakerDistance -point (-0.407,1.165) (-0.393,1.085)
+lakerZoomInByArea -point (-0.643,0.868) (-0.119,1.232)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (-0.426,1.164) -traversedist 0.002
+lakerStretchObj -refPoint (-0.425,1.165) -ignoreNet 0 -offsetPoint (-0.425,1.155)
+lakerPreSel -point (-0.425,1.149) -traversedist 0.002
+lakerDistance -point (-0.426,1.155) (-0.423,1.085)
+lakerPreSel -point (-0.442,1.151) -traversedist 0.002
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (-0.44,1.156) -traversedist 0.002
+lakerSingleSel
+lakerStretchObj -refPoint (-0.44,1.155) -ignoreNet 0 -offsetPoint (-0.44,1.145)
+lakerDistance -point (-0.437,1.145) (-0.432,1.085)
+lakerPreSel -point (-0.312,1.032) -traversedist 0.002
+lakerChangeSelMode -mode Object
+lakerClearRuler
+lakerZoomOut
+lakerPreSel -point (-0.212,1.026) -traversedist 0.004
+lakerZoomOut
+lakerPreSel -point (-0.021,1.056) -traversedist 0.009
+lakerSingleSel -point (-0.021,1.056) -traversedist 0.009
+lakerZoomOut
+lakerPreSel -point (0.339,1.063) -traversedist 0.017
+lakerDistance -point (-0.56,1.061) (-0.46,1.063)
+lakerDistance -point (-0.34,1.009) (-0.28,1.009)
+lakerDistance -point (-0.94,1.46) (-0.88,1.438)
+lakerClearRuler
+lakerPreSel -point (-1.175,2.205) -traversedist 0.017
+lakerAreaSel -point (-1.175,0.5) (0.03,2.205)
+lakerPreSel -point (-2.25,2.504) -traversedist 0.017
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerMakeCell -replace 1 -cell PMOS_65 -overwrite 1
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (-0.812,0.902) -traversedist 0.017
+lakerSingleSel
+lakerPreSel -point (-0.81,0.904) -traversedist 0.017
+lakerMaxViewLevel
+lakerZoomIn
+lakerPreSel -point (-0.596,0.977) -traversedist 0.009
+lakerZoomOut
+lakerPreSel -point (-0.811,0.904) -traversedist 0.017
+lakerZoomOut
+lakerPreSel -point (-1.109,0.803) -traversedist 0.035
+lakerMinViewLevel
+lakerPreSel -point (2.215,1.474) -traversedist 0.035
+lakerSingleSel
+lakerPreSel -point (-0.493,1.439) -traversedist 0.035
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerPreSel -point (2.588,1.595) -traversedist 0.035
+lakerSingleSel -point (2.588,1.595) -traversedist 0.035
+lakerPreSel -point (2.312,1.453) -traversedist 0.035
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerPreSel -point (-0.172,2.999) -traversedist 0.035
+lakerZoomInByArea -point (-2.058,-0.875) (3.522,2.999)
+lakerPreSel -point (0.735,0.449) -traversedist 0.023
+lakerSingleSel
+lakerPreSel -point (0.0,0.78) -traversedist 0.023
+lakerSingleSel -point (0.0,0.78) -traversedist 0.023
+lakerPreSel -point (-0.072,0.891) -traversedist 0.023
+lakerAreaSel -point (-0.072,0.03) (1.3,0.891)
+lakerPreSel -point (0.722,0.417) -traversedist 0.023
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (0.72,0.415) -offsetPoint (2.035,0.415)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Object
+lakerPreSel -point (2.262,-0.105) -traversedist 0.023
+lakerSingleSel -point (2.262,-0.105) -traversedist 0.023
+lakerPreSel -point (0.547,0.576) -traversedist 0.023
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerZoomIn
+lakerPreSel -point (0.822,0.8) -traversedist 0.011
+lakerZoomOut
+lakerPreSel -point (0.913,0.539) -traversedist 0.023
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerPreSel -point (1.253,0.497) -traversedist 0.023
+lakerSingleSel -point (1.253,0.497) -traversedist 0.023
+lakerPreSel -point (1.414,0.435) -traversedist 0.023
+lakerSingleSel -point (1.414,0.435) -traversedist 0.023
+lakerPreSel -point (0.05,0.973) -traversedist 0.023
+lakerAreaSel -point (0.05,0.005) (1.465,0.973)
+lakerPreSel -point (0.05,0.005) -traversedist 0.023
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (0.63,0.47) -offsetPoint (1.655,0.47)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Object
+lakerPreSel -point (1.499,0.366) -traversedist 0.023
+lakerDistance -point (1.52,0.77) (1.517,0.34)
+lakerClearRuler
+lakerPreSel -point (1.327,0.978) -traversedist 0.023
+lakerSingleSel -point (1.327,0.978) -traversedist 0.023
+lakerPreSel -point (1.216,0.994) -traversedist 0.023
+lakerSingleSel -point (1.216,0.994) -traversedist 0.023
+lakerPreSel -point (1.152,1.049) -traversedist 0.023
+lakerAreaSel -point (1.152,-0.175) (2.25,1.049)
+lakerPreSel -point (2.063,0.605) -traversedist 0.023
+lakerSingleSel -point (2.063,0.605) -traversedist 0.023
+lakerPreSel -point (0.959,1.125) -traversedist 0.023
+lakerZoomInByArea -point (0.958,0.164) (2.34,1.124)
+lakerPreSel -point (2.059,0.415) -traversedist 0.006
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.814,0.791) -traversedist 0.006
+lakerSingleSel
+lakerStretchObj -refPoint (1.815,0.79) -ignoreNet 0 -offsetPoint (1.815,1.01)
+lakerPreSel -point (2.106,0.77) -traversedist 0.006
+lakerSingleSel -point (2.106,0.77) -traversedist 0.006
+lakerPreSel -point (2.067,0.713) -traversedist 0.006
+lakerZoomOut
+lakerPreSel -point (2.093,0.552) -traversedist 0.011
+lakerDistance -point (1.595,0.77) (1.614,0.34)
+lakerPreSel -point (2.112,0.255) -traversedist 0.011
+lakerSingleSel -point (2.112,0.255) -traversedist 0.011
+lakerPreSel -point (2.113,0.255) -traversedist 0.011
+lakerChangeSelMode -mode Object
+lakerClearRuler
+lakerPreSel -point (1.161,1.089) -traversedist 0.011
+lakerAreaSel -point (1.161,0.005) (2.25,1.089)
+lakerPreSel -point (0.322,1.569) -traversedist 0.011
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerPreSel -point (0.674,1.122) -traversedist 0.011
+lakerMakeCell -replace 1 -cell NMOS_43
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.704,0.667) -traversedist 0.011
+lakerDistance -point (0.661,0.77) (0.721,0.34)
+lakerMaxViewLevel
+lakerPreSel -point (1.74,0.474) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (0.406,1.599) -traversedist 0.011
+lakerSelKind -selkind {Instance Array Device Mcell}
+lakerSmashObj -level 1
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSaveDesign -autosave
+lakerPreSel -point (2.031,0.839) -traversedist 0.011
+lakerSingleSel -point (2.031,0.839) -traversedist 0.011
+lakerPreSel -point (1.847,0.762) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (1.866,0.868) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (1.317,0.993) -traversedist 0.011
+lakerSingleSel -point (1.317,0.993) -traversedist 0.011
+lakerPreSel -point (1.645,0.653) -traversedist 0.011
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.507,0.769) -traversedist 0.011
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.503,0.763) -traversedist 0.011
+lakerSingleSel
+lakerStretchObj -refPoint (1.505,0.765) -ignoreNet 0 -offsetPoint (1.505,0.575)
+lakerPreSel -point (1.857,0.283) -traversedist 0.011
+lakerSingleSel -point (1.857,0.283) -traversedist 0.011
+lakerPreSel -point (1.71,1.115) -traversedist 0.011
+lakerAreaSel -point (1.71,0.465) (2.045,1.115)
+lakerStretchObj -refPoint (1.815,0.85) -ignoreNet 0 -offsetPoint (2.22,0.85)
+lakerPreSel -point (2.102,0.747) -traversedist 0.011
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerPreSel -point (2.394,0.676) -traversedist 0.011
+lakerSingleSel -point (2.394,0.676) -traversedist 0.011
+lakerPreSel -point (1.726,1.042) -traversedist 0.011
+lakerAreaSel -point (1.726,0.475) (1.905,1.042)
+lakerPreSel -point (1.821,0.683) -traversedist 0.011
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.82,0.685) -offsetPoint (1.82,0.495)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (2.169,0.381) -traversedist 0.011
+lakerSingleSel -point (2.169,0.381) -traversedist 0.011
+lakerZoomInByArea -point (1.087,0.053) (2.225,0.843)
+lakerPreSel -point (1.897,0.228) -traversedist 0.005
+lakerDistance -point (1.814,0.4) (1.808,0.34)
+lakerZoomOut
+lakerDistance -point (1.65,0.473) (1.75,0.479)
+lakerDistance -point (1.45,0.465) (1.55,0.471)
+lakerDistance -point (1.27,0.492) (1.33,0.476)
+lakerZoomOut
+lakerClearRuler
+lakerPreSel -point (1.164,0.997) -traversedist 0.019
+lakerAreaSel -point (1.164,-0.03) (2.19,0.997)
+lakerPreSel -point (-0.376,2.026) -traversedist 0.019
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerMakeCell -replace 1 -cell NMOS_24
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.687,-0.181) -traversedist 0.019
+lakerSingleSel -point (1.687,-0.181) -traversedist 0.019
+lakerPreSel -point (1.46,0.456) -traversedist 0.019
+lakerSingleSel
+lakerPreSel -point (1.454,0.458) -traversedist 0.019
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerPreSel -point (2.433,0.044) -traversedist 0.019
+lakerSingleSel -point (2.433,0.044) -traversedist 0.019
+lakerPreSel -point (2.398,0.048) -traversedist 0.019
+lakerZoomOut
+lakerPreSel -point (1.493,0.484) -traversedist 0.038
+lakerSingleSel
+lakerPreSel -point (2.457,0.262) -traversedist 0.038
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerPreSel -point (-0.281,3.053) -traversedist 0.038
+lakerZoomInByArea -point (-2.231,-0.964) (3.539,3.042)
+lakerPreSel -point (1.418,0.394) -traversedist 0.024
+lakerZoomAll
+lakerPreSel -point (1.967,1.495) -traversedist 0.02
+lakerSingleSel -point (1.967,1.495) -traversedist 0.02
+lakerPreSel -point (-0.178,2.015) -traversedist 0.02
+lakerSingleSel -point (-0.178,2.015) -traversedist 0.02
+lakerPreSel -point (-0.215,2.425) -traversedist 0.02
+lakerAreaSel -point (-0.215,1.065) (1.495,2.425)
+lakerPreSel -point (1.284,1.122) -traversedist 0.02
+lakerSingleSel -point (1.284,1.122) -traversedist 0.02
+lakerPreSel -point (1.398,1.719) -traversedist 0.02
+lakerSingleSel -point (1.398,1.719) -traversedist 0.02
+lakerCreateInstance -point (1.305,0.95) -cell PMOS_36 -lib leon -view layout
+lakerCreateInstance -point (1.975,0.955) -cell PMOS_36 -lib leon -view layout
+lakerUndo
+lakerPreSel -point (1.951,1.592) -traversedist 0.02
+lakerCreateInstance -point (1.985,0.95) -cell PMOS_36 -lib leon -view layout
+lakerPreSel -point (2.046,0.601) -traversedist 0.02
+lakerPanRight
+lakerPreSel -point (3.677,0.601) -traversedist 0.02
+lakerPanLeft
+lakerPreSel -point (2.046,0.601) -traversedist 0.02
+lakerPanRight
+lakerPreSel -point (3.209,1.42) -traversedist 0.02
+lakerCreateInstance -point (3.0,1.14) -cell PMOS_65 -lib leon -view layout
+lakerPreSel -point (2.457,1.777) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (0.398,2.971) -traversedist 0.02
+lakerMirrorY -refPoint (2.315,1.675)
+lakerPreSel -point (2.295,1.713) -traversedist 0.02
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.295,1.715) -ignoreNet 0 -offsetPoint (2.035,1.715)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (2.767,0.727) -traversedist 0.02
+lakerSingleSel -point (2.767,0.727) -traversedist 0.02
+lakerPreSel -point (2.669,0.817) -traversedist 0.02
+lakerSingleSel -point (2.669,0.817) -traversedist 0.02
+lakerPreSel -point (2.094,0.733) -traversedist 0.02
+lakerAreaSel -point (1.73,0.733) (2.094,1.84)
+lakerPreSel -point (2.642,0.886) -traversedist 0.02
+lakerSingleSel -point (2.642,0.886) -traversedist 0.02
+lakerPreSel -point (1.231,2.568) -traversedist 0.02
+lakerAreaSel -point (1.231,0.72) (3.85,2.568)
+lakerPreSel -point (-0.112,2.963) -traversedist 0.02
+lakerSelKind -selkind {Instance Array Device Mcell}
+lakerSmashObj -level 1
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.493,0.767) -traversedist 0.02
+lakerSingleSel -point (2.493,0.767) -traversedist 0.02
+lakerPreSel -point (1.906,1.563) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (2.15,0.646) -traversedist 0.02
+lakerSingleSel -point (2.15,0.646) -traversedist 0.02
+lakerPreSel -point (1.993,0.718) -traversedist 0.02
+lakerAreaSel -point (1.75,0.718) (1.993,1.79)
+lakerPreSel -point (2.521,0.739) -traversedist 0.02
+lakerSingleSel -point (2.521,0.739) -traversedist 0.02
+lakerPreSel -point (2.775,0.585) -traversedist 0.02
+lakerAreaSel -point (1.25,0.585) (2.775,2.605)
+lakerPreSel -point (1.25,0.585) -traversedist 0.02
+lakerSelKind -selkind {Shape}
+lakerSelInsideGroup -selInside 0
+lakerMergeObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelInsideGroup -selInside 1
+lakerPreSel -point (2.166,1.301) -traversedist 0.02
+lakerSingleSel -point (2.166,1.301) -traversedist 0.02
+lakerPreSel -point (2.421,1.118) -traversedist 0.02
+lakerCreateInstance -point (2.35,-0.125) -cell PMOS_36 -lib leon -view layout
+lakerPreSel -point (2.711,0.601) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (0.132,2.913) -traversedist 0.02
+lakerSelKind -selkind {Instance Array Device Mcell}
+lakerSmashObj -level 1
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.775,1.077) -traversedist 0.02
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (2.707,1.198) -traversedist 0.02
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerPreSel -point (2.693,1.211) -traversedist 0.02
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.697,1.213) -traversedist 0.02
+lakerAlignObj -point (2.697,1.213) -mode start
+lakerPreSel -point (2.713,1.208) -traversedist 0.02
+lakerAlignObj -refObj 1 -refPoint (2.715,1.21) -traversedist 0.01 -space 0.06
+lakerPreSel -point (2.953,0.93) -traversedist 0.02
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerUndo
+lakerPreSel -point (3.019,0.926) -traversedist 0.02
+lakerSingleSel -point (3.019,0.926) -traversedist 0.02
+lakerPreSel -point (2.604,0.85) -traversedist 0.02
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.721,1.202) -traversedist 0.02
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.549,2.933) -traversedist 0.02
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (2.681,1.213) -traversedist 0.02
+lakerAlignObj -point (2.681,1.213) -mode start
+lakerPreSel -point (2.721,0.739) -traversedist 0.02
+lakerAlignObj -refObj 1 -refPoint (2.72,0.74) -traversedist 0.01 -space 0.18
+lakerPreSel -point (2.781,0.862) -traversedist 0.02
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerDistance -point (2.689,0.925) (2.701,0.745)
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.32,1.291) -traversedist 0.02
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Object
+lakerPreSel -point (2.316,1.285) -traversedist 0.02
+lakerClearRuler
+lakerPreSel -point (2.245,1.364) -traversedist 0.02
+lakerAreaSel -point (2.245,-0.25) (3.085,1.364)
+lakerPreSel -point (3.37,-0.102) -traversedist 0.02
+lakerSingleSel -point (3.37,-0.102) -traversedist 0.02
+lakerPreSel -point (3.306,-0.338) -traversedist 0.02
+lakerAreaSel -point (2.54,-0.338) (3.306,0.685)
+lakerPreSel -point (3.642,0.569) -traversedist 0.02
+lakerSingleSel -point (3.642,0.569) -traversedist 0.02
+lakerPreSel -point (2.287,1.432) -traversedist 0.02
+lakerAreaSel -point (2.287,-0.195) (3.09,1.432)
+lakerPreSel -point (2.6,0.581) -traversedist 0.02
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerSaveDesign -autosave
+lakerPreSel -point (0.402,2.14) -traversedist 0.02
+lakerMakeCell -replace 1 -cell PMOS_36 -overwrite 1
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.493,0.66) -traversedist 0.02
+lakerDistance -point (2.58,0.745) (2.586,0.385)
+lakerClearRuler
+lakerPreSel -point (3.017,0.767) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (2.949,0.769) -traversedist 0.02
+lakerZoomOut
+lakerPreSel -point (1.25,2.567) -traversedist 0.04
+lakerZoomInByArea -point (0.593,-0.781) (5.415,2.567)
+lakerPreSel -point (1.308,2.315) -traversedist 0.02
+lakerZoomInByArea -point (0.529,-0.26) (4.237,2.314)
+lakerPreSel -point (2.86,0.174) -traversedist 0.015
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerPreSel -point (3.355,0.227) -traversedist 0.015
+lakerMaxViewLevel
+lakerPreSel -point (2.753,0.481) -traversedist 0.015
+lakerDistance -point (2.781,0.745) (2.763,0.385)
+lakerZoomOut
+lakerZoomInByArea -point (0.689,0.796) (3.219,2.552)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.775,2.267) -traversedist 0.01
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerDeselectAll
+lakerPreSel -point (1.769,2.206) -traversedist 0.01
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.118,2.546) -traversedist 0.01
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.66,2.289) -traversedist 0.01
+lakerAlignObj -point (1.66,2.289) -mode start
+lakerPreSel -point (1.651,1.818) -traversedist 0.01
+lakerAlignObj -refObj 1 -refPoint (1.65,1.82) -traversedist 0.005 -space 0.18
+lakerPreSel -point (2.07,2.283) -traversedist 0.01
+lakerAlignObj -point (2.07,2.283) -mode start
+lakerPreSel -point (2.065,1.818) -traversedist 0.01
+lakerAlignObj -refObj 1 -refPoint (2.065,1.82) -traversedist 0.005 -space 0.18
+lakerPreSel -point (2.586,1.57) -traversedist 0.01
+lakerZoomOut
+lakerPreSel -point (2.833,0.549) -traversedist 0.021
+lakerAlignObj -point (2.833,0.549) -mode start
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode DevObj
+lakerPreSel -point (2.608,0.528) -traversedist 0.021
+lakerSingleSel
+lakerDeleteObj
+lakerPreSel -point (2.512,0.468) -traversedist 0.021
+lakerSingleSel -point (2.512,0.468) -traversedist 0.021
+lakerChangeSelMode -mode Object
+lakerClearRuler
+lakerPreSel -point (-0.042,2.503) -traversedist 0.021
+lakerAreaSel -point (-0.042,0.985) (1.075,2.503)
+lakerPreSel -point (1.073,1.85) -traversedist 0.021
+lakerSingleSel -point (1.073,1.85) -traversedist 0.021
+lakerPreSel -point (1.202,2.472) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.816,1.594) -traversedist 0.021
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.851,1.836) -traversedist 0.021
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.298,2.536) -traversedist 0.021
+lakerAreaSel -point (1.298,0.82) (2.625,2.536)
+lakerPreSel -point (2.601,0.816) -traversedist 0.021
+lakerSingleSel -point (2.601,0.816) -traversedist 0.021
+lakerPreSel -point (1.261,2.572) -traversedist 0.021
+lakerSingleSel -point (1.261,2.572) -traversedist 0.021
+lakerPreSel -point (1.225,2.595) -traversedist 0.021
+lakerAreaSel -point (1.225,0.68) (2.585,2.595)
+lakerPreSel -point (1.897,1.475) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (3.492,1.988) -traversedist 0.021
+lakerAlignObj -point (3.492,1.988) -mode start
+lakerPreSel -point (0.677,1.892) -traversedist 0.021
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.453,1.099) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (-0.092,3.202) -traversedist 0.021
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (3.243,1.988) -traversedist 0.021
+lakerAlignObj -point (3.243,1.988) -mode start
+lakerPreSel -point (0.65,1.894) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (0.65,1.895) -traversedist 0.01
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.739,1.108) -traversedist 0.021
+lakerZoomIn
+lakerPreSel -point (2.347,1.391) -traversedist 0.01
+lakerZoomOut
+lakerPreSel -point (2.612,1.264) -traversedist 0.021
+lakerUndo
+lakerPreSel -point (2.675,1.137) -traversedist 0.021
+lakerSingleSel -point (2.675,1.137) -traversedist 0.021
+lakerPreSel -point (2.888,2.679) -traversedist 0.021
+lakerAreaSel -point (2.888,0.685) (3.965,2.679)
+lakerPreSel -point (3.591,1.487) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (3.455,1.988) -traversedist 0.021
+lakerAlignObj -point (3.455,1.988) -mode start
+lakerPreSel -point (0.666,1.896) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (0.665,1.895) -traversedist 0.01
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.591,1.08) -traversedist 0.021
+lakerSingleSel -point (2.591,1.08) -traversedist 0.021
+lakerPreSel -point (1.275,2.56) -traversedist 0.021
+lakerAreaSel -point (1.275,0.8) (2.635,2.56)
+lakerPreSel -point (2.028,1.331) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.836,1.827) -traversedist 0.021
+lakerAlignObj -point (1.836,1.827) -mode start
+lakerPreSel -point (3.232,1.89) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (3.23,1.89) -traversedist 0.01
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.377,1.13) -traversedist 0.021
+lakerSingleSel -point (2.377,1.13) -traversedist 0.021
+lakerPreSel -point (2.349,1.116) -traversedist 0.021
+lakerSingleSel -point (2.349,1.116) -traversedist 0.021
+lakerPreSel -point (1.446,2.257) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (2.243,2.241) -traversedist 0.021
+lakerIncreaseSel
+lakerPreSel -point (2.245,2.241) -traversedist 0.021
+lakerSelKind -selkind {Shape Mcell Route}
+lakerChopObj -point (1.215,2.355) (1.215,2.54) (2.53,2.54) (2.53,2.355) 
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.656,2.084) -traversedist 0.021
+lakerSingleSel -point (2.656,2.084) -traversedist 0.021
+lakerPreSel -point (2.658,2.084) -traversedist 0.021
+lakerSingleSel -point (2.658,2.084) -traversedist 0.021
+lakerPreSel -point (2.748,2.38) -traversedist 0.021
+lakerAreaSel -point (2.748,0.64) (3.99,2.38)
+lakerPreSel -point (2.539,1.633) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.996,1.6) -traversedist 0.021
+lakerAlignObj -point (2.996,1.6) -mode start
+lakerPreSel -point (2.383,1.663) -traversedist 0.021
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (3.0,1.533) -traversedist 0.021
+lakerAlignObj -point (3.0,1.533) -mode start
+lakerPreSel -point (2.387,1.615) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (2.385,1.615) -traversedist 0.01 -space 0.15
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (3.768,1.61) -traversedist 0.021
+lakerSingleSel -point (3.768,1.61) -traversedist 0.021
+lakerPreSel -point (-0.136,2.464) -traversedist 0.021
+lakerAreaSel -point (-0.136,0.055) (1.33,2.464)
+lakerPreSel -point (1.208,0.475) -traversedist 0.021
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerPreSel -point (1.16,2.522) -traversedist 0.021
+lakerAreaSel -point (1.16,0.7) (3.69,2.522)
+lakerPreSel -point (2.226,1.589) -traversedist 0.021
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (2.225,1.59) -offsetPoint (1.065,1.59)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (0.388,1.681) -traversedist 0.021
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (0.585,1.74) -offsetPoint (0.645,1.74)
+lakerChangeSelMode -mode Object
+lakerPreSel -point (2.616,0.392) -traversedist 0.021
+lakerSingleSel -point (2.616,0.392) -traversedist 0.021
+lakerPreSel -point (0.227,1.193) -traversedist 0.021
+lakerSingleSel -point (0.227,1.193) -traversedist 0.021
+lakerPreSel -point (0.908,2.885) -traversedist 0.021
+lakerAreaSel -point (0.908,2.235) (1.095,2.885)
+lakerPreSel -point (1.01,1.994) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (1.008,2.856) -traversedist 0.021
+lakerSingleSel -point (1.008,2.856) -traversedist 0.021
+lakerPreSel -point (0.979,2.856) -traversedist 0.021
+lakerAreaSel -point (0.979,2.205) (1.065,2.856)
+lakerPreSel -point (-0.083,3.411) -traversedist 0.021
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (0.993,2.793) -traversedist 0.021
+lakerAreaSel -point (0.993,2.25) (1.075,2.793)
+lakerPreSel -point (0.993,2.25) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.033,2.485) -traversedist 0.021
+lakerAlignObj -point (1.033,2.485) -mode start
+lakerPreSel -point (1.043,2.595) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (1.045,2.595) -traversedist 0.01 -space 0.15
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.486,2.512) -traversedist 0.021
+lakerUndo
+lakerSingleSel -point (1.486,2.512) -traversedist 0.021
+lakerPreSel -point (0.999,2.796) -traversedist 0.021
+lakerAreaSel -point (0.999,2.25) (1.07,2.796)
+lakerPreSel -point (1.031,2.501) -traversedist 0.021
+lakerStretchObj -refPoint (1.03,2.5) -ignoreNet 0 -offsetPoint (2.205,2.5)
+lakerPreSel -point (2.491,1.65) -traversedist 0.021
+lakerSingleSel -point (2.491,1.65) -traversedist 0.021
+lakerPreSel -point (2.452,1.462) -traversedist 0.021
+lakerSingleSel -point (2.452,1.462) -traversedist 0.021
+lakerPreSel -point (2.141,0.701) -traversedist 0.021
+lakerPanDown
+lakerPreSel -point (2.141,-0.471) -traversedist 0.021
+lakerPanUp
+lakerPreSel -point (2.141,0.701) -traversedist 0.021
+lakerZoomOut
+lakerPreSel -point (-0.039,2.79) -traversedist 0.042
+lakerSingleSel -point (-0.039,2.79) -traversedist 0.042
+lakerPreSel -point (-0.055,3.095) -traversedist 0.042
+lakerAreaSel -point (-0.055,-0.54) (3.06,3.095)
+lakerPreSel -point (1.405,-0.185) -traversedist 0.042
+lakerSingleSel -point (1.405,-0.185) -traversedist 0.042
+lakerPreSel -point (-0.105,3.057) -traversedist 0.042
+lakerAreaSel -point (-0.105,2.06) (2.885,3.057)
+lakerPreSel -point (2.891,2.056) -traversedist 0.042
+lakerSingleSel -point (2.891,2.056) -traversedist 0.042
+lakerPreSel -point (2.002,2.882) -traversedist 0.042
+lakerAreaSel -point (2.002,2.145) (2.59,2.882)
+lakerPreSel -point (2.59,2.148) -traversedist 0.042
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.223,2.465) -traversedist 0.042
+lakerAlignObj -point (2.223,2.465) -mode start
+lakerPreSel -point (1.706,-0.356) -traversedist 0.042
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.702,-0.423) -traversedist 0.042
+lakerSingleSel -point (1.702,-0.423) -traversedist 0.042
+lakerPreSel -point (1.155,-0.469) -traversedist 0.042
+lakerAreaSel -point (0.965,-0.469) (1.155,0.24)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.055,-0.123) -traversedist 0.042
+lakerAlignObj -point (1.055,-0.123) -mode start
+lakerPreSel -point (2.215,2.461) -traversedist 0.042
+lakerAlignObj -refObj 1 -refPoint (2.215,2.46) -traversedist 0.021 -space 0.15
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (3.308,0.553) -traversedist 0.042
+lakerSingleSel -point (3.308,0.553) -traversedist 0.042
+lakerPreSel -point (-0.168,3.02) -traversedist 0.042
+lakerZoomInByArea -point (-1.295,-0.582) (3.893,3.02)
+lakerPreSel -point (-0.096,0.634) -traversedist 0.021
+lakerSingleSel -point (-0.096,0.634) -traversedist 0.021
+lakerPreSel -point (-0.055,0.679) -traversedist 0.021
+lakerCreateInstance -point (0.17,0.19) -cell NMOS_24 -lib leon -view layout
+lakerPreSel -point (1.133,0.579) -traversedist 0.021
+lakerCreateInstance -point (0.85,0.205) -cell NMOS_24 -lib leon -view layout
+lakerPreSel -point (2.179,0.521) -traversedist 0.021
+lakerSaveDesign -autosave
+lakerPreSel -point (1.129,0.722) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (1.146,0.709) -traversedist 0.021
+lakerStretchObj -refPoint (1.145,0.71) -ignoreNet 0 -offsetPoint (1.03,0.71)
+lakerPreSel -point (1.416,0.478) -traversedist 0.021
+lakerSingleSel -point (1.416,0.478) -traversedist 0.021
+lakerPreSel -point (1.044,0.56) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (1.882,0.47) -traversedist 0.021
+lakerSingleSel -point (1.882,0.47) -traversedist 0.021
+lakerPreSel -point (-0.198,1.055) -traversedist 0.021
+lakerAreaSel -point (-0.198,0.15) (1.88,1.055)
+lakerPreSel -point (1.268,0.483) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (0.962,0.611) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (0.982,0.619) -traversedist 0.021
+lakerStretchObj -refPoint (0.98,0.62) -ignoreNet 0 -offsetPoint (0.98,0.6)
+lakerPreSel -point (0.962,0.553) -traversedist 0.021
+lakerStretchObj -refPoint (0.96,0.555) -ignoreNet 0 -offsetPoint (1.02,0.555)
+lakerPreSel -point (-0.077,0.562) -traversedist 0.021
+lakerSingleSel -point (-0.077,0.562) -traversedist 0.021
+lakerPreSel -point (-0.177,0.85) -traversedist 0.021
+lakerSingleSel -point (-0.177,0.85) -traversedist 0.021
+lakerPreSel -point (2.382,0.459) -traversedist 0.021
+lakerSingleSel -point (2.382,0.459) -traversedist 0.021
+lakerPreSel -point (1.997,0.583) -traversedist 0.021
+lakerCreateInstance -point (1.48,0.175) -cell NMOS_43 -lib leon -view layout
+lakerPreSel -point (2.679,0.675) -traversedist 0.021
+lakerSingleSel -point (2.679,0.675) -traversedist 0.021
+lakerPreSel -point (-0.196,1.117) -traversedist 0.021
+lakerAreaSel -point (-0.196,0.085) (2.625,1.117)
+lakerPreSel -point (2.818,0.869) -traversedist 0.021
+lakerSingleSel -point (2.818,0.869) -traversedist 0.021
+lakerPreSel -point (1.875,0.617) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (1.148,0.692) -traversedist 0.021
+lakerIncreaseSel
+lakerPreSel -point (0.182,0.726) -traversedist 0.021
+lakerIncreaseSel
+lakerPreSel -point (-1.254,2.642) -traversedist 0.021
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Instance Array Device Mcell}
+lakerSmashObj -level 1
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (-0.239,1.109) -traversedist 0.021
+lakerSingleSel -point (-0.239,1.109) -traversedist 0.021
+lakerPreSel -point (-0.177,0.983) -traversedist 0.021
+lakerSingleSel -point (-0.177,0.983) -traversedist 0.021
+lakerPreSel -point (-0.104,1.023) -traversedist 0.021
+lakerDistance -point (0.528,0.265) (0.522,0.025)
+lakerDeselectAll
+lakerPreSel -point (-0.179,1.145) -traversedist 0.021
+lakerAreaSel -point (-0.179,0.19) (0.815,1.145)
+lakerPreSel -point (-0.209,0.622) -traversedist 0.021
+lakerSingleSel -point (-0.209,0.622) -traversedist 0.021
+lakerPreSel -point (0.032,1.023) -traversedist 0.021
+lakerAreaSel -point (0.032,0.175) (0.89,1.023)
+lakerPreSel -point (-0.136,0.47) -traversedist 0.021
+lakerSingleSel -point (-0.136,0.47) -traversedist 0.021
+lakerPreSel -point (0.039,0.921) -traversedist 0.021
+lakerUndo
+lakerPreSel -point (0.043,0.887) -traversedist 0.021
+lakerUndo
+lakerPreSel -point (0.017,0.79) -traversedist 0.021
+lakerRedo
+lakerPreSel -point (-0.004,0.784) -traversedist 0.021
+lakerSingleSel -point (-0.004,0.784) -traversedist 0.021
+lakerPreSel -point (0.781,0.461) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (0.524,0.56) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (0.59,0.613) -traversedist 0.021
+lakerStretchObj -refPoint (0.59,0.615) -ignoreNet 0 -offsetPoint (-0.165,0.615)
+lakerPreSel -point (1.099,0.589) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (1.108,0.572) -traversedist 0.021
+lakerStretchObj -refPoint (1.11,0.57) -ignoreNet 0 -offsetPoint (0.465,0.57)
+lakerPreSel -point (0.319,0.604) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.379,0.684) -traversedist 0.021
+lakerAlignObj -point (0.379,0.684) -mode start
+lakerPreSel -point (-0.171,0.684) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (-0.17,0.685) -traversedist 0.011 -space 0.15
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerUndo
+lakerPreSel -point (-0.164,0.684) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.505,0.842) -traversedist 0.021
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.501,0.681) -traversedist 0.021
+lakerAlignObj -point (0.501,0.681) -mode start
+lakerPreSel -point (-0.106,0.681) -traversedist 0.021
+lakerAlignObj -snapMode anyangle -refObj 1 -refPoint (-0.105,0.68) -traversedist \
+           0.011
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (0.045,0.66) -traversedist 0.021
+lakerUndo
+lakerPreSel -point (0.392,0.69) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.494,0.669) -traversedist 0.021
+lakerAlignObj -point (0.494,0.669) -mode start
+lakerPreSel -point (-0.171,0.686) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (-0.17,0.685) -traversedist 0.011
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (0.954,0.32) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.218,0.564) -traversedist 0.021
+lakerAlignObj -point (0.218,0.564) -mode start
+lakerPreSel -point (-0.104,0.684) -traversedist 0.021
+lakerAlignObj -snapMode anyangle -refObj 1 -refPoint (-0.105,0.685) -traversedist \
+           0.011
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (0.665,0.444) -traversedist 0.021
+lakerSingleSel -point (0.665,0.444) -traversedist 0.021
+lakerPreSel -point (-0.703,1.13) -traversedist 0.021
+lakerSingleSel -point (-0.703,1.13) -traversedist 0.021
+lakerPreSel -point (-0.087,1.139) -traversedist 0.021
+lakerSingleSel -point (-0.087,1.139) -traversedist 0.021
+lakerPreSel -point (-0.109,1.07) -traversedist 0.021
+lakerAreaSel -point (-0.109,0.145) (0.06,1.07)
+lakerPreSel -point (0.28,0.177) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (-0.686,1.293) -traversedist 0.021
+lakerAreaSel -point (-0.686,0.145) (0.595,1.293)
+lakerPreSel -point (0.59,0.143) -traversedist 0.021
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Shape}
+lakerSelInsideGroup -selInside 0
+lakerMergeObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerPreSel -point (-0.545,0.899) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (-0.62,1.269) -traversedist 0.021
+lakerSingleSel -point (-0.62,1.269) -traversedist 0.021
+lakerPreSel -point (-0.765,1.205) -traversedist 0.021
+lakerAreaSel -point (-0.765,0.16) (0.58,1.205)
+lakerPreSel -point (-0.414,0.895) -traversedist 0.021
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Instance Array Device Mcell}
+lakerSmashObj -level 1
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (-0.51,0.829) -traversedist 0.021
+lakerSingleSel -point (-0.51,0.829) -traversedist 0.021
+lakerPreSel -point (-0.833,1.197) -traversedist 0.021
+lakerAreaSel -point (-0.833,0.13) (0.62,1.197)
+lakerPreSel -point (-0.833,0.13) -traversedist 0.021
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Shape}
+lakerSelInsideGroup -selInside 0
+lakerMergeObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerPreSel -point (1.212,0.517) -traversedist 0.021
+lakerSingleSel -point (1.212,0.517) -traversedist 0.021
+lakerPreSel -point (-0.066,0.707) -traversedist 0.021
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (-0.019,0.549) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (-0.021,0.547) -traversedist 0.021
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (0.669,0.602) -traversedist 0.021
+lakerSingleSel -point (0.669,0.602) -traversedist 0.021
+lakerPreSel -point (-0.791,1.132) -traversedist 0.021
+lakerAreaSel -point (-0.791,0.19) (0.595,1.132)
+lakerPreSel -point (-0.059,0.566) -traversedist 0.021
+lakerStretchObj -refPoint (-0.06,0.565) -ignoreNet 0 -offsetPoint (0.755,0.565)
+lakerPreSel -point (0.764,0.489) -traversedist 0.021
+lakerStretchObj -refPoint (0.765,0.49) -ignoreNet 0 -offsetPoint (0.765,0.35)
+lakerPreSel -point (0.776,0.457) -traversedist 0.021
+lakerStretchObj -refPoint (0.775,0.455) -ignoreNet 0 -offsetPoint (0.76,0.455)
+lakerPreSel -point (0.432,1.167) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.201,1.628) -traversedist 0.021
+lakerAlignObj -point (0.201,1.628) -mode start
+lakerPreSel -point (0.216,0.416) -traversedist 0.021
+lakerAlignObj -snapMode anyangle -refObj 1 -refPoint (0.215,0.415) -traversedist \
+           0.011
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerUndo
+lakerPreSel -point (0.218,1.03) -traversedist 0.021
+lakerSingleSel -point (0.218,1.03) -traversedist 0.021
+lakerPreSel -point (0.25,1.034) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.214,0.425) -traversedist 0.021
+lakerAlignObj -point (0.214,0.425) -mode start
+lakerPreSel -point (0.208,1.782) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (0.21,1.78) -traversedist 0.011
+lakerPreSel -point (0.206,1.744) -traversedist 0.021
+lakerZoomIn
+lakerPreSel -point (0.737,1.366) -traversedist 0.011
+lakerZoomOut
+lakerPreSel -point (-0.02,0.79) -traversedist 0.021
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerUndo
+lakerPreSel -point (0.132,0.807) -traversedist 0.021
+lakerSingleSel -point (0.132,0.807) -traversedist 0.021
+lakerPreSel -point (0.079,1.023) -traversedist 0.021
+lakerAreaSel -point (0.079,0.03) (1.425,1.023)
+lakerPreSel -point (0.226,0.422) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.207,0.424) -traversedist 0.021
+lakerAlignObj -point (0.207,0.424) -mode start
+lakerPreSel -point (0.194,1.665) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (0.195,1.665) -traversedist 0.011
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.067,0.454) -traversedist 0.021
+lakerUndo
+lakerPreSel -point (-0.022,0.938) -traversedist 0.021
+lakerSingleSel -point (-0.022,0.938) -traversedist 0.021
+lakerPreSel -point (0.123,0.792) -traversedist 0.021
+lakerUndo
+lakerUndo
+lakerPreSel -point (0.113,0.837) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.23,0.561) -traversedist 0.021
+lakerAlignObj -point (0.23,0.561) -mode start
+lakerPreSel -point (0.205,1.729) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (0.205,1.73) -traversedist 0.011
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.206,0.202) -traversedist 0.021
+lakerSingleSel -point (1.206,0.202) -traversedist 0.021
+lakerPreSel -point (-0.313,1.169) -traversedist 0.021
+lakerAreaSel -point (-0.313,0.14) (1.345,1.169)
+lakerPreSel -point (0.547,0.908) -traversedist 0.021
+lakerStretchObj -refPoint (0.545,0.91) -ignoreNet 0 -offsetPoint (0.545,0.755)
+lakerPreSel -point (-0.123,0.747) -traversedist 0.021
+lakerSingleSel -point (-0.123,0.747) -traversedist 0.021
+lakerPreSel -point (-0.142,0.76) -traversedist 0.021
+lakerClearRuler
+lakerPreSel -point (0.532,1.402) -traversedist 0.021
+lakerSingleSel
+lakerStretchObj -refPoint (0.53,1.4) -ignoreNet 0 -offsetPoint (0.53,0.77)
+lakerPreSel -point (0.947,1.393) -traversedist 0.021
+lakerSingleSel
+lakerStretchObj -refPoint (0.945,1.395) -ignoreNet 0 -offsetPoint (0.945,0.82)
+lakerPreSel -point (0.104,1.032) -traversedist 0.021
+lakerSingleSel -point (0.104,1.032) -traversedist 0.021
+lakerPreSel -point (0.72,1.25) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (0.688,1.105) -traversedist 0.021
+lakerDeselectAll
+lakerPreSel -point (0.75,0.874) -traversedist 0.021
+lakerSingleSel
+lakerStretchObj -refPoint (0.75,0.875) -ignoreNet 0 -offsetPoint (0.75,1.245)
+lakerPreSel -point (0.789,1.053) -traversedist 0.021
+lakerSingleSel -point (0.789,1.053) -traversedist 0.021
+lakerPreSel -point (0.295,0.912) -traversedist 0.021
+lakerCreateInstance -point (0.265,0.7) -cell POLY_GATE -lib leon -view layout
+lakerPreSel -point (1.108,0.895) -traversedist 0.021
+lakerSaveDesign -autosave
+lakerPreSel -point (1.163,0.756) -traversedist 0.021
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 0
+lakerSelKind -selkind \
+           {Shape Device Mcell Route IsDevFlatten IsMCellFlatten IsRouteFlatten}
+lakerPreSel -point (-1.297,2.217) -traversedist 0.021
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerPreSel -point (-0.234,1.385) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 0
+lakerSelKind -selkind \
+           {Shape Device Mcell Route IsDevFlatten IsMCellFlatten IsRouteFlatten}
+lakerPreSel -point (0.31,1.973) -traversedist 0.021
+lakerZoomInByArea -point (-0.314,0.189) (2.256,1.973)
+lakerPreSel -point (0.777,1.192) -traversedist 0.011
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 0
+lakerSelKind -selkind \
+           {Shape Device Mcell Route IsDevFlatten IsMCellFlatten IsRouteFlatten}
+lakerPreSel -point (0.686,1.308) -traversedist 0.011
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerPreSel -point (0.686,1.292) -traversedist 0.011
+lakerSingleSel
+lakerPreSel -point (0.757,1.289) -traversedist 0.011
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 0
+lakerSelKind -selkind \
+           {Shape Device Mcell Route IsDevFlatten IsMCellFlatten IsRouteFlatten}
+lakerPreSel -point (0.685,1.301) -traversedist 0.011
+lakerCreatePath -layerName METAL1 -point (0.685,1.3) (1.24,1.3) -width 0.120000 \
+           0.000000 -routeStatus fixed
+lakerPreSel -point (1.194,0.72) -traversedist 0.011
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 0
+lakerSelKind -selkind \
+           {Shape Device Mcell Route IsDevFlatten IsMCellFlatten IsRouteFlatten}
+lakerPreSel -point (1.163,0.769) -traversedist 0.011
+lakerCreatePath -layerName METAL1 -point (1.165,0.77) (1.165,1.36) -width \
+           0.120000 0.000000 -routeStatus fixed
+lakerPreSel -point (1.318,1.22) -traversedist 0.011
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerPreSel -point (1.329,1.127) -traversedist 0.011
+lakerDeselectAll
+lakerPreSel -point (1.042,1.268) -traversedist 0.011
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Shape Mcell Route}
+lakerPreSel -point (1.284,1.202) -traversedist 0.011
+lakerChopObj -point (1.225,1.16) (1.225,1.4) (1.255,1.4) (1.255,1.16) 
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.309,1.079) -traversedist 0.011
+lakerSingleSel -point (1.309,1.079) -traversedist 0.011
+lakerZoomOut
+lakerPreSel -point (0.758,0.362) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (2.2,0.222) -traversedist 0.021
+lakerSingleSel -point (2.2,0.222) -traversedist 0.021
+lakerPreSel -point (1.698,0.794) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (2.025,0.343) -traversedist 0.021
+lakerDeselectAll
+lakerPreSel -point (1.834,0.432) -traversedist 0.021
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.817,0.426) -traversedist 0.021
+lakerAlignObj -point (1.817,0.426) -mode start
+lakerPreSel -point (1.05,0.288) -traversedist 0.021
+lakerAlignObj -refObj 1 -refPoint (1.05,0.29) -traversedist 0.011
+lakerPreSel -point (2.05,0.025) -traversedist 0.021
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerDistance -point (1.802,0.11) (1.802,0.025)
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.678,0.752) -traversedist 0.021
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerDeselectAll
+lakerPreSel -point (0.142,0.97) -traversedist 0.021
+lakerAreaSel -point (0.142,0.665) (0.635,0.97)
+lakerPreSel -point (0.551,0.803) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (0.364,0.826) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (0.362,0.826) -traversedist 0.021
+lakerStretchObj -refPoint (0.36,0.825) -ignoreNet 0 -offsetPoint (0.36,1.005)
+lakerPreSel -point (0.174,0.796) -traversedist 0.021
+lakerSingleSel -point (0.174,0.796) -traversedist 0.021
+lakerPreSel -point (0.116,0.718) -traversedist 0.021
+lakerDistance -point (0.544,0.29) (0.542,0.11)
+lakerDeselectAll
+lakerPreSel -point (-0.034,0.872) -traversedist 0.021
+lakerAreaSel -point (-0.034,0.095) (2.37,0.872)
+lakerPreSel -point (2.488,0.201) -traversedist 0.021
+lakerSingleSel -point (2.488,0.201) -traversedist 0.021
+lakerPreSel -point (1.904,0.371) -traversedist 0.021
+lakerSingleSel
+lakerPreSel -point (-0.455,0.911) -traversedist 0.021
+lakerZoomInByArea -point (-0.455,-0.911) (2.499,1.139)
+lakerPreSel -point (1.629,-0.447) -traversedist 0.012
+lakerDistance -point (0.957,0.11) (0.962,0.025)
+lakerZoomOut
+lakerDeselectAll
+lakerPreSel -point (-0.15,0.877) -traversedist 0.024
+lakerAreaSel -point (-0.15,0.025) (2.625,0.877)
+lakerPreSel -point (1.797,0.536) -traversedist 0.024
+lakerIncreaseSel
+lakerPreSel -point (2.347,-0.016) -traversedist 0.024
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.943,0.11) -traversedist 0.024
+lakerAlignObj -point (0.943,0.11) -mode start
+lakerPreSel -point (0.955,0.03) -traversedist 0.024
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.955,0.115) -traversedist 0.024
+lakerAlignObj -point (0.955,0.115) -mode start
+lakerPreSel -point (0.853,0.028) -traversedist 0.024
+lakerAlignObj -refObj 1 -refPoint (0.855,0.03) -traversedist 0.012 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.693,0.152) -traversedist 0.024
+lakerUndo
+lakerPreSel -point (2.788,0.067) -traversedist 0.024
+lakerSingleSel -point (2.788,0.067) -traversedist 0.024
+lakerPreSel -point (-0.121,1.04) -traversedist 0.024
+lakerZoomInByArea -point (-0.154,-0.503) (2.068,1.039)
+lakerPreSel -point (0.08,0.611) -traversedist 0.009
+lakerAreaSel -point (0.08,0.1) (1.44,0.611)
+lakerPreSel -point (0.541,0.627) -traversedist 0.009
+lakerIncreaseSel
+lakerPreSel -point (0.869,0.678) -traversedist 0.009
+lakerIncreaseSel -point (0.869,0.678) -traversedist 0.009
+lakerPreSel -point (0.946,0.674) -traversedist 0.009
+lakerIncreaseSel
+lakerPreSel -point (0.573,0.045) -traversedist 0.009
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.524,0.107) -traversedist 0.009
+lakerAlignObj -point (0.524,0.107) -mode start
+lakerPreSel -point (0.536,0.027) -traversedist 0.009
+lakerAlignObj -refObj 1 -refPoint (0.535,0.025) -traversedist 0.005 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.315,0.246) -traversedist 0.009
+lakerZoomOut
+lakerPreSel -point (2.69,0.1) -traversedist 0.018
+lakerSingleSel -point (2.69,0.1) -traversedist 0.018
+lakerPreSel -point (1.37,0.974) -traversedist 0.018
+lakerAreaSel -point (1.37,-0.075) (2.43,0.974)
+lakerPreSel -point (1.87,0.104) -traversedist 0.018
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.83,0.106) -traversedist 0.018
+lakerAlignObj -point (1.83,0.106) -mode start
+lakerPreSel -point (1.375,0.024) -traversedist 0.018
+lakerAlignObj -refObj 1 -refPoint (1.375,0.025) -traversedist 0.009 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.597,0.088) -traversedist 0.018
+lakerUndo
+lakerSingleSel -point (2.597,0.088) -traversedist 0.018
+lakerPreSel -point (1.405,0.934) -traversedist 0.018
+lakerZoomInByArea -point (1.187,-0.423) (3.141,0.933)
+lakerPreSel -point (2.239,0.092) -traversedist 0.008
+lakerAreaSel -point (1.4,0.092) (2.239,0.885)
+lakerPreSel -point (1.805,0.25) -traversedist 0.008
+lakerSingleSel
+lakerPreSel -point (1.814,0.245) -traversedist 0.008
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.822,0.105) -traversedist 0.008
+lakerAlignObj -point (1.822,0.105) -mode start
+lakerPreSel -point (1.408,0.025) -traversedist 0.008
+lakerAlignObj -refObj 1 -refPoint (1.41,0.025) -traversedist 0.004 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.42,0.015) -traversedist 0.008
+lakerZoomOut
+lakerPreSel -point (0.688,-0.234) -traversedist 0.016
+lakerZoomOut
+lakerPreSel -point (2.678,-0.02) -traversedist 0.032
+lakerSingleSel -point (2.678,-0.02) -traversedist 0.032
+lakerPreSel -point (2.826,-0.008) -traversedist 0.032
+lakerSingleSel -point (2.826,-0.008) -traversedist 0.032
+lakerPreSel -point (2.723,0.791) -traversedist 0.032
+lakerSingleSel -point (2.723,0.791) -traversedist 0.032
+lakerClearRuler
+lakerPreSel -point (2.726,0.795) -traversedist 0.032
+lakerChangeSelMode -mode Object
+lakerPreSel -point (2.291,-0.661) -traversedist 0.032
+lakerAreaSel -point (1.985,-0.661) (2.291,0.185)
+lakerPreSel -point (2.439,-0.33) -traversedist 0.032
+lakerChangeSelMode -mode Vertex
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.066,-0.107) -traversedist 0.032
+lakerAlignObj -point (2.066,-0.107) -mode start
+lakerPreSel -point (2.465,-0.265) -traversedist 0.032
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.195,-0.365) -traversedist 0.032
+lakerAreaSel -point (2.025,-0.365) (2.195,0.2)
+lakerPreSel -point (2.133,-0.14) -traversedist 0.032
+lakerSingleSel -point (2.133,-0.14) -traversedist 0.032
+lakerPreSel -point (2.172,-0.497) -traversedist 0.032
+lakerAreaSel -point (1.97,-0.497) (2.172,0.18)
+lakerPreSel -point (2.069,-0.117) -traversedist 0.032
+lakerSingleSel
+lakerStretchObj -refPoint (2.07,-0.115) -ignoreNet 0 -offsetPoint (2.07,-0.73)
+lakerPreSel -point (2.133,-0.413) -traversedist 0.032
+lakerAreaSel -point (1.99,-0.413) (2.133,0.25)
+lakerPreSel -point (2.063,-0.14) -traversedist 0.032
+lakerSingleSel
+lakerStretchObj -refPoint (2.065,-0.14) -ignoreNet 0 -offsetPoint (2.455,-0.14)
+lakerPreSel -point (2.462,1.11) -traversedist 0.032
+lakerUndo
+lakerPreSel -point (2.365,-0.42) -traversedist 0.032
+lakerSingleSel -point (2.365,-0.42) -traversedist 0.032
+lakerPreSel -point (2.156,-0.491) -traversedist 0.032
+lakerAreaSel -point (1.92,-0.491) (2.156,0.245)
+lakerPreSel -point (2.079,-0.198) -traversedist 0.032
+lakerStretchObj -refPoint (2.055,-0.095) -ignoreNet 0 -offsetPoint (2.39,-0.095)
+lakerPreSel -point (2.745,1.529) -traversedist 0.032
+lakerSingleSel -point (2.745,1.529) -traversedist 0.032
+lakerPreSel -point (2.298,2.038) -traversedist 0.032
+lakerAreaSel -point (2.055,2.038) (2.298,2.965)
+lakerPreSel -point (2.34,2.412) -traversedist 0.032
+lakerStretchObj -refPoint (2.41,2.405) -ignoreNet 0 -offsetPoint (2.74,2.405)
+lakerPreSel -point (3.113,1.487) -traversedist 0.032
+lakerSingleSel -point (3.113,1.487) -traversedist 0.032
+lakerPreSel -point (0.197,1.738) -traversedist 0.032
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.201,0.424) -traversedist 0.032
+lakerAlignObj -point (0.201,0.424) -mode start
+lakerPreSel -point (0.201,1.764) -traversedist 0.032
+lakerAlignObj -refObj 1 -refPoint (0.2,1.765) -traversedist 0.016 -space 0.12
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerUndo
+lakerPreSel -point (2.958,0.714) -traversedist 0.032
+lakerSingleSel -point (2.958,0.714) -traversedist 0.032
+lakerPreSel -point (2.945,0.717) -traversedist 0.032
+lakerDeselectAll
+lakerPreSel -point (0.181,0.376) -traversedist 0.032
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.207,0.437) -traversedist 0.032
+lakerAlignObj -point (0.207,0.437) -mode start
+lakerPreSel -point (0.214,1.771) -traversedist 0.032
+lakerAlignObj -refObj 1 -refPoint (0.215,1.77) -traversedist 0.016
+lakerPreSel -point (1.537,0.656) -traversedist 0.032
+lakerAlignObj -point (1.537,0.656) -mode start
+lakerPreSel -point (1.502,0.431) -traversedist 0.032
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (1.47,0.505) -traversedist 0.032
+lakerAlignObj -point (1.47,0.505) -mode start
+lakerPreSel -point (1.418,1.394) -traversedist 0.032
+lakerAlignObj -refObj 1 -refPoint (1.42,1.395) -traversedist 0.016
+lakerPreSel -point (1.943,0.772) -traversedist 0.032
+lakerAlignObj -point (1.943,0.772) -mode start
+lakerPreSel -point (-0.63,2.83) -traversedist 0.032
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Object
+lakerSelKind -selkind {Instance Array Device Mcell}
+lakerPreSel -point (2.881,0.701) -traversedist 0.032
+lakerSaveDesign -autosave
+lakerSingleSel -point (2.881,0.701) -traversedist 0.032
+lakerPreSel -point (1.937,0.878) -traversedist 0.032
+lakerSingleSel
+lakerSmashObj -level 1
+lakerPreSel -point (1.995,0.84) -traversedist 0.032
+lakerSingleSel -point (1.995,0.84) -traversedist 0.032
+lakerPreSel -point (2.652,0.614) -traversedist 0.032
+lakerSingleSel -point (2.652,0.614) -traversedist 0.032
+lakerPreSel -point (1.67,0.447) -traversedist 0.032
+lakerSingleSel -point (1.67,0.447) -traversedist 0.032
+lakerPreSel -point (2.008,0.437) -traversedist 0.032
+lakerSingleSel -point (2.008,0.437) -traversedist 0.032
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerDeselectAll
+lakerPreSel -point (1.985,0.508) -traversedist 0.032
+lakerSingleSel
+lakerPreSel -point (2.001,0.698) -traversedist 0.032
+lakerSingleSel
+lakerPreSel -point (1.963,0.856) -traversedist 0.032
+lakerSingleSel
+lakerPreSel -point (2.488,0.743) -traversedist 0.032
+lakerAreaSel -point (1.77,0.907) (2.204,1.025)
+lakerPreSel -point (2.34,0.836) -traversedist 0.032
+lakerStretchObj -refPoint (1.98,1.0) -ignoreNet 0 -offsetPoint (1.98,1.24)
+lakerPreSel -point (2.433,0.981) -traversedist 0.032
+lakerSaveDesign
+lakerPreSel -point (1.612,0.94) -traversedist 0.032
+lakerAreaSel -point (1.612,0.83) (1.885,0.94)
+lakerPreSel -point (1.808,0.853) -traversedist 0.032
+lakerStretchObj -refPoint (1.775,0.88) -ignoreNet 0 -offsetPoint (1.775,1.255)
+lakerPreSel -point (3.106,0.894) -traversedist 0.032
+lakerSaveDesign
+lakerPreSel -point (1.628,0.872) -traversedist 0.032
+lakerZoomAll
+lakerPreSel -point (1.64,0.858) -traversedist 0.02
+lakerCreateInstance -point (1.555,0.84) -cell POLY_GATE -lib leon -view layout
+lakerPreSel -point (1.638,0.92) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (-0.861,2.971) -traversedist 0.02
+lakerRotate90 -refPoint (1.675,0.96)
+lakerPreSel -point (1.631,0.989) -traversedist 0.02
+lakerStretchObj -refPoint (1.63,0.99) -ignoreNet 0 -offsetPoint (1.62,0.99)
+lakerPreSel -point (-0.704,2.971) -traversedist 0.02
+lakerRotate90 -refPoint (1.665,0.96)
+lakerPreSel -point (1.603,1.037) -traversedist 0.02
+lakerStretchObj -refPoint (1.605,1.035) -ignoreNet 0 -offsetPoint (1.66,1.035)
+lakerPreSel -point (1.478,1.223) -traversedist 0.02
+lakerSingleSel -point (1.478,1.223) -traversedist 0.02
+lakerPreSel -point (1.714,1.043) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (1.64,0.962) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (1.656,0.969) -traversedist 0.02
+lakerStretchObj -refPoint (1.655,0.97) -ignoreNet 0 -offsetPoint (1.65,0.97)
+lakerPreSel -point (1.555,0.973) -traversedist 0.02
+lakerSingleSel -point (1.555,0.973) -traversedist 0.02
+lakerPreSel -point (1.309,0.93) -traversedist 0.02
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 0
+lakerSelKind -selkind \
+           {Shape Device Mcell Route IsDevFlatten IsMCellFlatten IsRouteFlatten}
+lakerPreSel -point (1.595,0.96) -traversedist 0.02
+lakerCreatePath -layerName METAL1 -point (1.595,0.96) (1.105,0.96) -width \
+           0.120000 0.000000 -routeStatus fixed
+lakerPreSel -point (0.73,1.412) -traversedist 0.02
+lakerZoomInByArea -point (0.73,0.403) (2.342,1.523)
+lakerPreSel -point (1.882,0.731) -traversedist 0.007
+lakerZoomOut
+lakerPreSel -point (2.229,0.498) -traversedist 0.013
+lakerZoomOut
+lakerPreSel -point (1.375,0.858) -traversedist 0.027
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerChangeSelMode -mode Object
+lakerPreSelMode -traversein 1 -fromtop 1 -TrHierFilter 0
+lakerSelKind -selkind {Shape Device Mcell Route IsDevFlatten IsMCellFlatten}
+lakerPreSel -point (1.415,0.93) -traversedist 0.027
+lakerConnChecker -addNet -net LakerNet__1 -startPoint (1.415,0.93)
+lakerConnChecker -toMaxLevel -net LakerNet__1 -speedMode -traceViaArray 1
+lakerPreSel -point (0.081,1.249) -traversedist 0.027
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerCreateText -layerName METAL1 -point (1.67,0.97) -justify CenterCenter \
+           -height 0.200000 -text {n0}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.226,1.387) -traversedist 0.027
+lakerSingleSel -point (1.226,1.387) -traversedist 0.027
+lakerPreSel -point (1.75,0.962) -traversedist 0.027
+lakerSingleSel
+lakerPreSel -point (2.659,1.044) -traversedist 0.027
+lakerSingleSel -point (2.659,1.044) -traversedist 0.027
+lakerPreSel -point (1.835,1.002) -traversedist 0.027
+lakerDeselectAll
+lakerPreSel -point (1.769,1.002) -traversedist 0.027
+lakerClearHighLight
+lakerPreSel -point (1.75,0.983) -traversedist 0.027
+lakerSingleSel
+lakerPreSel -point (1.676,1.033) -traversedist 0.027
+lakerSingleSel
+lakerPreSel -point (1.596,0.972) -traversedist 0.027
+lakerSingleSel
+lakerPreSel -point (1.67,0.972) -traversedist 0.027
+lakerSingleSel
+lakerPreSel -point (-0.496,2.589) -traversedist 0.027
+lakerAttribute -index 1 -purpose pin
+lakerPreSel -point (-0.015,1.039) -traversedist 0.027
+lakerSingleSel -point (-0.015,1.039) -traversedist 0.027
+lakerPreSel -point (-1.416,1.898) -traversedist 0.027
+lakerSetActiveLayer -layerName CONT -purpose drawing
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerCreateRect -layerName METAL1 -point (0.09,0.76) (0.565,1.28)
+lakerPreSel -point (0.195,1.164) -traversedist 0.027
+lakerSingleSel
+lakerPreSel -point (0.174,1.172) -traversedist 0.027
+lakerStretchObj -refPoint (0.175,1.17) -ignoreNet 0 -offsetPoint (0.295,1.17)
+lakerPreSel -point (0.495,1.182) -traversedist 0.027
+lakerStretchObj -refPoint (0.45,1.27) -ignoreNet 0 -offsetPoint (0.45,1.16)
+lakerPreSel -point (0.45,1.164) -traversedist 0.027
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerPreSel -point (0.232,1.31) -traversedist 0.027
+lakerCreateRect -layerName METAL1 -point (0.245,0.79) (0.58,1.195)
+lakerPreSelMode -traversein 1 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind {Shape Device Mcell Route IsDevFlatten IsMCellFlatten}
+lakerChangeSelMode -mode Object
+lakerPreSel -point (0.003,1.709) -traversedist 0.027
+lakerZoomInByArea -point (-0.381,0.52) (1.331,1.708)
+lakerPreSel -point (0.728,1.005) -traversedist 0.007
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (0.578,0.997) -traversedist 0.007
+lakerSingleSel
+lakerStretchObj -refPoint (0.58,0.995) -ignoreNet 0 -offsetPoint (0.555,0.995)
+lakerPreSel -point (0.653,0.892) -traversedist 0.007
+lakerSingleSel -point (0.653,0.892) -traversedist 0.007
+lakerPreSel -point (0.403,0.845) -traversedist 0.007
+lakerPreSelMode -traversein 1 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind {Shape Device Mcell Route IsDevFlatten IsMCellFlatten}
+lakerChangeSelMode -mode Object
+lakerPreSel -point (0.713,0.822) -traversedist 0.007
+lakerZoomOut
+lakerPreSel -point (0.556,0.811) -traversedist 0.014
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (0.55,0.913) -traversedist 0.014
+lakerSingleSel
+lakerStretchObj -refPoint (0.55,0.915) -ignoreNet 0 -offsetPoint (0.53,0.915)
+lakerPreSel -point (0.242,1.082) -traversedist 0.014
+lakerSingleSel
+lakerStretchObj -refPoint (0.24,1.08) -ignoreNet 0 -offsetPoint (0.26,1.08)
+lakerPreSel -point (0.875,0.82) -traversedist 0.014
+lakerSingleSel -point (0.875,0.82) -traversedist 0.014
+lakerPreSel -point (0.749,0.886) -traversedist 0.014
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.61,0.893) -traversedist 0.014
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind {Shape Device Mcell Route IsDevFlatten IsMCellFlatten}
+lakerChangeSelMode -mode Object
+lakerPreSel -point (0.83,1.01) -traversedist 0.014
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (0.526,1.096) -traversedist 0.014
+lakerSingleSel
+lakerStretchObj -refPoint (0.525,1.095) -ignoreNet 0 -offsetPoint (0.5,1.095)
+lakerPreSel -point (0.655,1.024) -traversedist 0.014
+lakerSingleSel -point (0.655,1.024) -traversedist 0.014
+lakerPreSel -point (0.701,0.825) -traversedist 0.014
+lakerPreSelMode -traversein 1 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind {Shape Device Mcell Route IsDevFlatten IsMCellFlatten}
+lakerChangeSelMode -mode Object
+lakerPreSel -point (0.629,0.873) -traversedist 0.014
+lakerDistance -point (0.359,0.79) (0.336,0.565)
+lakerPreSel -point (0.697,0.704) -traversedist 0.014
+lakerZoomOut
+lakerPreSel -point (0.75,0.839) -traversedist 0.028
+lakerDistance -point (0.502,1.195) (0.708,1.24)
+lakerPreSel -point (0.809,0.839) -traversedist 0.028
+lakerZoomOut
+lakerPreSel -point (-0.104,2.528) -traversedist 0.056
+lakerZoomInByArea -point (-1.075,-1.418) (4.569,2.5)
+lakerPreSel -point (2.592,0.405) -traversedist 0.023
+lakerZoomOut
+lakerPreSel -point (1.698,0.948) -traversedist 0.047
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (1.689,0.999) -traversedist 0.047
+lakerSingleSel
+lakerPreSel -point (1.754,0.641) -traversedist 0.047
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (1.755,0.64) -offsetPoint (1.755,2.215)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (2.693,1.962) -traversedist 0.047
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (-1.925,3.501) -traversedist 0.047
+lakerAttribute -index 1 -purpose pin -text {VDD}
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (1.763,2.58) -traversedist 0.047
+lakerAreaSel -point (1.41,2.55) (1.763,2.58)
+lakerPreSel -point (1.773,2.478) -traversedist 0.047
+lakerSingleSel
+lakerPreSel -point (1.8,2.51) -traversedist 0.047
+lakerStretchObj -refPoint (1.8,2.51) -ignoreNet 0 -offsetPoint (1.57,2.51)
+lakerPreSel -point (1.596,2.31) -traversedist 0.047
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (1.615,2.555) -offsetPoint (1.615,-0.105)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (-2.348,1.636) -traversedist 0.047
+lakerAttribute -index 1 -purpose pin -text {VSS}
+lakerPreSel -point (3.586,-0.229) -traversedist 0.047
+lakerSingleSel -point (3.586,-0.229) -traversedist 0.047
+lakerPreSel -point (2.996,0.618) -traversedist 0.047
+lakerSingleSel -point (2.996,0.618) -traversedist 0.047
+lakerPreSel -point (1.754,0.939) -traversedist 0.047
+lakerSingleSel
+lakerPreSel -point (1.624,0.911) -traversedist 0.047
+lakerSingleSel
+lakerPreSel -point (1.647,0.934) -traversedist 0.047
+lakerSingleSel
+lakerPreSel -point (1.647,0.939) -traversedist 0.047
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (1.645,0.94) -offsetPoint (0.38,0.94)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (0.428,0.915) -traversedist 0.047
+lakerSingleSel
+lakerPreSel -point (0.401,0.911) -traversedist 0.047
+lakerSingleSel
+lakerPreSel -point (0.549,0.911) -traversedist 0.047
+lakerSingleSel
+lakerPreSel -point (-3.213,3.901) -traversedist 0.047
+lakerAttribute -index 1 -purpose pin -text {A}
+lakerPreSel -point (-0.72,0.664) -traversedist 0.047
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerZoomInByArea -point (-0.739,-0.094) (2.283,2.004)
+lakerZoomOut
+lakerPreSel -point (0.9,0.769) -traversedist 0.025
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (2.347,0.705) -traversedist 0.025
+lakerSingleSel -point (2.347,0.705) -traversedist 0.025
+lakerPreSel -point (0.813,0.767) -traversedist 0.025
+lakerSaveDesign -autosave
+lakerCreateInstance -point (0.78,0.705) -cell POLY_GATE -lib leon -view layout
+lakerPreSel -point (0.118,1.873) -traversedist 0.025
+lakerZoomInByArea -point (-0.021,0.334) (2.195,1.872)
+lakerPreSel -point (0.983,0.806) -traversedist 0.009
+lakerDistance -point (1.02,0.853) (1.105,0.836)
+lakerPreSel -point (0.848,0.901) -traversedist 0.009
+lakerSingleSel
+lakerPreSel -point (0.208,1.872) -traversedist 0.009
+lakerRotate90 -refPoint (0.9,0.825)
+lakerPreSel -point (0.93,0.841) -traversedist 0.009
+lakerDistance -point (0.96,0.795) (1.105,0.774)
+lakerPreSel -point (0.822,0.814) -traversedist 0.009
+lakerSingleSel
+lakerPreSel -point (0.822,0.809) -traversedist 0.009
+lakerStretchObj -refPoint (0.82,0.81) -ignoreNet 0 -offsetPoint (0.865,0.81)
+lakerDistance -point (1.005,0.741) (1.105,0.733)
+lakerZoomOut
+lakerPreSel -point (0.748,0.857) -traversedist 0.018
+lakerSingleSel -point (0.748,0.857) -traversedist 0.018
+lakerPreSel -point (0.872,0.857) -traversedist 0.018
+lakerSingleSel
+lakerPreSel -point (0.883,0.857) -traversedist 0.018
+lakerStretchObj -refPoint (0.885,0.855) -ignoreNet 0 -offsetPoint (0.865,0.855)
+lakerPreSel -point (0.796,0.793) -traversedist 0.018
+lakerSingleSel -point (0.796,0.793) -traversedist 0.018
+lakerPreSel -point (0.768,0.728) -traversedist 0.018
+lakerCreateRect -layerName METAL1 -point (0.75,0.61) (0.985,0.945)
+lakerPreSel -point (0.692,1.024) -traversedist 0.018
+lakerPreSelMode -traversein 1 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind {Shape Device Mcell Route IsDevFlatten IsMCellFlatten}
+lakerChangeSelMode -mode Object
+lakerPreSel -point (0.628,1.044) -traversedist 0.018
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerChangeSelMode -mode Vertex
+lakerDeselectAll
+lakerPreSel -point (0.389,0.969) -traversedist 0.018
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (0.39,0.97) -offsetPoint (0.835,0.97)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (0.852,1.013) -traversedist 0.018
+lakerStretchObj -refPoint (0.85,1.015) -ignoreNet 0 -offsetPoint (0.85,0.85)
+lakerPreSel -point (-0.514,1.526) -traversedist 0.018
+lakerAttribute -index 1 -purpose pin -text {B}
+lakerPreSel -point (0.668,0.675) -traversedist 0.018
+lakerSingleSel -point (0.668,0.675) -traversedist 0.018
+lakerZoomOut
+lakerPreSel -point (2.882,0.502) -traversedist 0.037
+lakerSingleSel -point (2.882,0.502) -traversedist 0.037
+lakerPreSel -point (2.517,1.141) -traversedist 0.037
+lakerSingleSel -point (2.517,1.141) -traversedist 0.037
+lakerSingleSel -point (2.517,1.141) -traversedist 0.037
+lakerSingleSel -point (2.517,1.141) -traversedist 0.037
+lakerPreSel -point (2.901,1.77) -traversedist 0.037
+lakerSingleSel -point (2.901,1.77) -traversedist 0.037
+lakerPreSel -point (2.437,2.855) -traversedist 0.037
+lakerAreaSel -point (2.437,1.985) (2.785,2.855)
+lakerPreSel -point (2.813,1.631) -traversedist 0.037
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.959,0.297) -traversedist 0.037
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.411,-0.137) -traversedist 0.037
+lakerAlignObj -point (2.411,-0.137) -mode start
+lakerPreSel -point (2.689,2.27) -traversedist 0.037
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.766,1.715) -traversedist 0.037
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.546,2.497) -traversedist 0.037
+lakerAlignObj -point (2.546,2.497) -mode start
+lakerPreSel -point (2.411,-0.188) -traversedist 0.037
+lakerAlignObj -refObj 1 -refPoint (2.41,-0.19) -traversedist 0.018
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.744,1.441) -traversedist 0.037
+lakerSingleSel -point (2.744,1.441) -traversedist 0.037
+lakerPreSel -point (-3.185,3.304) -traversedist 0.037
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerPreSel -point (-1.446,2.621) -traversedist 0.037
+lakerSingleSel -point (-1.446,2.621) -traversedist 0.037
+lakerRedraw
+lakerPreSel -point (0.935,3.136) -traversedist 0.037
+lakerSingleSel -point (0.935,3.136) -traversedist 0.037
+lakerPreSel -point (-3.331,3.465) -traversedist 0.037
+lakerSetColPat -visall 0
+lakerSetColPat -selall 0
+lakerPreSel -point (-2.144,1.883) -traversedist 0.037
+lakerSingleSel -point (-2.144,1.883) -traversedist 0.037
+lakerPreSel -point (-2.14,1.89) -traversedist 0.037
+lakerRedraw
+lakerPreSel -point (-3.12,2.932) -traversedist 0.037
+lakerSetColPat -layerName NWELL -sel 1 -vis 1
+lakerSetActiveLayer -layerName NWELL -purpose drawing
+lakerPreSel -point (-1.614,2.303) -traversedist 0.037
+lakerSingleSel -point (-1.614,2.303) -traversedist 0.037
+lakerClearRuler
+lakerPreSel -point (-3.309,3.469) -traversedist 0.037
+lakerSetColPat -layerName PIMP -sel 1 -vis 1
+lakerSetActiveLayer -layerName PIMP -purpose drawing
+lakerSetColPat -layerName NIMP -sel 1 -vis 1
+lakerSetActiveLayer -layerName NIMP -purpose drawing
+lakerPreSel -point (-1.585,2.654) -traversedist 0.037
+lakerSingleSel -point (-1.585,2.654) -traversedist 0.037
+lakerRedraw
+lakerPreSel -point (0.862,3.162) -traversedist 0.037
+lakerSingleSel -point (0.862,3.162) -traversedist 0.037
+lakerPreSel -point (0.976,3.041) -traversedist 0.037
+lakerAreaSel -point (0.976,-0.74) (1.715,3.041)
+lakerPreSel -point (2.101,1.364) -traversedist 0.037
+lakerSingleSel -point (2.101,1.364) -traversedist 0.037
+lakerPreSel -point (1.041,3.001) -traversedist 0.037
+lakerAreaSel -point (1.041,-0.5) (1.485,3.001)
+lakerPreSel -point (2.042,1.642) -traversedist 0.037
+lakerSingleSel -point (2.042,1.642) -traversedist 0.037
+lakerPreSel -point (0.979,3.078) -traversedist 0.037
+lakerAreaSel -point (0.979,-0.41) (1.505,3.078)
+lakerPreSel -point (1.293,1.839) -traversedist 0.037
+lakerStretchObj -refPoint (1.325,1.83) -ignoreNet 0 -offsetPoint (3.87,1.83)
+lakerPreSel -point (4.019,0.034) -traversedist 0.037
+lakerSingleSel -point (4.019,0.034) -traversedist 0.037
+lakerPreSel -point (-3.207,3.271) -traversedist 0.037
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerPreSel -point (-1.706,2.723) -traversedist 0.037
+lakerSingleSel -point (-1.706,2.723) -traversedist 0.037
+lakerRedraw
+lakerPreSel -point (-1.702,2.559) -traversedist 0.037
+lakerSingleSel -point (-1.702,2.559) -traversedist 0.037
+lakerPreSel -point (-1.483,2.647) -traversedist 0.037
+lakerDistance -point (0.05,2.519) (0.17,2.5)
+lakerPreSel -point (-0.091,2.077) -traversedist 0.037
+lakerDeselectAll
+lakerPreSel -point (-0.245,3.012) -traversedist 0.037
+lakerAreaSel -point (-0.245,-0.69) (0.185,3.012)
+lakerPreSel -point (-0.877,1.704) -traversedist 0.037
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (0.187,2.519) -traversedist 0.037
+lakerAlignObj -point (0.187,2.519) -mode start
+lakerPreSel -point (0.201,1.737) -traversedist 0.037
+lakerAlignObj -refObj 1 -refPoint (0.2,1.735) -traversedist 0.018 -space 0.075
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (4.435,1.152) -traversedist 0.037
+lakerSingleSel -point (4.435,1.152) -traversedist 0.037
+lakerPreSel -point (3.226,3.048) -traversedist 0.037
+lakerAreaSel -point (3.226,-0.8) (4.235,3.048)
+lakerPreSel -point (4.311,-0.302) -traversedist 0.037
+lakerSingleSel -point (4.311,-0.302) -traversedist 0.037
+lakerPreSel -point (3.069,3.07) -traversedist 0.037
+lakerAreaSel -point (3.069,-0.98) (4.305,3.07)
+lakerPreSel -point (4.325,-0.598) -traversedist 0.037
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.714,1.759) -traversedist 0.037
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.656,1.73) -traversedist 0.037
+lakerAlignObj -point (2.656,1.73) -mode start
+lakerAlignObj -mode end
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (2.627,1.711) -traversedist 0.037
+lakerSingleSel
+lakerPreSel -point (2.276,2.983) -traversedist 0.037
+lakerAreaSel -point (2.276,-0.57) (2.645,2.983)
+lakerPreSel -point (2.839,2.325) -traversedist 0.037
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (2.389,2.526) -traversedist 0.037
+lakerAlignObj -point (2.389,2.526) -mode start
+lakerPreSel -point (2.086,1.678) -traversedist 0.037
+lakerAlignObj -refObj 1 -refPoint (2.085,1.68) -traversedist 0.018 -space 0.075
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (3.01,3.487) -traversedist 0.037
+lakerSingleSel -point (3.01,3.487) -traversedist 0.037
+lakerPreSel -point (3.113,3.22) -traversedist 0.037
+lakerAreaSel -point (3.113,-0.83) (4.16,3.22)
+lakerPreSel -point (1.465,2.453) -traversedist 0.037
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment RegionArea}
+lakerPreSelMode -traversein 1 -fromtop 0 -TrHierFilter 16
+lakerPreSel -point (3.712,2.515) -traversedist 0.037
+lakerAlignObj -point (3.712,2.515) -mode start
+lakerPreSel -point (2.17,2.486) -traversedist 0.037
+lakerAlignObj -refObj 1 -refPoint (2.17,2.485) -traversedist 0.018 -space 0.12
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerPreSel -point (3.142,2.248) -traversedist 0.037
+lakerDistance -point (2.17,2.5) (2.29,2.471)
+lakerPreSel -point (3.051,1.525) -traversedist 0.037
+lakerSingleSel -point (3.051,1.525) -traversedist 0.037
+lakerZoomAll
+lakerPreSel -point (2.621,1.555) -traversedist 0.02
+lakerSingleSel -point (2.621,1.555) -traversedist 0.02
+lakerPreSel -point (2.615,1.559) -traversedist 0.02
+lakerSingleSel -point (2.615,1.559) -traversedist 0.02
+lakerPreSel -point (2.671,1.529) -traversedist 0.02
+lakerSingleSel -point (2.671,1.529) -traversedist 0.02
+lakerPreSel -point (-1.287,2.963) -traversedist 0.02
+lakerSaveDesign
+lakerPreSel -point (-0.825,2.836) -traversedist 0.02
+lakerSingleSel -point (-0.825,2.836) -traversedist 0.02
+lakerPreSel -point (-0.331,1.271) -traversedist 0.02
+lakerSingleSel -point (-0.331,1.271) -traversedist 0.02
+lakerPreSel -point (-0.033,2.915) -traversedist 0.02
+lakerCalibreDRC
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {AND2X1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (1.859,0.835) -traversedist 0.003
+lakerSingleSel
+lakerPreSel -point (1.856,0.905) -traversedist 0.003
+lakerZoomOut
+lakerPreSel -point (1.836,0.85) -traversedist 0.005
+lakerZoomOut
+lakerPreSel -point (1.785,0.718) -traversedist 0.01
+lakerDistance -point (1.835,0.942) (1.915,0.935)
+lakerPreSel -point (1.672,0.954) -traversedist 0.01
+lakerSingleSel
+lakerPreSel -point (1.057,1.805) -traversedist 0.01
+lakerRotate90 -refPoint (1.67,0.97)
+lakerPreSel -point (1.845,1.22) -traversedist 0.01
+lakerUndo
+lakerPreSel -point (1.825,0.969) -traversedist 0.01
+lakerSingleSel
+lakerPreSel -point (0.919,1.809) -traversedist 0.01
+lakerRotate90 -refPoint (1.715,0.96)
+lakerPreSel -point (2.102,0.727) -traversedist 0.01
+lakerDistance -point (1.775,0.97) (1.915,0.977)
+lakerPreSel -point (1.397,0.816) -traversedist 0.01
+lakerSingleSel
+lakerPreSel -point (1.382,0.925) -traversedist 0.01
+lakerSingleSel
+lakerPreSel -point (1.377,0.929) -traversedist 0.01
+lakerStretchObj -refPoint (1.375,0.93) -ignoreNet 0 -offsetPoint (1.435,0.93)
+lakerPreSel -point (1.441,0.822) -traversedist 0.01
+lakerSingleSel
+lakerPreSel -point (1.699,0.849) -traversedist 0.01
+lakerSingleSel
+lakerPreSel -point (1.196,0.974) -traversedist 0.01
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerPreSelMode -traversein 1 -fromtop 1 -TrHierFilter 0
+lakerSelKind -selkind {Shape Device Mcell Route IsDevFlatten IsMCellFlatten}
+lakerConnChecker -addNet -net LakerNet__1 -startPoint (1.41,0.96)
+lakerConnChecker -toMaxLevel -net LakerNet__1 -speedMode -traceViaArray 1
+lakerPreSelMode -traversein 0 -fromtop 1 -TrHierFilter 32784
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerZoomOut
+lakerPreSel -point (2.345,0.341) -traversedist 0.02
+lakerSingleSel -point (2.345,0.341) -traversedist 0.02
+lakerSaveDesign
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {AND2X1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (2.613,0.889) -traversedist 0.02
+lakerSingleSel -point (2.613,0.889) -traversedist 0.02
+lakerPreSel -point (-0.037,2.658) -traversedist 0.02
+lakerCalibreLVS
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {AND2X1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (2.931,0.828) -traversedist 0.02
+lakerSingleSel -point (2.931,0.828) -traversedist 0.02
+lakerPreSel -point (2.832,1.668) -traversedist 0.02
+lakerSingleSel -point (2.832,1.668) -traversedist 0.02
+lakerZoomAll
+lakerPreSel -point (2.805,1.939) -traversedist 0.02
+lakerClearRuler
+lakerPreSel -point (0.31,2.485) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (0.601,2.495) -traversedist 0.02
+lakerDecreaseSel
+lakerPreSel -point (0.917,2.491) -traversedist 0.02
+lakerDecreaseSel
+lakerPreSel -point (0.625,2.537) -traversedist 0.02
+lakerDecreaseSel
+lakerPreSel -point (0.937,2.521) -traversedist 0.02
+lakerDecreaseSel
+lakerPreSel -point (0.913,2.533) -traversedist 0.02
+lakerSingleSel
+lakerPreSel -point (0.588,2.525) -traversedist 0.02
+lakerDecreaseSel
+lakerPreSel -point (0.615,2.519) -traversedist 0.02
+lakerIncreaseSel
+lakerPreSel -point (0.244,2.499) -traversedist 0.02
+lakerIncreaseSel
+lakerPreSel -point (0.348,2.493) -traversedist 0.02
+lakerIncreaseSel
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (0.35,2.495) -offsetPoint (1.37,2.495)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (-0.083,-0.169) -traversedist 0.02
+lakerSingleSel -point (-0.083,-0.169) -traversedist 0.02
+lakerPreSel -point (1.0,-0.205) -traversedist 0.02
+lakerAreaSel -point (0.15,-0.205) (1.0,0.01)
+lakerPreSel -point (0.231,-0.074) -traversedist 0.02
+lakerChangeSelMode -mode DevObj
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group}
+lakerCopyObj -refPoint (0.635,-0.09) -offsetPoint (1.565,-0.09)
+lakerSelKind -selkind \
+           {Shape Label Instance Array Device Mcell Route Ruler Comment Group RegionArea}
+lakerChangeSelMode -mode Vertex
+lakerPreSel -point (2.98,0.19) -traversedist 0.02
+lakerSingleSel -point (2.98,0.19) -traversedist 0.02
+lakerPreSel -point (2.861,1.983) -traversedist 0.02
+lakerSaveDesign
+lakerPreSel -point (-0.549,2.957) -traversedist 0.02
+lakerCalibreDRC
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {AND2X1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (-0.988,2.967) -traversedist 0.02
+lakerCalibreLVS
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell \
+           {AND2X1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib \
+           1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map \
+           -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} \
+           -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 \
+           -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 \
+           -keepLastOpts 1
+lakerPreSel -point (-0.747,1.86) -traversedist 0.02
+lakerSingleSel -point (-0.747,1.86) -traversedist 0.02
+lakerPreSel -point (-0.777,1.725) -traversedist 0.02
+lakerSelectAll
+lakerPreSel -point (-1.224,2.921) -traversedist 0.02
+lakerShiftOrigin -point (0.13,-0.275)
+lakerPreSel -point (-0.362,0.084) -traversedist 0.02
+lakerZoomAll
+lakerPreSel -point (-1.078,1.744) -traversedist 0.02
+lakerZoomAll
+lakerPreSel -point (-1.118,2.224) -traversedist 0.02
+lakerSaveDesign
+lakerPreSel -point (3.275,3.246) -traversedist 0.02
+lakerCloseDesign

@@ -2560,4 +2560,2600 @@ New connection accepted, fd = 18
 Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/lvs/DFFQX1.calibre.db" ]
 Transferring library (leon) to GDSII (/home/user/wrk/standard_113/lvs/DFFQX1.calibre.db) ...
 	Please wait a moment...
-lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} 
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 31
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+Calibre process exit.
+lakerZoomOut
+lakerZoomOut
+lakerPanLeft
+lakerZoomAll
+lakerSaveAsDesign -cell DFFQX1_1018_F -IgnoreLogicSchematicView 0
+lakerZoomAll
+lakerDistance -point (0.0,2.82) (5.835,2.825)
+lakerZoomInByArea -point (-1.8,-0.083) (3.542,3.245)
+lakerDistance -point (0.675,2.506) (0.775,2.52)
+lakerDistance -point (0.875,2.532) (1.045,2.504)
+lakerDistance -point (1.78,2.506) (1.95,2.514)
+lakerDeselectAll
+lakerAreaSel -point (0.977,2.24) (1.08,2.561)
+lakerSingleSel
+lakerSetColPat -layerName NWELL -vis 0
+lakerSetColPat -layerName PIMP -vis 0
+lakerSetColPat -layerName NIMP -vis 0
+lakerSingleSel -point (-0.923,2.377) -traversedist 0.02
+lakerRedraw
+lakerAreaSel -point (0.947,0.425) (1.265,3.022)
+lakerZoomInByArea -point (-0.226,1.178) (2.522,2.89)
+lakerAlignObj -point (1.045,2.516) -mode start
+lakerAlignObj -refObj 1 -refPoint (0.875,2.495) -traversedist 0.005 -space 0.12
+lakerDistance -point (0.89,1.867) (0.995,1.861)
+lakerZoomOut
+lakerUndo
+lakerSingleSel -point (-0.225,2.424) -traversedist 0.02
+lakerZoomInByArea -point (-1.225,1.015) (2.457,3.309)
+lakerDistance -point (0.89,1.775) (1.045,1.745)
+lakerZoomInByArea -point (0.437,1.331) (1.661,2.093)
+lakerZoomOut
+lakerZoomOut
+lakerDeselectAll
+lakerAreaSel -point (0.932,2.49) (0.95,2.587)
+lakerAreaSel -point (0.925,0.525) (1.32,2.566)
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.115,1.975) -offsetPoint (1.095,1.975)
+lakerChangeSelMode -mode Vertex
+lakerDistance -point (0.89,1.81) (1.025,1.77)
+lakerZoomOut
+lakerZoomIn
+lakerZoomIn
+lakerDistance -point (0.89,1.729) (1.025,1.725)
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.125,1.825) -offsetPoint (1.115,1.825)
+lakerChangeSelMode -mode Vertex
+lakerZoomAll
+lakerZoomInByArea -point (-0.059,1.016) (2.021,2.312)
+lakerClearRuler
+lakerDistance -point (0.89,1.878) (1.015,1.869)
+lakerZoomOut
+lakerAreaSel -point (1.27,0.68) (1.575,2.292)
+lakerDeselectAll
+lakerAlignObj -mode end
+lakerDeselectAll
+lakerAreaSel -point (1.296,0.685) (1.555,2.274)
+lakerAlignObj -point (1.359,2.121) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.135,1.685) -traversedist 0.008 -space 0.12
+lakerSingleSel -point (-0.396,1.707) -traversedist 0.015
+lakerZoomInByArea -point (0.471,1.269) (1.543,1.937)
+lakerChangeSelMode -mode Object
+lakerAreaSel -point (1.135,1.465) (1.17,1.604)
+lakerChangeSelMode -mode Vertex
+lakerUndo
+lakerRedo
+lakerSingleSel -point (0.895,1.395) -traversedist 0.004
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerChopObj -point (1.135,1.46) (1.135,1.605) (1.18,1.605) (1.18,1.46)
+lakerChangeSelMode -mode Vertex
+lakerZoomOut
+lakerZoomOut
+lakerSingleSel -point (1.471,1.144) -traversedist 0.016
+lakerSaveDesign -autosave
+lakerAreaSel -point (1.555,1.38) (1.875,2.588)
+lakerIncreaseSel
+lakerAlignObj -point (1.671,2.116) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.38,2.15) -traversedist 0.008 -space 0.12
+lakerSingleSel -point (1.141,1.243) -traversedist 0.016
+lakerSingleSel
+lakerStretchObj -refPoint (0.91,1.315) -ignoreNet 0 -offsetPoint (1.055,1.315)
+lakerSingleSel
+lakerStretchObj -refPoint (1.645,1.61) -ignoreNet 0 -offsetPoint (1.49,1.61)
+lakerSingleSel
+lakerStretchObj -refPoint (1.745,1.645) -ignoreNet 0 -offsetPoint (1.605,1.645)
+lakerSingleSel -point (1.864,1.738) -traversedist 0.016
+lakerSingleSel -point (1.863,1.714) -traversedist 0.016
+lakerUndo
+lakerUndo
+lakerUndo
+lakerUndo
+lakerSingleSel -point (-0.377,2.003) -traversedist 0.016
+lakerDistance -point (1.375,2.112) (1.67,2.125)
+lakerZoomOut
+lakerPanUp
+lakerPanRight
+lakerPanDown
+lakerPanLeft
+lakerZoomInByArea -point (0.036,0.099) (5.422,3.455)
+lakerDistance -point (2.975,2.03) (3.15,2.068)
+lakerPanRight
+lakerPanLeft
+lakerPanLeft
+lakerPanRight
+lakerPanLeft
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerZoomOut
+lakerZoomOut
+lakerZoomAll
+lakerZoomAll
+lakerZoomAll
+lakerZoomInByArea -point (-0.063,-0.365) (5.883,3.339)
+lakerDistance -point (1.115,2.103) (1.255,2.105)
+lakerSaveDesign -autosave
+lakerDistance -point (1.375,1.205) (1.61,1.212)
+lakerZoomInByArea -point (0.958,0.769) (2.212,1.551)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.375,2.066) (1.67,2.063)
+lakerZoomOut
+lakerZoomInByArea -point (-1.139,-0.564) (4.913,3.206)
+lakerZoomInByArea -point (0.275,1.408) (2.555,2.828)
+lakerZoomOut
+lakerZoomInByArea -point (1.458,0.897) (2.084,1.287)
+lakerZoomOut
+lakerZoomOut
+lakerPanUp
+lakerPanUp
+lakerZoomOut
+lakerZoomInByArea -point (0.794,1.667) (2.252,2.575)
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (0.086,1.027) (3.392,3.087)
+lakerZoomOut
+lakerPanRight
+lakerAreaSel -point (1.434,0.1) (6.29,3.209)
+lakerZoomInByArea -point (0.027,0.907) (3.671,3.177)
+lakerZoomInByArea -point (0.841,1.476) (2.433,2.468)
+lakerAlignObj -point (1.67,2.191) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.375,2.19) -traversedist 0.003 -space 0.18
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (1.062,0.806) (2.22,1.528)
+lakerDistance -point (1.375,1.178) (1.495,1.18)
+lakerZoomOut
+lakerZoomOut
+lakerPanRight
+lakerPanRight
+lakerPanLeft
+lakerZoomOut
+lakerDistance -point (0.0,2.837) (5.72,2.765)
+lakerZoomOut
+lakerZoomAll
+lakerClearRuler
+lakerSingleSel -point (4.481,1.309) -traversedist 0.026
+lakerDistance -point (0.0,2.786) (5.72,2.783)
+lakerZoomInByArea -point (1.796,0.665) (4.772,2.519)
+lakerDistance -point (3.155,1.255) (3.335,1.289)
+lakerZoomOut
+lakerDeselectAll
+lakerAreaSel -point (3.239,-0.19) (5.975,3.142)
+lakerSingleSel
+lakerSingleSel -point (3.331,3.204) -traversedist 0.022
+lakerDistance -point (3.155,2.101) (3.335,2.103)
+lakerZoomInByArea -point (2.27,0.848) (5.146,2.64)
+lakerDistance -point (3.155,2.064) (3.335,2.066)
+lakerZoomOut
+lakerDeselectAll
+lakerAreaSel -point (3.226,-0.055) (6.01,3.121)
+lakerAlignObj -point (3.345,1.718) -mode start
+lakerAlignObj -refObj 1 -refPoint (3.16,1.635) -traversedist 0.011 -space 0.12
+lakerSingleSel -point (6.152,1.071) -traversedist 0.021
+lakerDeselectAll
+lakerSingleSel
+lakerStretchObj -refPoint (3.285,2.805) -ignoreNet 0 -offsetPoint (3.325,2.805)
+lakerZoomInByArea -point (2.128,2.377) (3.698,3.355)
+lakerSaveDesign -autosave
+lakerDistance -point (3.11,2.82) (3.26,2.825)
+lakerDistance -point (2.84,2.824) (2.99,2.82)
+lakerDistance -point (2.55,2.821) (2.72,2.812)
+lakerZoomOut
+lakerZoomOut
+lakerPanDown
+lakerPanDown
+lakerZoomInByArea -point (2.503,-0.195) (3.533,0.447)
+lakerDistance -point (3.105,0.177) (3.215,0.185)
+lakerZoomOut
+lakerZoomOut
+lakerSingleSel
+lakerStretchObj -refPoint (3.295,0.165) -ignoreNet 0 -offsetPoint (3.31,0.165)
+lakerSingleSel -point (3.263,-0.124) -traversedist 0.015
+lakerZoomOut
+lakerSingleSel -point (3.379,-0.585) -traversedist 0.03
+lakerZoomOut
+lakerSingleSel -point (0.41,3.456) -traversedist 0.061
+lakerZoomInByArea -point (-1.165,-1.088) (6.725,3.828)
+lakerDistance -point (0.0,2.862) (5.66,2.841)
+lakerClearRuler
+lakerDistance -point (3.395,1.738) (3.605,1.773)
+lakerDistance -point (3.155,1.77) (3.275,1.764)
+lakerDistance -point (0.0,2.824) (5.66,2.783)
+lakerDistance -point (3.155,2.155) (3.275,2.152)
+lakerDistance -point (3.155,2.217) (3.335,2.211)
+lakerDistance -point (2.86,2.091) (3.035,2.117)
+lakerDistance -point (2.845,1.049) (3.035,1.087)
+lakerDistance -point (2.86,1.852) (3.035,1.802)
+lakerDistance -point (2.6,1.817) (2.74,1.846)
+lakerZoomInByArea -point (1.558,-0.536) (7.554,3.2)
+lakerPanLeft
+lakerClearRuler
+lakerAreaSel -point (2.989,0.49) (3.28,2.293)
+lakerSingleSel -point (3.258,0.456) -traversedist 0.022
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerZoomOut
+lakerAreaSel -point (2.928,-0.44) (5.965,3.16)
+lakerZoomInByArea -point (1.13,-0.474) (6.892,3.116)
+lakerDistance -point (2.86,2.123) (3.035,2.131)
+lakerAlignObj -point (3.038,2.086) -mode start
+lakerAlignObj -refObj 1 -refPoint (2.865,2.045) -traversedist 0.011 -space 0.12
+lakerSingleSel -point (2.844,1.468) -traversedist 0.021
+lakerDistance -point (2.9,1.68) (2.95,1.568)
+lakerDistance -point (3.185,1.48) (3.211,1.325)
+lakerSingleSel
+lakerStretchObj -refPoint (3.165,1.52) -ignoreNet 0 -offsetPoint (3.165,1.47)
+lakerDistance -point (3.193,1.43) (3.193,1.325)
+lakerClearRuler
+lakerDistance -point (3.364,1.43) (3.356,1.325)
+lakerSingleSel
+lakerStretchObj -refPoint (3.145,1.465) -ignoreNet 0 -offsetPoint (3.145,1.485)
+lakerDistance -point (3.206,1.45) (3.198,1.325)
+lakerSingleSel
+lakerStretchObj -refPoint (3.175,1.5) -ignoreNet 0 -offsetPoint (3.175,1.485)
+lakerDistance -point (3.311,1.435) (3.309,1.325)
+lakerClearRuler
+lakerDistance -point (3.37,1.435) (3.37,1.325)
+lakerSingleSel
+lakerStretchObj -refPoint (3.185,1.49) -ignoreNet 0 -offsetPoint (3.185,1.505)
+lakerDistance -point (3.193,1.45) (3.193,1.325)
+lakerSingleSel
+lakerStretchObj -refPoint (3.195,1.49) -ignoreNet 0 -offsetPoint (3.195,1.485)
+lakerDistance -point (3.373,1.445) (3.351,1.325)
+lakerClearRuler
+lakerDistance -point (3.368,1.445) (3.368,1.325)
+lakerDistance -point (2.9,1.683) (2.95,1.545)
+lakerSingleSel
+lakerSingleSel -point (2.814,1.481) -traversedist 0.021
+lakerSaveDesign -autosave
+lakerSingleSel -point (2.812,1.479) -traversedist 0.021
+lakerZoomInByArea -point (1.938,1.048) (3.868,2.25)
+lakerDistance -point (2.889,1.68) (2.95,1.538)
+lakerDistance -point (2.969,1.545) (2.888,1.68)
+lakerAlignObj -mode end
+lakerDistance -point (2.969,1.545) (2.882,1.68)
+lakerAlignObj -mode end
+lakerClearRuler
+lakerSingleSel
+lakerSingleSel -point (2.83,1.564) -traversedist 0.007
+lakerDistance -point (2.97,1.545) (2.883,1.68)
+lakerZoomOut
+lakerDistance -point (3.1,2.12) (3.22,2.11)
+lakerZoomOut
+lakerClearRuler
+lakerSaveDesign
+lakerSingleSel
+lakerSingleSel -point (5.906,1.866) -traversedist 0.029
+lakerDistance -point (0.0,2.814) (5.605,2.78)
+lakerZoomInByArea -point (-0.034,-0.319) (5.828,3.333)
+lakerZoomOut
+lakerClearRuler
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerSingleSel -point (-0.935,3.281) -traversedist 0.043
+lakerRedraw
+lakerSingleSel -point (-0.935,3.281) -traversedist 0.043
+lakerZoomInByArea -point (-0.584,-0.994) (6.56,3.456)
+lakerAreaSel -point (3.222,-0.515) (5.765,3.194)
+lakerZoomInByArea -point (1.236,-0.389) (6.784,3.067)
+lakerAlignObj -point (3.286,2.061) -mode start
+lakerAlignObj -refObj 1 -refPoint (3.095,2.135) -traversedist 0.01 -space 0.12
+lakerSingleSel
+lakerDistance -point (3.32,0.641) (3.44,0.66)
+lakerDeselectAll
+lakerSingleSel
+lakerStretchObj -refPoint (3.285,1.47) -ignoreNet 0 -offsetPoint (3.345,1.47)
+lakerDistance -point (3.1,1.7) (3.22,1.721)
+lakerSingleSel
+lakerDistance -point (3.34,1.768) (3.48,1.766)
+lakerDeselectAll
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerZoomOut
+lakerSingleSel -point (5.047,-0.672) -traversedist 0.041
+lakerDistance -point (0.0,2.821) (5.545,2.833)
+lakerDeselectAll
+lakerAreaSel -point (5.798,-0.74) (6.74,3.297)
+lakerZoomInByArea -point (1.666,-0.073) (7.596,3.621)
+lakerSingleSel -point (6.677,1.704) -traversedist 0.022
+lakerAreaSel -point (5.722,-0.025) (6.5,3.217)
+lakerAlignObj -point (5.951,2.772) -mode start
+lakerAlignObj -refObj 1 -refPoint (5.55,2.725) -traversedist 0.011 -space 0.12
+lakerDistance -point (5.545,2.739) (5.665,2.733)
+lakerZoomOut
+lakerPanLeft
+lakerPanRight
+lakerSaveDesign
+lakerPanLeft
+lakerZoomAll
+lakerDeselectAll
+lakerSingleSel -point (1.011,-0.192) -traversedist 0.025
+lakerSingleSel -point (1.071,-0.24) -traversedist 0.025
+lakerClearRuler
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSingleSel -point (2.478,3.253) -traversedist 0.025
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+1 of selected objects cannot be deleted since the "Delete Shape Vertex" option in Preferences form is off.
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (1.656,-0.207) -traversedist 0.025
+lakerAreaSel -point (1.311,0.07) (1.405,0.303)
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSingleSel -point (1.721,-0.412) -traversedist 0.025
+lakerAreaSel -point (1.481,0.005) (1.75,0.283)
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerAreaSel -point (0.978,0.065) (1.25,0.285)
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerAreaSel -point (2.358,2.675) (2.94,2.903)
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (2.805,2.795) -offsetPoint (3.355,2.795)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (3.318,3.218) -traversedist 0.025
+lakerSaveDesign
+lakerCalibreDRC
+New connection accepted, fd = 18
+
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 33
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (0.545,1.543) (1.305,2.017).
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+lakerZoomOut
+lakerDistance -point (0.975,1.843) (0.875,1.826)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.375,2.125) (1.565,2.149)
+lakerDeselectAll
+lakerAreaSel -point (0.937,1.625) (1.235,2.564)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerDeselectAll
+lakerSingleSel
+lakerDistance -point (1.135,1.618) (1.255,1.631)
+lakerZoomInByArea -point (0.105,1.26) (2.153,2.536)
+lakerDistance -point (0.89,1.865) (1.015,1.862)
+lakerZoomOut
+lakerDistance -point (1.375,0.896) (1.56,0.902)
+lakerDistance -point (1.375,1.224) (1.495,1.222)
+lakerDistance -point (1.735,1.175) (1.915,1.175)
+lakerZoomInByArea -point (1.287,0.825) (2.419,1.531)
+lakerDistance -point (1.699,1.42) (1.71,1.27)
+lakerZoomOut
+lakerSingleSel
+lakerDistance -point (1.715,1.295) (1.835,1.285)
+lakerAlignObj -point (1.711,1.056) -mode start
+lakerAlignObj -mode end
+lakerAlignObj -point (1.682,1.211) -mode start
+lakerAlignObj -mode end
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (1.64,1.24) -ignoreNet 0 -offsetPoint (1.67,1.24)
+lakerStretchObj -refPoint (1.65,1.24) -ignoreNet 0 -offsetPoint (1.63,1.24)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerZoomOut
+lakerSingleSel
+lakerZoomInByArea -point (1.379,0.728) (2.547,1.456)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (1.515,1.26) -ignoreNet 0 -offsetPoint (1.575,1.26)
+lakerSingleSel
+lakerSingleSel
+lakerZoomIn
+lakerZoomOut
+lakerZoomOut
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSmashObj -level 1
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (1.525,1.26) -ignoreNet 0 -offsetPoint (1.575,1.26)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerDistance -point (1.785,1.25) (1.915,1.25)
+lakerZoomOut
+lakerZoomInByArea -point (1.201,0.691) (2.485,1.491)
+lakerDeselectAll
+lakerSingleSel
+lakerStretchObj -refPoint (1.75,1.16) -ignoreNet 0 -offsetPoint (1.76,1.16)
+lakerSingleSel
+lakerDistance -point (1.795,1.234) (1.915,1.227)
+lakerClearRuler
+lakerZoomOut
+lakerZoomOut
+lakerSaveDesign
+lakerDistance -point (1.12,0.863) (1.255,0.88)
+lakerDistance -point (1.115,2.091) (1.255,2.092)
+lakerDeselectAll
+lakerAreaSel -point (0.936,1.465) (1.225,2.567)
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.055,2.28) -offsetPoint (1.075,2.28)
+lakerChangeSelMode -mode Vertex
+lakerDistance -point (0.875,2.079) (1.035,2.083)
+lakerZoomInByArea -point (0.149,1.241) (2.121,2.469)
+lakerZoomIn
+lakerZoomIn
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (-1.163,0.052) (3.267,2.812)
+lakerSingleSel
+lakerDistance -point (1.135,2.178) (1.255,2.152)
+lakerDistance -point (0.875,2.271) (1.035,2.271)
+lakerDistance -point (0.875,1.866) (0.995,1.852)
+lakerDeselectAll
+lakerSingleSel
+lakerStretchObj -refPoint (1.155,1.43) -ignoreNet 0 -offsetPoint (1.125,1.43)
+lakerSingleSel
+lakerStretchObj -refPoint (1.05,1.42) -ignoreNet 0 -offsetPoint (1.02,1.42)
+lakerDeselectAll
+lakerSaveDesign
+lakerSingleSel
+lakerZoomIn
+lakerZoomOut
+lakerZoomOut
+lakerPanRight
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 33
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (2.686,1.176) (3.148,1.464).
+lakerSingleSel
+lakerDistance -point (2.885,1.292) (2.95,1.284)
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (3.05,1.25) (3.18,1.26)
+lakerDistance -point (2.81,1.68) (2.868,1.32)
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerZoomInByArea -point (2.292,0.563) (3.964,1.605)
+lakerZoomOut
+lakerZoomInByArea -point (2.616,1.089) (3.628,1.719)
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerSingleSel
+lakerSetActiveLayer -layerName POLY1 -purpose drawing
+lakerSingleSel
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (4.39,2.183) (4.24,2.18)
+lakerDistance -point (5.545,2.773) (0.0,2.77)
+lakerClearRuler
+lakerZoomInByArea -point (-0.06,-0.534) (5.98,3.228)
+lakerZoomInByArea -point (2.302,0.728) (4.298,1.972)
+lakerCreatePath -layerName POLY1 -point (3.02,1.495) (2.775,1.495) (2.775,1.31) -width 0.100000 0.000000 -routeStatus fixed
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerChopObj -point (2.925,1.1) (2.925,1.44) (3.09,1.44) (3.09,1.1)
+lakerChangeSelMode -mode Vertex
+lakerAreaSel -point (2.916,1.42) (3.095,1.444)
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerChopObj -point (2.905,1.41) (2.905,1.445) (3.1,1.445) (3.1,1.41)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerDeselectAll
+lakerSingleSel
+lakerDistance -point (2.885,1.68) (2.874,1.545)
+lakerChangeSelMode -mode Object
+lakerAreaSel -point (2.885,1.077) (2.951,1.24)
+lakerSingleSel
+lakerChopObj -point (2.885,1.085) (2.885,1.265) (2.935,1.265) (2.935,1.085)
+lakerSingleSel
+lakerSaveDesign -autosave
+lakerDistance -point (2.845,1.249) (2.885,1.247)
+lakerZoomOut
+lakerChangeSelMode -mode Vertex
+lakerSaveDesign
+lakerClearRuler
+lakerSingleSel
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 33
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (2.943,0.934) (3.877,1.516).
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+lakerSingleSel
+lakerZoomOut
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 33
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (2.943,0.934) (3.877,1.516).
+lakerSingleSel
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (3.38,1.239) (3.44,1.236)
+lakerZoomOut
+lakerZoomInByArea -point (0.863,0.031) (5.655,3.017)
+lakerZoomInByArea -point (1.744,0.483) (4.482,2.189)
+lakerZoomOut
+lakerDistance -point (3.1,1.454) (3.22,1.466)
+lakerZoomInByArea -point (2.402,0.524) (4.228,1.662)
+lakerDeselectAll
+lakerAreaSel -point (3.16,1.095) (3.405,1.33)
+lakerSingleSel
+lakerStretchObj -refPoint (3.355,1.14) -ignoreNet 0 -offsetPoint (3.305,1.14)
+lakerDistance -point (3.33,1.175) (3.44,1.177)
+lakerSingleSel
+lakerStretchObj -refPoint (3.15,1.23) -ignoreNet 0 -offsetPoint (3.14,1.23)
+lakerDistance -point (3.1,1.198) (3.16,1.205)
+lakerZoomOut
+lakerUndo
+lakerUndo
+lakerSingleSel
+lakerZoomOut
+lakerDistance -point (0.0,2.804) (5.545,2.839)
+lakerDistance -point (1.375,2.115) (1.555,2.115)
+lakerClearRuler
+lakerAreaSel -point (3.397,-0.36) (6.025,3.155)
+lakerZoomInByArea -point (1.789,0.036) (6.271,2.828)
+lakerAlignObj -mode end
+lakerAlignObj -point (3.444,1.848) -mode start
+lakerAlignObj -mode end
+lakerAlignObj -point (3.436,1.238) -mode start
+lakerAlignObj -refObj 1 -refPoint (3.38,1.275) -traversedist 0.008 -space 0.12
+lakerDistance -point (3.38,1.273) (3.5,1.261)
+lakerSingleSel
+lakerZoomOut
+lakerPanLeft
+lakerPanRight
+lakerDistance -point (0.0,2.775) (5.605,2.792)
+lakerPanLeft
+lakerPanRight
+lakerPanLeft
+lakerZoomInByArea -point (-0.268,-0.352) (5.76,3.404)
+lakerDistance -point (1.375,1.207) (1.555,1.216)
+lakerZoomInByArea -point (0.96,0.455) (2.606,1.481)
+lakerZoomOut
+lakerZoomOut
+lakerSaveDesign -autosave
+lakerDistance -point (1.375,2.104) (1.555,2.118)
+lakerZoomOut
+lakerDeselectAll
+lakerAreaSel -point (0.932,-0.365) (6.095,3.195)
+lakerZoomAll
+lakerZoomInByArea -point (0.037,0.515) (3.649,2.765)
+lakerAlignObj -point (1.555,2.118) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.375,2.08) -traversedist 0.007 -space 0.12
+lakerUndo
+lakerZoomOut
+lakerAlignObj -mode end
+lakerDeselectAll
+lakerZoomAll
+lakerAreaSel -point (1.414,-0.235) (5.98,3.201)
+lakerZoomInByArea -point (-0.757,-0.089) (4.113,2.945)
+lakerAlignObj -point (1.556,2.12) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.38,2.07) -traversedist 0.009 -space 0.12
+lakerSingleSel
+lakerZoomOut
+lakerClearRuler
+lakerDistance -point (0.0,2.819) (5.545,2.808)
+lakerZoomOut
+lakerZoomAll
+lakerClearRuler
+lakerSingleSel -point (2.791,-0.315) -traversedist 0.025
+lakerSingleSel -point (2.781,-0.27) -traversedist 0.025
+lakerSingleSel -point (2.721,-0.252) -traversedist 0.025
+lakerClearRuler
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 33
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (0.573,1.296) (1.837,2.084).
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 33
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (0.573,1.296) (1.837,2.084).
+lakerSingleSel
+lakerZoomOut
+lakerDistance -point (1.155,1.859) (1.255,1.862)
+lakerZoomOut
+lakerDistance -point (0.89,1.872) (1.035,1.864)
+lakerSingleSel
+lakerStretchObj -refPoint (1.18,1.71) -ignoreNet 0 -offsetPoint (1.16,1.71)
+lakerZoomInByArea -point (0.394,1.344) (1.796,2.218)
+lakerSingleSel
+lakerStretchObj -refPoint (1.125,1.64) -ignoreNet 0 -offsetPoint (1.105,1.64)
+lakerDistance -point (0.89,1.79) (1.015,1.77)
+lakerDistance -point (1.135,1.738) (1.255,1.756)
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (1.419,1.125) (1.691,1.295).
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.566,1.42) (1.629,1.27)
+lakerDistance -point (1.375,1.207) (1.495,1.214)
+lakerDistance -point (1.735,1.177) (1.855,1.193)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerDistance -point (1.572,1.54) (1.586,1.66)
+lakerZoomOut
+lakerZoomInByArea -point (1.214,0.79) (2.284,1.456)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerRotate90 -refPoint (1.615,1.21)
+lakerZoomOut
+lakerSingleSel
+lakerAreaSel -point (1.63,1.285) (1.665,1.288)
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.665,1.305) -offsetPoint (1.605,1.305)
+lakerChangeSelMode -mode Object
+lakerZoomInByArea -point (1.257,0.982) (1.919,1.394)
+lakerSingleSel
+lakerDistance -point (1.571,1.33) (1.568,1.27)
+lakerZoomOut
+lakerDistance -point (1.565,1.42) (1.565,1.33)
+lakerSaveDesign -autosave
+lakerZoomOut
+lakerDistance -point (1.644,1.11) (1.651,0.99)
+lakerClearRuler
+lakerDistance -point (1.6,0.886) (1.775,0.888)
+lakerDeselectAll
+lakerDistance -point (1.655,1.142) (1.775,1.151)
+lakerZoomOut
+lakerZoomInByArea -point (0.358,0.026) (3.24,1.822)
+lakerSetActiveLayer -layerName METAL1 -purpose pin
+lakerRuler -point (0.98,1.48) (0.98,1.36)
+lakerZoomOut
+lakerDistance -point (1.135,1.592) (1.255,1.602)
+lakerZoomInByArea -point (0.662,0.365) (2.698,1.633)
+lakerDistance -point (1.375,1.226) (1.495,1.208)
+lakerDistance -point (1.558,1.42) (1.568,1.33)
+lakerDeselectAll
+lakerSingleSel
+lakerSingleSel
+lakerRotate90 -refPoint (1.555,1.21)
+lakerSaveDesign -autosave
+lakerDistance -point (1.675,1.244) (1.855,1.227)
+lakerDeselectAll
+lakerDeselectAll
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.59,1.055) -offsetPoint (1.645,1.055)
+lakerChangeSelMode -mode Object
+lakerDistance -point (1.655,0.837) (1.775,0.839)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.44,1.245) -ignoreNet 0 -offsetPoint (1.44,1.245)
+lakerChangeSelMode -mode Object
+lakerDistance -point (1.12,0.888) (1.255,0.883)
+lakerZoomOut
+lakerZoomInByArea -point (0.462,0.498) (2.418,1.716)
+lakerDistance -point (1.375,1.245) (1.435,1.251)
+lakerZoomOut
+lakerClearRuler
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 33
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (0.545,1.543) (1.305,2.017).
+lakerZoomOut
+lakerSaveDesign
+lakerDistance -point (0.875,1.795) (0.975,1.799)
+lakerSingleSel -point (1.168,1.85) -traversedist 0.006
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.165,1.865) -ignoreNet 0 -offsetPoint (1.18,1.865)
+lakerChangeSelMode -mode Object
+lakerDistance -point (0.875,1.831) (0.99,1.841)
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.18,1.895) -ignoreNet 0 -offsetPoint (1.185,1.895)
+lakerChangeSelMode -mode Object
+lakerDistance -point (0.875,1.817) (0.995,1.819)
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.08,1.635) -ignoreNet 0 -offsetPoint (1.095,1.635)
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.11,1.635) -ignoreNet 0 -offsetPoint (1.13,1.635)
+lakerChangeSelMode -mode Object
+lakerSingleSel
+lakerDistance -point (1.155,1.7) (1.255,1.701)
+lakerDistance -point (0.89,1.773) (1.035,1.752)
+lakerUndo
+lakerUndo
+lakerUndo
+lakerSingleSel
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (-0.891,0.368) (3.731,3.248)
+lakerZoomInByArea -point (-0.402,0.977) (2.302,2.661)
+lakerClearRuler
+lakerDistance -point (0.875,1.792) (0.975,1.795)
+lakerZoomOut
+lakerDistance -point (0.675,2.505) (0.775,2.507)
+lakerZoomInByArea -point (-0.128,1.329) (2.21,2.785)
+lakerDistance -point (1.135,1.845) (1.255,1.87)
+lakerZoomOut
+lakerDistance -point (1.135,1.763) (1.255,1.749)
+This feature only applies to Instance, not for Device, MCell or Shape.
+lakerZoomOut
+lakerSingleSel
+lakerSingleSel
+lakerDeselectAll
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (4.313,3.947) -traversedist 0.035
+lakerDeselectAll
+lakerDistance -point (0.0,2.76) (5.545,2.801)
+lakerZoomInByArea -point (-0.707,-0.386) (6.131,3.874)
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (1.029,0.976) (1.781,1.444).
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.375,1.211) (1.435,1.228)
+lakerZoomOut
+lakerSetActiveLayer -layerName CONT -purpose drawing
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerZoomInByArea -point (-0.571,0.055) (2.871,2.199)
+lakerCreatePath -layerName METAL1 -point (1.27,0.81) (0.975,0.81) (0.975,1.355) (1.375,1.355) -width 0.120000 0.000000 -routeStatus fixed
+lakerDistance -point (1.002,1.48) (0.998,1.415)
+lakerDistance -point (1.474,1.11) (1.472,0.99)
+lakerZoomOut
+lakerZoomInByArea -point (-0.199,0.921) (2.649,2.695)
+lakerDistance -point (1.135,1.842) (1.255,1.847)
+lakerZoomOut
+lakerUndo
+lakerClearRuler
+lakerZoomOut
+lakerZoomAll
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (0.545,1.543) (1.305,2.017).
+lakerZoomOut
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+lakerDistance -point (0.89,1.781) (1.015,1.752)
+lakerDistance -point (0.875,1.706) (0.975,1.707)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (0.675,2.523) (0.775,2.507)
+lakerDeselectAll
+lakerZoomOut
+lakerMaxViewLevel
+lakerZoomOut
+lakerZoomIn
+lakerZoomIn
+lakerZoomAll
+lakerAreaSel -point (0.915,-0.27) (5.96,3.154)
+lakerZoomInByArea -point (0.165,1.605) (1.995,2.745)
+lakerAlignObj -point (1.03,2.021) -mode start
+lakerAlignObj -mode end
+lakerDistance -point (0.875,2.126) (1.035,2.119)
+lakerZoomOut
+lakerZoomInByArea -point (0.515,1.505) (1.449,2.087)
+lakerAlignObj -point (0.973,1.785) -mode start
+lakerAlignObj -refObj 1 -refPoint (0.875,1.81) -traversedist 0.002 -space 0.12
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerSingleSel
+lakerZoomOut
+lakerSingleSel -point (5.342,-0.891) -traversedist 0.055
+lakerSingleSel
+lakerDeselectAll
+lakerZoomInByArea -point (-0.414,-1.164) (7.338,3.666)
+lakerDistance -point (0.0,2.831) (5.545,2.774)
+lakerSingleSel -point (5.27,3.164) -traversedist 0.029
+lakerZoomInByArea -point (-0.661,-0.304) (3.855,2.51)
+lakerDistance -point (0.875,1.681) (0.995,1.685)
+lakerZoomOut
+lakerZoomInByArea -point (1.163,-0.936) (5.439,1.728)
+lakerZoomOut
+lakerDeselectAll
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.445,0.545) -ignoreNet 0 -offsetPoint (2.465,0.545)
+lakerChangeSelMode -mode Object
+lakerZoomInByArea -point (0.958,-0.05) (4.38,2.082)
+lakerZoomOut
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerAreaSel -point (2.688,0.803) (2.72,0.805)
+lakerDeselectAll
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerAreaSel -point (2.67,1.021) (2.73,1.035)
+lakerSingleSel
+lakerSingleSel
+lakerAreaSel -point (2.673,1.008) (2.735,1.02)
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.665,0.795) -ignoreNet 0 -offsetPoint (2.73,0.795)
+lakerChangeSelMode -mode Object
+lakerSingleSel
+lakerSaveDesign
+lakerDistance -point (2.805,1.064) (2.94,1.077)
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 33
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (4.736,1.511) (6.418,2.559).
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (5.49,2.087) (5.665,2.1)
+lakerZoomOut
+lakerDeselectAll
+lakerAreaSel -point (5.39,-0.455) (6.26,3.329)
+lakerSingleSel -point (6.685,1.094) -traversedist 0.05
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (4.972,3.534) -traversedist 0.05
+lakerAreaSel -point (5.306,-0.305) (6.325,3.414)
+lakerSingleSel -point (6.7,-0.011) -traversedist 0.05
+lakerZoomAll
+lakerZoomAll
+lakerAreaSel -point (5.551,0.795) (5.91,3.213)
+lakerSingleSel -point (5.931,0.613) -traversedist 0.025
+lakerAreaSel -point (5.586,-0.305) (5.96,3.168)
+lakerAlignObj -point (5.658,2.795) -mode start
+lakerAlignObj -refObj 1 -refPoint (5.555,2.865) -traversedist 0.013 -space 0.12
+lakerAlignObj -point (5.666,2.788) -mode start
+lakerAlignObj -refObj 1 -refPoint (5.555,2.83) -traversedist 0.013 -space 0.12
+lakerDistance -point (5.545,2.855) (5.665,2.855)
+lakerDistance -point (5.49,1.923) (5.665,1.925)
+lakerDistance -point (-0.12,2.185) (0.075,2.195)
+lakerDistance -point (5.545,0.17) (5.665,0.188)
+lakerAreaSel -point (5.501,-0.165) (6.04,3.133)
+lakerAlignObj -point (5.566,2.773) -mode start
+lakerAlignObj -refObj 1 -refPoint (5.495,2.26) -traversedist 0.013 -space 0.075
+lakerSingleSel -point (5.928,1.073) -traversedist 0.025
+lakerDistance -point (5.49,2.238) (5.685,2.268)
+lakerDistance -point (5.565,2.725) (5.685,2.705)
+lakerDistance -point (0.0,2.87) (5.565,2.83)
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 33
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (3.979,1.97) (4.461,2.27).
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (4.2,2.116) (4.24,2.125)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (4.24,2.311) (4.41,2.286)
+lakerMaxViewLevel
+lakerZoomIn
+lakerPanDown
+lakerDeselectAll
+lakerAreaSel -point (4.265,0.719) (4.298,1.855)
+lakerSingleSel
+lakerDeselectAll
+lakerSingleSel
+lakerStretchObj -refPoint (4.24,2.26) -ignoreNet 0 -offsetPoint (4.26,2.26)
+lakerDistance -point (4.26,2.231) (4.41,2.231)
+lakerSingleSel
+lakerStretchObj -refPoint (4.27,0.86) -ignoreNet 0 -offsetPoint (4.29,0.86)
+lakerDeselectAll
+lakerSaveDesign -autosave
+lakerSaveDesign
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 33
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (4.071,0.699) (4.619,1.041).
+lakerSingleSel
+lakerDistance -point (4.28,0.82) (4.41,0.817)
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (4.2,0.893) (4.28,0.906)
+lakerZoomOut
+lakerZoomInByArea -point (3.053,0.103) (5.461,1.603)
+lakerZoomInByArea -point (3.939,0.758) (4.543,1.134)
+lakerZoomOut
+lakerStretchObj -refPoint (4.28,0.855) -ignoreNet 0 -offsetPoint (4.26,0.855)
+lakerZoomOut
+lakerDistance -point (4.2,0.84) (4.26,0.84)
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 33
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (1.049,0.976) (1.801,1.444).
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.395,1.21) (1.455,1.223)
+lakerZoomOut
+lakerZoomInByArea -point (1.275,2.293) (1.647,2.525)
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (1.275,2.293) (1.647,2.525).
+lakerAreaSel -point (1.491,2.35) (1.51,2.491)
+lakerZoomOut
+lakerZoomOut
+lakerDeselectAll
+lakerAreaSel -point (1.468,2.325) (1.51,2.505)
+lakerStretchObj -refPoint (1.5,2.425) -ignoreNet 0 -offsetPoint (1.525,2.425)
+lakerZoomOut
+lakerZoomOut
+lakerSaveDesign
+lakerZoomOut
+lakerZoomInByArea -point (-0.027,-0.643) (4.333,2.073)
+lakerDistance -point (1.695,1.176) (1.875,1.176)
+lakerDistance -point (1.675,0.891) (1.795,0.902)
+lakerZoomOut
+lakerZoomOut
+lakerZoomInByArea -point (-1.688,-1.414) (6.058,3.412)
+lakerDeselectAll
+lakerAreaSel -point (1.235,2.265) (1.475,3.14)
+lakerSingleSel -point (1.507,3.177) -traversedist 0.029
+lakerAreaSel -point (1.447,-0.46) (4.02,3.157)
+lakerSingleSel -point (1.519,3.272) -traversedist 0.029
+lakerAreaSel -point (1.433,-0.32) (5.92,3.177)
+lakerZoomInByArea -point (0.778,0.391) (2.858,1.687)
+lakerAlignObj -point (1.397,1.185) -mode start
+lakerAlignObj -mode end
+lakerAlignObj -point (1.454,1.198) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.395,1.17) -traversedist 0.004 -space 0.12
+lakerZoomOut
+lakerZoomOut
+lakerClearRuler
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 33
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+Calibre process exit.
+lakerSingleSel -point (2.709,-0.74) -traversedist 0.031
+lakerDistance -point (0.0,2.8) (5.625,2.76)
+lakerZoomOut
+lakerZoomInByArea -point (-0.438,-0.555) (6.29,3.637)
+lakerDistance -point (1.395,1.195) (1.515,1.215)
+lakerDistance -point (1.755,1.175) (1.935,1.183)
+lakerDistance -point (2.38,1.713) (2.5,1.733)
+lakerDistance -point (2.62,1.188) (2.745,1.195)
+lakerDistance -point (4.26,1.529) (4.53,1.561)
+lakerDistance -point (4.32,2.128) (4.47,2.136)
+lakerDistance -point (4.97,1.529) (5.11,1.529)
+lakerDistance -point (5.07,2.44) (5.17,2.442)
+lakerDistance -point (5.27,1.88) (5.37,1.875)
+lakerDeselectAll
+lakerSingleSel
+lakerDeselectAll
+lakerSingleSel
+lakerStretchObj -refPoint (4.9,1.71) -ignoreNet 0 -offsetPoint (4.9,1.69)
+lakerSingleSel -point (2.915,-0.406) -traversedist 0.025
+lakerSaveDesign -autosave
+lakerSingleSel
+lakerAreaSel -point (3.507,1.733) (3.58,1.745)
+lakerSingleSel
+lakerAttribute -index 1 -purpose pin -height 0.200000
+lakerStretchObj -refPoint (5.01,1.635) -ignoreNet 0 -offsetPoint (5.145,1.635)
+lakerStretchObj -refPoint (5.1,1.635) -ignoreNet 0 -offsetPoint (4.95,1.635)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerAttribute -index 1 -purpose pin -height 0.200000
+lakerSingleSel -point (6.161,1.048) -traversedist 0.025
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (2.37,3.269) -traversedist 0.025
+lakerAreaSel -point (2.392,2.71) (3.465,2.88)
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (3.395,2.805) -offsetPoint (1.815,2.805)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (2.718,-0.162) -traversedist 0.025
+lakerAreaSel -point (2.275,-0.189) (3.037,0.335)
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (2.825,0.175) -offsetPoint (3.385,0.175)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (3.311,-0.187) -traversedist 0.025
+lakerAreaSel -point (2.315,-0.244) (3.634,0.385)
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (2.43,0.155) -offsetPoint (0.895,0.155)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (2.688,-0.428) -traversedist 0.025
+lakerAreaSel -point (2.382,2.625) (3.55,3.109)
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (3.37,2.805) -offsetPoint (4.845,2.805)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (4.07,3.219) -traversedist 0.025
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerAreaSel -point (4.08,2.625) (4.69,3.147)
+lakerViewLevelDec
+lakerSingleSel
+lakerSingleSel
+lakerViewLevelDec
+lakerSingleSel
+lakerSingleSel
+lakerViewLevelDec
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (4.545,2.795) -offsetPoint (4.785,2.795)
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (4.785,2.795) -offsetPoint (5.385,2.795)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (4.446,3.234) -traversedist 0.025
+lakerAreaSel -point (2.24,-0.154) (3.574,0.305)
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (2.475,0.15) -offsetPoint (3.98,0.15)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSingleSel -point (4.834,-0.366) -traversedist 0.025
+lakerAreaSel -point (3.965,-0.326) (4.841,0.405)
+lakerChangeSelMode -mode DevObj
+lakerSaveDesign -autosave
+lakerCopyObj -refPoint (4.225,0.175) -offsetPoint (5.15,0.175)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (0.965,0.19) -offsetPoint (0.215,0.19)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (0.58,-0.134) -traversedist 0.025
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (0.93,2.825) -offsetPoint (0.215,2.825)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (3.542,-0.244) -traversedist 0.025
+lakerSingleSel -point (3.542,-0.244) -traversedist 0.025
+lakerSingleSel
+wtAskUser: "The minmum resoluble unit is 0.005, therefore change 1.239 to 1.235", answer:  "Cancel"
+wtAskUser: "The minmum resoluble unit is 0.005, therefore change 1.239 to 1.235", answer:  "Cancel"
+wtAskUser: "The data has been modified. Omit the change?", answer:  "Cancel"
+wtAskUser: "The data has been modified. Omit the change?", answer:  "Yes"
+lakerSingleSel -point (1.72,-0.351) -traversedist 0.025
+lakerSingleSel
+wtAskUser: "The minmum resoluble unit is 0.005, therefore change 1.239 to 1.235", answer:  "Replace"
+lakerAttribute -index 1 -purpose pin -point (2.05,1.235) -height 0.200000
+lakerAttribute -index 1 -purpose pin -height 0.150000
+lakerAttribute -index 1 -purpose pin -height 0.120000
+lakerSingleSel -point (2.733,-0.239) -traversedist 0.025
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (2.08,1.25) -offsetPoint (2.08,2.825)
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.165,2.81) -ignoreNet 0 -offsetPoint (0.725,2.81)
+lakerAttribute -index 1 -purpose pin -text {VDD}
+lakerAttribute -index 1 -purpose pin -height 0.200000
+lakerStretchObj -refPoint (0.72,2.88) -ignoreNet 0 -offsetPoint (0.72,2.835)
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (0.735,2.815) -offsetPoint (0.735,0.2)
+lakerChangeSelMode -mode Vertex
+lakerAttribute -index 1 -purpose pin -text {VSS}
+lakerSingleSel -point (1.367,-0.244) -traversedist 0.025
+lakerSingleSel
+lakerStretchObj -refPoint (0.725,0.19) -ignoreNet 0 -offsetPoint (0.725,0.225)
+lakerSingleSel -point (1.352,-0.336) -traversedist 0.025
+lakerSingleSel
+lakerAttribute -index 1 -purpose pin -height 0.120000
+lakerStretchObj -refPoint (1.25,1.83) -ignoreNet 0 -offsetPoint (1.225,1.83)
+lakerSingleSel
+lakerSingleSel
+lakerSaveDesign
+lakerClearRuler
+lakerCalibreDRC
+New connection accepted, fd = 18
+
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 35
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (4.519,2.705) (4.791,2.875).
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+lakerSingleSel
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerZoomOut
+lakerZoomOut
+lakerZoomOut
+lakerSaveDesign
+lakerZoomAll
+lakerSingleSel
+lakerAttribute -index 1 -purpose pin -height 0.120000
+lakerStretchObj -refPoint (3.475,1.705) -ignoreNet 0 -offsetPoint (3.51,1.705)
+lakerSingleSel
+lakerSingleSel
+lakerSaveDesign
+lakerCalibreDRC
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/drc/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 35
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+Calibre process exit.
+lakerCalibreLVS
+New connection accepted, fd = 18
+
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+Received from RVE: [ mgc_rve_export_layout "DFFQX1" "GDSII" "/home/user/wrk/standard_113/lvs/DFFQX1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/lvs/DFFQX1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {DFFQX1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 37
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+Calibre process exit.
+lakerDistance -point (0.0,2.883) (5.625,2.766)
+lakerDistance -point (5.55,2.064) (5.625,2.784)
+lakerAlignObj -point (0.065,2.156) -mode start
+lakerAlignObj -mode end
+lakerDistance -point (0.075,2.163) (0.0,2.893)
+lakerDistance -point (0.075,0.846) (0.0,0.19)
+lakerDistance -point (5.55,0.889) (5.625,0.152)
+lakerCloseDesign
+lakerNewCell -lib leon -cell AND2X1
+The color name 'ID_WHITE' of the 'DT' layer was not defined in default.dsp file.
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerCreateInstance -point (0.17,-0.095) -cell INVX1 -lib leon -view layout
+lakerZoomAll
+lakerMaxViewLevel
+lakerSingleSel -point (2.076,0.745) -traversedist 0.02
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSmashObj -level 1
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (-0.922,1.864) -traversedist 0.02
+lakerSetColPat -modCategory DesignSet -use 1
+lakerSetColPat -visall 0
+lakerSetColPat -selall 0
+lakerSingleSel -point (-0.955,2.227) -traversedist 0.02
+lakerRedraw
+lakerSetColPat -layerName METAL1 -purpose dummy -sel 1 -vis 1
+lakerSetActiveLayer -layerName METAL1 -purpose dummy
+lakerSingleSel -point (-0.91,2.142) -traversedist 0.02
+lakerRedraw
+lakerSingleSel -point (-0.299,2.14) -traversedist 0.02
+lakerSelectAll
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerSingleSel -point (-0.797,2.243) -traversedist 0.02
+lakerRedraw
+lakerSingleSel -point (-0.207,2.005) -traversedist 0.02
+lakerSingleSel -point (-0.656,1.541) -traversedist 0.02
+lakerSetColPat -layerName NWELL -vis 0
+lakerSetColPat -layerName PIMP -vis 0
+lakerSetActiveLayer -layerName NIMP -purpose drawing
+lakerSetColPat -layerName NIMP -vis 0
+lakerSingleSel -point (-0.793,2.178) -traversedist 0.02
+lakerRedraw
+lakerSingleSel -point (0.098,1.914) -traversedist 0.02
+lakerPanRight
+lakerPanLeft
+lakerPanRight
+lakerPanLeft
+lakerSingleSel -point (-0.191,2.15) -traversedist 0.02
+lakerDistance -point (0.455,1.895) (0.505,1.245)
+lakerZoomOut
+lakerZoomInByArea -point (-1.52,-0.599) (3.282,2.735)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (-0.159,2.318) -traversedist 0.02
+lakerAreaSel -point (-0.082,1.015) (1.36,2.367)
+lakerSingleSel -point (1.385,1.029) -traversedist 0.02
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (-0.766,2.13) -traversedist 0.02
+lakerAreaSel -point (-0.184,0.965) (1.42,2.436)
+lakerIncreaseSel
+lakerSingleSel -point (1.762,0.752) -traversedist 0.02
+lakerAreaSel -point (-0.143,0.98) (1.265,2.365)
+lakerDecreaseSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (0.58,1.52) -offsetPoint (1.915,1.52)
+lakerChangeSelMode -mode Object
+lakerMakeCell -replace 1 -cell PMOS_65
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.725,1.335) -ignoreNet 0 -offsetPoint (2.15,1.335)
+lakerChangeSelMode -mode Object
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.35,1.715) -ignoreNet 0 -offsetPoint (1.68,1.715)
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerSingleSel -point (1.61,1.583) -traversedist 0.02
+lakerUndo
+lakerUndo
+lakerUndo
+lakerUndo
+lakerSingleSel -point (1.713,0.964) -traversedist 0.02
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.8,1.58) -ignoreNet 0 -offsetPoint (1.46,1.58)
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerSingleSel -point (2.651,1.401) -traversedist 0.02
+lakerSaveDesign -autosave
+lakerAlignObj -mode end
+lakerAlignObj -point (1.814,1.886) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.825,1.25) -traversedist 0.01 -space 0.36
+lakerAlignObj -mode end
+lakerUndo
+lakerSingleSel -point (2.566,1.207) -traversedist 0.02
+lakerChangeSelMode -mode Vertex
+lakerAlignObj -point (1.82,1.892) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.81,1.245) -traversedist 0.01 -space 0.36
+lakerZoomInByArea -point (0.799,0.576) (3.441,2.41)
+lakerDistance -point (1.822,1.605) (1.832,1.245)
+lakerAlignObj -point (1.694,1.771) -mode start
+lakerAlignObj -mode end
+lakerChangeSelMode -mode Object
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerDistance -point (1.72,1.305) (1.716,1.245)
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.7,1.355) -ignoreNet 0 -offsetPoint (1.7,1.47)
+lakerChangeSelMode -mode Object
+lakerDistance -point (1.704,1.605) (1.712,1.54)
+lakerDeselectAll
+lakerSingleSel -point (1.463,1.398) -traversedist 0.011
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.71,1.465) -ignoreNet 0 -offsetPoint (1.71,1.48)
+lakerChangeSelMode -mode Object
+lakerDistance -point (1.688,1.605) (1.685,1.555)
+lakerDeselectAll
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (2.593,1.258) -traversedist 0.011
+lakerSingleSel -point (1.463,1.637) -traversedist 0.011
+lakerDeselectAll
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.71,1.5) -offsetPoint (1.71,1.49)
+lakerChangeSelMode -mode Object
+lakerDistance -point (1.68,1.605) (1.673,1.545)
+lakerClearRuler
+lakerDistance -point (1.725,1.605) (1.721,1.545)
+lakerDistance -point (1.694,1.425) (1.685,1.245)
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.73,1.3) -ignoreNet 0 -offsetPoint (1.73,2.08)
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerAlignObj -point (1.66,1.244) -mode start
+lakerAlignObj -mode end
+lakerSingleSel
+lakerAlignObj -point (1.694,1.249) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.71,1.425) -traversedist 0.005 -space 0.06
+lakerSingleSel -point (1.396,1.682) -traversedist 0.011
+lakerZoomOut
+lakerSingleSel -point (1.235,1.799) -traversedist 0.022
+lakerAreaSel -point (1.516,2.205) (1.76,2.517)
+lakerSingleSel -point (1.977,2.334) -traversedist 0.022
+lakerZoomInByArea -point (0.538,0.419) (3.762,2.657)
+lakerDistance -point (2.128,1.305) (2.133,1.245)
+lakerDeselectAll
+lakerSingleSel -point (2.042,1.807) -traversedist 0.013
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.145,1.795) -ignoreNet 0 -offsetPoint (2.145,1.42)
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (1.512,2.488) -traversedist 0.013
+lakerAreaSel -point (1.485,2.03) (1.9,2.522)
+lakerSingleSel
+lakerAreaSel -point (1.501,2.125) (1.83,2.51)
+lakerSingleSel
+lakerAreaSel -point (1.541,2.04) (1.85,2.503)
+lakerSingleSel
+lakerChopObj -point (1.5,2.0) (1.5,2.525) (1.82,2.525) (1.82,2.0)
+lakerSingleSel -point (2.388,1.772) -traversedist 0.013
+lakerUndo
+lakerChopObj -point (1.505,2.185) (1.505,2.505) (1.88,2.505) (1.88,2.185)
+lakerSingleSel -point (2.347,1.836) -traversedist 0.013
+lakerSingleSel
+lakerDistance -point (2.107,1.305) (2.107,1.245)
+lakerDistance -point (2.139,1.425) (2.137,1.52)
+lakerDeselectAll
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.125,1.045) -ignoreNet 0 -offsetPoint (2.125,1.02)
+lakerChangeSelMode -mode Object
+lakerDistance -point (2.094,1.425) (2.096,1.495)
+lakerZoomInByArea -point (1.703,0.884) (2.717,1.588)
+lakerDeselectAll
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (2.11,1.16) -offsetPoint (2.11,1.155)
+lakerChangeSelMode -mode Object
+lakerDistance -point (2.112,1.49) (2.115,1.425)
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (2.13,1.04) -offsetPoint (2.13,1.035)
+lakerChangeSelMode -mode Object
+lakerDistance -point (2.161,1.485) (2.161,1.425)
+lakerClearRuler
+lakerDistance -point (1.96,1.359) (2.06,1.36)
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.76,1.506) (1.86,1.513)
+lakerChopObj -point (1.97,0.515) (1.97,0.735) (2.38,0.735) (2.38,0.515)
+lakerSingleSel -point (2.764,0.483) -traversedist 0.017
+lakerClearRuler
+lakerDistance -point (2.032,1.605) (2.007,1.245)
+lakerAreaSel -point (1.459,0.3) (2.445,2.335)
+lakerSingleSel -point (2.53,0.976) -traversedist 0.017
+lakerAreaSel -point (1.43,0.825) (2.515,2.338)
+lakerSingleSel -point (2.326,0.634) -traversedist 0.017
+lakerAreaSel -point (1.452,0.795) (2.55,2.377)
+lakerSingleSel -point (2.458,0.854) -traversedist 0.017
+lakerAreaSel -point (1.387,0.615) (2.67,2.316)
+lakerMakeCell -replace 1 -cell PMOS_36
+lakerSingleSel -point (2.47,1.534) -traversedist 0.017
+lakerSingleSel
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (1.835,1.83) -ignoreNet 0 -offsetPoint (2.075,1.83)
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (2.547,1.711) -traversedist 0.017
+lakerAreaSel -point (1.842,1.84) (2.195,1.865)
+lakerPanLeft
+lakerSaveDesign -autosave
+lakerSingleSel -point (1.412,1.451) -traversedist 0.017
+lakerPanRight
+lakerPanLeft
+lakerDistance -point (0.643,0.77) (0.685,0.34)
+lakerCreateInstance -point (-0.94,0.71) -cell PMOS_65 -lib leon -view layout
+lakerSingleSel
+lakerMaxViewLevel
+lakerSingleSel -point (-0.418,0.246) -traversedist 0.017
+lakerZoomInByArea -point (-1.869,0.396) (0.767,2.226)
+lakerDeselectAll
+lakerSingleSel
+lakerSmashObj -level 1
+lakerZoomOut
+lakerAreaSel -point (-1.119,0.555) (-0.105,2.111)
+lakerSingleSel
+lakerZoomInByArea -point (-1.599,0.647) (0.483,2.093)
+lakerRuler -point (-0.81,1.375) (-0.81,1.315)
+lakerSingleSel
+lakerDeselectAll
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (-0.83,0.905) -ignoreNet 0 -offsetPoint (-0.83,1.315)
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerDistance -point (-0.808,1.555) (-0.809,1.495)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (-0.405,1.555) -ignoreNet 0 -offsetPoint (-0.405,1.165)
+lakerSingleSel
+lakerStretchObj -refPoint (-0.38,1.27) -ignoreNet 0 -offsetPoint (-0.38,1.405)
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerSingleSel -point (-0.172,1.394) -traversedist 0.009
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerDistance -point (-0.407,1.165) (-0.393,1.085)
+lakerZoomInByArea -point (-0.643,0.868) (-0.119,1.232)
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (-0.643,0.868) (-0.119,1.232).
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (-0.426,1.164) -traversedist 0.002
+lakerStretchObj -refPoint (-0.425,1.165) -ignoreNet 0 -offsetPoint (-0.425,1.155)
+lakerDistance -point (-0.426,1.155) (-0.423,1.085)
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (-0.44,1.155) -ignoreNet 0 -offsetPoint (-0.44,1.145)
+lakerDistance -point (-0.437,1.145) (-0.432,1.085)
+lakerChangeSelMode -mode Object
+lakerClearRuler
+lakerZoomOut
+lakerZoomOut
+lakerSingleSel -point (-0.021,1.056) -traversedist 0.009
+lakerZoomOut
+lakerDistance -point (-0.56,1.061) (-0.46,1.063)
+lakerDistance -point (-0.34,1.009) (-0.28,1.009)
+lakerDistance -point (-0.94,1.46) (-0.88,1.438)
+lakerClearRuler
+lakerAreaSel -point (-1.175,0.5) (0.03,2.205)
+wtAskUser: "The Cell: PMOS_65 View:layout exists. Overwrite it anyway?", answer:  "Yes"
+lakerMakeCell -replace 1 -cell PMOS_65 -overwrite 1
+lakerSingleSel
+lakerMaxViewLevel
+lakerZoomIn
+lakerZoomOut
+lakerZoomOut
+lakerMinViewLevel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerSingleSel -point (2.588,1.595) -traversedist 0.035
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerZoomInByArea -point (-2.058,-0.875) (3.522,2.999)
+lakerSingleSel
+lakerSingleSel -point (0.0,0.78) -traversedist 0.023
+lakerAreaSel -point (-0.072,0.03) (1.3,0.891)
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (0.72,0.415) -offsetPoint (2.035,0.415)
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (2.262,-0.105) -traversedist 0.023
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerZoomIn
+lakerZoomOut
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerSingleSel -point (1.253,0.497) -traversedist 0.023
+lakerSingleSel -point (1.414,0.435) -traversedist 0.023
+lakerAreaSel -point (0.05,0.005) (1.465,0.973)
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (0.63,0.47) -offsetPoint (1.655,0.47)
+lakerChangeSelMode -mode Object
+lakerDistance -point (1.52,0.77) (1.517,0.34)
+lakerClearRuler
+lakerSingleSel -point (1.327,0.978) -traversedist 0.023
+lakerSingleSel -point (1.216,0.994) -traversedist 0.023
+lakerAreaSel -point (1.152,-0.175) (2.25,1.049)
+lakerSingleSel -point (2.063,0.605) -traversedist 0.023
+lakerZoomInByArea -point (0.958,0.164) (2.34,1.124)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (1.815,0.79) -ignoreNet 0 -offsetPoint (1.815,1.01)
+lakerSingleSel -point (2.106,0.77) -traversedist 0.006
+lakerZoomOut
+lakerDistance -point (1.595,0.77) (1.614,0.34)
+lakerSingleSel -point (2.112,0.255) -traversedist 0.011
+lakerChangeSelMode -mode Object
+lakerClearRuler
+lakerAreaSel -point (1.161,0.005) (2.25,1.089)
+lakerMakeCell -replace 1 -cell NMOS_43
+lakerDistance -point (0.661,0.77) (0.721,0.34)
+lakerMaxViewLevel
+lakerSingleSel
+lakerSmashObj -level 1
+lakerSaveDesign -autosave
+lakerSingleSel -point (2.031,0.839) -traversedist 0.011
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (1.317,0.993) -traversedist 0.011
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (1.505,0.765) -ignoreNet 0 -offsetPoint (1.505,0.575)
+lakerSingleSel -point (1.857,0.283) -traversedist 0.011
+lakerAreaSel -point (1.71,0.465) (2.045,1.115)
+lakerStretchObj -refPoint (1.815,0.85) -ignoreNet 0 -offsetPoint (2.22,0.85)
+lakerChangeSelMode -mode Object
+lakerUndo
+lakerSingleSel -point (2.394,0.676) -traversedist 0.011
+lakerAreaSel -point (1.726,0.475) (1.905,1.042)
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (1.82,0.685) -offsetPoint (1.82,0.495)
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (2.169,0.381) -traversedist 0.011
+lakerZoomInByArea -point (1.087,0.053) (2.225,0.843)
+lakerDistance -point (1.814,0.4) (1.808,0.34)
+lakerZoomOut
+lakerDistance -point (1.65,0.473) (1.75,0.479)
+lakerDistance -point (1.45,0.465) (1.55,0.471)
+lakerDistance -point (1.27,0.492) (1.33,0.476)
+lakerZoomOut
+lakerClearRuler
+lakerAreaSel -point (1.164,-0.03) (2.19,0.997)
+lakerMakeCell -replace 1 -cell NMOS_24
+lakerSingleSel -point (1.687,-0.181) -traversedist 0.019
+lakerSingleSel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerSingleSel -point (2.433,0.044) -traversedist 0.019
+lakerZoomOut
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerZoomInByArea -point (-2.231,-0.964) (3.539,3.042)
+lakerZoomAll
+lakerSingleSel -point (1.967,1.495) -traversedist 0.02
+lakerSingleSel -point (-0.178,2.015) -traversedist 0.02
+lakerAreaSel -point (-0.215,1.065) (1.495,2.425)
+lakerSingleSel -point (1.284,1.122) -traversedist 0.02
+lakerSingleSel -point (1.398,1.719) -traversedist 0.02
+lakerCreateInstance -point (1.305,0.95) -cell PMOS_36 -lib leon -view layout
+lakerCreateInstance -point (1.975,0.955) -cell PMOS_36 -lib leon -view layout
+lakerUndo
+lakerCreateInstance -point (1.985,0.95) -cell PMOS_36 -lib leon -view layout
+lakerPanRight
+lakerPanLeft
+lakerPanRight
+lakerCreateInstance -point (3.0,1.14) -cell PMOS_65 -lib leon -view layout
+lakerSingleSel
+lakerMirrorY -refPoint (2.315,1.675)
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (2.295,1.715) -ignoreNet 0 -offsetPoint (2.035,1.715)
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (2.767,0.727) -traversedist 0.02
+lakerSingleSel -point (2.669,0.817) -traversedist 0.02
+lakerAreaSel -point (1.73,0.733) (2.094,1.84)
+lakerSingleSel -point (2.642,0.886) -traversedist 0.02
+lakerAreaSel -point (1.231,0.72) (3.85,2.568)
+lakerSmashObj -level 1
+lakerSingleSel -point (2.493,0.767) -traversedist 0.02
+lakerSingleSel
+lakerSingleSel -point (2.15,0.646) -traversedist 0.02
+lakerAreaSel -point (1.75,0.718) (1.993,1.79)
+lakerSingleSel -point (2.521,0.739) -traversedist 0.02
+lakerAreaSel -point (1.25,0.585) (2.775,2.605)
+lakerSelInsideGroup -selInside 0
+lakerMergeObj
+lakerSelInsideGroup -selInside 1
+lakerSingleSel -point (2.166,1.301) -traversedist 0.02
+lakerCreateInstance -point (2.35,-0.125) -cell PMOS_36 -lib leon -view layout
+lakerSingleSel
+lakerSmashObj -level 1
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerAlignObj -point (2.697,1.213) -mode start
+lakerAlignObj -refObj 1 -refPoint (2.715,1.21) -traversedist 0.01 -space 0.06
+lakerAlignObj -mode end
+lakerUndo
+lakerSingleSel -point (3.019,0.926) -traversedist 0.02
+lakerAlignObj -mode end
+lakerChangeSelMode -mode Vertex
+lakerAlignObj -point (2.681,1.213) -mode start
+lakerAlignObj -refObj 1 -refPoint (2.72,0.74) -traversedist 0.01 -space 0.18
+lakerDistance -point (2.689,0.925) (2.701,0.745)
+lakerAlignObj -mode end
+lakerChangeSelMode -mode Object
+lakerClearRuler
+lakerAreaSel -point (2.245,-0.25) (3.085,1.364)
+lakerSingleSel -point (3.37,-0.102) -traversedist 0.02
+lakerAreaSel -point (2.54,-0.338) (3.306,0.685)
+lakerSingleSel -point (3.642,0.569) -traversedist 0.02
+lakerAreaSel -point (2.287,-0.195) (3.09,1.432)
+lakerSaveDesign -autosave
+wtAskUser: "The Cell: PMOS_36 View:layout exists. Overwrite it anyway?", answer:  "Yes"
+lakerMakeCell -replace 1 -cell PMOS_36 -overwrite 1
+lakerDistance -point (2.58,0.745) (2.586,0.385)
+lakerClearRuler
+lakerSingleSel
+lakerZoomOut
+lakerZoomInByArea -point (0.593,-0.781) (5.415,2.567)
+lakerZoomInByArea -point (0.529,-0.26) (4.237,2.314)
+lakerMaxViewLevel
+lakerMinViewLevel
+lakerMaxViewLevel
+lakerDistance -point (2.781,0.745) (2.763,0.385)
+lakerZoomOut
+lakerZoomInByArea -point (0.689,0.796) (3.219,2.552)
+lakerAlignObj -mode end
+lakerAlignObj -mode end
+lakerDeselectAll
+lakerChangeSelMode -mode Vertex
+lakerAlignObj -point (1.66,2.289) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.65,1.82) -traversedist 0.005 -space 0.18
+lakerAlignObj -point (2.07,2.283) -mode start
+lakerAlignObj -refObj 1 -refPoint (2.065,1.82) -traversedist 0.005 -space 0.18
+lakerZoomOut
+lakerAlignObj -point (2.833,0.549) -mode start
+lakerAlignObj -mode end
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode DevObj
+lakerSingleSel
+lakerDeleteObj
+lakerSingleSel -point (2.512,0.468) -traversedist 0.021
+lakerChangeSelMode -mode Object
+lakerClearRuler
+lakerAreaSel -point (-0.042,0.985) (1.075,2.503)
+lakerSingleSel -point (1.073,1.85) -traversedist 0.021
+lakerAlignObj -mode end
+lakerAlignObj -mode end
+lakerAreaSel -point (1.298,0.82) (2.625,2.536)
+lakerSingleSel -point (2.601,0.816) -traversedist 0.021
+lakerSingleSel -point (1.261,2.572) -traversedist 0.021
+lakerAreaSel -point (1.225,0.68) (2.585,2.595)
+lakerAlignObj -point (3.492,1.988) -mode start
+lakerAlignObj -mode end
+lakerAlignObj -mode end
+lakerAlignObj -point (3.243,1.988) -mode start
+lakerAlignObj -refObj 1 -refPoint (0.65,1.895) -traversedist 0.01
+lakerZoomIn
+lakerZoomOut
+lakerUndo
+lakerSingleSel -point (2.675,1.137) -traversedist 0.021
+lakerAreaSel -point (2.888,0.685) (3.965,2.679)
+lakerAlignObj -point (3.455,1.988) -mode start
+lakerAlignObj -refObj 1 -refPoint (0.665,1.895) -traversedist 0.01
+lakerSingleSel -point (2.591,1.08) -traversedist 0.021
+lakerAreaSel -point (1.275,0.8) (2.635,2.56)
+lakerAlignObj -point (1.836,1.827) -mode start
+lakerAlignObj -refObj 1 -refPoint (3.23,1.89) -traversedist 0.01
+lakerSingleSel -point (2.377,1.13) -traversedist 0.021
+lakerSingleSel -point (2.349,1.116) -traversedist 0.021
+lakerSingleSel
+lakerIncreaseSel
+lakerChopObj -point (1.215,2.355) (1.215,2.54) (2.53,2.54) (2.53,2.355)
+lakerSingleSel -point (2.656,2.084) -traversedist 0.021
+lakerSingleSel -point (2.658,2.084) -traversedist 0.021
+lakerAreaSel -point (2.748,0.64) (3.99,2.38)
+lakerAlignObj -point (2.996,1.6) -mode start
+lakerAlignObj -mode end
+lakerAlignObj -point (3.0,1.533) -mode start
+lakerAlignObj -refObj 1 -refPoint (2.385,1.615) -traversedist 0.01 -space 0.15
+lakerSingleSel -point (3.768,1.61) -traversedist 0.021
+lakerAreaSel -point (-0.136,0.055) (1.33,2.464)
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Object
+lakerDeleteObj
+lakerAreaSel -point (1.16,0.7) (3.69,2.522)
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (2.225,1.59) -offsetPoint (1.065,1.59)
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode DevObj
+lakerMoveObj -ignoreNet 0 -refPoint (0.585,1.74) -offsetPoint (0.645,1.74)
+lakerChangeSelMode -mode Object
+lakerSingleSel -point (2.616,0.392) -traversedist 0.021
+lakerSingleSel -point (0.227,1.193) -traversedist 0.021
+lakerAreaSel -point (0.908,2.235) (1.095,2.885)
+lakerSingleSel
+lakerSingleSel -point (1.008,2.856) -traversedist 0.021
+lakerAreaSel -point (0.979,2.205) (1.065,2.856)
+lakerChangeSelMode -mode Vertex
+lakerAreaSel -point (0.993,2.25) (1.075,2.793)
+lakerAlignObj -point (1.033,2.485) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.045,2.595) -traversedist 0.01 -space 0.15
+lakerUndo
+lakerSingleSel -point (1.486,2.512) -traversedist 0.021
+lakerAreaSel -point (0.999,2.25) (1.07,2.796)
+lakerStretchObj -refPoint (1.03,2.5) -ignoreNet 0 -offsetPoint (2.205,2.5)
+lakerSingleSel -point (2.491,1.65) -traversedist 0.021
+lakerSingleSel -point (2.452,1.462) -traversedist 0.021
+lakerPanDown
+lakerPanUp
+lakerZoomOut
+lakerSingleSel -point (-0.039,2.79) -traversedist 0.042
+lakerAreaSel -point (-0.055,-0.54) (3.06,3.095)
+lakerSingleSel -point (1.405,-0.185) -traversedist 0.042
+lakerAreaSel -point (-0.105,2.06) (2.885,3.057)
+lakerSingleSel -point (2.891,2.056) -traversedist 0.042
+lakerAreaSel -point (2.002,2.145) (2.59,2.882)
+lakerAlignObj -point (2.223,2.465) -mode start
+lakerAlignObj -mode end
+lakerSingleSel -point (1.702,-0.423) -traversedist 0.042
+lakerAreaSel -point (0.965,-0.469) (1.155,0.24)
+lakerAlignObj -point (1.055,-0.123) -mode start
+lakerAlignObj -refObj 1 -refPoint (2.215,2.46) -traversedist 0.021 -space 0.15
+lakerSingleSel -point (3.308,0.553) -traversedist 0.042
+lakerZoomInByArea -point (-1.295,-0.582) (3.893,3.02)
+lakerSingleSel -point (-0.096,0.634) -traversedist 0.021
+lakerCreateInstance -point (0.17,0.19) -cell NMOS_24 -lib leon -view layout
+lakerCreateInstance -point (0.85,0.205) -cell NMOS_24 -lib leon -view layout
+lakerSaveDesign -autosave
+lakerSingleSel
+lakerStretchObj -refPoint (1.145,0.71) -ignoreNet 0 -offsetPoint (1.03,0.71)
+lakerSingleSel -point (1.416,0.478) -traversedist 0.021
+lakerSingleSel
+lakerSingleSel -point (1.882,0.47) -traversedist 0.021
+lakerAreaSel -point (-0.198,0.15) (1.88,1.055)
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (0.98,0.62) -ignoreNet 0 -offsetPoint (0.98,0.6)
+lakerStretchObj -refPoint (0.96,0.555) -ignoreNet 0 -offsetPoint (1.02,0.555)
+lakerSingleSel -point (-0.077,0.562) -traversedist 0.021
+lakerSingleSel -point (-0.177,0.85) -traversedist 0.021
+lakerSingleSel -point (2.382,0.459) -traversedist 0.021
+lakerCreateInstance -point (1.48,0.175) -cell NMOS_43 -lib leon -view layout
+lakerSingleSel -point (2.679,0.675) -traversedist 0.021
+lakerAreaSel -point (-0.196,0.085) (2.625,1.117)
+lakerSingleSel -point (2.818,0.869) -traversedist 0.021
+lakerSingleSel
+lakerIncreaseSel
+lakerIncreaseSel
+lakerChangeSelMode -mode Object
+lakerSmashObj -level 1
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (-0.239,1.109) -traversedist 0.021
+lakerSingleSel -point (-0.177,0.983) -traversedist 0.021
+lakerDistance -point (0.528,0.265) (0.522,0.025)
+lakerDeselectAll
+lakerAreaSel -point (-0.179,0.19) (0.815,1.145)
+lakerSingleSel -point (-0.209,0.622) -traversedist 0.021
+lakerAreaSel -point (0.032,0.175) (0.89,1.023)
+lakerSingleSel -point (-0.136,0.47) -traversedist 0.021
+lakerUndo
+lakerUndo
+lakerRedo
+lakerSingleSel -point (-0.004,0.784) -traversedist 0.021
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (0.59,0.615) -ignoreNet 0 -offsetPoint (-0.165,0.615)
+lakerSingleSel
+lakerStretchObj -refPoint (1.11,0.57) -ignoreNet 0 -offsetPoint (0.465,0.57)
+lakerAlignObj -point (0.379,0.684) -mode start
+lakerAlignObj -refObj 1 -refPoint (-0.17,0.685) -traversedist 0.011 -space 0.15
+lakerUndo
+lakerAlignObj -mode end
+lakerAlignObj -point (0.501,0.681) -mode start
+lakerAlignObj -snapMode anyangle -refObj 1 -refPoint (-0.105,0.68) -traversedist 0.011
+lakerUndo
+lakerAlignObj -point (0.494,0.669) -mode start
+lakerAlignObj -refObj 1 -refPoint (-0.17,0.685) -traversedist 0.011
+lakerAlignObj -point (0.218,0.564) -mode start
+lakerAlignObj -snapMode anyangle -refObj 1 -refPoint (-0.105,0.685) -traversedist 0.011
+lakerSingleSel -point (0.665,0.444) -traversedist 0.021
+lakerSingleSel -point (-0.703,1.13) -traversedist 0.021
+lakerSingleSel -point (-0.087,1.139) -traversedist 0.021
+lakerAreaSel -point (-0.109,0.145) (0.06,1.07)
+lakerSingleSel
+lakerAreaSel -point (-0.686,0.145) (0.595,1.293)
+lakerChangeSelMode -mode Object
+lakerSelInsideGroup -selInside 0
+lakerMergeObj
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerSingleSel
+lakerSingleSel -point (-0.62,1.269) -traversedist 0.021
+lakerAreaSel -point (-0.765,0.16) (0.58,1.205)
+lakerChangeSelMode -mode Object
+lakerSmashObj -level 1
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (-0.51,0.829) -traversedist 0.021
+lakerAreaSel -point (-0.833,0.13) (0.62,1.197)
+lakerChangeSelMode -mode Object
+lakerSelInsideGroup -selInside 0
+lakerMergeObj
+lakerChangeSelMode -mode Vertex
+lakerSelInsideGroup -selInside 1
+lakerSingleSel -point (1.212,0.517) -traversedist 0.021
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSingleSel -point (0.669,0.602) -traversedist 0.021
+lakerAreaSel -point (-0.791,0.19) (0.595,1.132)
+lakerStretchObj -refPoint (-0.06,0.565) -ignoreNet 0 -offsetPoint (0.755,0.565)
+lakerStretchObj -refPoint (0.765,0.49) -ignoreNet 0 -offsetPoint (0.765,0.35)
+lakerStretchObj -refPoint (0.775,0.455) -ignoreNet 0 -offsetPoint (0.76,0.455)
+lakerAlignObj -point (0.201,1.628) -mode start
+lakerAlignObj -snapMode anyangle -refObj 1 -refPoint (0.215,0.415) -traversedist 0.011
+lakerUndo
+lakerSingleSel -point (0.218,1.03) -traversedist 0.021
+lakerAlignObj -point (0.214,0.425) -mode start
+lakerAlignObj -refObj 1 -refPoint (0.21,1.78) -traversedist 0.011
+lakerZoomIn
+lakerZoomOut
+lakerAlignObj -mode end
+lakerUndo
+lakerSingleSel -point (0.132,0.807) -traversedist 0.021
+lakerAreaSel -point (0.079,0.03) (1.425,1.023)
+lakerAlignObj -point (0.207,0.424) -mode start
+lakerAlignObj -refObj 1 -refPoint (0.195,1.665) -traversedist 0.011
+lakerUndo
+lakerSingleSel -point (-0.022,0.938) -traversedist 0.021
+lakerUndo
+lakerUndo
+lakerAlignObj -point (0.23,0.561) -mode start
+lakerAlignObj -refObj 1 -refPoint (0.205,1.73) -traversedist 0.011
+lakerSingleSel -point (1.206,0.202) -traversedist 0.021
+lakerAreaSel -point (-0.313,0.14) (1.345,1.169)
+lakerStretchObj -refPoint (0.545,0.91) -ignoreNet 0 -offsetPoint (0.545,0.755)
+lakerSingleSel -point (-0.123,0.747) -traversedist 0.021
+lakerClearRuler
+lakerSingleSel
+lakerStretchObj -refPoint (0.53,1.4) -ignoreNet 0 -offsetPoint (0.53,0.77)
+lakerSingleSel
+lakerStretchObj -refPoint (0.945,1.395) -ignoreNet 0 -offsetPoint (0.945,0.82)
+lakerSingleSel -point (0.104,1.032) -traversedist 0.021
+lakerSingleSel
+lakerDeselectAll
+lakerSingleSel
+lakerStretchObj -refPoint (0.75,0.875) -ignoreNet 0 -offsetPoint (0.75,1.245)
+lakerSingleSel -point (0.789,1.053) -traversedist 0.021
+lakerCreateInstance -point (0.265,0.7) -cell POLY_GATE -lib leon -view layout
+lakerSaveDesign -autosave
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerZoomInByArea -point (-0.314,0.189) (2.256,1.973)
+lakerSingleSel
+lakerCreatePath -layerName METAL1 -point (0.685,1.3) (1.24,1.3) -width 0.120000 0.000000 -routeStatus fixed
+lakerCreatePath -layerName METAL1 -point (1.165,0.77) (1.165,1.36) -width 0.120000 0.000000 -routeStatus fixed
+lakerDeselectAll
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerChopObj -point (1.225,1.16) (1.225,1.4) (1.255,1.4) (1.255,1.16)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (1.309,1.079) -traversedist 0.011
+lakerZoomOut
+lakerSingleSel
+lakerSingleSel -point (2.2,0.222) -traversedist 0.021
+lakerSingleSel
+lakerDeselectAll
+lakerAlignObj -point (1.817,0.426) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.05,0.29) -traversedist 0.011
+lakerDistance -point (1.802,0.11) (1.802,0.025)
+lakerAlignObj -mode end
+lakerDeselectAll
+lakerAreaSel -point (0.142,0.665) (0.635,0.97)
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (0.36,0.825) -ignoreNet 0 -offsetPoint (0.36,1.005)
+lakerSingleSel -point (0.174,0.796) -traversedist 0.021
+lakerDistance -point (0.544,0.29) (0.542,0.11)
+lakerDeselectAll
+lakerAreaSel -point (-0.034,0.095) (2.37,0.872)
+lakerSingleSel -point (2.488,0.201) -traversedist 0.021
+lakerSingleSel
+lakerZoomInByArea -point (-0.455,-0.911) (2.499,1.139)
+lakerDistance -point (0.957,0.11) (0.962,0.025)
+lakerZoomOut
+lakerDeselectAll
+lakerAreaSel -point (-0.15,0.025) (2.625,0.877)
+lakerIncreaseSel
+lakerAlignObj -point (0.943,0.11) -mode start
+lakerAlignObj -mode end
+lakerAlignObj -point (0.955,0.115) -mode start
+lakerAlignObj -refObj 1 -refPoint (0.855,0.03) -traversedist 0.012 -space 0.12
+lakerUndo
+lakerSingleSel -point (2.788,0.067) -traversedist 0.024
+lakerZoomInByArea -point (-0.154,-0.503) (2.068,1.039)
+lakerAreaSel -point (0.08,0.1) (1.44,0.611)
+lakerIncreaseSel
+lakerIncreaseSel -point (0.869,0.678) -traversedist 0.009
+lakerIncreaseSel
+lakerAlignObj -point (0.524,0.107) -mode start
+lakerAlignObj -refObj 1 -refPoint (0.535,0.025) -traversedist 0.005 -space 0.12
+lakerZoomOut
+lakerSingleSel -point (2.69,0.1) -traversedist 0.018
+lakerAreaSel -point (1.37,-0.075) (2.43,0.974)
+lakerAlignObj -point (1.83,0.106) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.375,0.025) -traversedist 0.009 -space 0.12
+lakerUndo
+lakerSingleSel -point (2.597,0.088) -traversedist 0.018
+lakerZoomInByArea -point (1.187,-0.423) (3.141,0.933)
+lakerAreaSel -point (1.4,0.092) (2.239,0.885)
+lakerSingleSel
+lakerAlignObj -point (1.822,0.105) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.41,0.025) -traversedist 0.004 -space 0.12
+lakerZoomOut
+lakerZoomOut
+lakerSingleSel -point (2.678,-0.02) -traversedist 0.032
+lakerSingleSel -point (2.826,-0.008) -traversedist 0.032
+lakerSingleSel -point (2.723,0.791) -traversedist 0.032
+lakerClearRuler
+lakerChangeSelMode -mode Object
+lakerAreaSel -point (1.985,-0.661) (2.291,0.185)
+lakerChangeSelMode -mode Vertex
+lakerAlignObj -point (2.066,-0.107) -mode start
+lakerAlignObj -mode end
+lakerAreaSel -point (2.025,-0.365) (2.195,0.2)
+lakerSingleSel -point (2.133,-0.14) -traversedist 0.032
+lakerAreaSel -point (1.97,-0.497) (2.172,0.18)
+lakerSingleSel
+lakerStretchObj -refPoint (2.07,-0.115) -ignoreNet 0 -offsetPoint (2.07,-0.73)
+lakerAreaSel -point (1.99,-0.413) (2.133,0.25)
+lakerSingleSel
+lakerStretchObj -refPoint (2.065,-0.14) -ignoreNet 0 -offsetPoint (2.455,-0.14)
+lakerUndo
+lakerSingleSel -point (2.365,-0.42) -traversedist 0.032
+lakerAreaSel -point (1.92,-0.491) (2.156,0.245)
+lakerStretchObj -refPoint (2.055,-0.095) -ignoreNet 0 -offsetPoint (2.39,-0.095)
+lakerSingleSel -point (2.745,1.529) -traversedist 0.032
+lakerAreaSel -point (2.055,2.038) (2.298,2.965)
+lakerStretchObj -refPoint (2.41,2.405) -ignoreNet 0 -offsetPoint (2.74,2.405)
+lakerSingleSel -point (3.113,1.487) -traversedist 0.032
+lakerAlignObj -point (0.201,0.424) -mode start
+lakerAlignObj -refObj 1 -refPoint (0.2,1.765) -traversedist 0.016 -space 0.12
+lakerAlignObj -mode end
+lakerUndo
+lakerSingleSel -point (2.958,0.714) -traversedist 0.032
+lakerDeselectAll
+lakerAlignObj -point (0.207,0.437) -mode start
+lakerAlignObj -refObj 1 -refPoint (0.215,1.77) -traversedist 0.016
+lakerAlignObj -point (1.537,0.656) -mode start
+lakerAlignObj -mode end
+lakerAlignObj -point (1.47,0.505) -mode start
+lakerAlignObj -refObj 1 -refPoint (1.42,1.395) -traversedist 0.016
+lakerAlignObj -point (1.943,0.772) -mode start
+lakerAlignObj -mode end
+lakerChangeSelMode -mode Object
+lakerSaveDesign -autosave
+lakerSingleSel -point (2.881,0.701) -traversedist 0.032
+lakerSingleSel
+lakerSmashObj -level 1
+lakerSingleSel -point (1.995,0.84) -traversedist 0.032
+lakerSingleSel -point (2.652,0.614) -traversedist 0.032
+lakerSingleSel -point (1.67,0.447) -traversedist 0.032
+lakerSingleSel -point (2.008,0.437) -traversedist 0.032
+lakerChangeSelMode -mode Vertex
+lakerDeselectAll
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerAreaSel -point (1.77,0.907) (2.204,1.025)
+lakerStretchObj -refPoint (1.98,1.0) -ignoreNet 0 -offsetPoint (1.98,1.24)
+lakerSaveDesign
+lakerAreaSel -point (1.612,0.83) (1.885,0.94)
+lakerStretchObj -refPoint (1.775,0.88) -ignoreNet 0 -offsetPoint (1.775,1.255)
+lakerSaveDesign
+lakerZoomAll
+lakerCreateInstance -point (1.555,0.84) -cell POLY_GATE -lib leon -view layout
+lakerSingleSel
+lakerRotate90 -refPoint (1.675,0.96)
+lakerStretchObj -refPoint (1.63,0.99) -ignoreNet 0 -offsetPoint (1.62,0.99)
+lakerRotate90 -refPoint (1.665,0.96)
+lakerStretchObj -refPoint (1.605,1.035) -ignoreNet 0 -offsetPoint (1.66,1.035)
+lakerSingleSel -point (1.478,1.223) -traversedist 0.02
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (1.655,0.97) -ignoreNet 0 -offsetPoint (1.65,0.97)
+lakerSingleSel -point (1.555,0.973) -traversedist 0.02
+lakerCreatePath -layerName METAL1 -point (1.595,0.96) (1.105,0.96) -width 0.120000 0.000000 -routeStatus fixed
+lakerZoomInByArea -point (0.73,0.403) (2.342,1.523)
+lakerZoomOut
+lakerZoomOut
+lakerChangeSelMode -mode Object
+lakerConnChecker -addNet -net LakerNet__1 -startPoint (1.415,0.93)
+lakerConnChecker -toMaxLevel -net LakerNet__1 -speedMode -traceViaArray 1
+lakerChangeSelMode -mode Vertex
+lakerChangeSelMode -mode Object
+lakerCreateText -layerName METAL1 -point (1.67,0.97) -justify CenterCenter -height 0.200000 -text {n0}
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (1.226,1.387) -traversedist 0.027
+lakerSingleSel
+lakerSingleSel -point (2.659,1.044) -traversedist 0.027
+lakerDeselectAll
+lakerConnChecker -clear
+lakerClearHighLight
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerAttribute -index 1 -purpose pin
+lakerSingleSel -point (-0.015,1.039) -traversedist 0.027
+lakerSetActiveLayer -layerName CONT -purpose drawing
+lakerSetActiveLayer -layerName METAL1 -purpose drawing
+lakerCreateRect -layerName METAL1 -point (0.09,0.76) (0.565,1.28)
+lakerSingleSel
+lakerStretchObj -refPoint (0.175,1.17) -ignoreNet 0 -offsetPoint (0.295,1.17)
+lakerStretchObj -refPoint (0.45,1.27) -ignoreNet 0 -offsetPoint (0.45,1.16)
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerCreateRect -layerName METAL1 -point (0.245,0.79) (0.58,1.195)
+lakerChangeSelMode -mode Object
+lakerZoomInByArea -point (-0.381,0.52) (1.331,1.708)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (0.58,0.995) -ignoreNet 0 -offsetPoint (0.555,0.995)
+lakerSingleSel -point (0.653,0.892) -traversedist 0.007
+lakerChangeSelMode -mode Object
+lakerZoomOut
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (0.55,0.915) -ignoreNet 0 -offsetPoint (0.53,0.915)
+lakerSingleSel
+lakerStretchObj -refPoint (0.24,1.08) -ignoreNet 0 -offsetPoint (0.26,1.08)
+lakerSingleSel -point (0.875,0.82) -traversedist 0.014
+lakerAlignObj -mode end
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerStretchObj -refPoint (0.525,1.095) -ignoreNet 0 -offsetPoint (0.5,1.095)
+lakerSingleSel -point (0.655,1.024) -traversedist 0.014
+lakerChangeSelMode -mode Object
+lakerDistance -point (0.359,0.79) (0.336,0.565)
+lakerZoomOut
+lakerDistance -point (0.502,1.195) (0.708,1.24)
+lakerZoomOut
+lakerZoomInByArea -point (-1.075,-1.418) (4.569,2.5)
+lakerZoomOut
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (1.755,0.64) -offsetPoint (1.755,2.215)
+lakerChangeSelMode -mode Vertex
+lakerAttribute -index 1 -purpose pin -text {VDD}
+lakerAlignObj -mode end
+lakerAreaSel -point (1.41,2.55) (1.763,2.58)
+lakerSingleSel
+lakerStretchObj -refPoint (1.8,2.51) -ignoreNet 0 -offsetPoint (1.57,2.51)
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (1.615,2.555) -offsetPoint (1.615,-0.105)
+lakerChangeSelMode -mode Vertex
+lakerAttribute -index 1 -purpose pin -text {VSS}
+lakerSingleSel -point (3.586,-0.229) -traversedist 0.047
+lakerSingleSel -point (2.996,0.618) -traversedist 0.047
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (1.645,0.94) -offsetPoint (0.38,0.94)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerAttribute -index 1 -purpose pin -text {A}
+lakerChangeSelMode -mode DevObj
+lakerZoomInByArea -point (-0.739,-0.094) (2.283,2.004)
+lakerZoomOut
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (2.347,0.705) -traversedist 0.025
+lakerSaveDesign -autosave
+lakerCreateInstance -point (0.78,0.705) -cell POLY_GATE -lib leon -view layout
+lakerZoomInByArea -point (-0.021,0.334) (2.195,1.872)
+lakerDistance -point (1.02,0.853) (1.105,0.836)
+lakerSingleSel
+lakerRotate90 -refPoint (0.9,0.825)
+lakerDistance -point (0.96,0.795) (1.105,0.774)
+lakerSingleSel
+lakerStretchObj -refPoint (0.82,0.81) -ignoreNet 0 -offsetPoint (0.865,0.81)
+lakerDistance -point (1.005,0.741) (1.105,0.733)
+lakerZoomOut
+lakerSingleSel -point (0.748,0.857) -traversedist 0.018
+lakerSingleSel
+lakerStretchObj -refPoint (0.885,0.855) -ignoreNet 0 -offsetPoint (0.865,0.855)
+lakerSingleSel -point (0.796,0.793) -traversedist 0.018
+lakerCreateRect -layerName METAL1 -point (0.75,0.61) (0.985,0.945)
+lakerChangeSelMode -mode Object
+lakerChangeSelMode -mode Vertex
+lakerDeselectAll
+lakerSingleSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (0.39,0.97) -offsetPoint (0.835,0.97)
+lakerChangeSelMode -mode Vertex
+lakerStretchObj -refPoint (0.85,1.015) -ignoreNet 0 -offsetPoint (0.85,0.85)
+lakerAttribute -index 1 -purpose pin -text {B}
+lakerSingleSel -point (0.668,0.675) -traversedist 0.018
+lakerZoomOut
+lakerSingleSel -point (2.882,0.502) -traversedist 0.037
+lakerSingleSel -point (2.517,1.141) -traversedist 0.037
+lakerSingleSel -point (2.517,1.141) -traversedist 0.037
+lakerSingleSel -point (2.517,1.141) -traversedist 0.037
+lakerSingleSel -point (2.901,1.77) -traversedist 0.037
+lakerAreaSel -point (2.437,1.985) (2.785,2.855)
+lakerAlignObj -mode end
+lakerAlignObj -point (2.411,-0.137) -mode start
+lakerAlignObj -mode end
+lakerAlignObj -point (2.546,2.497) -mode start
+lakerAlignObj -refObj 1 -refPoint (2.41,-0.19) -traversedist 0.018
+lakerSingleSel -point (2.744,1.441) -traversedist 0.037
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerSingleSel -point (-1.446,2.621) -traversedist 0.037
+lakerRedraw
+lakerSingleSel -point (0.935,3.136) -traversedist 0.037
+lakerSetColPat -visall 0
+lakerSetColPat -selall 0
+lakerSingleSel -point (-2.144,1.883) -traversedist 0.037
+lakerRedraw
+lakerSetColPat -layerName NWELL -sel 1 -vis 1
+lakerSetActiveLayer -layerName NWELL -purpose drawing
+lakerSingleSel -point (-1.614,2.303) -traversedist 0.037
+lakerClearRuler
+lakerSetColPat -layerName PIMP -sel 1 -vis 1
+lakerSetActiveLayer -layerName PIMP -purpose drawing
+lakerSetColPat -layerName NIMP -sel 1 -vis 1
+lakerSetActiveLayer -layerName NIMP -purpose drawing
+lakerSingleSel -point (-1.585,2.654) -traversedist 0.037
+lakerRedraw
+lakerSingleSel -point (0.862,3.162) -traversedist 0.037
+lakerAreaSel -point (0.976,-0.74) (1.715,3.041)
+lakerSingleSel -point (2.101,1.364) -traversedist 0.037
+lakerAreaSel -point (1.041,-0.5) (1.485,3.001)
+lakerSingleSel -point (2.042,1.642) -traversedist 0.037
+lakerAreaSel -point (0.979,-0.41) (1.505,3.078)
+lakerStretchObj -refPoint (1.325,1.83) -ignoreNet 0 -offsetPoint (3.87,1.83)
+lakerSingleSel -point (4.019,0.034) -traversedist 0.037
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerSingleSel -point (-1.706,2.723) -traversedist 0.037
+lakerRedraw
+lakerSingleSel -point (-1.702,2.559) -traversedist 0.037
+lakerDistance -point (0.05,2.519) (0.17,2.5)
+lakerDeselectAll
+lakerAreaSel -point (-0.245,-0.69) (0.185,3.012)
+lakerAlignObj -point (0.187,2.519) -mode start
+lakerAlignObj -refObj 1 -refPoint (0.2,1.735) -traversedist 0.018 -space 0.075
+lakerSingleSel -point (4.435,1.152) -traversedist 0.037
+lakerAreaSel -point (3.226,-0.8) (4.235,3.048)
+lakerSingleSel -point (4.311,-0.302) -traversedist 0.037
+lakerAreaSel -point (3.069,-0.98) (4.305,3.07)
+lakerAlignObj -mode end
+lakerAlignObj -point (2.656,1.73) -mode start
+lakerAlignObj -mode end
+lakerSingleSel
+lakerAreaSel -point (2.276,-0.57) (2.645,2.983)
+lakerAlignObj -point (2.389,2.526) -mode start
+lakerAlignObj -refObj 1 -refPoint (2.085,1.68) -traversedist 0.018 -space 0.075
+lakerSingleSel -point (3.01,3.487) -traversedist 0.037
+lakerAreaSel -point (3.113,-0.83) (4.16,3.22)
+lakerAlignObj -point (3.712,2.515) -mode start
+lakerAlignObj -refObj 1 -refPoint (2.17,2.485) -traversedist 0.018 -space 0.12
+lakerDistance -point (2.17,2.5) (2.29,2.471)
+lakerSingleSel -point (3.051,1.525) -traversedist 0.037
+lakerZoomAll
+lakerSingleSel -point (2.621,1.555) -traversedist 0.02
+lakerSingleSel -point (2.615,1.559) -traversedist 0.02
+lakerSingleSel -point (2.671,1.529) -traversedist 0.02
+lakerSaveDesign
+lakerSingleSel -point (-0.825,2.836) -traversedist 0.02
+lakerSingleSel -point (-0.331,1.271) -traversedist 0.02
+lakerCalibreDRC
+New connection accepted, fd = 18
+
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+Received from RVE: [ mgc_rve_export_layout "AND2X1" "GDSII" "/home/user/wrk/standard_113/drc/AND2X1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/AND2X1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {AND2X1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 39
+
+Received from RVE: [ mgc_rve_rfile "/home/user/wrk/standard_113/drc/query_results" ]
+The zoom-in area is re-adjusted to minimum size that can be displayed.
+The displayed area is: (1.57,0.748) (2.18,1.172).
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+lakerSingleSel
+lakerZoomOut
+lakerZoomOut
+lakerDistance -point (1.835,0.942) (1.915,0.935)
+lakerSingleSel
+lakerRotate90 -refPoint (1.67,0.97)
+lakerUndo
+lakerSingleSel
+lakerRotate90 -refPoint (1.715,0.96)
+lakerDistance -point (1.775,0.97) (1.915,0.977)
+lakerSingleSel
+lakerSingleSel
+lakerStretchObj -refPoint (1.375,0.93) -ignoreNet 0 -offsetPoint (1.435,0.93)
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerConnChecker -addNet -net LakerNet__1 -startPoint (1.41,0.96)
+lakerConnChecker -toMaxLevel -net LakerNet__1 -speedMode -traceViaArray 1
+lakerChangeSelMode -mode Vertex
+lakerZoomOut
+lakerSingleSel -point (2.345,0.341) -traversedist 0.02
+lakerSaveDesign
+Received from RVE: [ mgc_rve_export_layout "AND2X1" "GDSII" "/home/user/wrk/standard_113/drc/AND2X1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/AND2X1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {AND2X1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 39
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+Calibre process exit.
+lakerSingleSel -point (2.613,0.889) -traversedist 0.02
+lakerCalibreLVS
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+
+New connection accepted, fd = 18
+
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+Received from RVE: [ mgc_rve_export_layout "AND2X1" "GDSII" "/home/user/wrk/standard_113/lvs/AND2X1.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/lvs/AND2X1.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {AND2X1} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 41
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+Calibre process exit.
+lakerSingleSel -point (2.931,0.828) -traversedist 0.02
+lakerSingleSel -point (2.832,1.668) -traversedist 0.02
+lakerZoomAll
+lakerClearRuler
+lakerSingleSel
+lakerDecreaseSel
+lakerDecreaseSel
+lakerDecreaseSel
+lakerDecreaseSel
+lakerSingleSel
+lakerDecreaseSel
+lakerIncreaseSel
+lakerIncreaseSel
+lakerIncreaseSel
+lakerChangeSelMode -mode DevObj
+lakerCopyObj -refPoint (0.35,2.495) -offsetPoint (1.37,2.495)
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (-0.083,-0.169) -traversedist 0.02
+lakerAreaSel -point (0.15,-0.205) (1.0,0.01)
+lakerChangeSelMode

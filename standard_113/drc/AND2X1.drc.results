@@ -1,0 +1,1521 @@
+AND2X1 1000
+HRI.WARN
+0 0 3 Oct 18 19:09:04 2024                     
+HRI.WARN { @ RLPPDMY overlap OD is not allowed
+  RLPPDMY AND OD   
+}
+NW.W.1
+0 0 3 Oct 18 19:09:04 2024                     
+NW.W.1 { @ Minimum NWEL width < 0.6
+  INT NWEL < 0.6 ABUT < 90 SINGULAR REGION
+}
+NW.S.2
+0 0 3 Oct 18 19:09:04 2024                     
+NW.S.2 { @ Minimum same potential NWEL space < 0.6
+  EXT NWEL < 0.60 REGION ABUT < 90 SINGULAR 
+}
+NWR.E.1
+0 0 4 Oct 18 19:09:04 2024                     
+NWR.E.1 {@ Min. OD enclose NWEL resistor < 1.0
+  ENC NWRES ODWR < 1.0 ABUT<90 SINGULAR REGION
+  NWRES CUT ODWR    
+}
+NWR.E.2
+0 0 4 Oct 18 19:09:04 2024                     
+NWR.E.2 {@ Min. NWEL resistor enclose CO < 0.3
+  ENC COWR NWRES < 0.3 ABUT<90 SINGULAR REGION
+  COWR CUT NWRES    
+}
+NWR.C.1
+0 0 3 Oct 18 19:09:04 2024                     
+NWR.C.1 {@ Min. RPO hole enclose NWEL < 0.3
+  ENC NWRES RHWR < 0.3 ABUT<90 SINGULAR REGION
+}
+NWR.C.2
+0 0 3 Oct 18 19:09:04 2024                     
+NWR.C.2 {@ Min. RPO enclose OD (with NWEL resistor) < 0.22
+  ENC ODWR RPO < 0.22 ABUT<90 SINGULAR REGION
+}
+NWR.C.3
+0 0 4 Oct 18 19:09:04 2024                     
+NWR.C.3 {@ Min. RPO hole enclose NWEL resistor CO < 0.3
+  ENC COWR RHWR < 0.3 ABUT<90 SINGULAR REGION
+  COWR CUT RHWR    
+}
+NWR.O.1
+0 0 6 Oct 18 19:09:04 2024                     
+NWR.O.1 {@ Min. RPO overlap NP < 0.4
+    INT NPWR RPO < 0.4 ABUT < 90 SINGULAR REGION
+    X = RPO INTERACT NWRES
+    H = HOLES X INNER
+    H NOT NPWR
+}
+NWR.R.1
+0 0 4 Oct 18 19:09:04 2024                     
+NWR.R.1 {@ NW resistor doped by implants not allowed.
+  RWDMY AND NPOD
+  RWDMY AND PPOD
+}
+NWR.E.3
+0 0 4 Oct 18 19:09:04 2024                     
+NWR.E.3 { @ Min. extension of NP to OD (NWEL resistor under STI) 0.18 um
+  ENC ODWR_STI NPWR_STI < 0.18 ABUT < 90 SINGULAR REGION
+  ODWR_STI NOT NPWR_STI
+}
+NT_N.I.2
+0 0 3 Oct 18 19:09:04 2024                     
+NT_N.I.2 {@ only one OD region allowed to be put in an NT_N region
+   NTN ENCLOSE OD > 1
+}
+NT_N.I.3
+0 0 3 Oct 18 19:09:04 2024                     
+NT_N.I.3 {@ A P+GATE is not allowed to be put in an NT_N region
+   NTN AND GATE_PP
+}
+NT_N.I.4
+0 0 6 Oct 18 19:09:04 2024                     
+NT_N.I.4 {@ A bent poly region is not allowed to put in an NT_N region
+  EXT NTN_PO_W < 0.18 ABUT == 90 INTERSECTING ONLY
+  INT NTN_PO_W < 0.18 ABUT == 90 INTERSECTING ONLY
+  EXT NTN_PO_W < 0.18 ABUT == 135 INTERSECTING ONLY
+  INT NTN_PO_W < 0.18 ABUT == 135 INTERSECTING ONLY
+}
+NT_N.W.1
+0 0 3 Oct 18 19:09:04 2024                     
+NT_N.W.1 {@ Minimum width of a NT_N region < 0.74
+   INT NTN < 0.74 SINGULAR ABUT<90 REGION
+}
+NT_N.W.2
+0 0 3 Oct 18 19:09:04 2024                     
+NT_N.W.2 {@ Minimum poly gate dimension of a 1.8V blocked NT_N device < 0.5
+   INT NTN_GATE_W < 0.5 ABUT<90 REGION
+}
+NT_N.W.2B
+0 0 4 Oct 18 19:09:04 2024                     
+NT_N.W.2B {@ Minimum poly gate dimension of a 3.3V blocked NT_N device < 1.2
+   Z = NTN_GATE_W INSIDE EDGE OD2
+   INT Z < 1.2 ABUT<90 REGION
+}
+NT_N.E.1
+0 0 8 Oct 18 19:09:04 2024                     
+NT_N.E.1 {@ Maximum and Minimum extension from NT_N region beyond an NP OD region 0.26
+  A = NTN INTERACT NPOD
+  B = NPOD INTERACT NTN
+  C = SIZE B BY 0.26
+  D = SIZE A BY -0.26
+  A XOR C
+  B XOR D
+}
+NT_N.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+NT_N.S.1 {@ Minimum space between two NT_N regions < 0.86
+   EXT NTN < 0.86 ABUT<90 SINGULAR REGION
+}
+NT_N.C.1
+0 0 4 Oct 18 19:09:04 2024                     
+NT_N.C.1 {@ MInimum clearance from NT_N to OD < 0.52
+   EXT OD NTN < 0.52 SINGULAR ABUT<90 REGION
+   OD CUT NTN    
+}
+NT_N.C.2
+0 0 4 Oct 18 19:09:04 2024                     
+NT_N.C.2 {@ Minimum clearance frome a NT_N region to NWEL edge < 1.66
+   EXT NTN NWEL < 1.66 SINGULAR ABUT<90 REGION
+   NTN AND NWEL    
+}
+NT_N.PO.1
+0 0 3 Oct 18 19:09:04 2024                     
+NT_N.PO.1 {@ Minimum overlap of a PO region extended into field oxide(endcap) < 0.35
+   ENC NTN_OD POLY < 0.35 ABUT<90 SINGULAR REGION
+}
+OD.W.1_OD.W.2
+0 0 3 Oct 18 19:09:04 2024                     
+OD.W.1_OD.W.2 { @ Min. OD width for MOS and interconnect < 0.1
+  INT OD < 0.1 SINGULAR ABUT < 90 REGION 
+}
+OD.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+OD.S.1 { @ Minimum OD spacing < 0.15
+  EXT OD < 0.15 ABUT < 90 SINGULAR REGION 
+}
+OD.C.1
+0 0 4 Oct 18 19:09:04 2024                     
+OD.C.1 { @ NWEL olap NPOD tie down < 0.12
+   ENC NPOD NONWR < 0.12 SINGULAR ABUT<90 REGION
+   NPOD CUT NONWR    
+}
+OD.C.2_OD.C.3
+0 0 6 Oct 18 19:09:04 2024                     
+OD.C.2_OD.C.3 { @ Minimum NWEL to NPOD space < 0.3
+   A = NPOD NOT INSIDE NWEL
+   X = A NOT ODWR
+   EXT X NWEL < 0.3 SINGULAR ABUT<90 REGION
+   X CUT NWEL
+}
+OD.C.4
+0 0 4 Oct 18 19:09:04 2024                     
+OD.C.4 { @ NWEL overlap PPOD < 0.12
+   ENC PPOD NWEL < 0.12 SINGULAR ABUT<90 REGION
+   PPOD CUT NWEL    
+}
+OD.C.5
+0 0 3 Oct 18 19:09:04 2024                     
+OD.C.5 { @ NWEL space PPOD outside NW < 0.12
+   EXT PTAP NWEL < 0.12 SINGULAR ABUT<90 REGION
+}
+OD.W.3
+0 0 9 Oct 18 19:09:04 2024                     
+OD.W.3 { @ Length of active with width < 0.42 um, connected to butted strap <= 0.8 um 
+  SD = (DACT INTERACT ALL_GATE) NOT ALL_GATE
+  NP_PP_BTE     = NPOD COIN OUTSIDE EDGE PPOD  
+  BUTTED_EDGE = LENGTH NP_PP_BTE < 0.42
+  CHECK_SD = SD WITH EDGE BUTTED_EDGE
+  NARROW_SD = INT (CHECK_SD COIN INSIDE EDGE OD) < 0.42 ABUT < 90 OPPOSITE REGION 
+  CHECK_OD = (NARROW_SD WITH EDGE BUTTED_EDGE) OR (NARROW_SD WITH EDGE GATE_W)
+  PATH LENGTH (OD COIN INSIDE EDGE CHECK_OD) > 0.8
+     }
+OD.A.1
+0 0 3 Oct 18 19:09:04 2024                     
+OD.A.1 { @ Minimum area of stand-alone OD region < 0.202
+  OD AREA < 0.202
+}
+OD2.E.1
+0 0 11 Oct 18 19:09:04 2024                    
+OD2.E.1 { @ Minimum OD2 olap OD < 0.32
+  // This only applies to active OD
+  CHECK_EDGE_N = ENC [NACT] OD2 < 0.32 SINGULAR ABUT <90 
+  CHECK_EDGE_N NOT COIN OUTSIDE EDGE PTAP
+  CHECK_EDGE_P = ENC [PACT] OD2 < 0.32 SINGULAR ABUT <90 
+  CHECK_EDGE_P NOT COIN OUTSIDE EDGE NTAP
+  OD2 INSIDE DACT		// OD2 totally inside OD
+  Y = DACT INTERACT OD2
+  Z = Y NOT OD2
+  Z OUTSIDE ALL_GATE
+}
+OD2.S.1
+0 0 4 Oct 18 19:09:04 2024                     
+OD2.S.1 { @ Minimum OD2 spacing < 0.45
+  // Merge if space < 0.45 um
+  EXT OD2 < 0.45 SINGULAR ABUT <90 REGION
+}
+OD2.C.1
+0 0 4 Oct 18 19:09:04 2024                     
+OD2.C.1 { @ Minimum OD2 space to OD < 0.32
+  EXT OD2 NACT < 0.32 SINGULAR ABUT <90 REGION
+  EXT OD2 PACT < 0.32 SINGULAR ABUT <90 REGION
+}
+OD2.C.2
+0 0 4 Oct 18 19:09:04 2024                     
+OD2.C.2 { @ Minimum OD2 space to gate < 0.4
+  A = OD2 INSIDE EDGE DACT
+  EXT A GATE_W < 0.400 ABUT <90
+}
+OD2.E.2
+0 0 4 Oct 18 19:09:04 2024                     
+OD2.E.2 { @ Minimum enclosure of gate by OD2 < 0.4
+  ENC GATE_W OD2_BEDGE < 0.400 ABUT < 90 REGION 
+  ALL_GATE CUT OD2    
+}
+PO.W.3
+0 0 3 Oct 18 19:09:04 2024                     
+PO.W.3 { @ Min. POLY width for interconnect, 1.8V NMOS, 1.8V PMOS < 0.1
+  INT POLY < 0.1 SINGULAR ABUT < 90 REGION
+}
+PO.W.1B
+0 0 3 Oct 18 19:09:04 2024                     
+PO.W.1B { @ Minimum POLY gate length 3.3V pmos < 0.30
+  INT HV_PGATE_W < 0.30 ABUT < 90 REGION
+}
+PO.W.2B
+0 0 3 Oct 18 19:09:04 2024                     
+PO.W.2B { @ Minimum POLY gate length 3.3v nmos < 0.35
+  INT HV_NGATE_W < 0.35 ABUT < 90 REGION
+}
+PO.S.1
+0 0 7 Oct 18 19:09:04 2024                     
+PO.S.1 { @ Minimum POLY space on OD with contact < 0.12
+         // Select device OD enclosing contacts
+         // Get gate edges (width) along s/d region
+         // Find spacing violations between edges
+  Y = ALL_GATE COINCIDENT OUTSIDE EDGE ASD1
+  EXT Y < 0.12 REGION
+}
+PO.S.2_PO.S.3
+0 0 3 Oct 18 19:09:04 2024                     
+PO.S.2_PO.S.3 { @ Min. POLY space: on OD w/o contact and interconnect < 0.12
+    EXT POLY < 0.12 SINGULAR ABUT <90 REGION
+}
+PO.C.1
+0 0 3 Oct 18 19:09:04 2024                     
+PO.C.1 { @ Minimum POLY on field space to active < 0.1
+  EXT POLY OD < 0.1 ABUT < 89.5 REGION SINGULAR
+}
+PO.C.2
+0 0 3 Oct 18 19:09:04 2024                     
+PO.C.2 { @ Minimum OD overhang gate < 0.2
+  ENC POLY OD < 0.2 SINGULAR ABUT < 89.5 REGION
+}
+PO.O.1
+0 0 3 Oct 18 19:09:04 2024                     
+PO.O.1 { @ Minimum POLY overhang active < 0.18
+  ENC OD POLY < 0.18 SINGULAR ABUT < 89.5 REGION
+}
+PO.R.1A
+0 0 5 Oct 18 19:09:04 2024                     
+PO.R.1A { @ 90 degree gate not allowed/L and U shape gate are not allowed
+      // 0.18 value is arbitrary, note the angle
+  EXT GATE_W < 0.18 ABUT == 90 INTERSECTING ONLY
+  INT GATE_W < 0.18 ABUT == 90 INTERSECTING ONLY
+}
+PO.R.1B
+0 0 3 Oct 18 19:09:04 2024                     
+PO.R.1B { @ 45 degree 1.8V gate min. length < 0.21
+  INT LVGT < 0.21 ANGLED == 2 OPPOSITE REGION
+}
+PO.R.2
+0 0 14 Oct 18 19:09:04 2024                    
+PO.R.2 { @ Maximum POLY length between contacts when PO width less than 0.24um > 50.00
+  LONG_PO = AREA ILP1 > 0.18*50
+  CHECK_PO = LONG_PO INTERACT CO
+  CHECK_CO = CO INTERACT CHECK_PO
+  CO_A = SIZE CHECK_CO BY 50 / 2 INSIDE OF CHECK_PO STEP 0.25 
+  PO_A = CHECK_PO INTERACT CO_A == 1
+  PO_B = CHECK_PO INTERACT CO_A > 1
+  CO_B = CO_A INTERACT PO_A
+  CO_C = SIZE CO_B BY 50 / 2 INSIDE OF PO_A STEP 0.25 
+  BAD = (PO_A NOT CO_C) OR (PO_B NOT CO_A)
+  BAD_EDGE = BAD COIN INSIDE EDGE POLY
+  ERROR = INT BAD_EDGE <= 0.24 ABUT < 90 REGION
+  CHECK_PO INTERACT ERROR
+}
+PP.W.1
+0 0 3 Oct 18 19:09:04 2024                     
+PP.W.1 { @ PP width < 0.240
+  INT PP < 0.240 SINGULAR ABUT < 90 REGION 
+}
+PP.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+PP.S.1 { @ PP space < 0.240
+  EXT PP < 0.240 ABUT < 90 SINGULAR REGION
+}
+PP.C.1
+0 0 9 Oct 18 19:09:04 2024                     
+PP.C.1 { @ PP space to n active in pwell < 0.160
+         // N active in pwell can be butting or
+         // non-butting. The non-butting n active is not
+         // allowed to touch PP.
+  EXT PP NACT < 0.160 ABUT >0<90 REGION
+  X = EXT PP [NACT] < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT PPOD
+}
+PP.C.2
+0 0 3 Oct 18 19:09:04 2024                     
+PP.C.2 { @ PP space to non-butting NTAP < 0.02 with PWEL space >= 0.43
+  EXT PP NTAP < 0.02 ABUT>0<90 REGION
+}
+PP.O.1
+0 0 3 Oct 18 19:09:04 2024                     
+PP.O.1 { @ PP extends into p active < 0.230
+  INT OD PP < 0.230 SINGULAR REGION ABUT >0<90
+}
+PP.E.1
+0 0 6 Oct 18 19:09:04 2024                     
+PP.E.1 { @ PP olap OD < 0.180
+  ENC PACT PP < 0.180 SINGULAR ABUT >0<90 REGION
+  Y = ENC [PACT] PP < 0.001 ABUT == 0
+  Z = EXPAND EDGE Y OUTSIDE BY 0.001
+  Z NOT INTERACT NPOD
+}
+PP.E.1_NP.E.1
+0 0 3 Oct 18 19:09:04 2024                     
+PP.E.1_NP.E.1 { @ Implant can not coincident OD edge except butted diffusion
+  IMP COIN INSIDE EDGE OD
+}  
+PP.E.3
+0 0 6 Oct 18 19:09:04 2024                     
+PP.E.3 { @ Minimum enclosure of PTAP by PP < 0.02 with NWEL space >= 0.43
+  ENC PTAP PP < 0.02 ABUT>0<90 SINGULAR REGION
+  X = ENC [PTAP] PP < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT NPOD
+}
+PP.E.4
+0 0 3 Oct 18 19:09:04 2024                     
+PP.E.4 { @ Min. enc. of PTAP by PP < 0.18 with NWEL space < 0.43
+  PPE4_CHECKOD INSIDE EDGE PPE4_NWELC
+}
+PP.E.6
+0 0 4 Oct 18 19:09:04 2024                     
+PP.E.6 { @ Min enc of POLY resistor by PP < 0.18
+  ENC PORES PP < 0.18 ABUT <90 REGION
+  (RPO AND POLY) NOT IMP
+}
+PP.R.1_NP.R.1
+0 0 3 Oct 18 19:09:04 2024                     
+PP.R.1_NP.R.1 { @ PP and NP not allowed to overlap
+  PP AND NP
+}
+PP.R.3_NP.R.3
+0 0 4 Oct 18 19:09:04 2024                     
+PP.R.3_NP.R.3 { @ OD must be fully covered by PP and NP ,except OD without interacting CO OR PO
+   ((OD INTERACT POLYi )NOT ODWR) NOT IMP
+   ((OD INTERACT COi )NOT ODWR) NOT IMP
+}
+NP.W.1
+0 0 3 Oct 18 19:09:04 2024                     
+NP.W.1 { @ NP width < 0.240
+  INT NP < 0.240 SINGULAR ABUT < 90 REGION
+}
+NP.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+NP.S.1 { @ NP space < 0.240
+  EXT NP < 0.240 ABUT < 90 SINGULAR REGION
+}
+NP.C.1
+0 0 9 Oct 18 19:09:04 2024                     
+NP.C.1 { @ NP space to p active in NWEL < 0.160
+         // P active in NWEL can be butting or
+         // non-butting. The non-butting p active is not
+         // allowed to touch NP.
+  EXT NP PACT < 0.160 ABUT >0<90 REGION
+  X = EXT NP [PACT] < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT NPOD
+}
+NP.C.2
+0 0 3 Oct 18 19:09:04 2024                     
+NP.C.2 { @ NP space to non-butting ptap < 0.02 with NWEL space >= 0.43
+  EXT NP PTAP < 0.02 ABUT>0<90 REGION
+}
+NP.C.3
+0 0 3 Oct 18 19:09:04 2024                     
+NP.C.3 { @ NP space to non-butting ptap < 0.18 with NWEL space < 0.43
+  NPC3_CHECKOD INSIDE EDGE PPE4_NWELC
+}
+NP.O.1
+0 0 3 Oct 18 19:09:04 2024                     
+NP.O.1 { @ NP extends into n active < 0.230
+  INT OD NP < 0.230 SINGULAR REGION ABUT >0<90
+}
+NP.E.1
+0 0 7 Oct 18 19:09:04 2024                     
+NP.E.1 { @ NP olap OD < 0.180
+  X = NACT NOT ODWR
+  ENC X NP < 0.180 SINGULAR ABUT >0<90 REGION
+  Y = ENC [X] NP < 0.001 ABUT == 0
+  Z  = EXPAND EDGE Y OUTSIDE BY 0.001
+  Z NOT INTERACT PPOD
+}
+NP.E.3
+0 0 6 Oct 18 19:09:04 2024                     
+NP.E.3 { @ Minimum enclosure of NTAP by NP < 0.02 with PWEL space >= 0.43
+  ENC NTAP NP < 0.02 ABUT>0<90 SINGULAR REGION
+  X = ENC [NTAP] NP < 0.001 ABUT == 0
+  Y = EXPAND EDGE X OUTSIDE BY 0.001
+  Y NOT INTERACT PPOD
+}
+NP.E.6
+0 0 3 Oct 18 19:09:04 2024                     
+NP.E.6 { @ Min enc of POLY resistor by NP < 0.18
+  ENC PORES NP < 0.18 ABUT <90 REGION
+}
+RPO.W.1
+0 0 3 Oct 18 19:09:04 2024                     
+RPO.W.1 { @ Minimum RPO width < 0.430
+  INT RPO < 0.43 SINGULAR ABUT < 90 REGION
+}
+RPO.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+RPO.S.1 { @ Minimum RPO space < 0.43
+  EXT RPO < 0.43 ABUT < 90 SINGULAR REGION
+}
+RPO.C.1
+0 0 3 Oct 18 19:09:04 2024                     
+RPO.C.1 { @ Minimum RPO space to OD < 0.22
+  EXT RPO OD < 0.22 SINGULAR ABUT < 90 REGION
+}
+RPO.C.2
+0 0 4 Oct 18 19:09:04 2024                     
+RPO.C.2 { @ Minimum RPO space to CO < 0.22
+  EXT RPO CO < 0.22 ABUT < 90 SINGULAR REGION 
+  CO AND RPO     
+}
+RPO.C.3
+0 0 5 Oct 18 19:09:04 2024                     
+RPO.C.3 { @ Minimum RPO space to gate < 0.45
+  A = (((ALL_GATE NOT DRCDMY) NOT ESD1DMY) NOT ESD2DMY) NOT ESD3DMY   
+  EXT RPO A < 0.45 ABUT < 90 SINGULAR REGION 
+  RPO AND A
+}
+RPO.C.4
+0 0 4 Oct 18 19:09:04 2024                     
+RPO.C.4 { @ Minimum RPO overhang OD < 0.22
+  ENC OD RPO < 0.22 ABUT < 90 SINGULAR REGION
+  RPO_NOT_SR INSIDE OD    
+}
+RPO.E.1
+0 0 3 Oct 18 19:09:04 2024                     
+RPO.E.1 { @ Minimum OD overhang RPO < 0.22
+  ENC RPO OD < 0.22 ABUT < 90 SINGULAR REGION
+}
+RPO.C.5
+0 0 4 Oct 18 19:09:04 2024                     
+RPO.C.5 { @ Minimum RPO overhang POLY < 0.22
+  ENC POLY RPO < 0.22 ABUT < 90 SINGULAR REGION
+  RPO_NOT_SR INSIDE POLY
+}
+RPO.C.6
+0 0 3 Oct 18 19:09:04 2024                     
+RPO.C.6 { @ Minimum clearance RPO to unrelated poly < 0.3um
+  EXT RPO POLY_ISO < 0.30 ABUT < 90 SINGULAR REGION
+}
+RPO.A.1
+0 0 3 Oct 18 19:09:04 2024                     
+RPO.A.1 { @ RPO min. area < 2 um*um
+  AREA RPO < 2
+}
+CO.W.1
+0 0 3 Oct 18 19:09:04 2024                     
+CO.W.1 { @ contact width != 0.12
+  NOT RECTANGLE CO == 0.12 BY == 0.12 ORTHOGONAL ONLY
+}
+CO.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+CO.S.1 { @ contact spacing < 0.14
+  EXT CO < 0.14 ABUT < 90 SINGULAR REGION
+}
+CO.S.2
+0 0 7 Oct 18 19:09:04 2024                     
+CO.S.2  { @ Min space between two contacts in larger than 4x4 array.
+  A = SIZE CO BY 0.30/2 OVERUNDER  // space < 0.3um treat as array
+  B = SIZE A BY 0.7 UNDEROVER                        // (0.22*3+0.3*2) = 1.26  (3 COs Mix.)
+  C = B INTERACT CO >= 16                  // 1.63-0.22 = 1.41       (Max. CO shift space) 
+  D = CO INTERACT C                        // so 1.26 < CONTY width < 1.41
+  EXT D < 0.28                             // & we use CONTY width = 1.4
+}
+CO.C.1_CO.R.1
+0 0 4 Oct 18 19:09:04 2024                     
+CO.C.1_CO.R.1 { @ diff contact to gate space < 0.1, or contact on gate
+  EXT CO_DIFF ALL_GATE < 0.1 SINGULAR ABUT <90 REGION
+  CO_DIFF AND ALL_GATE    
+}
+CO.C.2
+0 0 3 Oct 18 19:09:04 2024                     
+CO.C.2 { @ poly contact space to OD < 0.12
+  EXT CO_POLY OD < 0.12 ABUT <90 SINGULAR REGION
+}
+CO.E.1
+0 0 4 Oct 18 19:09:04 2024                     
+CO.E.1 { @ active olap contact < 0.06, also floating contacts
+  ENC CO_DIFF OD < 0.06 SINGULAR ABUT < 90 REGION
+  CO_DIFF OUTSIDE EDGE OD    
+}
+CO.E.2
+0 0 4 Oct 18 19:09:04 2024                     
+CO.E.2 { @ poly olap contact < 0.04
+  ENC CO_POLY POLY_ISO < 0.04 SINGULAR ABUT < 90 REGION
+  CO_POLY CUT POLY_ISO    
+}
+CO.E.3
+0 0 4 Oct 18 19:09:04 2024                     
+CO.E.3 { @ implant olap contact < 0.06
+  ENC CO_DIFF PP < 0.06 ABUT < 90 SINGULAR REGION 
+  PP INSIDE EDGE CO_DIFF    
+}
+CO.E.4
+0 0 4 Oct 18 19:09:04 2024                     
+CO.E.4 { @ implant olap contact < 0.06
+  ENC CO_DIFF NP < 0.06 ABUT < 90 SINGULAR REGION 
+  NP INSIDE EDGE CO_DIFF    
+}
+M1.W.1
+0 0 3 Oct 18 19:09:04 2024                     
+M1.W.1 { @ M1 width < 0.12
+  INT M1 < 0.12 SINGULAR REGION ABUT < 90
+}
+M1.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+M1.S.1 { @ M1 spacing < 0.12
+  EXT M1 < 0.12 ABUT < 90 SINGULAR REGION
+}
+M1.S.2
+0 0 16 Oct 18 19:09:04 2024                    
+M1.S.2 { @ Wide M1 (>10um) min. to M1 < 0.6 um
+  M1_S5 = SHRINK (SHRINK (SHRINK (SHRINK M1 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M1_G5 = GROW (GROW (GROW (GROW M1_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M1_Wide = M1_G5 AND M1
+  M1_Exp = SIZE M1_Wide BY 1 INSIDE OF M1 STEP 0.161
+  M1_Branch = M1_Exp NOT M1_Wide
+  M1_Branch_edge = M1_Branch COIN INSIDE EDGE M1
+  M1_Check = M1 AND (SIZE M1_Exp BY 0.6)
+  M1_Branch_Check = M1 AND (EXPAND EDGE M1_Branch_edge OUTSIDE BY 0.6 CORNER FILL)
+  M1_WideC = STAMP M1_Wide BY M1xd
+  M1_CheckC = STAMP M1_Check BY M1xd
+  M1_BranchC = STAMP M1_Branch BY M1xd
+  M1_Branch_CheckC = STAMP M1_Branch_Check BY M1xd
+  EXT M1_WideC M1_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+  EXT M1_BranchC M1_Branch_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+}
+M1.E.2
+0 0 4 Oct 18 19:09:04 2024                     
+M1.E.2 { @ Min extension of M1 end-of-line region beyond CO region is 0.06 um
+  X = ENC [CO] M1 < 0.06 ABUT < 90 OPPOSITE   // a narrow side
+  INT X < 0.22 ABUT == 90 INTERSECTING ONLY          // adjacent narrow sides
+}
+M1.A.1
+0 0 3 Oct 18 19:09:04 2024                     
+M1.A.1{ @ Min M1 area < 0.07
+  AREA M1 < 0.07
+}
+VIA1.W.1
+0 0 4 Oct 18 19:09:04 2024                     
+VIA1.W.1 { @ VIA1 must be 0.26 x 0.26 um
+  A = NOT RECTANGLE VIA1 == 0.26 BY == 0.26 ORTHOGONAL ONLY
+  A OUTSIDE RNGX   // exclude from metal fuse protection ring area
+}
+VIA1.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+VIA1.S.1 { @ VIA1 SPACING < 0.26
+  EXT VIA1 < 0.26 ABUT < 90 SINGULAR REGION 
+}
+VIA1.E.1
+0 0 4 Oct 18 19:09:04 2024                     
+VIA1.E.1 { @ Min extension of a M1 region beyond a VIA1 region is 0.01 um
+  ENC VIA1 M1 < 0.01 ABUT<90 SINGULAR 
+  VIA1 NOT M1    
+}
+VIA1.E.2
+0 0 4 Oct 18 19:09:04 2024                     
+VIA1.E.2 { @ Min extension of M1 end-of-line region beyond VIA1 region is 0.06 um
+   X = ENC [VIA1] M1 < 0.06 ABUT < 90 OPPOSITE         // a narrow side
+   INT X < 0.26  ABUT == 90 INTERSECTING ONLY     // adjacent narrow sides
+}
+M2.W.1
+0 0 3 Oct 18 19:09:04 2024                     
+M2.W.1 { @ M2 width < 0.28
+  INT M2 < 0.28 SINGULAR REGION ABUT < 90
+}
+M2.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+M2.S.1 { @ M2 spacing < 0.28
+  EXT M2 < 0.28 ABUT < 90 SINGULAR REGION
+}
+M2.S.2
+0 0 16 Oct 18 19:09:04 2024                    
+M2.S.2 { @ Wide M2 (>10um) min.spacing to M2 < 0.6 um
+  M2_S5 = SHRINK (SHRINK (SHRINK (SHRINK M2 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M2_G5 = GROW (GROW (GROW (GROW M2_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M2_Wide = M2_G5 AND M2
+  M2_Exp = SIZE M2_Wide BY 1 INSIDE OF M2 STEP 0.196
+  M2_Branch = M2_Exp NOT M2_Wide
+  M2_Branch_edge = M2_Branch COIN INSIDE EDGE M2
+  M2_Check = M2 AND (SIZE M2_Exp BY 0.6)
+  M2_Branch_Check = M2 AND (EXPAND EDGE M2_Branch_edge OUTSIDE BY 0.6 CORNER FILL)
+  M2_WideC = STAMP M2_Wide BY M2xd
+  M2_CheckC = STAMP M2_Check BY M2xd
+  M2_BranchC = STAMP M2_Branch BY M2xd
+  M2_Branch_CheckC = STAMP M2_Branch_Check BY M2xd
+  EXT M2_WideC M2_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+  EXT M2_BranchC M2_Branch_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+}
+M2.E.1
+0 0 4 Oct 18 19:09:04 2024                     
+M2.E.1 { @ Min extension of a M2 region beyond a VIA1 region is 0.01 um
+   ENC VIA1 M2 < 0.01 ABUT<90 SINGULAR 
+   VIA1 NOT M2    
+}
+M2.E.2
+0 0 4 Oct 18 19:09:04 2024                     
+M2.E.2 { @ Min extension of M2 end-of-line region beyond VIA1 region is 0.06um
+   X = ENC [VIA1] M2 < 0.06 ABUT < 90 OPPOSITE		// a narrow side
+   INT X < 0.26 ABUT == 90 INTERSECTING ONLY       // adjacent narrow sides
+}
+M2.A.1
+0 0 3 Oct 18 19:09:04 2024                     
+M2.A.1{ @ Min M2 area region < 0.202
+  AREA M2 < 0.202
+}
+VIA2.W.1
+0 0 4 Oct 18 19:09:04 2024                     
+VIA2.W.1 { @ VIA2 must be 0.36 x 0.36 um
+  A = NOT RECTANGLE VIA2R == 0.36 BY == 0.36 ORTHOGONAL ONLY
+  A OUTSIDE RNGX     // exclude from metal fuse protection ring area
+}
+VIA2.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+VIA2.S.1 { @ VIA2 spacing < 0.35
+  EXT VIA2R < 0.35 ABUT < 90 SINGULAR REGION
+}
+VIA2.E.1
+0 0 4 Oct 18 19:09:04 2024                     
+VIA2.E.1 { @ Min extension of a M2 region beyond a VIA2 region is 0.01 um
+  ENC VIA2R M2 < 0.01 ABUT<90 SINGULAR 
+  VIA2R NOT M2    
+}
+VIA2.E.2
+0 0 4 Oct 18 19:09:04 2024                     
+VIA2.E.2 { @ Min extension of a M2 end-of-line region beyond VIA2 region is 0.06 um
+  X = ENC [VIA2R] M2 < 0.06 OPPOSITE 			// a narrow side
+  INT X < 0.36 ABUT == 90 INTERSECTING ONLY	// adjacent narrow sides
+}
+VIAD.W.1
+0 0 4 Oct 18 19:09:04 2024                     
+VIAD.W.1 { @ VIAD must be 0.36 x 0.36 um
+  A = NOT RECTANGLE VIADR == 0.36 BY == 0.36 ORTHOGONAL ONLY
+  A OUTSIDE RNGX     // exclude from metal fuse protection ring area
+}
+VIAD.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+VIAD.S.1 { @ VIAD spacing < 0.35
+  EXT VIADR < 0.35 ABUT < 90 SINGULAR REGION
+}
+VIAD.E.1
+0 0 4 Oct 18 19:09:04 2024                     
+VIAD.E.1 { @ Min extension of a M3 region beyond a VIAD region is 0.01 um
+  ENC VIADR M3 < 0.01 ABUT<90 SINGULAR 
+  VIADR NOT M3    
+}
+VIAD.E.2
+0 0 4 Oct 18 19:09:04 2024                     
+VIAD.E.2 { @ Min extension of a M3 end-of-line region beyond VIAD region is 0.06 um
+  X = ENC [VIADR] M3 < 0.06 OPPOSITE 			// a narrow side
+  INT X < 0.36 ABUT == 90 INTERSECTING ONLY	// adjacent narrow sides
+}
+M3.W.1
+0 0 3 Oct 18 19:09:04 2024                     
+M3.W.1 { @ M3 width < 0.44
+  INT M3 < 0.44 SINGULAR REGION ABUT < 90
+}
+M3.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+M3.S.1 { @ M3 spacing < 0.46
+  EXT M3 < 0.46 ABUT < 90 SINGULAR REGION
+}
+M3.S.2
+0 0 16 Oct 18 19:09:04 2024                    
+M3.S.2 { @ Wide M3 (>10um) min.spacing to M3 < 0.6 um
+  M3_S5 = SHRINK (SHRINK (SHRINK (SHRINK M3 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M3_G5 = GROW (GROW (GROW (GROW M3_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  M3_Wide = M3_G5 AND M3
+  M3_Exp = SIZE M3_Wide BY 1 INSIDE OF M3 STEP 0.322
+  M3_Branch = M3_Exp NOT M3_Wide
+  M3_Branch_edge = M3_Branch COIN INSIDE EDGE M3
+  M3_Check = M3 AND (SIZE M3_Exp BY 0.6)
+  M3_Branch_Check = M3 AND (EXPAND EDGE M3_Branch_edge OUTSIDE BY 0.6 CORNER FILL)
+  M3_WideC = STAMP M3_Wide BY M3xd
+  M3_CheckC = STAMP M3_Check BY M3xd
+  M3_BranchC = STAMP M3_Branch BY M3xd
+  M3_Branch_CheckC = STAMP M3_Branch_Check BY M3xd
+  EXT M3_WideC M3_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+  EXT M3_BranchC M3_Branch_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+}
+M3.E.1
+0 0 4 Oct 18 19:09:04 2024                     
+M3.E.1 { @ Min extension of a M3 region beyond a VIA2 region is 0.09 um
+   ENC VIA2 M3 < 0.09 ABUT<90 SINGULAR 
+   VIA2 NOT M3    
+}
+M3.A.1
+0 0 3 Oct 18 19:09:04 2024                     
+M3.A.1 { @ Min M3 area region < 0.562
+  AREA M3 < 0.562
+}
+MD.W.1
+0 0 3 Oct 18 19:09:04 2024                     
+MD.W.1 { @ MD width < 0.44
+  INT MD < 0.44 SINGULAR REGION ABUT < 90
+}
+MD.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+MD.S.1 { @ MD spacing < 0.46
+  EXT MD < 0.46 ABUT < 90 SINGULAR REGION
+}
+MD.S.2
+0 0 16 Oct 18 19:09:04 2024                    
+MD.S.2 { @ Wide MD (>10um) min.spacing to MD < 0.6 um
+  MD_S5 = SHRINK (SHRINK (SHRINK (SHRINK MD RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  MD_G5 = GROW (GROW (GROW (GROW MD_S5 RIGHT BY 5) LEFT BY 5) TOP BY 5) BOTTOM BY 5
+  MD_Wide = MD_G5 AND MD
+  MD_Exp = SIZE MD_Wide BY 1 INSIDE OF MD STEP 0.322
+  MD_Branch = MD_Exp NOT MD_Wide
+  MD_Branch_edge = MD_Branch COIN INSIDE EDGE MD
+  MD_Check = MD AND (SIZE MD_Exp BY 0.6)
+  MD_Branch_Check = MD AND (EXPAND EDGE MD_Branch_edge OUTSIDE BY 0.6 CORNER FILL)
+  MD_WideC = STAMP MD_Wide BY MDxd
+  MD_CheckC = STAMP MD_Check BY MDxd
+  MD_BranchC = STAMP MD_Branch BY MDxd
+  MD_Branch_CheckC = STAMP MD_Branch_Check BY MDxd
+  EXT MD_WideC MD_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+  EXT MD_BranchC MD_Branch_CheckC < 0.6 ABUT >0 <89.5 NOT CONNECTED REGION
+}
+MD.E.1
+0 0 4 Oct 18 19:09:04 2024                     
+MD.E.1 { @ Min extension of a MD region beyond a VIAD region is 0.09 um
+   ENC VIAD MD < 0.09 ABUT<90 SINGULAR 
+   VIAD NOT MD    
+}
+MD.A.1
+0 0 3 Oct 18 19:09:04 2024                     
+MD.A.1 { @ Min MD area region < 0.562
+  AREA MD < 0.562
+}
+MD.R.1
+0 0 4 Oct 18 19:09:04 2024                     
+MD.R.1 { @ Min MD area coverage < 30%
+  ERR = DENSITY MDxd < 0.3 PRINT MD_DENSITY.log
+  ERR INTERACT CHIP_MD
+}  
+ADP.R.0A
+0 0 5 Oct 18 19:09:04 2024                     
+ADP.R.0A { @ chip corner dummy pad structure should be M1/M2.../M3
+  DPDMY NOT M1
+  DPDMY NOT M2
+  DPDMY NOT M3
+}  
+ADP.R.0B
+0 0 4 Oct 18 19:09:04 2024                     
+ADP.R.0B { @ chip corner dummy pad structure should be VIA1/VIA2.../VIA3
+  DPDMY NOT ENCLOSE VIA1
+  DPDMY NOT ENCLOSE VIA2
+}
+ADP.R.0C
+0 0 5 Oct 18 19:09:04 2024                     
+ADP.R.0C { @ Via structure in Dummy Pad
+  GRP1 = COPY DP_V2  
+  GRP2 = DP_V1 OR DP_VD
+  GRP1 AND GRP2
+}
+ADP.S.1_VIA1
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.S.1_VIA1 { @ Via1 spacing (the same level) < 0.58um.
+  EXT DP_V1 < 0.58 ABUT<90 SINGULAR REGION
+}
+ADP.S.1_VIA2
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.S.1_VIA2 { @ Via2 spacing (the same level) < 0.58um.
+  EXT DP_V2 < 0.58 ABUT<90 SINGULAR REGION
+}
+ADP.S.1_VIAD
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.S.1_VIAD { @ ViaD spacing (the same level) < 0.58um.
+  EXT DP_VD < 0.58 ABUT<90 SINGULAR REGION
+}
+ADP.C.2_V1_V2
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.C.2_V1_V2 { @ Via1 and Via2 spacing < 0.16um.
+  EXT DP_V1 DP_V2 < 0.16 ABUT<90 SINGULAR
+}
+ADP.C.2_V2_VD
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.C.2_V2_VD { @ Via2 and ViaD spacing < 0.16um.
+  EXT DP_V2 DP_VD < 0.16 ABUT<90 SINGULAR
+}
+ADP.E.1_V1_M1
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.E.1_V1_M1 { @ Metal1 enclose Via1 in dummy pad < 3um.
+  ENC DP_V1 M1 < 3 ABUT<90 SINGULAR
+}
+ADP.E.1_V1_M2
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.E.1_V1_M2 { @ Metal2 enclose Via1 in dummy pad < 3um.
+  ENC DP_V1 M2 < 3 ABUT<90 SINGULAR
+}
+ADP.E.1_V2_M2
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.E.1_V2_M2 { @ Metal2 enclose Via2 in dummy pad < 3um.
+  ENC DP_V2 M2 < 3 ABUT<90 SINGULAR
+}
+ADP.E.1_V2_M3
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.E.1_V2_M3 { @ Metal3 enclose Via2 in dummy pad < 3um.
+  ENC DP_V2 M3 < 3 ABUT<90 SINGULAR
+}
+ADP.E.1_VD_M3
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.E.1_VD_M3 { @ Meta3l enclose ViaD in dummy pad < 3um.
+  ENC DP_VD M3 < 3 ABUT<90 SINGULAR
+}
+ADP.E.1_VD_MD
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.E.1_VD_MD { @ MD enclose ViaD in dummy pad < 3um.
+  ENC DP_VD MD < 3 ABUT<90 SINGULAR
+}
+ADP.S.2
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.S.2 { @ dummy pad spacing < 2um.
+  EXT DPDMY < 2 ABUT<90 SINGULAR REGION
+}
+ADP.W.3
+0 0 4 Oct 18 19:09:04 2024                     
+ADP.W.3 { @ dummy pad width > 80um
+  DPADG = INT DPDMY <= 80 REGION OPPOSITE ABUT>0<90
+  DPDMY NOT DPADG
+}
+ADP.W.4
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.W.4 { @ dummy pad width < 40um
+  INT DPDMY < 40  ABUT>0<90 SINGULAR
+}
+ADP.R.0D
+0 0 5 Oct 18 19:09:04 2024                     
+ADP.R.0D { @ Via structure in Power Line
+  GRP1 = COPY PL_V2  
+  GRP2 = PL_V1 OR PL_VD
+  GRP1 AND GRP2
+}
+ADP.S.4_V1
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.S.4_V1 { @ Via1 spacing (the same level) < 0.58um.
+  EXT PL_V1 < 0.58 ABUT<90 SINGULAR REGION
+}
+ADP.S.4_V2
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.S.4_V2 { @ Via2 spacing (the same level) < 0.58um.
+  EXT PL_V2 < 0.58 ABUT<90 SINGULAR REGION
+}
+ADP.S.4_VD
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.S.4_VD { @ ViaD spacing (the same level) < 0.58um.
+  EXT PL_VD < 0.58 ABUT<90 SINGULAR REGION
+}
+ADP.C.3_V1_V2
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.C.3_V1_V2 { @ Vias spacing (different level) in chip corner power line < 0.23um.
+  EXT PL_V1 PL_V2 < 0.23 ABUT<90 SINGULAR
+}
+ADP.C.3_V2_VD
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.C.3_V2_VD { @ Vias spacing (different level) in chip corner power line < 0.23um.
+  EXT PL_V2 PL_VD < 0.23 ABUT<90 SINGULAR
+}
+ADP.E.2_V1_M1
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.E.2_V1_M1 { @ Metal1 enclose Via1 in chip corner power line < 0.2um.
+  ENC PL_V1 M1 < 0.2 ABUT<90 SINGULAR
+}
+ADP.E.2_V1_M2
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.E.2_V1_M2 { @ Metal2 enclose Via1 in chip corner power line < 0.2um.
+  ENC PL_V1 M2 < 0.2 ABUT<90 SINGULAR
+}
+ADP.E.2_V2_M2
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.E.2_V2_M2 { @ Metal2 enclose Via2 in chip corner power line < 0.2um.
+  ENC PL_V2 M2 < 0.2 ABUT<90 SINGULAR
+}
+ADP.E.2_V2_M3
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.E.2_V2_M3 { @ Metal3 enclose Via2 in chip corner power line < 0.2um.
+  ENC PL_V2 M3 < 0.2 ABUT<90 SINGULAR
+}
+ADP.E.2_VD_M3
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.E.2_VD_M3 { @ Metal3 enclose ViaD in chip corner power line < 0.2um.
+  ENC PL_VD M3 < 0.2 ABUT<90 SINGULAR
+}
+ADP.E.2_VD_MD
+0 0 3 Oct 18 19:09:04 2024                     
+ADP.E.2_VD_MD { @ MD enclose ViaD in chip corner power line < 0.2um.
+  ENC PL_VD MD < 0.2 ABUT<90 SINGULAR
+}
+AMS.1.M1
+0 0 4 Oct 18 19:09:04 2024                     
+AMS.1.M1 { @ Wide Metal (>35um) must have slot.
+  A = (SIZE ( SIZE M1EXD BY 1.0 UNDEROVER ) BY 17.5 UNDEROVER TRUNCATE 17.5 ) AND M1EXD
+  ENCLOSE RECTANGLE A 35.005 35.005    
+}
+AMS.DN.M1
+0 0 4 Oct 18 19:09:04 2024                     
+AMS.DN.M1 { @ Min. Hole density for metal lines that need to apply slot  1.5%
+    NET AREA RATIO LM1X M1HoleD < 0.015
+	[ AREA(M1HoleD) / AREA(LM1X) ] RDB M1Hole.density2 LM1X M1HoleD 
+}
+AM.W.1.M1
+0 0 9 Oct 18 19:09:04 2024                     
+AM.W.1.M1 { @ Min. width for metal connected to wide metal 10um.
+  M1WMD = M1WMA AND M1EXD
+  M1WME = M1WMD TOUCH M1SLT
+  S_FIM1 = M1xd NOT M1WME
+  S_FIM1E = S_FIM1 COIN OUTSIDE EDGE M1WME // check edge
+  G_FIM1E = PATH LENGTH S_FIM1E >= 10      // good edge
+  B_FIM1E = PATH LENGTH S_FIM1E < 10       // bad edge
+  B_FIM1E TOUCH EDGE (M1WME NOT TOUCH EDGE G_FIM1E)
+}
+AMS.1.M2
+0 0 4 Oct 18 19:09:04 2024                     
+AMS.1.M2 { @ Wide Metal (>35um) must have slot.
+  A = (SIZE ( SIZE M2EXD BY 1.0 UNDEROVER ) BY 17.5 UNDEROVER TRUNCATE 17.5 ) AND M2EXD
+  ENCLOSE RECTANGLE A 35.005 35.005    
+}
+AMS.DN.M2
+0 0 4 Oct 18 19:09:04 2024                     
+AMS.DN.M2 { @ Min. Hole density for metal lines that need to apply slot  1.5%
+    NET AREA RATIO LM2X M2HoleD < 0.015
+	[ AREA(M2HoleD) / AREA(LM2X) ] RDB M2Hole.density2 LM2X M2HoleD 
+}
+AM.W.1.M2
+0 0 9 Oct 18 19:09:04 2024                     
+AM.W.1.M2 { @ Min. width for metal connected to wide metal 10um.
+  M2WMD = M2WMA AND M2EXD
+  M2WME = M2WMD TOUCH M2SLT
+  S_FIM2 = M2xd NOT M2WME
+  S_FIM2E = S_FIM2 COIN OUTSIDE EDGE M2WME // check edge
+  G_FIM2E = PATH LENGTH S_FIM2E >= 10      // good edge
+  B_FIM2E = PATH LENGTH S_FIM2E < 10       // bad edge
+  B_FIM2E TOUCH EDGE (M2WME NOT TOUCH EDGE G_FIM2E)
+}
+AMS.1.M3
+0 0 4 Oct 18 19:09:04 2024                     
+AMS.1.M3 { @ Wide Metal (>35um) must have slot.
+  A = (SIZE ( SIZE M3EXD BY 1.0 UNDEROVER ) BY 17.5 UNDEROVER TRUNCATE 17.5 ) AND M3EXD
+  ENCLOSE RECTANGLE A 35.005 35.005    
+}
+AMS.DN.M3
+0 0 4 Oct 18 19:09:04 2024                     
+AMS.DN.M3 { @ Min. Hole density for metal lines that need to apply slot  1.5%
+    NET AREA RATIO LM3X M3HoleD < 0.015
+	[ AREA(M3HoleD) / AREA(LM3X) ] RDB M3Hole.density2 LM3X M3HoleD 
+}
+AM.W.1.M3
+0 0 9 Oct 18 19:09:04 2024                     
+AM.W.1.M3 { @ Min. width for metal connected to wide metal 10um.
+  M3WMD = M3WMA AND M3EXD
+  M3WME = M3WMD TOUCH M3SLT
+  S_FIM3 = M3xd NOT M3WME
+  S_FIM3E = S_FIM3 COIN OUTSIDE EDGE M3WME // check edge
+  G_FIM3E = PATH LENGTH S_FIM3E >= 10      // good edge
+  B_FIM3E = PATH LENGTH S_FIM3E < 10       // bad edge
+  B_FIM3E TOUCH EDGE (M3WME NOT TOUCH EDGE G_FIM3E)
+}
+AMS.1.MD
+0 0 4 Oct 18 19:09:04 2024                     
+AMS.1.MD { @ Wide Metal (>35um) must have slot
+  A = (SIZE ( SIZE MDEXD BY 1.0 UNDEROVER ) BY 17.5 UNDEROVER TRUNCATE 17.5) AND MDEXD
+  ENCLOSE RECTANGLE A 35.005 35.005    
+}
+AMS.DN.MD
+0 0 4 Oct 18 19:09:04 2024                     
+AMS.DN.MD { @ Min. Hole density for metal lines that need to apply slot  1.5%
+  NET AREA RATIO LMDX MDHoleD < 0.015
+    [ AREA(MDHoleD) / AREA(LMDX) ] RDB MDHole.density2 LMDX MDHoleD 
+}
+AM.W.1.MD
+0 0 9 Oct 18 19:09:04 2024                     
+AM.W.1.MD { @ Min. width for metal connected to wide metal 10um.
+  MDWMD = MDWMA AND MDEXD
+  MDWME = MDWMD TOUCH MDSLT
+  S_FIMD = MDxd NOT MDWME
+  S_FIMDE = S_FIMD COIN OUTSIDE EDGE MDWME
+  G_FIMDE = PATH LENGTH S_FIMDE >= 10
+  B_FIMDE = PATH LENGTH S_FIMDE < 10
+  B_FIMDE TOUCH EDGE (MDWME NOT TOUCH EDGE G_FIMDE)
+}
+ESD.22
+0 0 5 Oct 18 19:09:04 2024                     
+ESD.22 { @ ESD1DMY is for NMOS only / ESD2DMY is for 3.3V NMOS only
+  ESD1DMY AND GATE_PP
+  ESD2DMY AND GATE_PP
+  ESD2DMY AND (GATE_NP NOT OD2)
+}
+ESD.GUIDE.4
+0 0 4 Oct 18 19:09:04 2024                     
+ESD.GUIDE.4 { @ I/O - Gate 20um <= width <= 60um.
+  PATH LENGTH EGTE_W > 0 < 20
+  PATH LENGTH EGTE_W > 60 < 999
+}
+ESD.5A
+0 0 10 Oct 18 19:09:04 2024                    
+ESD.5A { @ For 3.3V high voltage tolerant NMOS, RPO should completely cover 1st poly gate
+         @ and overlap 2nd poly gate >= 0.05um
+  X = ESD2_TOL_GATE NOT RPO
+  ESD2_TOL NOT INTERACT X
+  ESD2_TOL_GATE2 OUTSIDE RPO
+  ESD2_TOL_GATE1 NOT RPO
+  INT ESD2_TOL_GATE2 RPO < 0.05 ABUT<90 OPPOSITE REGION
+  //For 3.3V high voltage tolerant NMOS, 1st and 2nd poly gate spacing is >=0.25um 
+  //is checked by ESD.5H
+}
+ESD.5B
+0 0 11 Oct 18 19:09:04 2024                    
+ESD.5B { @ For 1.8V high voltage tolerant NMOS, RPO should completely cover 1st poly gate
+         @ and should not cover 2nd poly gate, RPO space to 2nd poly gate >= 0.25um
+  X = ESD1_TOL_GATE AND RPO
+  ESD1_TOL NOT INTERACT X
+  ESD1_TOL_GATE1 NOT RPO
+  ESD1_TOL_GATE2 AND RPO
+  Y = RPO INTERACT ESD1_TOL_GATE1
+  EXT Y ESD1_TOL_GATE2_W < 0.25 ABUT<90 OPPOSITE REGION
+  //For 1.8V high voltage tolerant NMOS, 1st and 2nd poly gate spacing is >=0.25um
+  //is checked by ESD.5I
+}
+ESD.5C
+0 0 6 Oct 18 19:09:04 2024                     
+ESD.5C { @ For 3.3V regular NMOS, RPO needs to overlap poly gate >= 0.05um
+  X = ESD2_REG_GATE NOT RPO
+  ESD2_REG NOT INTERACT X
+  ESD2_REG_GATE OUTSIDE RPO
+  INT ESD2_REG_GATE RPO < 0.05 ABUT<90 OPPOSITE REGION 
+}
+ESD.WARN.1
+0 0 6 Oct 18 19:09:04 2024                     
+ESD.WARN.1 { @ CO can't inserted between gate and RPO for 1.8V NMOS and all PMOS I/O pattern.
+  RED  = (EPSD OR ENSD) INTERACT RPO1
+  XRPO = RED NOT RPO1
+  XRPG = XRPO TOUCH EGTE1
+  XRPG INTERACT ECO
+}
+ESD.5D
+0 0 4 Oct 18 19:09:04 2024                     
+ESD.5D { @ For the grounded gate ESD protection device between Vcc/Vss, RPO should fully cover
+         @ all poly gate and source drain.
+  ESD1_NCS_GATE NOT RPO	 
+}
+ESD.5E
+0 0 4 Oct 18 19:09:04 2024                     
+ESD.5E { @ For all PMOS and 1.8V regular NMOS, RPO space to gate 0.45um
+  EXT RPO1 EGTE1_W < 0.45 ABUT<90 OPPOSITE REGION
+  EGTE1 AND RPO1
+}
+ESD.5F
+0 0 7 Oct 18 19:09:04 2024                     
+ESD.5F { @ For 3.3V high voltage tolerant, 3.3V regular NMOS, and 1.8V NMOS high voltage tolerant
+         @ min. width of RPO on drain side and RPO edge to OD edge 1.95um
+  X = (ENSD_WCO AND ESD2DMY) AND RPO
+  INT X < 1.95 ABUT<90 REGION
+  Z = ((ENSD_WCO AND ESD1DMY) AND RPO) INTERACT ESD1_TOL_GATE1
+  INT Z < 1.95 ABUT<90 REGION
+}
+ESD.5G
+0 0 6 Oct 18 19:09:04 2024                     
+ESD.5G { @ For 1.8V regular NMOS and all PMOS 
+         @ min. width of RPO on drain side and RPO edge to OD edge 1.5um
+//Y = RPO1 AND OD                
+  Y = RPO AND (OD INTERACT POLY) 
+  INT Y < 1.5 ABUT<90 REGION
+}
+ESD.5H
+0 0 4 Oct 18 19:09:04 2024                     
+ESD.5H { @ For 3.3V high voltage tolerant NMOS, 1st and 2nd poly gate spacing is >=0.25um
+  X = ENSD_NCO INTERACT ESD2DMY
+  INT X < 0.25 ABUT<90 REGION
+}
+ESD.5I
+0 0 3 Oct 18 19:09:04 2024                     
+ESD.5I { @ For 1.8V high voltage tolerant NMOS, 1st and 2nd poly gate spacing is >=0.25um
+  INT ENSD_NCO_ESD1DMY < 0.25 ABUT<90 REGION
+}
+ESD.6
+0 0 5 Oct 18 19:09:04 2024                     
+ESD.6 { @ Min. space between CO on source side to poly gate 0.75um
+  EXT ECOS EGTE_W < 0.75 ABUT<90 OPPOSITE REGION
+  X = ECO AND ESD1_NCS     
+  EXT X EGTE_W < 0.75 ABUT<90 OPPOSITE REGION
+}  
+ESD.9A
+0 0 3 Oct 18 19:09:04 2024                     
+ESD.9A { @ 1.8V IO ESD NMOS/PMOS gate length < 0.25um
+  INT LEGT < 0.25 ABUT<90 SINGULAR REGION
+}
+ESD.9B
+0 0 3 Oct 18 19:09:04 2024                     
+ESD.9B { @ 3.3V IO ESD NMOS gate length < 0.4um
+  INT HEGN < 0.4 ABUT<90 SINGULAR REGION
+}
+ESD.9C
+0 0 3 Oct 18 19:09:04 2024                     
+ESD.9C { @ 3.3V IO ESD PMOS gate length < 0.3um
+  INT HEGP < 0.3 ABUT<90 SINGULAR REGION
+}
+ESD.11
+0 0 34 Oct 18 19:09:04 2024                    
+ESD.11 { @ Butting or inserted pickup between source diffusion of ESD devices are prohibited
+  EAct = EPACT OR ENACT
+  DTap = NTAP OR PTAP
+  EActUp3 = SIZE EAct BY 3 OUTSIDE OF DTap STEP 0.22*0.7
+  D1 = DTap INTERACT EActUp3
+  D1R1 = SHRINK D1 RIGHT BY 0.001
+  D1R2 = D1 NOT D1R1 
+  D1R3 = LENGTH D1R2 > 0.001
+  D1R4 = D1 TOUCH EDGE D1R3
+  D1R5 = EXT [D1R4] EAct < 3 ABUT < 90 OPPOSITE  
+  D1L  = D1 WITH EDGE D1R5 
+  D1L1 = SHRINK D1L LEFT BY 0.001
+  D1L2 = D1L NOT D1L1 
+  D1L3 = LENGTH D1L2 > 0.001
+  D1L4 = D1L TOUCH EDGE D1L3
+  D1L5 = EXT [D1L4] EAct < 3 ABUT < 90 OPPOSITE  
+  D1X  = D1L WITH EDGE D1L5 
+  D1T1 = SHRINK D1 TOP BY 0.001
+  D1T2 = D1 NOT D1T1 
+  D1T3 = LENGTH D1T2 > 0.001
+  D1T4 = D1 TOUCH EDGE D1T3
+  D1T5 = EXT [D1T4] EAct < 3 ABUT < 90 OPPOSITE  
+  D1B  = D1 WITH EDGE D1T5 
+  D1B1 = SHRINK D1B BOTTOM BY 0.001
+  D1B2 = D1B NOT D1B1 
+  D1B3 = LENGTH D1B2 > 0.001
+  D1B4 = D1B TOUCH EDGE D1B3
+  D1B5 = EXT [D1B4] EAct < 3 ABUT < 90 OPPOSITE  
+  D1Y  = D1B WITH EDGE D1B5 
+  DTap2Check=D1X OR D1Y
+  DTapHole = HOLES DTap2Check INNER
+  DTapSuspect = DTap2Check NOT TOUCH DTapHole
+  ENCLOSE RECTANGLE DTapSuspect 0.22 20
+}
+LAT.2
+0 0 3 Oct 18 19:09:04 2024                     
+LAT.2 { @ I/O - NMOS to PMOS space < 15um.     
+  EXT EPMOS ENMOS < 15 ABUT>0<90 SINGULAR
+}
+LAT.3P
+0 0 17 Oct 18 19:09:04 2024                    
+LAT.3P { @ N-well pickup OD to PMOS space > 30um
+  NWELi_US = SIZE NWELi BY - 0.085 // 0.12/1.415 = 0.085
+  // 30/1.415 = 21.201, (0.6 + 2 * 0.085)/1.415 = 0.544
+  NTAP_OS = SIZE NTAP BY 21.201 INSIDE OF NWELi_US STEP 0.544 TRUNCATE 0.544
+  PASD_FAR = PASD NOT NTAP_OS
+  PASD_FAR_FILTER = SIZE PASD_FAR BY 30
+  NTAP_NEAR = NTAP INTERACT PASD_FAR_FILTER
+  // doing an more accurate sizing
+  NTAP_NEAR_OS = SIZE NTAP_NEAR BY 0.10
+  NTAP_90_CORNER = INT NTAP_NEAR_OS < 0.06 ABUT==90 INTERSECTING ONLY REGION
+  NTAP_OCT = NTAP_NEAR_OS NOT NTAP_90_CORNER
+  NTAP_135_CORNER = INT NTAP_OCT < 0.04 ABUT>134<136 INTERSECTING ONLY REGION
+  NTAP_HEX = NTAP_OCT NOT NTAP_135_CORNER
+  // 30-0.10 = 29.9
+  NTAP_HEX_OS = SIZE NTAP_HEX BY 29.9 INSIDE OF NWELi_US STEP 0.544 TRUNCATE 0.544
+  PASD_FAR NOT NTAP_HEX_OS
+}
+LAT.3N
+0 0 17 Oct 18 19:09:04 2024                    
+LAT.3N { @ P-well pickup OD to NMOS space > 30um
+  PWELi_US = SIZE PWELi BY - 0.085 // 0.12/1.415 = 0.085
+  // 30/1.415 = 21.201, (0.86 + 2 * 0.085)/1.415 = 0.728
+  PTAP_OS = SIZE PTAP BY 21.201 INSIDE OF PWELi_US STEP 0.728 TRUNCATE 0.728
+  NASD_FAR = NASD NOT PTAP_OS
+  NASD_FAR_FILTER = SIZE NASD_FAR BY 30
+  PTAP_NEAR = PTAP INTERACT NASD_FAR_FILTER
+  // doing an more accurate sizing
+  PTAP_NEAR_OS = SIZE PTAP_NEAR BY 0.10
+  PTAP_90_CORNER = INT PTAP_NEAR_OS < 0.06 ABUT==90 INTERSECTING ONLY REGION
+  PTAP_OCT = PTAP_NEAR_OS NOT PTAP_90_CORNER
+  PTAP_135_CORNER = INT PTAP_OCT < 0.04 ABUT>134<136 INTERSECTING ONLY REGION
+  PTAP_HEX = PTAP_OCT NOT PTAP_135_CORNER
+  // 30-0.10 = 29.9
+  PTAP_HEX_OS = SIZE PTAP_HEX BY 29.9 INSIDE OF PWELi_US STEP 0.728 TRUNCATE 0.728
+  NASD_FAR NOT PTAP_HEX_OS
+}
+CTM.TITLE.1
+0 0 5 Oct 18 19:09:04 2024                     
+CTM.TITLE.1 { @ MiM capacitors should be placed between the top two interconnect metal layers
+  COPY CTM5
+  COPY CTM3
+  COPY CTM4
+} 
+CTM.W.1
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.W.1 { @ CTM (as capacitor top plate) width >= 4 um
+  INT TCTM < 4 ABUT < 90 SINGULAR REGION
+}
+CTM.W.2
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.W.2 { @ Minimum width of a dummy CTM region >= 0.4um
+  INT DCTM < 0.4 ABUT < 90 SINGULAR REGION
+}
+CTM.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.S.1 { @ CTM (as capacitor top plate) space < 1.2 um
+  EXT TCTM < 1.2 ABUT < 90 SINGULAR REGION
+}
+CTM.S.2
+0 0 4 Oct 18 19:09:04 2024                     
+CTM.S.2 { @ Minimum space between a dummy CTM to a CTM regions 0.8um
+  EXT DCTM TCTM < 0.8 ABUT < 90 SINGULAR REGION
+  EXT DCTM < 0.8 ABUT < 90 SINGULAR REGION
+}
+CTM.S.3
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.S.3 { @ Minimum space between two Mn+1 of both dummy and real capacitor bottom plate < 0.8um
+  EXT BPM2 DPM2 < 0.8 ABUT < 90 SINGULAR REGION
+}
+CTM.S.6
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.S.6 { @ Min. space between two Mn+1 as capacitor bottom plate < 0.8 um
+  EXT BPM2 < 0.8 ABUT < 90 SINGULAR REGION
+}
+CTM.E.1
+0 0 4 Oct 18 19:09:04 2024                     
+CTM.E.1 { @ CTM enclose Via < 0.24 um
+  ENC VIA2 CTM2 < 0.24 ABUT<90 SINGULAR REGION
+  VIA2 CUT CTM2    
+}
+CTM.E.2
+0 0 4 Oct 18 19:09:04 2024                     
+CTM.E.2 { @ bottom plate Metal enclose Via < 0.12 um
+  ENC VIA1 BPM2 < 0.12 ABUT<90 SINGULAR REGION
+  ENC VIA2 BPM2 < 0.12 ABUT<90 SINGULAR REGION
+}
+CTM.E.3
+0 0 4 Oct 18 19:09:04 2024                     
+CTM.E.3 { @ bottom plate Metal enclose CTM < 0.4 um
+  ENC CTM2 M2 < 0.4 ABUT<90 SINGULAR REGION
+  CTM2 NOT M2    
+}
+CTM.C.1
+0 0 4 Oct 18 19:09:04 2024                     
+CTM.C.1 { @ CTM space to Via < 0.4 um
+  EXT VIA1 CTM2 < 0.4 ABUT<90 SINGULAR REGION
+  EXT VIA2 CTM2 < 0.4 ABUT<90 SINGULAR REGION
+}
+CTM.R.2
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.R.2 { @ Min. density of a CTM < 3%
+   DENSITY CTM2i > 0 < 0.03 PRINT CTM2i.density
+}
+CTM.S.4
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.S.4 { @ min space between two vias locate on CTM < 2um
+  EXT CTMV2 < 2 ABUT < 90 SINGULAR REGION
+}
+CTM.S.4a
+0 0 6 Oct 18 19:09:04 2024                     
+CTM.S.4a { @ min vias density on CTM < 1%
+  NET AREA RATIO CTMV2 TCTM < 0.01
+  [
+      AREA(CTMV2) / AREA(TCTM)
+  ] RDB VIA2_DENSITY.log CTMV2 TCTM
+}
+CTM.S.5
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.S.5 { @ min space between two vias locate on buttom plate < 4um
+  EXT CBMV2 < 4 ABUT < 90 SINGULAR REGION
+}
+CTM.R.4
+0 0 4 Oct 18 19:09:04 2024                     
+CTM.R.4 { @ dummy layer enclose bottom plate metal < 2um.
+//  ENC BPM2A CTMDMY < 2 ABUT < 90 SINGULAR REGION 
+    TCTM NOT CTMDMY   // CTMDMY is needed to sepcify MiM capacitor region and separates from metal interconnection region for DRC purpose.	
+}
+CTM.I.1
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.I.1 { @ max width of a CTM region as a capacitor top plate > 30um
+  ENCLOSE RECTANGLE TCTM 4 30.005 ORTHOGONAL ONLY // 4um is min TCTM width
+}
+CTM.I.2
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.I.2 { @ max width of a capacitor bottom plate > 35um
+  SIZE BPM2 BY 17.5 UNDEROVER
+}
+CTM.I.3
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.I.3 { @ ViaN under CTM is not allowed.
+  VIA1 AND CTM2
+}
+CTM.I.4
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.I.4 { @ device under CTM is not allowed
+  (((PORES OR RNWEL) OR  ODRES ) OR DACT) AND CTM2 
+}
+CTM.A.1
+0 0 3 Oct 18 19:09:04 2024                     
+CTM.A.1 { @ Min. area of CTM region 0.202
+  AREA CTM2 < 0.202
+}
+CAL.ERR.ODNW
+0 0 4 Oct 18 19:09:04 2024                     
+CAL.ERR.ODNW { @ OD only over one NWELL resistor
+               @ Define by CALibre exclude IP/LIB REGION!
+  NWRR4 NOT NWRR5
+}
+CAL.ERR.PAD1
+0 0 5 Oct 18 19:09:04 2024                     
+CAL.ERR.PAD1 { @ PAD MUST TOTAL INSIDE TOP METAL!!!2004/11/25
+               @ Define by CALibre exclude IP/LIB REGION!
+  ERPAD1 = NOT CB M3
+  CB INTERACT ERPAD1
+}
+CAL.ERR.PAD2
+0 0 5 Oct 18 19:09:04 2024                     
+CAL.ERR.PAD2 { @ IF TOP METAL > 40um MUST HAVE CB STRUCT!!!(EXCLUDE NON-PAD REGION)
+               @ Define by CALibre exclude IP/LIB REGION!
+PADM3 = M3 SIZE BY 20 UNDEROVER
+PADM3 NOT INTERACT CB
+}
+CAL.ERR.ESDDMY
+0 0 6 Oct 18 19:09:04 2024                     
+CAL.ERR.ESDDMY { @ ESD1DMY ESD2DMY ESD3DMY DON'T ALLOW OVER PMOS AREA
+                 @ Define by CALibre exclude IP/LIB REGION!
+  ESD1DMY AND (OD INTERACT GATE_PP)
+  ESD2DMY AND (OD INTERACT GATE_PP)
+  ESD3DMY AND (OD INTERACT GATE_PP)
+}
+CAL.ERR.DMNP2V
+0 0 4 Oct 18 19:09:04 2024                     
+CAL.ERR.DMNP2V { @ DMN2V overlap DMP2V is not allowed
+                 @ Define by CALibre exclude IP/LIB REGION!
+  DMN2V AND DMP2V
+}
+CAL.ERR.FUSE.M1
+0 0 6 Oct 18 19:09:04 2024                     
+CAL.ERR.FUSE.M1 { @ Metal1 routing layer inside fuse window
+                  @ Define by CALibre exclude IP/LIB REGION!
+  X = M1 INTERACT FW
+  X NOT INSIDE FW
+  X NOT INTERACT CO
+}
+CAL.ERR.FUSE.M2
+0 0 6 Oct 18 19:09:04 2024                     
+CAL.ERR.FUSE.M2 { @ Metal2 routing layer inside fuse window
+                  @ Define by CALibre exclude IP/LIB REGION!
+  X = M2 INTERACT FW
+  X NOT INSIDE FW
+  X NOT INTERACT VIA1
+}
+CAL.ERR.FUSE.M3
+0 0 6 Oct 18 19:09:04 2024                     
+CAL.ERR.FUSE.M3 { @ Metal3 routing layer inside fuse window
+                  @ Define by CALibre exclude IP/LIB REGION!
+  X = M3 INTERACT FW
+  X NOT INSIDE FW
+  X NOT INTERACT VIA2
+}
+CAL.ERR.FUSE.MD
+0 0 6 Oct 18 19:09:04 2024                     
+CAL.ERR.FUSE.MD { @ MD routing layer inside fuse window
+                  @ Define by CALibre exclude IP/LIB REGION!
+  X = MD INTERACT FW
+  X NOT INSIDE FW
+  X NOT INTERACT VIAD
+}
+DNW.I.1
+0 0 3 Oct 18 19:09:04 2024                     
+DNW.I.1 { @ DNW must be surrounded or fully covered by NW
+    DNW OUTSIDE EDGE NWEL
+}
+DNW.I.6
+0 0 3 Oct 18 19:09:04 2024                     
+DNW.I.6 { @ DNW is not allowed as a resistor
+  AND DNW RWDMY
+}
+DNW.I.7
+0 0 4 Oct 18 19:09:04 2024                     
+DNW.I.7 { @ NW resistor is not allowed to connect DNW
+  INTERACT RNWEL DNW
+  INTERACT NWRES DNW
+}
+DNW.W.1
+0 0 3 Oct 18 19:09:04 2024                     
+DNW.W.1 { @ Min. DNW width < 3
+  INT DNW < 3 ABUT<90 SINGULAR REGION
+}
+DNW.S.1
+0 0 3 Oct 18 19:09:04 2024                     
+DNW.S.1 { @ Min. DNW space < 5
+  EXT DNW < 5 ABUT<90 REGION
+}
+DNW.E.1
+0 0 4 Oct 18 19:09:04 2024                     
+DNW.E.1 { @ Min. extension of NW beyond DNW < 1.5
+  DNW_RW = DNW ENCLOSE RW //exclude DNW without RW
+  ENC DNW_RW NWEL < 1.5 ABUT<90 SINGULAR REGION
+}
+DNW.O.1
+0 0 3 Oct 18 19:09:04 2024                     
+DNW.O.1 { @ Min. overlap of NW into DNW < 2.0
+  INT DNW NWEL < 2.0 ABUT<90 SINGULAR // MEASURE COINCIDENT
+}
+DNW.C.1
+0 0 4 Oct 18 19:09:04 2024                     
+DNW.C.1 { @ Min. DNW space to NW < 3.5
+  X = NWEL OUTSIDE DNW
+  EXT DNW X < 3.5 ABUT<90 SINGULAR REGION
+}
+DNW.C.2_DNW.C.3
+0 0 4 Oct 18 19:09:04 2024                     
+DNW.C.2_DNW.C.3 { @ Min. NWEL to NPOD in DNW spacing < 0.50
+  ND_ACT = NPOD AND DNW
+  EXT ND_ACT NONWR < 0.50 SINGULAR ABUT <90 OVERLAP  REGION
+}
+DNW.C.4
+0 0 5 Oct 18 19:09:04 2024                     
+DNW.C.4 { @ Min. DNW space to N+OD outside NW < 3
+  A = PWEL NOT DNW
+  B = NPOD AND A
+  EXT B DNW < 3.0 ABUT<90 SINGULAR
+} 
+CAL.ERR.DMP2V
+0 0 4 Oct 18 19:09:04 2024                     
+CAL.ERR.DMP2V { @ DMP2V DON'T ALLOW OVER ANY MOS OD2 REGION
+                @ Define by CALibre exclude IP/LIB REGION!
+  DMP2V AND MOSOD2
+}
+CAL.ERR.DMN2V
+0 0 4 Oct 18 19:09:04 2024                     
+CAL.ERR.DMN2V { @ DMN2V DON'T ALLOW OVER ANY MOS OD2 REGION
+                @ Define by CALibre exclude IP/LIB REGION!
+  DMN2V AND MOSOD2
+}
+CB.R.3.1
+0 0 5 Oct 18 19:09:04 2024                     
+CB.R.3.1 { @ pad structure must be MT/VIAT/Mtop-1
+  CUP_CB_CUP NOT INTERACT CUP_PADM3
+  CUP_CB_CUP NOT ENCLOSE VIA2
+  CUP_CB_CUP NOT INTERACT CUP_PADM2
+}
+CBVIAT.EN.2
+0 0 4 Oct 18 19:09:04 2024                     
+CBVIAT.EN.2 { @ VIAT enclosure by metal < 2
+  ENC PAD_VIA_CUP2 M2  < 2 ABUT < 90 REGION
+  ENC PAD_VIA_CUP2 M3 < 2 ABUT < 90 REGION
+}
+CBVIAT.W.2
+0 0 3 Oct 18 19:09:04 2024                     
+CBVIAT.W.2 { @ CBVIAT.W.3 is also checked. Width of VIAT must = 0.28um, Length of VIAT must = 3.44um
+  NOT RECTANGLE PAD_VIA_CUP2 == 0.28 BY == 3.44 ORTHOGONAL ONLY
+}
+CBVIAT.S.3
+0 0 3 Oct 18 19:09:04 2024                     
+CBVIAT.S.3 { @ space of two line VIAT (in parallel direction) = 1.3
+  NOT RECTANGLE VIA_SPACE == 1.3 BY == 3.44 ORTHOGONAL ONLY
+}
+CBVIAT.S.4
+0 0 4 Oct 18 19:09:04 2024                     
+CBVIAT.S.4 { @ space of two line VIAT (in perpendicular direction) = 2
+  X = EXT VIA_MERGE < 2.5 OPPOSITE REGION
+  NOT RECTANGLE X == 2 BY == 3.44 ORTHOGONAL ONLY
+}
+CBVIAT.DN.1
+0 0 5 Oct 18 19:09:04 2024                     
+CBVIAT.DN.1 { @ Ratio of total mesh VIAT area to CB area < 0.08
+  NET AREA RATIO CUP_CB_CUP PAD_VIA_CUP2 <0.08
+  [AREA(PAD_VIA_CUP2)/AREA(CUP_CB_CUP)
+  ] RDB via2_density.log CUP_CB_CUP PAD_VIA_CUP2
+}
+CB.R.2a
+0 0 7 Oct 18 19:09:04 2024                     
+CB.R.2a { @ pad structure must be MT/VIAT/Mtop-1...M1
+  CB_NONCUP NOT INTERACT CUP_PADM1
+  CB_NONCUP NOT INTERACT CUP_PADM2
+  CB_NONCUP NOT INTERACT CUP_PADM3
+  CB_NONCUP NOT ENCLOSE VIA1
+  CB_NONCUP NOT ENCLOSE VIA2
+}
+CAL.ERR.OFFGRID
+0 0 4 Oct 18 19:09:04 2024                     
+CAL.ERR.OFFGRID { @ The Grid size is recommended to be 0.005
+                  @ Vertice is drawn off-grid.
+  DRAWN OFFGRID
+}
+NET_AREA_RATIO_RDBS
+0 0 6 Oct 18 19:09:04 2024
+M1Hole.density2 0
+M2Hole.density2 0
+M3Hole.density2 0
+MDHole.density2 0
+VIA2_DENSITY.log 0
+via2_density.log 0
+DENSITY_PRINT_FILES
+0 0 2 Oct 18 19:09:04 2024
+MD_DENSITY.log
+CTM2i.density
