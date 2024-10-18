@@ -1,18 +1,18 @@
        ###############################################
        ##                                           ##
        ##    FileName:  gdsOut.log                  ##
-       ##    GenDate :  18-Oct-2024   19:09:40      ##
+       ##    GenDate :  18-Oct-2024   20:15:57      ##
        ##                                           ##
        ##    Laker: 2023.06-2 (Linux x86_64/64bit) 03/22/2024  ##
        #############################################AN
 
-Command: gdsOut -64 -SkipWarnNo 100 -keepPCell off -s Preserve -label Preserve -T "AND2X1" -filterAllSysLayer "All" -reduceMCell off -maxAryColRow off -precisionForMag 5 -reduceDevice off -filterText off -convertPolyText off -pathToPolygon off -purposeMap on -designIntention off -Ref -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterDummyCell -Vm 4096 -o /home/user/wrk/standard_113/lvs/AND2X1.calibre.db leon
+Command: gdsOut -64 -SkipWarnNo 100 -keepPCell off -s Preserve -label Preserve -T "AND3X1" -filterAllSysLayer "All" -reduceMCell off -maxAryColRow off -precisionForMag 5 -reduceDevice off -filterText off -convertPolyText off -pathToPolygon off -purposeMap on -designIntention off -Ref -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterDummyCell -Vm 4096 -o /home/user/wrk/standard_113/drc/AND3X1.calibre.db leon
 Host/OS: leon   Linux 3.10.0-1160.105.1.el7.x86_64
 
 
 ##### Stream Cells #####
 
-   1.AND2X1                  2.POLY_GATE            
+   1.AND3X1                  2.POLY_GATE            
 
 
 ##### Stream Error File(gdsOut.err) #####
@@ -25,14 +25,14 @@ Host/OS: leon   Linux 3.10.0-1160.105.1.el7.x86_64
                    Resort Primary Cell(s)
 
 --------------------------------------------------------------------------
-   1.AND2X1               
+   1.AND3X1               
 
 
                    Resort Cell(s) Summary
 
 cellName     #cInst  #array    #rect    #poly    #path    #text  bBox(um)
 --------------------------------------------------------------------------------------------------
-AND2X1            3       0       51        0        3        5 (-0.170,-0.275) (2.470,2.815)
+AND3X1            3       0       59        0        4        7 (-0.300,0.000) (2.820,3.090)
 POLY_GATE         0       0        6        0        0        0 (0.000,0.020) (0.240,0.220)
 
 
@@ -43,23 +43,23 @@ layerName   purpose  layerNo  dataType    #rect    #poly    #path    #text
 --------------------------------------------------------------------------
 DIFF        drawing        1        0         6        0        0        0
 NWELL       drawing        2        0         1        0        0        0
-POLY1       drawing        3        0        10        0        0        0
+POLY1       drawing        3        0        15        0        0        0
 NIMP        drawing        4        0         2        0        0        0
 PIMP        drawing        5        0         2        0        0        0
 CONT        drawing        6        0        22        0        0        0
-METAL1      pin       40        0         0        0        0        5
-METAL1      drawing        7        0        14        0        3        0
+METAL1      pin       40        0         0        0        0        7
+METAL1      drawing        7        0        17        0        4        0
 
 
 
 
 No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off
 
- EXE Start Time = 18-Oct-2024   19:09:40                  
- EXE Stop  Time = 18-Oct-2024   19:09:40                  
+ EXE Start Time = 18-Oct-2024   20:15:57                  
+ EXE Stop  Time = 18-Oct-2024   20:15:57                  
 
  #Elapsed Time  = 00:00:00
  #CPU Time      = 00:00:00
 
- #Memory 562928 K,Peak 562928 K
+ #Memory 566284 K,Peak 566284 K
  Total #Fatal = 0, #Warn = 0

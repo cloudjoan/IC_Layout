@@ -3,19 +3,19 @@
 ==================================================================================
 === CALIBRE::ERC-H SUMMARY REPORT
 ===
-Execution Date/Time:          Fri Oct 18 19:09:42 2024
+Execution Date/Time:          Fri Oct 18 20:15:25 2024
 Calibre Version:              v2022.4_37.20    Fri Dec 2 17:41:13 PST 2022
 Rule File Pathname:           _lvs.rule_
 Rule File Title:              
 Layout System:                GDSII
-Layout Path(s):               AND2X1.calibre.db
-Layout Primary Cell:          AND2X1
+Layout Path(s):               AND3X1.calibre.db
+Layout Primary Cell:          AND3X1
 Current Directory:            /home/user/wrk/standard_113/lvs
 User Name:                    user
 Maximum Results/ERC Check:    ALL
 Maximum ERC Result Vertices:  4096
-ERC PATHCHK Results Database: svdb/AND2X1.pathchk.erc
-ERC PATHCHK Report:           svdb/AND2X1.pathchk.rep
+ERC PATHCHK Results Database: svdb/AND3X1.pathchk.erc
+ERC PATHCHK Report:           svdb/AND3X1.pathchk.rep
 Layout Depth:                 ALL
 Text Depth:                   1
 Summary Report File:          calibre_erc.rep (REPLACE)
@@ -32,7 +32,7 @@ Keep Empty Checks:            YES
 --- ORIGINAL LAYER STATISTICS
 ---
 LAYER MOSRDUM ... TOTAL Original Geometry Count = 0  (0)
-LAYER POLY1i .... TOTAL Original Geometry Count = 18 (18)
+LAYER POLY1i .... TOTAL Original Geometry Count = 23 (23)
 LAYER ODi ....... TOTAL Original Geometry Count = 6  (6)
 LAYER RPO ....... TOTAL Original Geometry Count = 0  (0)
 LAYER RODMY ..... TOTAL Original Geometry Count = 0  (0)
@@ -49,7 +49,7 @@ LAYER PIMP ...... TOTAL Original Geometry Count = 2  (2)
 LAYER DIODMY .... TOTAL Original Geometry Count = 0  (0)
 LAYER BJTDMY .... TOTAL Original Geometry Count = 0  (0)
 LAYER DUM1 ...... TOTAL Original Geometry Count = 0  (0)
-LAYER M1 ........ TOTAL Original Geometry Count = 19 (19)
+LAYER M1 ........ TOTAL Original Geometry Count = 23 (23)
 LAYER M1SLOT .... TOTAL Original Geometry Count = 0  (0)
 LAYER RMDMY ..... TOTAL Original Geometry Count = 0  (0)
 LAYER DUM2 ...... TOTAL Original Geometry Count = 0  (0)
@@ -97,5 +97,5 @@ LAYER FCAPDUM ... TOTAL Original Geometry Count = 0  (0)
 ---
 TOTAL CPU Time:                              0
 TOTAL REAL Time:                             0
-TOTAL Original Layer Geometries:             72 (72)
+TOTAL Original Layer Geometries:             81 (81)
 TOTAL ERC PATHCHK Operations Executed:       1
