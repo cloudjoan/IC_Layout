@@ -7,13 +7,3 @@ Path with Zero Width : ON, FATAL
 Self-intersected Polygon : OFF, FATAL
 Flash Path : ON, FATAL
 
-### cellName: new2 ###
- *W* Drop empty cell (new2, original name:new2(layout)) in library (test).
-### cellName: new_1008 ###
- *W* Drop empty cell (new_1008, original name:new_1008(layout)) in library (test).
-### cellName: new_1011 ###
- *W* Drop empty cell (new_1011, original name:new_1011(layout)) in library (test).
-### cellName: test ###
- *W* Drop empty cell (test, original name:test(layout)) in library (test).
-### cellName: test2 ###
- *W* Drop empty cell (test2, original name:test2(layout)) in library (test).

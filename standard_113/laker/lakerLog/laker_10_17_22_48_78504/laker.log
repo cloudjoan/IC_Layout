@@ -1,0 +1,193 @@
+Command Line: /data1/synopsys/laker/laker_v2023.06-2.aut/platform/LINUX64/bin/laker
+uname(Linux leon 3.10.0-1160.105.1.el7.x86_64 #1 SMP Mon Nov 6 06:58:51 EST 2023 x86_64)
+source /data1/synopsys/laker/laker_v2023.06-2.aut/gift/gift.tcl
+The color name 'ID_WHITE' of the 'DT' layer was not defined in default.dsp file.
+lakerOpenDesign -lib leon -cell DFFQX1 -mode readOnly
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerZoomInByArea -point (0.41,-14.627) (7.432,-9.761)
+lakerClearRuler
+lakerMaxViewLevel
+lakerNewCell -lib leon -cell test_1017
+lakerSetActiveLayer -layerName ref -purpose drawing
+lakerZoomAll
+lakerZoomAll
+lakerCreateInstance -point (0.215,0.09) -cell INVX1 -lib test -view layout
+lakerZoomAll
+lakerMaxViewLevel
+lakerSingleSel
+lakerChangeSelMode -mode Object
+lakerSmashObj -level 1
+lakerChangeSelMode -mode Vertex
+lakerSingleSel -point (-0.405,2.34) -traversedist 0.02
+lakerSingleSel -point (2.074,0.893) -traversedist 0.02
+lakerSetColPat -modCategory DrawingSet -use 1
+lakerSetColPat -modCategory DesignSet -use 1
+lakerSetColPat -modCategory RoutingSet -use 1
+lakerSetColPat -modCategory DrawingSet -use 0
+lakerSetColPat -modCategory DesignSet -use 0
+lakerSetColPat -modCategory RoutingSet -use 0
+lakerSetColPat -modCategory DesignSet -use 1
+lakerSetColPat -visall 0
+lakerSetColPat -selall 0
+lakerSetColPat -layerName METAL1 -purpose dummy -vis 1
+lakerSetColPat -layerName METAL1 -purpose dummy -sel 1 -vis 1
+lakerSetActiveLayer -layerName METAL1 -purpose dummy
+lakerSingleSel -point (-1.077,2.276) -traversedist 0.02
+lakerRedraw
+lakerAreaSel -point (-0.132,-0.07) (1.37,2.892)
+lakerChangeSelMode -mode DevObj
+lakerChangeSelMode -mode Vertex
+lakerDeleteObj
+lakerSetColPat -visall 1
+lakerSetColPat -selall 1
+lakerSingleSel
+lakerRedraw
+lakerSingleSel -point (-0.837,1.385) -traversedist 0.02
+lakerCalibreDRC
+New connection accepted, fd = 18
+
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+lakerSaveDesign -autosave
+
+//  Lost connection to license server 1717@192.168.3.2 for feature calinteractive. Reconnection attempt #1 in progress...
+
+lakerSaveDesign -autosave
+
+//  Lost connection to license server 1717@192.168.3.2 for feature calinteractive. Reconnection attempt #2 in progress...
+
+
+//  Lost connection to license server 1717@192.168.3.2 for feature calinteractive. Reconnection attempt #3 in progress...
+
+lakerSaveDesign -autosave
+
+//  Lost connection to license server 1717@192.168.3.2 for feature calinteractive. Reconnection attempt #4 in progress...
+
+lakerSaveDesign -autosave
+
+//  Lost connection to license server 1717@192.168.3.2 for feature calinteractive. Reconnection attempt #5 in progress...
+
+
+//  Lost connection to license server 1717@192.168.3.2 for feature calinteractive. Reconnection attempt #6 in progress...
+
+lakerSaveDesign -autosave
+
+//  Lost connection to license server 1717@192.168.3.2 for feature calinteractive. Reconnection attempt #7 in progress...
+
+
+//  Lost connection to license server 1717@192.168.3.2 for feature calinteractive. Reconnection attempt #8 in progress...
+
+lakerSaveDesign -autosave
+
+//  Lost connection to license server 1717@192.168.3.2 for feature calinteractive. Reconnection attempt #9 in progress...
+
+lakerSaveDesign -autosave
+
+//  Lost connection to license server 1717@192.168.3.2 for feature calinteractive. Reconnection attempt #10 in progress...
+
+
+//  Lost connection to license server 1717@192.168.3.2 for feature calinteractive. Reconnection attempt #11 in progress...
+
+lakerSaveDesign -autosave
+Calibre process exit.
+lakerSaveDesign -autosave
+lakerSaveDesign -autosave
+lakerSingleSel
+lakerSaveDesign -autosave
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel
+lakerAreaSel -point (-0.92,1.42) (1.61,2.3)
+lakerSingleSel -point (-1.047,2.447) -traversedist 0.02
+lakerSingleSel -point (-0.855,2.409) -traversedist 0.02
+lakerSetActiveLayer -layerName DIFF -purpose drawing
+lakerSingleSel -point (0.045,2.116) -traversedist 0.02
+lakerSingleSel -point (1.738,-10.233) -traversedist 0.029
+lakerSingleSel
+lakerSingleSel -point (2.244,-10.348) -traversedist 0.029
+lakerSingleSel -point (-0.185,2.167) -traversedist 0.02
+lakerSingleSel
+lakerSingleSel
+lakerSingleSel -point (-0.243,2.435) -traversedist 0.02
+lakerAreaSel -point (0.063,1.38) (1.245,2.306)
+lakerStretchObj -refPoint (0.625,2.26) -ignoreNet 0 -offsetPoint (0.625,2.395)
+lakerStretchObj -refPoint (0.615,2.39) -ignoreNet 0 -offsetPoint (0.615,2.44)
+lakerSingleSel
+lakerSaveDesign
+lakerCalibreDRC
+New connection accepted, fd = 18
+
+//  Calibre v2022.4_37.20    Fri Dec 2 17:41:17 PST 2022
+//  Calibre Utility Library   v0-10_13-2017-1    Fri Jul 30 08:22:01 PDT 2021
+//  Litho Libraries v2022.4_37.20  Fri Dec 2 17:41:17 PST 2022
+//
+//                   Copyright Siemens 1996-2022
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+//  Running on 1 CPU 
+//
+//
+
+//  calinteractive license acquired.
+//  Calibre Interactive authorized.
+
+Received from RVE: [ mgc_rve_export_layout "test_1017" "GDSII" "/home/user/wrk/standard_113/drc/test_1017.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/test_1017.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {test_1017} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New connection accepted, fd = 23
+
+Received from RVE: [ mgc_rve_delete_markers "" 1 ]
+lakerDistance -point (0.613,2.445) (0.633,2.58)
+lakerSingleSel -point (-0.348,2.504) -traversedist 0.02
+lakerSingleSel -point (-0.348,2.504) -traversedist 0.02
+lakerAreaSel -point (-0.417,1.915) (1.245,2.492)
+lakerSingleSel
+lakerAreaSel -point (-0.12,1.5) (1.555,2.506)
+lakerStretchObj -refPoint (0.615,2.44) -ignoreNet 0 -offsetPoint (0.615,2.495)
+lakerSingleSel
+lakerSaveDesign
+lakerCalibreDRC
+Received from RVE: [ mgc_rve_export_layout "test_1017" "GDSII" "/home/user/wrk/standard_113/drc/test_1017.calibre.db" ]
+Transferring library (leon) to GDSII (/home/user/wrk/standard_113/drc/test_1017.calibre.db) ...
+	Please wait a moment...
+lakerExportStream -file /home/user/wrk/standard_113/laker/ -lib leon -topCell {test_1017} -case Preserve -label Preserve -maxVerti 4096 -mergeRefLib 1 -OutAbsCell Off -SmashMCell ExpCont -IoLayerMapMode Map -filterText 0 -filterDummyCell 1 -filterAllSysLayer {All} -reduceMCell 0 -maxAryColRow 0 -reduceDevice 0 -convertPolyText 0 -pathToPolygon 0 -purposeMap 1 -keepPCell 0 -designIntention 0 -keepLastOpts 1
+The Export Stream process has been completed.
+Total #Fatal = 0, #Warn = 0
+For more information, please check (gdsOut.log) and (gdsOut.err) files.
+No illegal shape is filtered since the option "Filter-Illegal-Shapes" is turned off.
+Sent to RVE: [ layout_done 1 ]
+New

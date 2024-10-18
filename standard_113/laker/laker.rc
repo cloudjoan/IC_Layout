@@ -4,6 +4,7 @@ test = /home/user/wrk/standard_113/laker/test.lib++
 test2 = /home/user/wrk/standard_113/laker/test2.lib++
 test3 = /home/user/wrk/standard_113/laker/test3.lib++
 t = /home/user/wrk/standard_113/laker/t.lib++
+leon = /home/user/wrk/standard_113/laker/leon.lib++
 [DataManagement]
 DMToolType = unknown
 DMServerHost = localhost
@@ -16,27 +17,29 @@ DMAutoExcludeViewName =
 version = 2023.06-2
 [Form]
 version = 2023.06-2
-leoMasterWnd.fm = 557,212,822,507
+leoMasterWnd.fm = 1167,497,821,507
 openfile.fm = 200,274,723,535
 leoImport.fm = 400,110,429,708
 leoTFeBrowser.fm = 649,442,417,561
 leoTFeWnd.fm = 383,207,1037,795
-leoDelCell.fm = 332,432,447,365
-leoCreateArray.fm = 620,151,680,562
+leoDelCell.fm = 372,509,447,424
+leoCreateArray.fm = 680,248,680,562
 leoCreateText.fm = 589,141,400,684
-leoDsgWnd.fm = 9,35,1914,772
+leoDsgWnd.fm = 0,65,2554,1814
 leoClsWndSaveCnf.fm = 100,100,656,263
-opendir.fm = 120,120,355,403
+opendir.fm = 120,120,355,389
 leoExport.fm = 330,114,469,723
-shareOpenDsg.fm = 802,443,764,394
+shareOpenDsg.fm = 802,445,764,394
 leoNewLibrary.fm = 330,267,382,459
 leoRenCell.fm = 330,267,451,417
 leoSetupGrid.fm = 100,100,639,608
 leoCorrectOffGrid.fm = 100,100,427,406
 leoCopyCell.fm = 330,267,910,532
 leoSelGrpByName.fm = 200,387,248,293
-leoSpecNetName.fm = 100,100,335,273
+leoSpecNetName.fm = 120,120,335,273
 leoSummary.fm = 100,100,612,536
+leoCrDevice.fm = 300,200,680,593
+leoCopyLib.fm = 330,267,324,363
 [General]
 KeepEnvValInRc = TRUE
 SyncDir = FALSE
@@ -45,6 +48,7 @@ AutoSyncLibMapFile = FALSE
 test = 0.001 0.05 0.05 5 1 
 test2 = 0.001 0.01 0.01 5 1
 t = 0.001 0.01 0.01 5 1
+leon = 0.001 0.05 0.05 5 1 
 [ImportExport]
 ImportFileFilter = *.db;*.gds;*.gz;*.Z
 LayerMapFilter = *.map
@@ -418,9 +422,17 @@ ShowErrorFlagTip = FALSE
 InfixEditing = FALSE
 PopUpInformation = FALSE
 IgnoreMOSBulk = FALSE
+CopyLibDir = /home/user/wrk/standard_113/laker
 [LeoWnd]
 layertblpos = 2
-dsgwndsize = 1914 772
+dsgwndsize = 2554 1814
+[Print]
+PrinterName = lp
+FileName = DFFQX1.ps
+ColorPrint = FALSE
+BlackBackground = FALSE
+[QtDialog]
+SelectObjects = 1049,746,436,297
 [SourceTcl]
 [SystemLayer]
 Ruler = SystemLayer yellow 65 yellow 65 blank 7 line_solid 0 1
